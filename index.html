@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>IBSTech – Embedded Intelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; color: #222; }
+    header { background: #0b1b2b; color: #fff; padding: 40px 20px; text-align: center; }
+    header h1 { margin: 0 0 10px; }
+    header p { margin: 0 0 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
+    header a { display: inline-block; margin: 5px; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; }
+    .btn-primary { background: #ff8a00; color: #000; }
+    .btn-secondary { border: 1px solid #fff; color: #fff; }
+    nav { background: #111; color: #fff; padding: 10px 20px; position: sticky; top: 0; z-index: 10; }
+    nav a { color: #fff; margin-right: 15px; text-decoration: none; font-size: 0.9rem; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
+    h2 { margin-top: 0; color: #0b1b2b; }
+    h3 { margin-bottom: 5px; }
+    .columns { display: flex; flex-wrap: wrap; gap: 20px; }
+    .column { flex: 1 1 250px; border: 1px solid #ddd; padding: 20px; border-radius: 4px; background: #fafafa; }
+    footer { background: #0b1b2b; color: #fff; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px; }
+    label { display: block; margin-top: 10px; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 3px; }
+    button { margin-top: 10px; padding: 10px 20px; background: #ff8a00; border: none; cursor: pointer; font-weight: bold; }
+    button:hover { opacity: 0.9; }
+    ul { padding-left: 20px; }
+    @media (max-width: 600px) {
+      header { padding: 30px 15px; }
+      section { padding: 30px 15px; }
+      nav { overflow-x: auto; white-space: nowrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">Über uns</a>
+    <a href="#services">Leistungen</a>
+    <a href="#ai-embedded">KI &amp; Embedded</a>
+    <a href="#projects">Projekte</a>
+    <a href="#process">Vorgehen</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <header>
+    <h1>IBSTech – Embedded Intelligence für smarte Produkte</h1>
+    <p>
+      IBSTech verbindet klassische Embedded-Entwicklung mit moderner KI.
+      Von der ersten Idee bis zur Serie unterstützen wir Unternehmen beim Aufbau intelligenter, vernetzter Produkte.
+    </p>
+    <a href="#contact" class="btn-primary">Jetzt Kontakt aufnehmen</a>
+    <a href="#ai-embedded" class="btn-secondary">Mehr über KI in Embedded</a>
+  </header>
+
+  <section id="about">
+    <h2>Wer ist IBSTech?</h2>
+    <p>
+      IBSTech ist ein Entwicklungs- und Beratungspartner für Embedded-Systeme und intelligente Produkte.
+      Wir kommen aus der klassischen Embedded-Welt – C/C++, Echtzeit, knappe Ressourcen – und erweitern diese Erfahrung
+      gezielt um moderne KI-Methoden direkt auf dem Gerät oder am Edge.
+    </p>
+    <p>
+      Unser Fokus:
+      zuverlässige, wartbare Embedded-Software, praxistaugliche KI-Lösungen statt Hype
+      und eine enge Zusammenarbeit mit Ihrem Entwicklungsteam.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Was wir tun</h2>
+    <div class="columns">
+      <div class="column">
+        <h3>Klassische Embedded-Entwicklung</h3>
+        <ul>
+          <li>Firmware in C/C++</li>
+          <li>Treiber- und HAL-Entwicklung</li>
+          <li>RTOS (z. B. FreeRTOS, Zephyr)</li>
+          <li>Kommunikation (CAN, Ethernet, UART, SPI, I²C)</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>KI in der Embedded Welt</h3>
+        <ul>
+          <li>Edge-AI auf Mikrocontrollern und SoCs</li>
+          <li>Anomalie- und Fehlererkennung in Sensordaten</li>
+          <li>Predictive Maintenance</li>
+          <li>Signalverarbeitung und Feature-Engineering</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Beratung &amp; Schulung</h3>
+        <ul>
+          <li>Architektur- und Code-Reviews</li>
+          <li>Workshops zu „KI im Embedded-Bereich“</li>
+          <li>Proof-of-Concepts und technische Evaluierungen</li>
+          <li>Begleitung beim Aufbau interner KI-Kompetenz</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai-embedded">
+    <h2>Warum KI im Embedded-Bereich?</h2>
+    <p>
+      Viele Unternehmen haben heute Daten – aber nutzen sie kaum im Feld.
+      Mit KI direkt im Gerät oder am Edge entstehen neue Möglichkeiten:
+    </p>
+    <ul>
+      <li>Frühe Erkennung von Abweichungen und Ausfällen</li>
+      <li>Intelligente Regelung statt starrer Schwellenwerte</li>
+      <li>Lokale Entscheidungen auch ohne Cloud-Verbindung</li>
+      <li>Mehrwertfunktionen, die Ihr Produkt vom Wettbewerb abheben</li>
+    </ul>
+    <p>
+      IBSTech unterstützt Sie von der Idee über den Prototyp bis zur Serienreife:
+      Auswahl geeigneter Modelle, Optimierung für knappe Ressourcen (Speicher, Rechenzeit, Energie),
+      Integration in bestehende Embedded-Architekturen sowie Mess- und Testkonzepte für robuste Systeme.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Beispielhafte Anwendungen</h2>
+
+    <h3>Zustandsüberwachung einer Motorsteuerung</h3>
+    <p>
+      Aus Vibrations- und Strom-Signalen wird der Zustand eines Motors lokal bewertet.
+      Ein leichtgewichtiges Modell erkennt Abweichungen frühzeitig und meldet Warnungen über das bestehende Feldbussystem –
+      ganz ohne permanente Cloud-Anbindung.
+    </p>
+
+    <h3>Intelligente Lüfter- und Temperaturregelung</h3>
+    <p>
+      Eine Embedded-KI bewertet Sensordaten im Kontext (Last, Umgebung, Historie) und regelt Lüfter und Heizungen adaptiv.
+      Das reduziert Geräusche, Energieverbrauch und Verschleiß, ohne das Systemverhalten zu gefährden.
+    </p>
+
+    <h3>Edge Analytics für Sensorknoten</h3>
+    <p>
+      Verteilte Sensorknoten extrahieren direkt am Edge aussagekräftige Merkmale aus Rohdaten.
+      Nur relevante Ereignisse werden übertragen – das spart Bandbreite und ermöglicht schnellere Reaktionen.
+    </p>
+  </section>
+
+  <section id="process">
+    <h2>So arbeiten wir zusammen</h2>
+    <ol>
+      <li><strong>Analyse &amp; Zielbild:</strong> Klärung von Nutzen, Randbedingungen und vorhandener Hardware.</li>
+      <li><strong>Proof of Concept:</strong> Erster Prototyp mit echten Daten auf Ihrer Zielplattform.</li>
+      <li><strong>Integration &amp; Optimierung:</strong> Einbindung in Ihre Embedded-Software, Performance-Tuning und Tests.</li>
+      <li><strong>Übergabe &amp; Schulung:</strong> Dokumentation, Schulung Ihres Teams und Begleitung in Richtung Serie.</li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt aufnehmen</h2>
+    <p>
+      Sie möchten KI in Ihre Embedded-Produkte bringen oder bestehende Systeme weiterentwickeln?
+      Schreiben Sie uns eine Nachricht – wir melden uns zeitnah.
+    </p>
+    <form>
+      <label for="name">Name</label>
+      <input id="name" type="text" />
+
+      <label for="email">E-Mail</label>
+      <input id="email" type="email" />
+
+      <label for="company">Unternehmen</label>
+      <input id="company" type="text" />
+
+      <label for="message">Nachricht</label>
+      <textarea id="message" rows="4"></textarea>
+
+      <button type="submit">Anfrage senden</button>
+    </form>
+  </section>
+
+  <footer>
+    © IBSTech – Embedded Intelligence
+  </footer>
+
+</body>
+</html>
