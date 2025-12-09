@@ -13,6 +13,7 @@
     header a { display: inline-block; margin: 5px; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; }
     .btn-primary { background: #ff8a00; color: #000; }
     .btn-secondary { border: 1px solid #fff; color: #fff; }
+
     nav { background: #111; color: #fff; padding: 10px 20px; position: sticky; top: 0; z-index: 10; }
     nav a { color: #fff; margin-right: 15px; text-decoration: none; font-size: 0.9rem; }
     nav a:hover { text-decoration: underline; }
@@ -21,7 +22,6 @@
     h2 { margin-top: 0; color: #0b1b2b; }
     h3 { margin-bottom: 5px; }
     ul { padding-left: 20px; }
-    ol { padding-left: 20px; }
 
     .columns { display: flex; flex-wrap: wrap; gap: 20px; }
     .column { flex: 1 1 250px; border: 1px solid #ddd; padding: 20px; border-radius: 4px; background: #fafafa; }
@@ -31,11 +31,10 @@
 
     /* Vision / interaktives Schichtenbild */
     .vision-wrapper { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 20px; }
-    .vision-text { flex: 1 1 260px; }
-    .vision-stack { flex: 2 1 320px; display: flex; flex-wrap: wrap; gap: 10px; align-items: stretch; }
+    .vision-stack { flex: 1 1 100%; display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch; }
 
     .vision-column {
-      flex: 1 1 250px;
+      flex: 1 1 280px;
       border-radius: 10px;
       padding: 15px;
       background: linear-gradient(135deg, #f5f7fb, #e7ebf5);
@@ -51,8 +50,8 @@
       box-shadow: 0 8px 18px rgba(0,0,0,0.12);
       border-color: #ff8a00;
     }
-    .vision-column h3 { margin-top: 0; margin-bottom: 4px; }
-    .vision-tagline { font-size: 0.85rem; color: #555; margin-bottom: 10px; }
+    .vision-column h3 { margin-top: 0; margin-bottom: 4px; text-align: center; }
+    .vision-tagline { font-size: 0.85rem; color: #555; margin-bottom: 10px; text-align: center; }
 
     .layer-list {
       list-style: none;
@@ -69,13 +68,11 @@
       border: 1px solid #d2d7e5;
       padding: 4px 8px;
       box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    }
-    .layer-list li::before {
-      content: "";
+      text-align: center;
     }
 
     .vision-info {
-      margin-top: 20px;
+      margin-top: 24px;
       padding: 15px 20px;
       border-radius: 8px;
       border: 1px solid #ccd2e0;
@@ -107,9 +104,8 @@
 
   <nav>
     <a href="#home">Home</a>
-    <a href="#vision">Vision</a>
+    <a href="#vision">Schichtenbild</a>
     <a href="#tools">Tools</a>
-    <a href="#tutorials">Tutorials</a>
     <a href="#demos">Demos</a>
     <a href="#links">Links</a>
     <a href="#events">Events</a>
@@ -117,12 +113,8 @@
 
   <header id="home">
     <h1>IBSTech Portal</h1>
-    <h2>KI · Robotik · Embedded – von der Hardware bis zur Cloud</h2>
-    <p>
-      Ein unabhängiges Portal rund um KI in der Embedded- und Robotik-Welt:
-      Tools, Tutorials, Demos und Ressourcen für alle, die reale Systeme intelligenter machen wollen –
-      von Mikrocontrollern bis Cloud, von MedTech über Automotive bis IoT.
-    </p>
+    <h2>KI · Robotik · Embedded</h2>
+    <p>Interaktives Schichtenbild und Beispiele für KI in realen Systemen.</p>
     <div class="domain-tags">
       <span class="domain-tag">MedTech</span>
       <span class="domain-tag">Robotik</span>
@@ -132,106 +124,82 @@
       <span class="domain-tag">Kommunikation &amp; Edge</span>
     </div>
     <br />
-    <a href="#vision" class="btn-primary">Schichtenbild ansehen</a>
+    <a href="#vision" class="btn-primary">Zum Schichtenbild</a>
     <a href="#demos" class="btn-secondary">Demos ansehen</a>
   </header>
 
   <section id="vision">
-    <h2>Schichtenbild: Embedded · Robotik · KI</h2>
-    <p>
-      Idee für die Präsentation:
-    </p>
-    <ul>
-      <li><strong>Links:</strong> Klassischer Stack – alles von Hand modelliert, programmiert, integriert.</li>
-      <li><strong>Rechts:</strong> KI-übersteuerter Stack – „Black Box“ vom Sensor bis in die Cloud.</li>
-      <li><strong>Mitte:</strong> Hybrid – Embedded, Robotik und KI arbeiten zusammen, mit klaren Verantwortlichkeiten.</li>
-    </ul>
-    <p>
-      Die drei Karten unten sind wie ein interaktives Bild gedacht: Beim Darüberfahren mit der Maus lassen sich die Schichten
-      und Stichwörter erklären – ideal, um den heutigen Zustand, Zukunftsvisionen und deinen Mittelweg zu zeigen.
-    </p>
+    <h2>Interaktives Schichtenbild: Embedded · Robotik · KI</h2>
+    <p>Bewege die Maus über eine der drei Säulen, um den jeweiligen Ansatz zu erklären.</p>
 
     <div class="vision-wrapper">
-      <div class="vision-text">
-        <p><strong>So kannst du es im Vortrag nutzen:</strong></p>
-        <ul>
-          <li>Zuerst die linke Karte: Komplexität, viele Schichten, alles manuell.</li>
-          <li>Dann die rechte Karte: „Alles KI“, aber Gefahr der Intransparenz.</li>
-          <li>Zum Schluss die mittlere Karte: dein Hybrid-Ansatz als realistische Perspektive.</li>
-        </ul>
-      </div>
-
       <div class="vision-stack">
-        <!-- Links -->
+        <!-- Links: klassischer Stack -->
         <div class="vision-column"
              data-title="Klassischer Stack"
-             data-description="Viele Schichten, viel Handarbeit: Hardware-Setup, Treiber, RTOS, Protokolle, Regelung, Edge-Gateways und Cloud sind getrennte Welten, oft mit separaten Teams und Toolchains.">
-          <h3>Heute: Klassischer Stack</h3>
-          <div class="vision-tagline">hoch manuell · fragmentierte Toolchains</div>
+             data-description="Viele Schichten, viel Handarbeit: jede Ebene separat modelliert, programmiert und integriert. Hoher Aufwand, aber maximale Kontrolle.">
+          <h3>Heute</h3>
+          <div class="vision-tagline">klassischer Stack</div>
           <ul class="layer-list">
-            <li>Hardware &amp; Sensorik (MCUs, Motor-Driver, Feldbusse)</li>
-            <li>Firmware in C/C++, RTOS, Protokoll-Stacks</li>
-            <li>Robotik-Logik &amp; Regelung (State-Machines, PID, Safety)</li>
-            <li>Edge-Gateways, proprietäre Schnittstellen</li>
-            <li>Cloud/Backend mit separaten KI-Services</li>
+            <li>Cloud / Backend</li>
+            <li>Edge-Gateway / Middleware</li>
+            <li>Robotik-Logik &amp; Regelung</li>
+            <li>Firmware (RTOS, Protokolle)</li>
+            <li>Hardware &amp; Sensorik</li>
           </ul>
         </div>
 
-        <!-- Mitte -->
+        <!-- Mitte: Hybrid -->
         <div class="vision-column"
              style="border-color:#ff8a00; background:linear-gradient(135deg,#fff7ec,#ffe0b8);"
-             data-title="Hybrid: Mensch + KI in der Mitte"
-             data-description="Embedded, Robotik und KI arbeiten zusammen: Echtzeit-Logik bleibt kontrollierbar, KI unterstützt Sensorfusion, Anomalieerkennung und Planung. On-Device-ML reduziert Cloud-Abhängigkeit, Verantwortlichkeiten sind klar.">
-          <h3>Hybrid: Mensch + KI in der Mitte</h3>
-          <div class="vision-tagline">unterstützende KI · erklärbare Entscheidungen</div>
+             data-title="Hybrid: Mensch + KI"
+             data-description="Embedded, Robotik und KI arbeiten zusammen: KI unterstützt Sensorfusion, Anomalieerkennung und Planung, während Echtzeit und Safety in klaren Schichten bleiben.">
+          <h3>Mitte</h3>
+          <div class="vision-tagline">Hybrid – Mensch + KI</div>
           <ul class="layer-list">
-            <li>Embedded-Hardware &amp; Echtzeit bleiben klar definiert</li>
-            <li>KI-Modelle für Sensorfusion &amp; Anomalieerkennung</li>
-            <li>Robotik-Schichten nutzen KI für Planung, mit abgesicherten Controllern</li>
-            <li>On-Device-ML &amp; Edge-AI reduzieren Cloud-Abhängigkeit</li>
-            <li>Cloud/Backend für Training, Flotten-Analysen, Updates</li>
+            <li>Cloud (Training, Flottenanalyse)</li>
+            <li>Edge-AI &amp; Koordination</li>
+            <li>Robotik-Planung + Controller</li>
+            <li>On-Device-ML &amp; Firmware</li>
+            <li>Hardware, Aktoren &amp; Sensoren</li>
           </ul>
         </div>
 
-        <!-- Rechts -->
+        <!-- Rechts: KI-dominierte Zukunft -->
         <div class="vision-column"
-             data-title="Zukunft: KI-dominierte Systeme"
-             data-description="Stark automatisierte Pipelines von Code-Generierung bis Deployment: KI-Agenten übernehmen große Teile der Planung und Steuerung. Hohe Effizienz, aber auch hohe Anforderungen an Erklärbarkeit, Safety und Governance.">
-          <h3>Zukunft: KI-dominierte Systeme</h3>
-          <div class="vision-tagline">hohe Automatisierung · Risiko von Intransparenz</div>
+             data-title="KI-dominierte Systeme"
+             data-description="Stark automatisierte Pipelines: KI-Agenten übernehmen große Teile von Design, Planung und Steuerung. Effizient, aber mit hohem Bedarf an Erklärbarkeit und Governance.">
+          <h3>Zukunft</h3>
+          <div class="vision-tagline">KI-übersteuerter Stack</div>
           <ul class="layer-list">
-            <li>Automatisierte Code-Generierung und Synthese</li>
-            <li>Planung &amp; Steuerung stark durch KI-Agenten geprägt</li>
-            <li>Durchgängige Datenpipelines vom Sensor bis Cloud</li>
-            <li>Selbstoptimierende Robotik- und Produktionssysteme</li>
-            <li>Hoher Bedarf an Erklärbarkeit, Safety &amp; Governance</li>
+            <li>End-to-End KI-Orchestrierung</li>
+            <li>Auto-Generierung von Code &amp; Tests</li>
+            <li>Selbstoptimierende Regelung</li>
+            <li>Generische Runtime-Plattform</li>
+            <li>Sensoren &amp; Aktoren als „Ressourcen“</li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="vision-info" id="vision-info">
-      <h3 class="vision-info-title">Interaktives Schichtenbild</h3>
+      <h3 class="vision-info-title">Hinweis</h3>
       <p class="vision-info-text">
-        Fahre mit der Maus über eine der drei Karten („Heute“, „Hybrid“, „Zukunft“),
-        um hier eine kurze Erklärung angezeigt zu bekommen. So kannst du dein Narrativ im Vortrag visuell begleiten.
+        Fahre mit der Maus über „Heute“, „Mitte“ oder „Zukunft“, um den jeweiligen Ansatz kurz erklärt zu bekommen.
+        Das lässt sich in der Präsentation sehr gut live kommentieren.
       </p>
     </div>
   </section>
 
   <section id="tools">
-    <h2>Tools – Bausteine für KI · Robotik · Embedded</h2>
-    <p>
-      Sammlung von Tool-Ideen und Frameworks, die typische Aufgaben in KI- und Embedded-Projekten unterstützen.
-      Später können hier konkrete Repositories, Downloads oder Online-Tools verlinkt werden.
-    </p>
+    <h2>Tools – KI · Robotik · Embedded</h2>
     <div class="columns">
       <div class="column">
         <span class="badge">Embedded-KI</span>
         <h3>Edge-AI Toolchain (Konzept)</h3>
         <p>
           Pipeline von Datenerfassung über Feature-Engineering bis zur Modellintegration auf Mikrocontrollern
-          (z. B. für MedTech-Sensorik, Automotive-Steuergeräte oder IoT-Knoten).
+          (z. B. für MedTech, Automotive oder IoT).
         </p>
       </div>
       <div class="column">
@@ -239,7 +207,7 @@
         <h3>Robotik-Stack-Templates</h3>
         <p>
           Vorlagen für Robotik-Anwendungen mit klarer Trennung von Echtzeit-Controllern,
-          Bewegungsplanung und KI-gestützten Wahrnehmungsmodulen.
+          Bewegungsplanung und KI-gestützter Wahrnehmung.
         </p>
       </div>
       <div class="column">
@@ -253,83 +221,49 @@
     </div>
   </section>
 
-  <section id="tutorials">
-    <h2>Tutorials – Einstieg und Vertiefung</h2>
-    <p>
-      Hier können Schritt-für-Schritt-Anleitungen für typische KI- und Embedded-Aufgaben entstehen.
-      Aktuell als Themenübersicht formuliert, später mit konkreten Links zu Artikeln oder Videos.
-    </p>
-    <ul>
-      <li>Von Sensordaten zum Embedded-Modell – End-to-End-Pipeline.</li>
-      <li>Edge-AI auf Mikrocontrollern (z. B. TinyML, Signalverarbeitung, Quantisierung).</li>
-      <li>Robotik-Use-Cases mit KI-Unterstützung (z. B. Pfadplanung, Objekterkennung).</li>
-      <li>Teststrategien für KI im Embedded-Kontext (Simulation, HIL, Flotten-Feedback).</li>
-    </ul>
-  </section>
-
   <section id="demos">
     <h2>Demos – KI in Aktion</h2>
-    <p>
-      Beispielhafte Demos, die sich gut live zeigen lassen – auch mit Hardware-Anbindung.
-      MedTech, Industrie, Robotik und IoT sind typische Zielbereiche.
-    </p>
+    <p>Beispiele, die sich live zeigen lassen (MedTech, Industrie, Robotik, IoT).</p>
 
     <h3>Demo: Ganzheitliche Physio- &amp; Reha-Analyse</h3>
-    <p>
-      Kombination aus Sensorsohlen, Video-/3D-Analyse und EMG-Biofeedback für Prävention,
-      Assessment, Reha-Physio und Monitoring.
-    </p>
     <ul>
-      <li>Sensorsohlen mit Druck- und IMU-Sensoren für Ganganalyse.</li>
+      <li>Sensorsohlen mit Druck- und IMU-Sensoren (Ganganalyse).</li>
       <li>Video- &amp; 3D-Körperanalyse (markerlose Pose-Estimation).</li>
       <li>EMG-Biofeedback für Muskelaktivität und Kompensationsmuster.</li>
-      <li>KI-gestützte Fusion für Kennzahlen, Alerts und Therapie-Empfehlungen.</li>
+      <li>KI-Fusion für Kennzahlen, Alerts und Therapie-Empfehlungen.</li>
     </ul>
 
     <h3>Demo: KI-Zustandsüberwachung eines Antriebs (Industrie/IoT)</h3>
-    <p>
-      Vibrations- und Strommessung an einem Motor oder Antriebssystem,
-      ausgewertet durch Embedded-KI zur frühzeitigen Anomalieerkennung.
-    </p>
     <ul>
       <li>Sensorknoten mit IMU, Temperatur und Stromsensor.</li>
       <li>Edge-AI für Merkmalsextraktion und Zustandsbewertung.</li>
-      <li>Visualisierung über Dashboard, optional Feldbus/MQTT-Anbindung.</li>
+      <li>Dashboard-Visualisierung, optional Feldbus/MQTT-Anbindung.</li>
     </ul>
-
-    <h3>Multi-Agent-Orchestrierung entlang des V-Modells</h3>
-    <p>
-      Konzeptdemo, wie spezialisierte KI-Agenten Requirements, Architektur, Implementierung,
-      Test und Betrieb unterstützen können – ohne die Kontrolle an eine „Black Box“ abzugeben.
-    </p>
   </section>
 
   <section id="links">
     <h2>Links – Podcasts, Seiten, Repos</h2>
-    <p>
-      Platzhalter für eine kuratierte Link-Sammlung rund um KI, Robotik und Embedded.
-      Für die Präsentation reicht es, die Struktur zu zeigen; später können konkrete Ressourcen ergänzt werden.
-    </p>
+    <p>Struktur für spätere Inhalte (aktuell Platzhalter).</p>
     <div class="columns">
       <div class="column">
         <h3>Podcasts</h3>
         <ul>
-          <li>Podcast zu Embedded-Entwicklung &amp; Echtzeit-Systemen (Platzhalter)</li>
-          <li>Podcast zu KI in Industrie &amp; Robotik (Platzhalter)</li>
+          <li>Embedded-Entwicklung &amp; Echtzeit (Platzhalter)</li>
+          <li>KI in Industrie &amp; Robotik (Platzhalter)</li>
         </ul>
       </div>
       <div class="column">
         <h3>Webseiten &amp; Blogs</h3>
         <ul>
-          <li>Blog zu Edge-AI und TinyML (Platzhalter)</li>
-          <li>Artikel zu Robotik-Architekturen mit KI-Unterstützung (Platzhalter)</li>
+          <li>Edge-AI / TinyML (Platzhalter)</li>
+          <li>Robotik-Architekturen mit KI (Platzhalter)</li>
         </ul>
       </div>
       <div class="column">
         <h3>Repos &amp; Dokus</h3>
         <ul>
           <li>Open-Source-Beispiele für Embedded-KI (Platzhalter)</li>
-          <li>Dokumentation zu relevanten Toolchains &amp; Frameworks (Platzhalter)</li>
+          <li>Dokumentation zu Toolchains &amp; Frameworks (Platzhalter)</li>
         </ul>
       </div>
     </div>
@@ -337,14 +271,11 @@
 
   <section id="events">
     <h2>Events – Konferenzen, Meetups, Schulungen</h2>
-    <p>
-      Platzhalter für zukünftige Veranstaltungen rund um KI, Robotik und Embedded:
-      Konferenzen, lokale Meetups, Online-Workshops oder eigene Formate.
-    </p>
+    <p>Platzhalter für zukünftige Veranstaltungen rund um KI, Robotik und Embedded.</p>
     <ul>
-      <li>Embedded-KI-Workshop (Idee: praxisnaher Intensivtag).</li>
-      <li>Robotik &amp; KI-Demo-Tag (Idee: Live-Demos mit Hardware).</li>
-      <li>Community-Meetup KI &amp; Embedded (Idee: Austausch zwischen Entwickelnden und Forschenden).</li>
+      <li>Embedded-KI-Workshop (Idee).</li>
+      <li>Robotik &amp; KI-Demo-Tag (Idee).</li>
+      <li>Community-Meetup KI &amp; Embedded (Idee).</li>
     </ul>
   </section>
 
@@ -367,7 +298,6 @@
           if (t) titleEl.textContent = t;
           if (d) textEl.textContent = d;
         });
-        // Tastaturfokus
         col.setAttribute('tabindex', '0');
         col.addEventListener('focus', function() {
           var t = col.getAttribute('data-title') || '';
