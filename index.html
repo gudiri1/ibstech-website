@@ -29,7 +29,7 @@
 
     footer { background: #0b1b2b; color: #fff; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px; }
 
-    /* Vision / "interaktives Bild" */
+    /* Vision / interaktives Bild */
     .vision-wrapper { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 20px; }
     .vision-text { flex: 1 1 260px; }
     .vision-stack { flex: 2 1 320px; display: flex; flex-wrap: wrap; gap: 10px; }
@@ -41,6 +41,7 @@
       background: linear-gradient(135deg, #f5f7fb, #e7ebf5);
       border: 1px solid #ccd2e0;
       transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+      cursor: pointer;
     }
     .vision-column:hover {
       transform: translateY(-3px);
@@ -57,7 +58,17 @@
       color: #ff8a00;
     }
 
-    /* kleine Domain-Badges unter dem Hero */
+    .vision-info {
+      margin-top: 20px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      border: 1px solid #ccd2e0;
+      background: #f6f8fc;
+    }
+    .vision-info h3 { margin-top: 0; margin-bottom: 5px; }
+    .vision-info p { margin: 0; font-size: 0.9rem; }
+
+    /* Domain-Tags unter dem Hero */
     .domain-tags { margin-top: 10px; font-size: 0.85rem; }
     .domain-tag {
       display: inline-block;
@@ -112,197 +123,16 @@
   <section id="vision">
     <h2>Schichtenbild: Embedded · Robotik · KI</h2>
     <p>
-      Heute sind Embedded- und Robotik-Systeme oft sehr komplex: viele Schichten, viele Tools, viel manuelle Arbeit.
-      In manchen Zukunftsvisionen „macht die KI alles“ – Entwicklerinnen und Entwickler verschwinden aus dem Bild.
-      Dieses Portal verfolgt einen Ansatz dazwischen: KI als Verstärker, nicht als Ersatz.
+      Idee für die Präsentation:
+    </p>
+    <ul>
+      <li><strong>Links:</strong> Klassischer Stack – alles von Hand modelliert, programmiert, integriert.</li>
+      <li><strong>Rechts:</strong> KI-übersteuerter Stack – „Black Box“ vom Sensor bis in die Cloud.</li>
+      <li><strong>Mitte:</strong> Hybrid – Embedded, Robotik und KI arbeiten zusammen, mit klaren Verantwortlichkeiten.</li>
+    </ul>
+    <p>
+      Die drei Karten unten sind wie ein interaktives Bild gedacht: Beim Darüberfahren mit der Maus lassen sich die Schichten
+      und Stichwörter erklären – ideal, um den heutigen Zustand, Zukunftsvisionen und deinen Mittelweg zu zeigen.
     </p>
 
     <div class="vision-wrapper">
-      <div class="vision-text">
-        <p><strong>Idee für die Präsentation:</strong></p>
-        <ul>
-          <li>Links: Klassischer Stack – alles von Hand modelliert, programmiert, integriert.</li>
-          <li>Rechts: KI-übersteuerter Stack – „black box“ vom Sensor bis in die Cloud.</li>
-          <li>Mitte: Hybrid – Embedded, Robotik und KI arbeiten zusammen, mit klaren Verantwortlichkeiten.</li>
-        </ul>
-        <p>
-          Die drei Karten rechts sind wie ein interaktives Bild gedacht: beim Darüberfahren mit der Maus
-          lassen sich die Schichten und Stichwörter erklären.
-        </p>
-      </div>
-
-      <div class="vision-stack">
-        <div class="vision-column">
-          <h3>Heute: Klassischer Stack</h3>
-          <div class="vision-tagline">hoch manuell · fragmentierte Toolchains</div>
-          <ul class="layer-list">
-            <li>Hardware &amp; Sensorik (MCUs, Motor-Driver, Feldbusse)</li>
-            <li>Firmware in C/C++, RTOS, Protokoll-Stacks</li>
-            <li>Robotik-Logik &amp; Regelung (State-Machines, PID, Safety)</li>
-            <li>Edge-Gateways, proprietäre Schnittstellen</li>
-            <li>Cloud/Backend mit separaten KI-Services</li>
-          </ul>
-        </div>
-
-        <div class="vision-column" style="border-color:#ff8a00; background:linear-gradient(135deg,#fff7ec,#ffe0b8);">
-          <h3>Hybrid: Mensch + KI in der Mitte</h3>
-          <div class="vision-tagline">unterstützende KI · erklärbare Entscheidungen</div>
-          <ul class="layer-list">
-            <li>Embedded-Hardware &amp; Echtzeit bleiben klar definiert</li>
-            <li>KI-Modelle unterstützen Sensorfusion, Anomalieerkennung, Planung</li>
-            <li>Robotik-Schichten nutzen KI für Planung, aber mit abgesicherten Controllern</li>
-            <li>On-Device-ML &amp; Edge-AI reduzieren Cloud-Abhängigkeit</li>
-            <li>Cloud/Backend für Training, Flotten-Analysen, Updates</li>
-          </ul>
-        </div>
-
-        <div class="vision-column">
-          <h3>Zukunft: KI-dominierte Systeme</h3>
-          <div class="vision-tagline">hohe Automatisierung · Risiko von Intransparenz</div>
-          <ul class="layer-list">
-            <li>Automatisierte Code-Generierung und Synthese</li>
-            <li>Planung &amp; Steuerung stark durch KI-Agenten geprägt</li>
-            <li>Durchgängige Datenpipelines vom Sensor bis Cloud</li>
-            <li>Selbstoptimierende Robotik- und Produktionssysteme</li>
-            <li>Hoher Bedarf an Erklärbarkeit, Safety &amp; Governance</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="tools">
-    <h2>Tools – Bausteine für KI · Robotik · Embedded</h2>
-    <p>
-      Sammlung von Tool-Ideen und Frameworks, die typische Aufgaben in KI- und Embedded-Projekten unterstützen.
-      Später können hier konkrete Repositories, Downloads oder Online-Tools verlinkt werden.
-    </p>
-    <div class="columns">
-      <div class="column">
-        <span class="badge">Embedded-KI</span>
-        <h3>Edge-AI Toolchain (Konzept)</h3>
-        <p>
-          Pipeline von Datenerfassung über Feature-Engineering bis zur Modellintegration auf Mikrocontrollern
-          (z. B. für MedTech-Sensorik, Automotive-Steuergeräte oder IoT-Knoten).
-        </p>
-      </div>
-      <div class="column">
-        <span class="badge">Robotik</span>
-        <h3>Robotik-Stack-Templates</h3>
-        <p>
-          Vorlagen für Robotik-Anwendungen mit klarer Trennung von Echtzeit-Controllern,
-          Bewegungsplanung und KI-gestützten Wahrnehmungsmodulen.
-        </p>
-      </div>
-      <div class="column">
-        <span class="badge">Prototyping</span>
-        <h3>Prototyping-Templates</h3>
-        <p>
-          Projekt-Templates für schnelle Demos – z. B. Zustandsüberwachung, Ganganalyse,
-          smarte Aktorik – inklusive Visualisierung und Datenaufzeichnung.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="tutorials">
-    <h2>Tutorials – Einstieg und Vertiefung</h2>
-    <p>
-      Hier können Schritt-für-Schritt-Anleitungen für typische KI- und Embedded-Aufgaben entstehen.
-      Aktuell als Themenübersicht formuliert, später mit konkreten Links zu Artikeln oder Videos.
-    </p>
-    <ul>
-      <li>Von Sensordaten zum Embedded-Modell – End-to-End-Pipeline.</li>
-      <li>Edge-AI auf Mikrocontrollern (z. B. TinyML, Signalverarbeitung, Quantisierung).</li>
-      <li>Robotik-Use-Cases mit KI-Unterstützung (z. B. Pfadplanung, Objekterkennung).</li>
-      <li>Teststrategien für KI im Embedded-Kontext (Simulation, HIL, Flotten-Feedback).</li>
-    </ul>
-  </section>
-
-  <section id="demos">
-    <h2>Demos – KI in Aktion</h2>
-    <p>
-      Beispielhafte Demos, die sich gut live zeigen lassen – auch mit Hardware-Anbindung.
-      MedTech, Industrie, Robotik und IoT sind typische Zielbereiche.
-    </p>
-
-    <h3>Demo: Ganzheitliche Physio- &amp; Reha-Analyse</h3>
-    <p>
-      Kombination aus Sensorsohlen, Video-/3D-Analyse und EMG-Biofeedback für Prävention,
-      Assessment, Reha-Physio und Monitoring.
-    </p>
-    <ul>
-      <li>Sensorsohlen mit Druck- und IMU-Sensoren für Ganganalyse.</li>
-      <li>Video- &amp; 3D-Körperanalyse (markerlose Pose-Estimation).</li>
-      <li>EMG-Biofeedback für Muskelaktivität und Kompensationsmuster.</li>
-      <li>KI-gestützte Fusion für Kennzahlen, Alerts und Therapie-Empfehlungen.</li>
-    </ul>
-
-    <h3>Demo: KI-Zustandsüberwachung eines Antriebs (Industrie/IoT)</h3>
-    <p>
-      Vibrations- und Strommessung an einem Motor oder Antriebssystem,
-      ausgewertet durch Embedded-KI zur frühzeitigen Anomalieerkennung.
-    </p>
-    <ul>
-      <li>Sensorknoten mit IMU, Temperatur und Stromsensor.</li>
-      <li>Edge-AI für Merkmalsextraktion und Zustandsbewertung.</li>
-      <li>Visualisierung über Dashboard, optional Feldbus/MQTT-Anbindung.</li>
-    </ul>
-
-    <h3>Multi-Agent-Orchestrierung entlang des V-Modells</h3>
-    <p>
-      Konzeptdemo, wie spezialisierte KI-Agenten Requirements, Architektur, Implementierung,
-      Test und Betrieb unterstützen können – ohne die Kontrolle an eine „Black Box“ abzugeben.
-    </p>
-  </section>
-
-  <section id="links">
-    <h2>Links – Podcasts, Seiten, Repos</h2>
-    <p>
-      Platzhalter für eine kuratierte Link-Sammlung rund um KI, Robotik und Embedded.
-      Für die Präsentation reicht es, die Struktur zu zeigen; später können konkrete Ressourcen ergänzt werden.
-    </p>
-    <div class="columns">
-      <div class="column">
-        <h3>Podcasts</h3>
-        <ul>
-          <li>Podcast zu Embedded-Entwicklung &amp; Echtzeit-Systemen (Platzhalter)</li>
-          <li>Podcast zu KI in Industrie &amp; Robotik (Platzhalter)</li>
-        </ul>
-      </div>
-      <div class="column">
-        <h3>Webseiten &amp; Blogs</h3>
-        <ul>
-          <li>Blog zu Edge-AI und TinyML (Platzhalter)</li>
-          <li>Artikel zu Robotik-Architekturen mit KI-Unterstützung (Platzhalter)</li>
-        </ul>
-      </div>
-      <div class="column">
-        <h3>Repos &amp; Dokus</h3>
-        <ul>
-          <li>Open-Source-Beispiele für Embedded-KI (Platzhalter)</li>
-          <li>Dokumentation zu relevanten Toolchains &amp; Frameworks (Platzhalter)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="events">
-    <h2>Events – Konferenzen, Meetups, Schulungen</h2>
-    <p>
-      Platzhalter für zukünftige Veranstaltungen rund um KI, Robotik und Embedded:
-      Konferenzen, lokale Meetups, Online-Workshops oder eigene Formate.
-    </p>
-    <ul>
-      <li>Embedded-KI-Workshop (Idee: praxisnaher Intensivtag).</li>
-      <li>Robotik &amp; KI-Demo-Tag (Idee: Live-Demos mit Hardware).</li>
-      <li>Community-Meetup KI &amp; Embedded (Idee: Austausch zwischen Entwickelnden und Forschenden).</li>
-    </ul>
-  </section>
-
-  <footer>
-    © IBSTech Portal – KI · Robotik · Embedded
-  </footer>
-
-</body>
-</html>
