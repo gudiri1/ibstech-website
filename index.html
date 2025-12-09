@@ -2,12 +2,13 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>IBSTech – Embedded Intelligence</title>
+  <title>IBSTech – Innovation, Beratung, Schulung</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; color: #222; }
     header { background: #0b1b2b; color: #fff; padding: 40px 20px; text-align: center; }
-    header h1 { margin: 0 0 10px; }
+    header h1 { margin: 0 0 5px; }
+    header h2 { margin: 0 0 15px; font-weight: normal; font-size: 1.2rem; }
     header p { margin: 0 0 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
     header a { display: inline-block; margin: 5px; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; }
     .btn-primary { background: #ff8a00; color: #000; }
@@ -15,7 +16,7 @@
     nav { background: #111; color: #fff; padding: 10px 20px; position: sticky; top: 0; z-index: 10; }
     nav a { color: #fff; margin-right: 15px; text-decoration: none; font-size: 0.9rem; }
     nav a:hover { text-decoration: underline; }
-    section { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
+    section { padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
     h2 { margin-top: 0; color: #0b1b2b; }
     h3 { margin-bottom: 5px; }
     .columns { display: flex; flex-wrap: wrap; gap: 20px; }
@@ -26,6 +27,12 @@
     button { margin-top: 10px; padding: 10px 20px; background: #ff8a00; border: none; cursor: pointer; font-weight: bold; }
     button:hover { opacity: 0.9; }
     ul { padding-left: 20px; }
+    ol { padding-left: 20px; }
+    .timeline { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; }
+    .timeline-step { flex: 1 1 220px; border-left: 3px solid #ff8a00; padding-left: 10px; }
+    .badge { display: inline-block; padding: 3px 8px; font-size: 0.75rem; border-radius: 999px; background: #e3e7ef; color: #0b1b2b; margin-bottom: 5px; }
+    details { margin: 10px 0; background: #fafafa; border-radius: 4px; border: 1px solid #ddd; padding: 8px 12px; }
+    details summary { cursor: pointer; font-weight: bold; }
     @media (max-width: 600px) {
       header { padding: 30px 15px; }
       section { padding: 30px 15px; }
@@ -39,19 +46,21 @@
     <a href="#about">Über uns</a>
     <a href="#services">Leistungen</a>
     <a href="#ai-embedded">KI &amp; Embedded</a>
-    <a href="#projects">Projekte</a>
-    <a href="#process">Vorgehen</a>
+    <a href="#demolab">DemoLab</a>
+    <a href="#vmodel">V-Modell &amp; Multi-Agenten</a>
+    <a href="#partners">Partnerschaften</a>
     <a href="#contact">Kontakt</a>
   </nav>
 
   <header>
-    <h1>IBSTech – Embedded Intelligence für smarte Produkte</h1>
+    <h1>IBSTech</h1>
+    <h2>Innovation · Beratung · Schulung für Embedded KI</h2>
     <p>
       IBSTech verbindet klassische Embedded-Entwicklung mit moderner KI.
-      Von der ersten Idee bis zur Serie unterstützen wir Unternehmen beim Aufbau intelligenter, vernetzter Produkte.
+      Wir unterstützen Unternehmen dabei, aus Daten echte intelligente Funktionen zu machen – von der Idee bis zur Serie.
     </p>
     <a href="#contact" class="btn-primary">Jetzt Kontakt aufnehmen</a>
-    <a href="#ai-embedded" class="btn-secondary">Mehr über KI in Embedded</a>
+    <a href="#demolab" class="btn-secondary">DemoLab ansehen</a>
   </header>
 
   <section id="about">
@@ -69,32 +78,38 @@
   </section>
 
   <section id="services">
-    <h2>Was wir tun</h2>
+    <h2>Was wir tun – Innovation, Beratung, Schulung</h2>
     <div class="columns">
       <div class="column">
-        <h3>Klassische Embedded-Entwicklung</h3>
+        <span class="badge">Innovation</span>
+        <h3>Klassische Embedded- &amp; Edge-Entwicklung</h3>
         <ul>
-          <li>Firmware in C/C++</li>
+          <li>Firmware in C/C++ für Mikrocontroller und SoCs</li>
           <li>Treiber- und HAL-Entwicklung</li>
           <li>RTOS (z. B. FreeRTOS, Zephyr)</li>
           <li>Kommunikation (CAN, Ethernet, UART, SPI, I²C)</li>
+          <li>Sensorik-Integration und Signalverarbeitung</li>
         </ul>
       </div>
       <div class="column">
+        <span class="badge">Beratung</span>
         <h3>KI in der Embedded Welt</h3>
         <ul>
           <li>Edge-AI auf Mikrocontrollern und SoCs</li>
           <li>Anomalie- und Fehlererkennung in Sensordaten</li>
-          <li>Predictive Maintenance</li>
-          <li>Signalverarbeitung und Feature-Engineering</li>
+          <li>Predictive Maintenance &amp; Zustandsüberwachung</li>
+          <li>On-Device-Modelle für Steuerung und Regelung</li>
+          <li>Architektur- &amp; Technologiestrategie für KI im Produkt</li>
         </ul>
       </div>
       <div class="column">
-        <h3>Beratung &amp; Schulung</h3>
+        <span class="badge">Schulung</span>
+        <h3>Beratung &amp; Training</h3>
         <ul>
           <li>Architektur- und Code-Reviews</li>
           <li>Workshops zu „KI im Embedded-Bereich“</li>
           <li>Proof-of-Concepts und technische Evaluierungen</li>
+          <li>Schulung von Entwicklungsteams zu Edge-AI</li>
           <li>Begleitung beim Aufbau interner KI-Kompetenz</li>
         </ul>
       </div>
@@ -120,65 +135,19 @@
     </p>
   </section>
 
-  <section id="projects">
-    <h2>Beispielhafte Anwendungen</h2>
-
-    <h3>Zustandsüberwachung einer Motorsteuerung</h3>
+  <section id="demolab">
+    <h2>DemoLab – interaktive KI-Showcases</h2>
     <p>
-      Aus Vibrations- und Strom-Signalen wird der Zustand eines Motors lokal bewertet.
-      Ein leichtgewichtiges Modell erkennt Abweichungen frühzeitig und meldet Warnungen über das bestehende Feldbussystem –
-      ganz ohne permanente Cloud-Anbindung.
+      In unserem DemoLab zeigen wir praxisnah, wie KI und Embedded zusammenwirken.
+      Die folgenden Beispiele sind so angelegt, dass sie sich in Workshops und Schulungen direkt demonstrieren lassen –
+      mit realen Sensoren, Hardware und verständlicher Visualisierung.
     </p>
 
-    <h3>Intelligente Lüfter- und Temperaturregelung</h3>
+    <h3>Demo 1: Ganzheitliche Physio- &amp; Reha-Analyse</h3>
     <p>
-      Eine Embedded-KI bewertet Sensordaten im Kontext (Last, Umgebung, Historie) und regelt Lüfter und Heizungen adaptiv.
-      Das reduziert Geräusche, Energieverbrauch und Verschleiß, ohne das Systemverhalten zu gefährden.
+      Ziel ist eine durchgängige Analyse für Prävention, Assessment, Reha-Physiotherapie und Monitoring.
+      Verschiedene Sensoren und KI-Modelle werden kombiniert, um Bewegungsqualität und Belastung objektiv zu erfassen.
     </p>
-
-    <h3>Edge Analytics für Sensorknoten</h3>
-    <p>
-      Verteilte Sensorknoten extrahieren direkt am Edge aussagekräftige Merkmale aus Rohdaten.
-      Nur relevante Ereignisse werden übertragen – das spart Bandbreite und ermöglicht schnellere Reaktionen.
-    </p>
-  </section>
-
-  <section id="process">
-    <h2>So arbeiten wir zusammen</h2>
-    <ol>
-      <li><strong>Analyse &amp; Zielbild:</strong> Klärung von Nutzen, Randbedingungen und vorhandener Hardware.</li>
-      <li><strong>Proof of Concept:</strong> Erster Prototyp mit echten Daten auf Ihrer Zielplattform.</li>
-      <li><strong>Integration &amp; Optimierung:</strong> Einbindung in Ihre Embedded-Software, Performance-Tuning und Tests.</li>
-      <li><strong>Übergabe &amp; Schulung:</strong> Dokumentation, Schulung Ihres Teams und Begleitung in Richtung Serie.</li>
-    </ol>
-  </section>
-
-  <section id="contact">
-    <h2>Kontakt aufnehmen</h2>
-    <p>
-      Sie möchten KI in Ihre Embedded-Produkte bringen oder bestehende Systeme weiterentwickeln?
-      Schreiben Sie uns eine Nachricht – wir melden uns zeitnah.
-    </p>
-    <form>
-      <label for="name">Name</label>
-      <input id="name" type="text" />
-
-      <label for="email">E-Mail</label>
-      <input id="email" type="email" />
-
-      <label for="company">Unternehmen</label>
-      <input id="company" type="text" />
-
-      <label for="message">Nachricht</label>
-      <textarea id="message" rows="4"></textarea>
-
-      <button type="submit">Anfrage senden</button>
-    </form>
-  </section>
-
-  <footer>
-    © IBSTech – Embedded Intelligence
-  </footer>
-
-</body>
-</html>
+    <ul>
+      <li><strong>Ganganalyse über Sensoreinlagen:</strong> Drucksensoren und Inertial-Sensoren (IMUs) in den Sohlen erfassen Schrittfolge, Belastungsverteilung und Symmetrien.</li>
+      <li><strong>Video- &amp; 3D-Körperanalyse:</strong> Kameras mit markerloser Pose-Estimation rekonstruieren Gelenkwinkel und Bewegungsbahnen (z. B. Knie, Hüfte, Wirbelsäule).
