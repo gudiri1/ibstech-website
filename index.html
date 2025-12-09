@@ -93,13 +93,7 @@
       background: rgba(0,0,0,0.15);
     }
 
-    @media (max-width: 600px) {
-      header { padding: 30px 15px; }
-      section { padding: 30px 15px; }
-      nav { overflow-x: auto; white-space: nowrap; }
-    }
-
-        /* Demo-KI-Agent (Chat-Widget) */
+    /* Demo-KI-Agent (Chat-Widget) */
     .chat-widget {
       position: fixed;
       bottom: 20px;
@@ -189,6 +183,11 @@
       width: 220px;
     }
 
+    @media (max-width: 600px) {
+      header { padding: 30px 15px; }
+      section { padding: 30px 15px; }
+      nav { overflow-x: auto; white-space: nowrap; }
+    }
   </style>
 </head>
 <body>
@@ -222,8 +221,8 @@
   <section id="vision">
     <h2>Digitaler Zwilling & interaktives Schichtenbild</h2>
 
-    <h3>Digitaler Zwilling des klassischen Stacks</h3>
-    <p>klassischer Stack von Cloud bis Hardware &amp; Sensorik.</p>
+    <h3>Video: Digitaler Zwilling des klassischen Stacks</h3>
+    <p>Dieses Video zeigt den klassischen Stack als digitales Haus – von Cloud bis Hardware &amp; Sensorik.</p>
     <video width="100%" controls>
       <source src="DigitalerZwilling.mp4" type="video/mp4" />
       Dein Browser unterstützt das Video-Tag nicht.
@@ -385,7 +384,29 @@
     © IBSTech Portal – KI · Robotik · Embedded
   </footer>
 
+  <!-- Demo-KI-Agent (einfacher Browser-Chat) -->
+  <div class="chat-widget collapsed" id="demo-agent">
+    <div class="chat-header">
+      <span>Demo-KI-Agent</span>
+      <span class="chat-toggle" id="chat-toggle">▲</span>
+    </div>
+    <div class="chat-body" id="chat-log">
+      <div class="chat-message agent">
+        <div class="chat-bubble">
+          Hallo, ich bin der Demo-Agent.<br />
+          Frag mich z.B. nach <strong>heute</strong>, <strong>hybrid</strong>, <strong>zukunft</strong>,
+          oder nach den <strong>Demos</strong> (Physio, Antrieb).
+        </div>
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chat-input-text" placeholder="Frage eingeben ..." />
+      <button id="chat-send">Senden</button>
+    </div>
+  </div>
+
   <script>
+    // Interaktives Schichtenbild
     (function() {
       var infoBox = document.getElementById('vision-info');
       if (!infoBox) return;
@@ -410,7 +431,9 @@
       });
     })();
   </script>
-    <script>
+
+  <script>
+    // Demo-KI-Agent (einfacher Browser-Chat)
     (function() {
       const widget = document.getElementById('demo-agent');
       const toggle = document.getElementById('chat-toggle');
@@ -486,31 +509,5 @@
     })();
   </script>
 
-  
-  <!-- Demo-KI-Agent (einfacher Browser-Chat) -->
-  <div class="chat-widget collapsed" id="demo-agent">
-    <div class="chat-header">
-      <span>Demo-KI-Agent</span>
-      <span class="chat-toggle" id="chat-toggle">▲</span>
-    </div>
-    <div class="chat-body" id="chat-log">
-      <div class="chat-message agent">
-        <div class="chat-bubble">
-          Hallo, ich bin der Demo-Agent.<br />
-          Frag mich z.B. nach <strong>heute</strong>, <strong>hybrid</strong>, <strong>zukunft</strong>,
-          oder nach den <strong>Demos</strong> (Physio, Antrieb).
-        </div>
-      </div>
-    </div>
-    <div class="chat-input">
-      <input type="text" id="chat-input-text" placeholder="Frage eingeben ..." />
-      <button id="chat-send">Senden</button>
-    </div>
-  </div>
-
 </body>
 </html>
-
-
-
-
