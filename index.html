@@ -410,6 +410,83 @@
       });
     })();
   </script>
+    <script>
+    (function() {
+      const widget = document.getElementById('demo-agent');
+      const toggle = document.getElementById('chat-toggle');
+      const log = document.getElementById('chat-log');
+      const input = document.getElementById('chat-input-text');
+      const sendBtn = document.getElementById('chat-send');
+
+      if (!widget || !toggle || !log || !input || !sendBtn) return;
+
+      // Auf- und Zuklappen
+      toggle.addEventListener('click', function() {
+        widget.classList.toggle('collapsed');
+        toggle.textContent = widget.classList.contains('collapsed') ? '▲' : '▼';
+      });
+
+      function appendMessage(text, from) {
+        const msg = document.createElement('div');
+        msg.className = 'chat-message ' + (from === 'user' ? 'user' : 'agent');
+        const bubble = document.createElement('div');
+        bubble.className = 'chat-bubble';
+        bubble.innerHTML = text;
+        msg.appendChild(bubble);
+        log.appendChild(msg);
+        log.scrollTop = log.scrollHeight;
+      }
+
+      function generateAgentAnswer(question) {
+        const q = question.toLowerCase();
+
+        if (q.includes('heute') || q.includes('klassisch')) {
+          return 'Im klassischen Stack ist alles stark getrennt: Hardware & Sensorik unten, dann Firmware mit RTOS und Protokollen, darüber Robotik-Logik und Regelung, ein Edge-Gateway und ganz oben Cloud/Backend. Viel Handarbeit, aber volle Kontrolle.';
+        }
+        if (q.includes('hybrid') || q.includes('mitte')) {
+          return 'Im Hybrid-Ansatz bleibt die klassische Struktur erhalten, aber einzelne Schichten werden von KI unterstützt – zum Beispiel Sensorfusion, Anomalieerkennung oder Bewegungsplanung. Echtzeit und Safety bleiben klar abgetrennt.';
+        }
+        if (q.includes('zukunft') || q.includes('ki-domin')) {
+          return 'In KI-dominierten Systemen übernehmen KI-Agenten große Teile von Design, Planung und Steuerung. Das kann sehr effizient sein, braucht aber starke Mechanismen für Erklärbarkeit, Safety und Governance.';
+        }
+        if (q.includes('physio') || q.includes('reha')) {
+          return 'Die Physio-/Reha-Demo kombiniert Sensorsohlen, Video- und 3D-Analyse sowie EMG-Biofeedback. Ziel ist eine durchgängige Analyse von Gangbild und Bewegung für Prävention, Assessment und Reha.';
+        }
+        if (q.includes('antrieb') || q.includes('motor') || q.includes('zustands')) {
+          return 'Die Zustandsüberwachungs-Demo nutzt Vibration, Strom und Temperatur an einem Antrieb. Embedded-KI erkennt Abweichungen frühzeitig und kann so auf Wartungsbedarf oder Fehlzustände hinweisen.';
+        }
+        if (q.includes('multi-agent') || q.includes('agenten')) {
+          return 'Multi-Agent-Orchestrierung bedeutet, dass spezialisierte KI-Agenten entlang des V-Modells helfen: bei Anforderungen, Architektur, Code, Tests und Betrieb. Jeder Agent hat eine klare Rolle, der Mensch bleibt in der Verantwortung.';
+        }
+        if (q.includes('video') || q.includes('digitaler zwilling')) {
+          return 'Das Video zeigt den klassischen Stack als digitalen Zwilling in Form eines Hauses – von Cloud/Backend oben bis Hardware & Sensorik unten. Es ist die visuelle Basis, um später Hybrid- und Zukunftsszenarien zu erklären.';
+        }
+
+        return 'Ich habe deine Frage verstanden, aber ich bin nur ein einfacher Demo-Agent im Browser. Versuche es mal mit Stichwörtern wie „heute“, „hybrid“, „zukunft“, „Physio“, „Antrieb“ oder „Multi-Agent“.';
+      }
+
+      function handleSend() {
+        const text = input.value.trim();
+        if (!text) return;
+        appendMessage(text, 'user');
+        input.value = '';
+
+        const answer = generateAgentAnswer(text);
+        setTimeout(function() {
+          appendMessage(answer, 'agent');
+        }, 300);
+      }
+
+      sendBtn.addEventListener('click', handleSend);
+      input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          handleSend();
+        }
+      });
+    })();
+  </script>
+
+  
   <!-- Demo-KI-Agent (einfacher Browser-Chat) -->
   <div class="chat-widget collapsed" id="demo-agent">
     <div class="chat-header">
@@ -433,6 +510,7 @@
 
 </body>
 </html>
+
 
 
 
