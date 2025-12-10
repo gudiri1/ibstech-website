@@ -49,14 +49,17 @@
       background: #222;
       border: 1px solid #444;
       border-radius: 4px;
-      padding: 2px 6px;
+      padding: 2px 4px;
       cursor: pointer;
-      font-size: 1.1rem; /* Flaggen schön groß */
-      line-height: 1.2;
     }
     .lang-btn.active {
       border-color: #ff8a00;
       background: #333;
+    }
+    .lang-btn img.flag-icon {
+      display: block;
+      width: 22px;
+      height: auto;
     }
 
     section { padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
@@ -321,12 +324,19 @@
     </div>
     <div class="lang-switcher">
       <span class="lang-switcher-label">Sprache:</span>
-      <button class="lang-btn active" data-lang="de" aria-label="Deutsch">🇩🇪</button>
-      <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧</button>
-      <button class="lang-btn" data-lang="fr" aria-label="Français">🇫🇷</button>
-      <button class="lang-btn" data-lang="es" aria-label="Español (Ecuador)">🇪🇨</button>
+      <button class="lang-btn active" data-lang="de" aria-label="Deutsch">
+        <img src="media/flag_de.png" alt="Deutsch" class="flag-icon" />
+      </button>
+      <button class="lang-btn" data-lang="en" aria-label="English">
+        <img src="media/flag_gb.png" alt="English" class="flag-icon" />
+      </button>
+      <button class="lang-btn" data-lang="fr" aria-label="Français">
+        <img src="media/flag_fr.png" alt="Français" class="flag-icon" />
+      </button>
+      <button class="lang-btn" data-lang="es" aria-label="Español (Ecuador)">
+        <img src="media/flag_ec.png" alt="Español (Ecuador)" class="flag-icon" />
+      </button>
     </div>
-
   </nav>
 
   <header id="home">
@@ -635,7 +645,7 @@
         toggle.textContent = widget.classList.contains('collapsed') ? '▲' : '▼';
       }
 
-      // gesamter Header (Titel + Pfeil) ist klickbar
+      // gesamter Header klickbar
       header.addEventListener('click', toggleChat);
 
       function appendMessage(text, from) {
@@ -1181,5 +1191,3 @@
 
 </body>
 </html>
-
-
