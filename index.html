@@ -51,7 +51,7 @@
       border-radius: 4px;
       padding: 2px 6px;
       cursor: pointer;
-      font-size: 0.85rem;
+      font-size: 1.1rem; /* Flaggen schön groß */
       line-height: 1.2;
     }
     .lang-btn.active {
@@ -157,6 +157,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer; /* gesamter Header klickbar */
     }
     .chat-header span {
       font-weight: bold;
@@ -323,7 +324,7 @@
       <button class="lang-btn active" data-lang="de" aria-label="Deutsch">🇩🇪</button>
       <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧</button>
       <button class="lang-btn" data-lang="fr" aria-label="Français">🇫🇷</button>
-      <button class="lang-btn" data-lang="es" aria-label="Español">🇪🇸</button>
+      <button class="lang-btn" data-lang="es" aria-label="Español (Ecuador)">🇪🇨</button>
     </div>
   </nav>
 
@@ -508,7 +509,7 @@
 
     <hr style="margin:30px 0; border:none; border-top:1px solid #ddd;" />
 
-    <!-- Bestehende Demo-Beschreibungen (bleiben erstmal deutsch) -->
+    <!-- Bestehende Demo-Beschreibungen -->
     <h3 id="further-demos-title">Weitere Demo-Ideen</h3>
     <h4 id="further-demo1-title">Ganzheitliche Physio- &amp; Reha-Analyse</h4>
     <ul>
@@ -570,7 +571,7 @@
 
   <!-- Demo-KI-Agent (einfacher Browser-Chat) -->
   <div class="chat-widget collapsed" id="demo-agent">
-    <div class="chat-header">
+    <div class="chat-header" id="chat-header">
       <span>Demo-KI-Agent</span>
       <span class="chat-toggle" id="chat-toggle">▲</span>
     </div>
@@ -621,17 +622,20 @@
     (function() {
       const widget = document.getElementById('demo-agent');
       const toggle = document.getElementById('chat-toggle');
+      const header = document.getElementById('chat-header');
       const log = document.getElementById('chat-log');
       const input = document.getElementById('chat-input-text');
       const sendBtn = document.getElementById('chat-send');
 
-      if (!widget || !toggle || !log || !input || !sendBtn) return;
+      if (!widget || !toggle || !log || !input || !sendBtn || !header) return;
 
-      // Auf- und Zuklappen
-      toggle.addEventListener('click', function() {
+      function toggleChat() {
         widget.classList.toggle('collapsed');
         toggle.textContent = widget.classList.contains('collapsed') ? '▲' : '▼';
-      });
+      }
+
+      // gesamter Header (Titel + Pfeil) ist klickbar
+      header.addEventListener('click', toggleChat);
 
       function appendMessage(text, from) {
         const msg = document.createElement('div');
