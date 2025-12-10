@@ -14,9 +14,50 @@
     .btn-primary { background: #ff8a00; color: #000; }
     .btn-secondary { border: 1px solid #fff; color: #fff; }
 
-    nav { background: #111; color: #fff; padding: 10px 20px; position: sticky; top: 0; z-index: 10; }
-    nav a { color: #fff; margin-right: 15px; text-decoration: none; font-size: 0.9rem; }
+    nav {
+      background: #111;
+      color: #fff;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    nav a { color: #fff; text-decoration: none; font-size: 0.9rem; }
     nav a:hover { text-decoration: underline; }
+
+    .lang-switcher {
+      margin-left: auto;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .lang-switcher-label {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-right: 4px;
+    }
+    .lang-btn {
+      background: #222;
+      border: 1px solid #444;
+      border-radius: 4px;
+      padding: 2px 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      line-height: 1.2;
+    }
+    .lang-btn.active {
+      border-color: #ff8a00;
+      background: #333;
+    }
 
     section { padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
     h2 { margin-top: 0; color: #0b1b2b; }
@@ -213,7 +254,7 @@
       text-align: center;
       transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
     }
-    .demo-step-btn span {
+    .demo-step-btn span.step-number {
       font-weight: bold;
       margin-right: 4px;
     }
@@ -260,25 +301,36 @@
     @media (max-width: 600px) {
       header { padding: 30px 15px; }
       section { padding: 30px 15px; }
-      nav { overflow-x: auto; white-space: nowrap; }
+      nav { padding: 10px 12px; }
+      .nav-links { gap: 10px; }
+      .lang-switcher { margin-left: 0; margin-top: 6px; }
     }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#vision">Digitaler Zwilling & Schichtenbild</a>
-    <a href="#tools">Tools</a>
-    <a href="#demos">Demos</a>
-    <a href="#links">Links</a>
-    <a href="#events">Events</a>
+    <div class="nav-links">
+      <a href="#home" id="nav-home-link">Home</a>
+      <a href="#vision" id="nav-vision-link">Digitaler Zwilling &amp; Schichtenbild</a>
+      <a href="#tools" id="nav-tools-link">Tools</a>
+      <a href="#demos" id="nav-demos-link">Demos</a>
+      <a href="#links" id="nav-links-link">Links</a>
+      <a href="#events" id="nav-events-link">Events</a>
+    </div>
+    <div class="lang-switcher">
+      <span class="lang-switcher-label">Sprache:</span>
+      <button class="lang-btn active" data-lang="de" aria-label="Deutsch">🇩🇪</button>
+      <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧</button>
+      <button class="lang-btn" data-lang="fr" aria-label="Français">🇫🇷</button>
+      <button class="lang-btn" data-lang="es" aria-label="Español">🇪🇸</button>
+    </div>
   </nav>
 
   <header id="home">
-    <h1>IBSTech Portal</h1>
-    <h2>KI · Robotik · Embedded</h2>
-    <p>Digitaler Zwilling und Simulation von KI-, Robotik- und Embedded-Systemen.</p>
+    <h1 id="hero-title">IBSTech Portal</h1>
+    <h2 id="hero-tagline">KI · Robotik · Embedded</h2>
+    <p id="hero-subtitle">Digitaler Zwilling und Simulation von KI-, Robotik- und Embedded-Systemen.</p>
     <div class="domain-tags">
       <span class="domain-tag">MedTech</span>
       <span class="domain-tag">Robotik</span>
@@ -288,30 +340,30 @@
       <span class="domain-tag">Kommunikation &amp; Edge</span>
     </div>
     <br />
-    <a href="#vision" class="btn-primary">Digitaler Zwilling & Schichtenbild</a>
-    <a href="#demos" class="btn-secondary">Demos ansehen</a>
+    <a href="#vision" class="btn-primary" id="btn-vision">Digitaler Zwilling &amp; Schichtenbild</a>
+    <a href="#demos" class="btn-secondary" id="btn-demos">Demos ansehen</a>
   </header>
 
   <section id="vision">
-    <h2>Digitaler Zwilling & interaktives Schichtenbild</h2>
+    <h2 id="vision-title">Digitaler Zwilling &amp; interaktives Schichtenbild</h2>
 
-    <h3>Video: Digitaler Zwilling des klassischen Stacks</h3>
-    <p>Dieses Video zeigt den klassischen Stack als digitales Haus – von Cloud bis Hardware &amp; Sensorik.</p>
+    <h3 id="vision-video-title">Video: Digitaler Zwilling des klassischen Stacks</h3>
+    <p id="vision-video-text">Dieses Video zeigt den klassischen Stack als digitales Haus – von Cloud bis Hardware &amp; Sensorik.</p>
     <video width="100%" controls>
       <source src="DigitalerZwilling.mp4" type="video/mp4" />
       Dein Browser unterstützt das Video-Tag nicht.
     </video>
 
     <p>
-      <a href="https://youtu.be/zUHOcTU51rM" target="_blank" rel="noopener noreferrer">
+      <a id="vision-youtube-link" href="https://youtu.be/zUHOcTU51rM" target="_blank" rel="noopener noreferrer">
         Video auf YouTube ansehen
       </a>
     </p>
 
     <hr style="margin:30px 0; border:none; border-top:1px solid #ddd;" />
 
-    <h3>Interaktives Schichtenbild</h3>
-    <p>Bewege die Maus über eine der drei Säulen, um den jeweiligen Ansatz zu erklären.</p>
+    <h3 id="vision-stack-title">Interaktives Schichtenbild</h3>
+    <p id="vision-stack-text">Bewege die Maus über eine der drei Säulen, um den jeweiligen Ansatz zu erklären.</p>
 
     <div class="vision-wrapper">
       <div class="vision-stack">
@@ -319,8 +371,8 @@
         <div class="vision-column"
              data-title="Klassischer Stack"
              data-description="Viele Schichten, viel Handarbeit: jede Ebene separat modelliert, programmiert und integriert. Hoher Aufwand, aber maximale Kontrolle.">
-          <h3>Heute</h3>
-          <div class="vision-tagline">klassischer Stack</div>
+          <h3 id="vision-col-today">Heute</h3>
+          <div class="vision-tagline" id="vision-col-today-tagline">klassischer Stack</div>
           <ul class="layer-list">
             <li>Cloud / Backend</li>
             <li>Edge-Gateway / Middleware</li>
@@ -335,8 +387,8 @@
              style="border-color:#ff8a00; background:linear-gradient(135deg,#fff7ec,#ffe0b8);"
              data-title="Hybrid: Mensch + KI"
              data-description="Embedded, Robotik und KI arbeiten zusammen: KI unterstützt Sensorfusion, Anomalieerkennung und Planung, während Echtzeit und Safety in klaren Schichten bleiben.">
-          <h3>Mitte</h3>
-          <div class="vision-tagline">Hybrid – Mensch + KI</div>
+          <h3 id="vision-col-middle">Mitte</h3>
+          <div class="vision-tagline" id="vision-col-middle-tagline">Hybrid – Mensch + KI</div>
           <ul class="layer-list">
             <li>Cloud (Training, Flottenanalyse)</li>
             <li>Edge-AI &amp; Koordination</li>
@@ -350,8 +402,8 @@
         <div class="vision-column"
              data-title="KI-dominierte Systeme"
              data-description="Stark automatisierte Pipelines: KI-Agenten übernehmen große Teile von Design, Planung und Steuerung. Effizient, aber mit hohem Bedarf an Erklärbarkeit und Governance.">
-          <h3>Zukunft</h3>
-          <div class="vision-tagline">KI-übersteuerter Stack</div>
+          <h3 id="vision-col-future">Zukunft</h3>
+          <div class="vision-tagline" id="vision-col-future-tagline">KI-übersteuerter Stack</div>
           <ul class="layer-list">
             <li>End-to-End KI-Orchestrierung</li>
             <li>Auto-Generierung von Code &amp; Tests</li>
@@ -364,8 +416,8 @@
     </div>
 
     <div class="vision-info" id="vision-info">
-      <h3 class="vision-info-title">Hinweis</h3>
-      <p class="vision-info-text">
+      <h3 class="vision-info-title" id="vision-info-title">Hinweis</h3>
+      <p class="vision-info-text" id="vision-info-text">
         Fahre mit der Maus über „Heute“, „Mitte“ oder „Zukunft“, um den jeweiligen Ansatz kurz erklärt zu bekommen.
         Das lässt sich in der Präsentation sehr gut live kommentieren.
       </p>
@@ -373,28 +425,28 @@
   </section>
 
   <section id="tools">
-    <h2>Tools – KI · Robotik · Embedded</h2>
+    <h2 id="tools-title">Tools – KI · Robotik · Embedded</h2>
     <div class="columns">
       <div class="column">
-        <span class="badge">Embedded-KI</span>
-        <h3>Edge-AI Toolchain (Konzept)</h3>
-        <p>
+        <span class="badge" id="tools-card1-badge">Embedded-KI</span>
+        <h3 id="tools-card1-title">Edge-AI Toolchain (Konzept)</h3>
+        <p id="tools-card1-text">
           Pipeline von Datenerfassung über Feature-Engineering bis zur Modellintegration auf Mikrocontrollern
           (z. B. für MedTech, Automotive oder IoT).
         </p>
       </div>
       <div class="column">
-        <span class="badge">Robotik</span>
-        <h3>Robotik-Stack-Templates</h3>
-        <p>
+        <span class="badge" id="tools-card2-badge">Robotik</span>
+        <h3 id="tools-card2-title">Robotik-Stack-Templates</h3>
+        <p id="tools-card2-text">
           Vorlagen für Robotik-Anwendungen mit klarer Trennung von Echtzeit-Controllern,
           Bewegungsplanung und KI-gestützter Wahrnehmung.
         </p>
       </div>
       <div class="column">
-        <span class="badge">Prototyping</span>
-        <h3>Prototyping-Templates</h3>
-        <p>
+        <span class="badge" id="tools-card3-badge">Prototyping</span>
+        <h3 id="tools-card3-title">Prototyping-Templates</h3>
+        <p id="tools-card3-text">
           Projekt-Templates für schnelle Demos – z. B. Zustandsüberwachung, Ganganalyse,
           smarte Aktorik – inklusive Visualisierung und Datenaufzeichnung.
         </p>
@@ -403,23 +455,41 @@
   </section>
 
   <section id="demos">
-    <h2>Demos – KI in Aktion</h2>
-    <p>Beispiele, die sich live zeigen lassen (MedTech, Industrie, Robotik, IoT).</p>
+    <h2 id="demos-title">Demos – KI in Aktion</h2>
+    <p id="demos-intro-text">Beispiele, die sich live zeigen lassen (MedTech, Industrie, Robotik, IoT).</p>
 
     <!-- Geführte Demo Sensorsohlen -->
     <div class="demo-walkthrough" id="sensor-walkthrough">
-      <h3>Demo: Sensorsohlen – Ganganalyse (6-Schritte-Übersicht)</h3>
-      <p style="font-size:0.9rem;">
+      <h3 id="walk-title">Demo: Sensorsohlen – Ganganalyse (6-Schritte-Übersicht)</h3>
+      <p id="walk-intro-text" style="font-size:0.9rem;">
         Klicke dich Schritt für Schritt durch das System – von der Produktübersicht über Hardware und Software bis zum fertigen Analysebericht.
       </p>
 
       <div class="demo-steps">
-        <button class="demo-step-btn active" data-step="0"><span>1</span>Produktübersicht</button>
-        <button class="demo-step-btn" data-step="1"><span>2</span>Schaltplan</button>
-        <button class="demo-step-btn" data-step="2"><span>3</span>Systemarchitektur</button>
-        <button class="demo-step-btn" data-step="3"><span>4</span>Softwarearchitektur</button>
-        <button class="demo-step-btn" data-step="4"><span>5</span>Bericht – Übersicht</button>
-        <button class="demo-step-btn" data-step="5"><span>6</span>Bericht – Details</button>
+        <button class="demo-step-btn active" data-step="0">
+          <span class="step-number">1</span>
+          <span id="step-label-0">Produktübersicht</span>
+        </button>
+        <button class="demo-step-btn" data-step="1">
+          <span class="step-number">2</span>
+          <span id="step-label-1">Schaltplan</span>
+        </button>
+        <button class="demo-step-btn" data-step="2">
+          <span class="step-number">3</span>
+          <span id="step-label-2">Systemarchitektur</span>
+        </button>
+        <button class="demo-step-btn" data-step="3">
+          <span class="step-number">4</span>
+          <span id="step-label-3">Softwarearchitektur</span>
+        </button>
+        <button class="demo-step-btn" data-step="4">
+          <span class="step-number">5</span>
+          <span id="step-label-4">Bericht – Übersicht</span>
+        </button>
+        <button class="demo-step-btn" data-step="5">
+          <span class="step-number">6</span>
+          <span id="step-label-5">Bericht – Details</span>
+        </button>
       </div>
 
       <div class="demo-content">
@@ -438,9 +508,9 @@
 
     <hr style="margin:30px 0; border:none; border-top:1px solid #ddd;" />
 
-    <!-- Bestehende Demo-Beschreibungen -->
-    <h3>Weitere Demo-Ideen</h3>
-    <h4>Ganzheitliche Physio- &amp; Reha-Analyse</h4>
+    <!-- Bestehende Demo-Beschreibungen (bleiben erstmal deutsch) -->
+    <h3 id="further-demos-title">Weitere Demo-Ideen</h3>
+    <h4 id="further-demo1-title">Ganzheitliche Physio- &amp; Reha-Analyse</h4>
     <ul>
       <li>Sensorsohlen mit Druck- und IMU-Sensoren (Ganganalyse).</li>
       <li>Video- &amp; 3D-Körperanalyse (markerlose Pose-Estimation).</li>
@@ -448,7 +518,7 @@
       <li>KI-Fusion für Kennzahlen, Alerts und Therapie-Empfehlungen.</li>
     </ul>
 
-    <h4>KI-Zustandsüberwachung eines Antriebs (Industrie/IoT)</h4>
+    <h4 id="further-demo2-title">KI-Zustandsüberwachung eines Antriebs (Industrie/IoT)</h4>
     <ul>
       <li>Sensorknoten mit IMU, Temperatur und Stromsensor.</li>
       <li>Edge-AI für Merkmalsextraktion und Zustandsbewertung.</li>
@@ -457,8 +527,8 @@
   </section>
 
   <section id="links">
-    <h2>Links – Podcasts, Seiten, Repos</h2>
-    <p>Struktur für spätere Inhalte (aktuell Platzhalter).</p>
+    <h2 id="links-title">Links – Podcasts, Seiten, Repos</h2>
+    <p id="links-intro-text">Struktur für spätere Inhalte (aktuell Platzhalter).</p>
     <div class="columns">
       <div class="column">
         <h3>Podcasts</h3>
@@ -485,8 +555,8 @@
   </section>
 
   <section id="events">
-    <h2>Events – Konferenzen, Meetups, Schulungen</h2>
-    <p>Platzhalter für zukünftige Veranstaltungen rund um KI, Robotik und Embedded.</p>
+    <h2 id="events-title">Events – Konferenzen, Meetups, Schulungen</h2>
+    <p id="events-intro-text">Platzhalter für zukünftige Veranstaltungen rund um KI, Robotik und Embedded.</p>
     <ul>
       <li>Embedded-KI-Workshop (Idee).</li>
       <li>Robotik &amp; KI-Demo-Tag (Idee).</li>
@@ -624,59 +694,430 @@
   </script>
 
   <script>
-    // Geführte Sensorsohlen-Demo (Schritte 1–6)
+    // Mehrsprachigkeit + geführte Sensorsohlen-Demo
     (function() {
-      const steps = [
-        {
-          img: 'media/sohle_1_produkt.jpeg',
-          title: 'Schritt 1: Produktübersicht',
-          desc: 'Die Sensorsohlen bestehen aus zwei Einlagen mit integrierter Elektronik im Kunststoffgehäuse. Jede Einlage sitzt zwischen Ferse und Mittelfuß, misst Druckverläufe und Bewegung und kommuniziert per BLE mit der App.'
-        },
-        {
-          img: 'media/sohle_2_schaltplan.jpg',
-          title: 'Schritt 2: Schaltplan der Elektronik',
-          desc: 'Der Schaltplan zeigt LiPo-Akku, Schutzschaltung, LDO, MCU mit BLE, IMU sowie mehrere Drucksensoren (FSR) als Spannungsteiler auf ADC-Kanälen. So entsteht die lokale Mess- und Funkplattform in der Sohle.'
-        },
-        {
-          img: 'media/sohle_3_systemarchitektur.jpg',
-          title: 'Schritt 3: Systemarchitektur',
-          desc: 'Die Systemarchitektur verbindet die beiden Sensorsohlen über BLE mit der Smartphone-App und weiter mit einem Cloud-/Backend-System. Dort werden Daten gespeichert, analysiert und für Reports aufbereitet.'
-        },
-        {
-          img: 'media/sohle_4_softwarearchitektur.jpg',
-          title: 'Schritt 4: Softwarearchitektur',
-          desc: 'Die Softwarearchitektur zeigt die Ebenen von der Firmware auf der Sohle (Treiber, RTOS, Messlogik) über BLE-Protokoll und Smartphone-App (UI, Domain-Logik) bis hin zur Analyse-Engine und dem Report-Generator im Backend.'
-        },
-        {
-          img: 'media/sohle_5_bericht1.png',
-          title: 'Schritt 5: Analysebericht – Übersicht',
-          desc: 'Der erste Berichtsscreen zeigt die wichtigsten Kennzahlen wie Symmetrie, Cadence und Speed sowie aggregierte Bewertungen. Er dient als schneller Überblick für Nutzer und Therapeuten.'
-        },
-        {
-          img: 'media/sohle_6_bericht2.png',
-          title: 'Schritt 6: Analysebericht – Details',
-          desc: 'Im Detailbericht werden zusätzliche Parameter wie Gait Line, Pronation/Supination, Belastungsverläufe und Clearance visualisiert. Das erlaubt eine tiefergehende Interpretation des Gangbilds.'
-        }
+      const stepMeta = [
+        { img: 'media/sohle_1_produkt.jpeg', key: 'step1' },
+        { img: 'media/sohle_2_schaltplan.jpg', key: 'step2' },
+        { img: 'media/sohle_3_systemarchitektur.jpg', key: 'step3' },
+        { img: 'media/sohle_4_softwarearchitektur.jpg', key: 'step4' },
+        { img: 'media/sohle_5_bericht1.png', key: 'step5' },
+        { img: 'media/sohle_6_bericht2.png', key: 'step6' }
       ];
+
+      const translations = {
+        de: {
+          texts: {
+            'nav-home-link': 'Home',
+            'nav-vision-link': 'Digitaler Zwilling & Schichtenbild',
+            'nav-tools-link': 'Tools',
+            'nav-demos-link': 'Demos',
+            'nav-links-link': 'Links',
+            'nav-events-link': 'Events',
+
+            'hero-title': 'IBSTech Portal',
+            'hero-tagline': 'KI · Robotik · Embedded',
+            'hero-subtitle': 'Digitaler Zwilling und Simulation von KI-, Robotik- und Embedded-Systemen.',
+            'btn-vision': 'Digitaler Zwilling & Schichtenbild',
+            'btn-demos': 'Demos ansehen',
+
+            'vision-title': 'Digitaler Zwilling & interaktives Schichtenbild',
+            'vision-video-title': 'Video: Digitaler Zwilling des klassischen Stacks',
+            'vision-video-text': 'Dieses Video zeigt den klassischen Stack als digitales Haus – von Cloud bis Hardware & Sensorik.',
+            'vision-youtube-link': 'Video auf YouTube ansehen',
+            'vision-stack-title': 'Interaktives Schichtenbild',
+            'vision-stack-text': 'Bewege die Maus über eine der drei Säulen, um den jeweiligen Ansatz zu erklären.',
+            'vision-col-today': 'Heute',
+            'vision-col-today-tagline': 'klassischer Stack',
+            'vision-col-middle': 'Mitte',
+            'vision-col-middle-tagline': 'Hybrid – Mensch + KI',
+            'vision-col-future': 'Zukunft',
+            'vision-col-future-tagline': 'KI-übersteuerter Stack',
+            'vision-info-title': 'Hinweis',
+            'vision-info-text': 'Fahre mit der Maus über „Heute“, „Mitte“ oder „Zukunft“, um den jeweiligen Ansatz kurz erklärt zu bekommen. Das lässt sich in der Präsentation sehr gut live kommentieren.',
+
+            'tools-title': 'Tools – KI · Robotik · Embedded',
+            'tools-card1-badge': 'Embedded-KI',
+            'tools-card1-title': 'Edge-AI Toolchain (Konzept)',
+            'tools-card1-text': 'Pipeline von Datenerfassung über Feature-Engineering bis zur Modellintegration auf Mikrocontrollern (z. B. für MedTech, Automotive oder IoT).',
+            'tools-card2-badge': 'Robotik',
+            'tools-card2-title': 'Robotik-Stack-Templates',
+            'tools-card2-text': 'Vorlagen für Robotik-Anwendungen mit klarer Trennung von Echtzeit-Controllern, Bewegungsplanung und KI-gestützter Wahrnehmung.',
+            'tools-card3-badge': 'Prototyping',
+            'tools-card3-title': 'Prototyping-Templates',
+            'tools-card3-text': 'Projekt-Templates für schnelle Demos – z. B. Zustandsüberwachung, Ganganalyse, smarte Aktorik – inklusive Visualisierung und Datenaufzeichnung.',
+
+            'demos-title': 'Demos – KI in Aktion',
+            'demos-intro-text': 'Beispiele, die sich live zeigen lassen (MedTech, Industrie, Robotik, IoT).',
+            'walk-title': 'Demo: Sensorsohlen – Ganganalyse (6-Schritte-Übersicht)',
+            'walk-intro-text': 'Klicke dich Schritt für Schritt durch das System – von der Produktübersicht über Hardware und Software bis zum fertigen Analysebericht.',
+
+            'step-label-0': 'Produktübersicht',
+            'step-label-1': 'Schaltplan',
+            'step-label-2': 'Systemarchitektur',
+            'step-label-3': 'Softwarearchitektur',
+            'step-label-4': 'Bericht – Übersicht',
+            'step-label-5': 'Bericht – Details',
+
+            'further-demos-title': 'Weitere Demo-Ideen',
+            'further-demo1-title': 'Ganzheitliche Physio- & Reha-Analyse',
+            'further-demo2-title': 'KI-Zustandsüberwachung eines Antriebs (Industrie/IoT)',
+
+            'links-title': 'Links – Podcasts, Seiten, Repos',
+            'links-intro-text': 'Struktur für spätere Inhalte (aktuell Platzhalter).',
+
+            'events-title': 'Events – Konferenzen, Meetups, Schulungen',
+            'events-intro-text': 'Platzhalter für zukünftige Veranstaltungen rund um KI, Robotik und Embedded.'
+          },
+          steps: {
+            step1: {
+              label: 'Produktübersicht',
+              title: 'Schritt 1: Produktübersicht',
+              desc: 'Die Sensorsohlen bestehen aus zwei Einlagen mit integrierter Elektronik im Kunststoffgehäuse. Jede Einlage sitzt zwischen Ferse und Mittelfuß, misst Druckverläufe und Bewegung und kommuniziert per BLE mit der App.'
+            },
+            step2: {
+              label: 'Schaltplan',
+              title: 'Schritt 2: Schaltplan der Elektronik',
+              desc: 'Der Schaltplan zeigt LiPo-Akku, Schutzschaltung, LDO, MCU mit BLE, IMU sowie mehrere Drucksensoren (FSR) als Spannungsteiler auf ADC-Kanälen. So entsteht die lokale Mess- und Funkplattform in der Sohle.'
+            },
+            step3: {
+              label: 'Systemarchitektur',
+              title: 'Schritt 3: Systemarchitektur',
+              desc: 'Die Systemarchitektur verbindet die beiden Sensorsohlen über BLE mit der Smartphone-App und weiter mit einem Cloud-/Backend-System. Dort werden Daten gespeichert, analysiert und für Reports aufbereitet.'
+            },
+            step4: {
+              label: 'Softwarearchitektur',
+              title: 'Schritt 4: Softwarearchitektur',
+              desc: 'Die Softwarearchitektur zeigt die Ebenen von der Firmware auf der Sohle (Treiber, RTOS, Messlogik) über BLE-Protokoll und Smartphone-App (UI, Domain-Logik) bis hin zur Analyse-Engine und dem Report-Generator im Backend.'
+            },
+            step5: {
+              label: 'Bericht – Übersicht',
+              title: 'Schritt 5: Analysebericht – Übersicht',
+              desc: 'Der erste Berichtsscreen zeigt die wichtigsten Kennzahlen wie Symmetrie, Cadence und Speed sowie aggregierte Bewertungen. Er dient als schneller Überblick für Nutzer und Therapeuten.'
+            },
+            step6: {
+              label: 'Bericht – Details',
+              title: 'Schritt 6: Analysebericht – Details',
+              desc: 'Im Detailbericht werden zusätzliche Parameter wie Gait Line, Pronation/Supination, Belastungsverläufe und Clearance visualisiert. Das erlaubt eine tiefergehende Interpretation des Gangbilds.'
+            }
+          }
+        },
+
+        en: {
+          texts: {
+            'nav-home-link': 'Home',
+            'nav-vision-link': 'Digital twin & layer view',
+            'nav-tools-link': 'Tools',
+            'nav-demos-link': 'Demos',
+            'nav-links-link': 'Links',
+            'nav-events-link': 'Events',
+
+            'hero-title': 'IBSTech Portal',
+            'hero-tagline': 'AI · Robotics · Embedded',
+            'hero-subtitle': 'Digital twin and simulation of AI, robotics and embedded systems.',
+            'btn-vision': 'Digital twin & layer view',
+            'btn-demos': 'View demos',
+
+            'vision-title': 'Digital twin & interactive layer model',
+            'vision-video-title': 'Video: Digital twin of the classic stack',
+            'vision-video-text': 'This video shows the classic stack as a digital house – from cloud down to hardware & sensors.',
+            'vision-youtube-link': 'Watch video on YouTube',
+            'vision-stack-title': 'Interactive layer view',
+            'vision-stack-text': 'Move the mouse over one of the three pillars to see the respective approach explained.',
+            'vision-col-today': 'Today',
+            'vision-col-today-tagline': 'classic stack',
+            'vision-col-middle': 'Middle',
+            'vision-col-middle-tagline': 'Hybrid – human + AI',
+            'vision-col-future': 'Future',
+            'vision-col-future-tagline': 'AI-driven stack',
+            'vision-info-title': 'Hint',
+            'vision-info-text': 'Hover over “Today”, “Middle” or “Future” to get a short explanation of each approach. This works very well for live commentary in your presentation.',
+
+            'tools-title': 'Tools – AI · Robotics · Embedded',
+            'tools-card1-badge': 'Embedded AI',
+            'tools-card1-title': 'Edge-AI toolchain (concept)',
+            'tools-card1-text': 'Pipeline from data acquisition and feature engineering to model integration on microcontrollers (e.g. for MedTech, automotive or IoT).',
+            'tools-card2-badge': 'Robotics',
+            'tools-card2-title': 'Robotics stack templates',
+            'tools-card2-text': 'Templates for robotics applications with a clear separation between real-time controllers, motion planning and AI-based perception.',
+            'tools-card3-badge': 'Prototyping',
+            'tools-card3-title': 'Prototyping templates',
+            'tools-card3-text': 'Project templates for fast demos – e.g. condition monitoring, gait analysis, smart actuators – including visualization and data logging.',
+
+            'demos-title': 'Demos – AI in action',
+            'demos-intro-text': 'Examples that can be shown live (MedTech, industry, robotics, IoT).',
+            'walk-title': 'Demo: sensor insoles – gait analysis (6-step overview)',
+            'walk-intro-text': 'Click through the system step by step – from product overview via hardware and software to the final analysis report.',
+
+            'step-label-0': 'Product overview',
+            'step-label-1': 'Schematic',
+            'step-label-2': 'System architecture',
+            'step-label-3': 'Software architecture',
+            'step-label-4': 'Report – overview',
+            'step-label-5': 'Report – details',
+
+            'further-demos-title': 'Additional demo ideas',
+            'further-demo1-title': 'Holistic physio & rehab analysis',
+            'further-demo2-title': 'AI-based drive condition monitoring (industry/IoT)',
+
+            'links-title': 'Links – podcasts, pages, repos',
+            'links-intro-text': 'Structure for future content (currently placeholders).',
+
+            'events-title': 'Events – conferences, meetups, trainings',
+            'events-intro-text': 'Placeholder for future events around AI, robotics and embedded.'
+          },
+          steps: {
+            step1: {
+              label: 'Product overview',
+              title: 'Step 1: Product overview',
+              desc: 'The sensor insoles consist of two inserts with integrated electronics in a plastic housing. Each insert sits between heel and midfoot, measures pressure patterns and motion, and communicates via BLE with the app.'
+            },
+            step2: {
+              label: 'Schematic',
+              title: 'Step 2: Electronics schematic',
+              desc: 'The schematic shows LiPo battery, protection circuit, LDO, MCU with BLE, IMU and multiple pressure sensors (FSR) as voltage dividers on ADC channels. This forms the local measurement and radio platform inside the insole.'
+            },
+            step3: {
+              label: 'System architecture',
+              title: 'Step 3: System architecture',
+              desc: 'The system architecture connects both sensor insoles via BLE to the smartphone app and further to a cloud/backend system. Data is stored, analysed and prepared for reports there.'
+            },
+            step4: {
+              label: 'Software architecture',
+              title: 'Step 4: Software architecture',
+              desc: 'The software architecture spans from firmware on the insole (drivers, RTOS, measurement logic) via BLE protocol and smartphone app (UI, domain logic) up to the analytics engine and report generator in the backend.'
+            },
+            step5: {
+              label: 'Report – overview',
+              title: 'Step 5: Analysis report – overview',
+              desc: 'The first report screen shows key metrics such as symmetry, cadence and speed plus aggregated ratings. It provides a quick overview for users and therapists.'
+            },
+            step6: {
+              label: 'Report – details',
+              title: 'Step 6: Analysis report – details',
+              desc: 'The detailed report visualises additional parameters such as gait line, pronation/supination, load curves and clearance. This enables deeper interpretation of the gait pattern.'
+            }
+          }
+        },
+
+        fr: {
+          texts: {
+            'nav-home-link': 'Accueil',
+            'nav-vision-link': 'Jumeau numérique & couches',
+            'nav-tools-link': 'Outils',
+            'nav-demos-link': 'Démos',
+            'nav-links-link': 'Liens',
+            'nav-events-link': 'Événements',
+
+            'hero-title': 'IBSTech Portal',
+            'hero-tagline': 'IA · Robotique · Embarqué',
+            'hero-subtitle': 'Jumeau numérique et simulation de systèmes IA, robotiques et embarqués.',
+            'btn-vision': 'Jumeau numérique & couches',
+            'btn-demos': 'Voir les démos',
+
+            'vision-title': 'Jumeau numérique & vue en couches interactive',
+            'vision-video-title': 'Vidéo : jumeau numérique de la pile classique',
+            'vision-video-text': 'Cette vidéo montre la pile classique sous forme de maison numérique – du cloud jusqu’au matériel et aux capteurs.',
+            'vision-youtube-link': 'Voir la vidéo sur YouTube',
+            'vision-stack-title': 'Vue en couches interactive',
+            'vision-stack-text': 'Survolez l’une des trois colonnes pour voir l’approche correspondante expliquée.',
+            'vision-col-today': 'Aujourd’hui',
+            'vision-col-today-tagline': 'pile classique',
+            'vision-col-middle': 'Milieu',
+            'vision-col-middle-tagline': 'Hybride – humain + IA',
+            'vision-col-future': 'Futur',
+            'vision-col-future-tagline': 'Pile pilotée par l’IA',
+            'vision-info-title': 'Remarque',
+            'vision-info-text': 'Survolez « Aujourd’hui », « Milieu » ou « Futur » pour obtenir une courte explication de chaque approche. Idéal à commenter en direct pendant la présentation.',
+
+            'tools-title': 'Outils – IA · Robotique · Embarqué',
+            'tools-card1-badge': 'IA embarquée',
+            'tools-card1-title': 'Toolchain Edge-AI (concept)',
+            'tools-card1-text': 'Pipeline allant de l’acquisition des données et l’ingénierie des caractéristiques jusqu’à l’intégration du modèle sur microcontrôleurs (p. ex. pour MedTech, automobile ou IoT).',
+            'tools-card2-badge': 'Robotique',
+            'tools-card2-title': 'Templates de pile robotique',
+            'tools-card2-text': 'Modèles pour des applications robotiques avec séparation claire entre contrôle temps réel, planification de mouvement et perception basée sur l’IA.',
+            'tools-card3-badge': 'Prototypage',
+            'tools-card3-title': 'Templates de prototypage',
+            'tools-card3-text': 'Templates de projet pour des démos rapides – p. ex. surveillance d’état, analyse de marche, actionneurs intelligents – y compris visualisation et enregistrement des données.',
+
+            'demos-title': 'Démos – l’IA en action',
+            'demos-intro-text': 'Exemples à montrer en direct (MedTech, industrie, robotique, IoT).',
+            'walk-title': 'Démo : semelles capteurs – analyse de marche (vue en 6 étapes)',
+            'walk-intro-text': 'Parcourez le système étape par étape – de la vue produit au matériel et logiciel jusqu’au rapport d’analyse final.',
+
+            'step-label-0': 'Vue produit',
+            'step-label-1': 'Schéma',
+            'step-label-2': 'Architecture système',
+            'step-label-3': 'Architecture logicielle',
+            'step-label-4': 'Rapport – vue d’ensemble',
+            'step-label-5': 'Rapport – détails',
+
+            'further-demos-title': 'Autres idées de démos',
+            'further-demo1-title': 'Analyse physio & rééducation globale',
+            'further-demo2-title': 'Surveillance d’état de moteur par IA (industrie/IoT)',
+
+            'links-title': 'Liens – podcasts, sites, repos',
+            'links-intro-text': 'Structure pour du contenu futur (pour l’instant des espaces réservés).',
+
+            'events-title': 'Événements – conférences, meetups, formations',
+            'events-intro-text': 'Espace réservé pour de futurs événements autour de l’IA, de la robotique et de l’embarqué.'
+          },
+          steps: {
+            step1: {
+              label: 'Vue produit',
+              title: 'Étape 1 : vue produit',
+              desc: 'Les semelles capteurs se composent de deux inserts avec électronique intégrée dans un boîtier plastique. Chaque insert se trouve entre le talon et le médio-pied, mesure les profils de pression et le mouvement et communique en BLE avec l’application.'
+            },
+            step2: {
+              label: 'Schéma',
+              title: 'Étape 2 : schéma électronique',
+              desc: 'Le schéma montre une batterie LiPo, un circuit de protection, un LDO, un MCU avec BLE, une IMU ainsi que plusieurs capteurs de pression (FSR) en diviseurs de tension sur des entrées ADC. Cela forme la plateforme locale de mesure et de radio dans la semelle.'
+            },
+            step3: {
+              label: 'Architecture système',
+              title: 'Étape 3 : architecture système',
+              desc: 'L’architecture système relie les deux semelles capteurs via BLE à l’application smartphone puis à un backend/cloud. Les données y sont stockées, analysées et préparées pour les rapports.'
+            },
+            step4: {
+              label: 'Architecture logicielle',
+              title: 'Étape 4 : architecture logicielle',
+              desc: 'L’architecture logicielle couvre le firmware sur la semelle (drivers, RTOS, logique de mesure), le protocole BLE et l’application smartphone (UI, logique métier) jusqu’au moteur d’analyse et au générateur de rapports dans le backend.'
+            },
+            step5: {
+              label: 'Rapport – vue d’ensemble',
+              title: 'Étape 5 : rapport d’analyse – vue d’ensemble',
+              desc: 'Le premier écran de rapport affiche les principaux indicateurs comme la symétrie, la cadence et la vitesse ainsi que des évaluations agrégées. Il fournit une vue rapide pour les utilisateurs et les thérapeutes.'
+            },
+            step6: {
+              label: 'Rapport – détails',
+              title: 'Étape 6 : rapport d’analyse – détails',
+              desc: 'Le rapport détaillé visualise des paramètres supplémentaires comme la ligne de marche, la pronation/supination, les courbes de charge et la clearance. Cela permet une interprétation plus approfondie de la marche.'
+            }
+          }
+        },
+
+        es: {
+          texts: {
+            'nav-home-link': 'Inicio',
+            'nav-vision-link': 'Gemelo digital y capas',
+            'nav-tools-link': 'Herramientas',
+            'nav-demos-link': 'Demos',
+            'nav-links-link': 'Enlaces',
+            'nav-events-link': 'Eventos',
+
+            'hero-title': 'IBSTech Portal',
+            'hero-tagline': 'IA · Robótica · Embebido',
+            'hero-subtitle': 'Gemelo digital y simulación de sistemas de IA, robótica y embebidos.',
+            'btn-vision': 'Gemelo digital y capas',
+            'btn-demos': 'Ver demos',
+
+            'vision-title': 'Gemelo digital y vista por capas interactiva',
+            'vision-video-title': 'Vídeo: gemelo digital del stack clásico',
+            'vision-video-text': 'Este vídeo muestra el stack clásico como una casa digital, desde la nube hasta el hardware y los sensores.',
+            'vision-youtube-link': 'Ver vídeo en YouTube',
+            'vision-stack-title': 'Vista por capas interactiva',
+            'vision-stack-text': 'Mueve el ratón sobre una de las tres columnas para ver explicada cada aproximación.',
+            'vision-col-today': 'Hoy',
+            'vision-col-today-tagline': 'stack clásico',
+            'vision-col-middle': 'Centro',
+            'vision-col-middle-tagline': 'Híbrido – humano + IA',
+            'vision-col-future': 'Futuro',
+            'vision-col-future-tagline': 'Stack dirigido por IA',
+            'vision-info-title': 'Nota',
+            'vision-info-text': 'Pasa el ratón por «Hoy», «Centro» o «Futuro» para obtener una breve explicación de cada enfoque. Es ideal para comentarlo en directo durante la presentación.',
+
+            'tools-title': 'Herramientas – IA · Robótica · Embebido',
+            'tools-card1-badge': 'IA embebida',
+            'tools-card1-title': 'Toolchain de Edge-AI (concepto)',
+            'tools-card1-text': 'Pipeline desde la adquisición de datos y el diseño de características hasta la integración del modelo en microcontroladores (p. ej. para MedTech, automoción o IoT).',
+            'tools-card2-badge': 'Robótica',
+            'tools-card2-title': 'Plantillas de stack robótico',
+            'tools-card2-text': 'Modelos para aplicaciones robóticas con clara separación entre control en tiempo real, planificación de movimiento y percepción basada en IA.',
+            'tools-card3-badge': 'Prototipado',
+            'tools-card3-title': 'Plantillas de prototipado',
+            'tools-card3-text': 'Plantillas de proyecto para demos rápidas – p. ej. monitorización de estado, análisis de la marcha, actuadores inteligentes – con visualización y registro de datos.',
+
+            'demos-title': 'Demos – IA en acción',
+            'demos-intro-text': 'Ejemplos que se pueden mostrar en directo (MedTech, industria, robótica, IoT).',
+            'walk-title': 'Demo: plantillas sensoras – análisis de la marcha (vista en 6 pasos)',
+            'walk-intro-text': 'Recorre el sistema paso a paso: desde la vista del producto, pasando por hardware y software, hasta el informe de análisis final.',
+
+            'step-label-0': 'Vista del producto',
+            'step-label-1': 'Esquema',
+            'step-label-2': 'Arquitectura del sistema',
+            'step-label-3': 'Arquitectura de software',
+            'step-label-4': 'Informe – resumen',
+            'step-label-5': 'Informe – detalles',
+
+            'further-demos-title': 'Más ideas de demos',
+            'further-demo1-title': 'Análisis global de fisio y rehabilitación',
+            'further-demo2-title': 'Monitorización de estado de un accionamiento con IA (industria/IoT)',
+
+            'links-title': 'Enlaces – podcasts, sitios, repos',
+            'links-intro-text': 'Estructura para contenido futuro (de momento marcadores de posición).',
+
+            'events-title': 'Eventos – conferencias, meetups, formaciones',
+            'events-intro-text': 'Marcador de posición para futuros eventos sobre IA, robótica y embebidos.'
+          },
+          steps: {
+            step1: {
+              label: 'Vista del producto',
+              title: 'Paso 1: vista del producto',
+              desc: 'Las plantillas sensoras constan de dos plantillas con electrónica integrada en una carcasa de plástico. Cada plantilla se sitúa entre el talón y el mediopié, mide patrones de presión y movimiento y se comunica por BLE con la app.'
+            },
+            step2: {
+              label: 'Esquema',
+              title: 'Paso 2: esquema electrónico',
+              desc: 'El esquema muestra una batería LiPo, circuito de protección, LDO, MCU con BLE, IMU y varios sensores de presión (FSR) como divisores de tensión en canales ADC. Esto forma la plataforma local de medida y radio dentro de la plantilla.'
+            },
+            step3: {
+              label: 'Arquitectura del sistema',
+              title: 'Paso 3: arquitectura del sistema',
+              desc: 'La arquitectura del sistema conecta las dos plantillas sensoras mediante BLE con la app del smartphone y después con un sistema backend/nube. Allí se almacenan, analizan y preparan los datos para los informes.'
+            },
+            step4: {
+              label: 'Arquitectura de software',
+              title: 'Paso 4: arquitectura de software',
+              desc: 'La arquitectura de software cubre el firmware en la plantilla (drivers, RTOS, lógica de medida), el protocolo BLE y la app del smartphone (UI, lógica de dominio) hasta el motor de analítica y el generador de informes en el backend.'
+            },
+            step5: {
+              label: 'Informe – resumen',
+              title: 'Paso 5: informe de análisis – resumen',
+              desc: 'La primera pantalla del informe muestra métricas clave como simetría, cadencia y velocidad, además de valoraciones agregadas. Ofrece una visión rápida para usuarios y terapeutas.'
+            },
+            step6: {
+              label: 'Informe – detalles',
+              title: 'Paso 6: informe de análisis – detalles',
+              desc: 'El informe detallado visualiza parámetros adicionales como línea de marcha, pronación/supinación, curvas de carga y clearance. Esto permite una interpretación más profunda del patrón de marcha.'
+            }
+          }
+        }
+      };
+
+      let currentLang = 'de';
+      let currentStepIndex = 0;
 
       const imgEl = document.getElementById('demo-image');
       const titleEl = document.getElementById('demo-title');
       const descEl = document.getElementById('demo-description');
       const buttons = document.querySelectorAll('.demo-step-btn');
 
-      if (!imgEl || !titleEl || !descEl || !buttons.length) return;
-
       function setStep(index) {
-        const step = steps[index];
-        if (!step) return;
-        imgEl.src = step.img;
-        imgEl.alt = step.title;
-        titleEl.textContent = step.title;
-        descEl.textContent = step.desc;
+        const meta = stepMeta[index];
+        if (!meta) return;
+        const dictSteps = translations[currentLang].steps;
+        const stepTexts = dictSteps[meta.key];
+        imgEl.src = meta.img;
+        imgEl.alt = stepTexts.title;
+        titleEl.textContent = stepTexts.title;
+        descEl.textContent = stepTexts.desc;
 
         buttons.forEach(btn => btn.classList.remove('active'));
         const active = Array.from(buttons).find(b => Number(b.getAttribute('data-step')) === index);
         if (active) active.classList.add('active');
+
+        currentStepIndex = index;
       }
 
       buttons.forEach(btn => {
@@ -686,8 +1127,50 @@
         });
       });
 
-      // Sicherstellen, dass Schritt 0 initial gesetzt ist
-      setStep(0);
+      function applyTranslations() {
+        const dict = translations[currentLang];
+        if (!dict) return;
+
+        // statische Texte
+        Object.keys(dict.texts).forEach(id => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.textContent = dict.texts[id];
+          }
+        });
+
+        // Schritt-Labels
+        stepMeta.forEach((meta, idx) => {
+          const labelEl = document.getElementById('step-label-' + idx);
+          if (!labelEl) return;
+          const stepTexts = dict.steps[meta.key];
+          labelEl.textContent = stepTexts.label;
+        });
+
+        // Sprache im <html>-Tag setzen
+        document.documentElement.lang = currentLang;
+
+        // Aktiven Button markieren
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
+        });
+
+        // aktuellen Schritt-Text aktualisieren
+        setStep(currentStepIndex);
+      }
+
+      // Sprachbuttons
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const lang = btn.getAttribute('data-lang');
+          if (!translations[lang]) return;
+          currentLang = lang;
+          applyTranslations();
+        });
+      });
+
+      // Initiale Sprache anwenden
+      applyTranslations();
     })();
   </script>
 
