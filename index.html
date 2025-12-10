@@ -183,6 +183,80 @@
       width: 220px;
     }
 
+    /* Geführte Sensorsohlen-Demo */
+    .demo-walkthrough {
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #dde1ec;
+      background: #f7f8fd;
+    }
+    .demo-walkthrough h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .demo-steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+    .demo-step-btn {
+      flex: 1 1 120px;
+      min-width: 120px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid #c4c9dd;
+      background: #ffffff;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-align: center;
+      transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+    }
+    .demo-step-btn span {
+      font-weight: bold;
+      margin-right: 4px;
+    }
+    .demo-step-btn:hover {
+      background: #ffedd5;
+      border-color: #ff8a00;
+      transform: translateY(-1px);
+    }
+    .demo-step-btn.active {
+      background: #ff8a00;
+      border-color: #ff8a00;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .demo-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .demo-image-wrapper {
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #e5e8f3;
+      border: 1px solid #ccd2e0;
+    }
+    .demo-image-wrapper img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    .demo-text {
+      font-size: 0.9rem;
+    }
+    .demo-text h4 {
+      margin: 0 0 4px;
+      color: #0b1b2b;
+    }
+    .demo-text p {
+      margin: 0;
+    }
+
     @media (max-width: 600px) {
       header { padding: 30px 15px; }
       section { padding: 30px 15px; }
@@ -326,7 +400,41 @@
     <h2>Demos – KI in Aktion</h2>
     <p>Beispiele, die sich live zeigen lassen (MedTech, Industrie, Robotik, IoT).</p>
 
-    <h3>Demo: Ganzheitliche Physio- &amp; Reha-Analyse</h3>
+    <!-- Geführte Demo Sensorsohlen -->
+    <div class="demo-walkthrough" id="sensor-walkthrough">
+      <h3>Demo: Sensorsohlen – Ganganalyse (6-Schritte-Übersicht)</h3>
+      <p style="font-size:0.9rem;">
+        Klicke dich Schritt für Schritt durch das System – von der Produktübersicht über Hardware und Software bis zum fertigen Analysebericht.
+      </p>
+
+      <div class="demo-steps">
+        <button class="demo-step-btn active" data-step="0"><span>1</span>Produktübersicht</button>
+        <button class="demo-step-btn" data-step="1"><span>2</span>Schaltplan</button>
+        <button class="demo-step-btn" data-step="2"><span>3</span>Systemarchitektur</button>
+        <button class="demo-step-btn" data-step="3"><span>4</span>Softwarearchitektur</button>
+        <button class="demo-step-btn" data-step="4"><span>5</span>Bericht – Übersicht</button>
+        <button class="demo-step-btn" data-step="5"><span>6</span>Bericht – Details</button>
+      </div>
+
+      <div class="demo-content">
+        <div class="demo-image-wrapper">
+          <img id="demo-image" src="media/sohle_1_produkt.png" alt="Sensorsohlen Produktübersicht" />
+        </div>
+        <div class="demo-text">
+          <h4 id="demo-title">Schritt 1: Produktübersicht</h4>
+          <p id="demo-description">
+            Die Sensorsohlen bestehen aus zwei Einlagen mit integrierter Elektronik im Kunststoffgehäuse.
+            Jede Einlage sitzt zwischen Ferse und Mittelfuß, misst Druckverläufe und Bewegung und kommuniziert per BLE mit der App.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr style="margin:30px 0; border:none; border-top:1px solid #ddd;" />
+
+    <!-- Bestehende Demo-Beschreibungen -->
+    <h3>Weitere Demo-Ideen</h3>
+    <h4>Ganzheitliche Physio- &amp; Reha-Analyse</h4>
     <ul>
       <li>Sensorsohlen mit Druck- und IMU-Sensoren (Ganganalyse).</li>
       <li>Video- &amp; 3D-Körperanalyse (markerlose Pose-Estimation).</li>
@@ -334,7 +442,7 @@
       <li>KI-Fusion für Kennzahlen, Alerts und Therapie-Empfehlungen.</li>
     </ul>
 
-    <h3>Demo: KI-Zustandsüberwachung eines Antriebs (Industrie/IoT)</h3>
+    <h4>KI-Zustandsüberwachung eines Antriebs (Industrie/IoT)</h4>
     <ul>
       <li>Sensorknoten mit IMU, Temperatur und Stromsensor.</li>
       <li>Edge-AI für Merkmalsextraktion und Zustandsbewertung.</li>
@@ -506,6 +614,74 @@
           handleSend();
         }
       });
+    })();
+  </script>
+
+  <script>
+    // Geführte Sensorsohlen-Demo (Schritte 1–6)
+    (function() {
+      const steps = [
+        {
+          img: 'media/sohle_1_produkt.png',
+          title: 'Schritt 1: Produktübersicht',
+          desc: 'Die Sensorsohlen bestehen aus zwei Einlagen mit integrierter Elektronik im Kunststoffgehäuse. Jede Einlage sitzt zwischen Ferse und Mittelfuß, misst Druckverläufe und Bewegung und kommuniziert per BLE mit der App.'
+        },
+        {
+          img: 'media/sohle_2_schaltplan.jpg',
+          title: 'Schritt 2: Schaltplan der Elektronik',
+          desc: 'Der Schaltplan zeigt LiPo-Akku, Schutzschaltung, LDO, MCU mit BLE, IMU sowie mehrere Drucksensoren (FSR) als Spannungsteiler auf ADC-Kanälen. So entsteht die lokale Mess- und Funkplattform in der Sohle.'
+        },
+        {
+          img: 'media/sohle_3_systemarchitektur.jpg',
+          title: 'Schritt 3: Systemarchitektur',
+          desc: 'Die Systemarchitektur verbindet die beiden Sensorsohlen über BLE mit der Smartphone-App und weiter mit einem Cloud-/Backend-System. Dort werden Daten gespeichert, analysiert und für Reports aufbereitet.'
+        },
+        {
+          img: 'media/sohle_4_softwarearchitektur.jpg',
+          title: 'Schritt 4: Softwarearchitektur',
+          desc: 'Die Softwarearchitektur zeigt die Ebenen von der Firmware auf der Sohle (Treiber, RTOS, Messlogik) über BLE-Protokoll und Smartphone-App (UI, Domain-Logik) bis hin zur Analyse-Engine und dem Report-Generator im Backend.'
+        },
+        {
+          img: 'media/sohle_5_bericht1.png',
+          title: 'Schritt 5: Analysebericht – Übersicht',
+          desc: 'Der erste Berichtsscreen zeigt die wichtigsten Kennzahlen wie Symmetrie, Cadence und Speed sowie aggregierte Bewertungen. Er dient als schneller Überblick für Nutzer und Therapeuten.'
+        },
+        {
+          img: 'media/sohle_6_bericht2.jpeg',
+          title: 'Schritt 6: Analysebericht – Details',
+          desc: 'Im Detailbericht werden zusätzliche Parameter wie Gait Line, Pronation/Supination, Belastungsverläufe und Clearance visualisiert. Das erlaubt eine tiefergehende Interpretation des Gangbilds.'
+        }
+      ];
+
+      const imgEl = document.getElementById('demo-image');
+      const titleEl = document.getElementById('demo-title');
+      const descEl = document.getElementById('demo-description');
+      const buttons = document.querySelectorAll('.demo-step-btn');
+
+      if (!imgEl || !titleEl || !descEl || !buttons.length) return;
+
+      function setStep(index) {
+        const step = steps[index];
+        if (!step) return;
+        imgEl.src = step.img;
+        imgEl.alt = step.title;
+        titleEl.textContent = step.title;
+        descEl.textContent = step.desc;
+
+        buttons.forEach(btn => btn.classList.remove('active'));
+        const active = Array.from(buttons).find(b => Number(b.getAttribute('data-step')) === index);
+        if (active) active.classList.add('active');
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const index = Number(btn.getAttribute('data-step'));
+          setStep(index);
+        });
+      });
+
+      // Sicherstellen, dass Schritt 0 initial gesetzt ist
+      setStep(0);
     })();
   </script>
 
