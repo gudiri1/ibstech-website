@@ -1,0 +1,35 @@
+name: ToolRadar Scan (Open Source)
+
+on:
+  schedule:
+    - cron: "15 3 * * *"   # täglich 03:15 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run scan
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/toolradar_scan.py --max 60
+
+      - name: Commit & push changes (if any)
+        run: |
+          git config user.name "toolradar-bot"
+          git config user.email "toolradar-bot@users.noreply.github.com"
+          git add data/toolradar_tools.json data/toolradar_meta.json data/toolradar_signals.json
+          git diff --cached --quiet || git commit -m "ToolRadar: scan update"
+          git push
