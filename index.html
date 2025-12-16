@@ -49,19 +49,32 @@
       background: #222;
       border: 1px solid #444;
       border-radius: 4px;
-      padding: 2px 4px;
+      width: 34px;
+      height: 26px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 1;
+      padding: 0;
       cursor: pointer;
     }
     .lang-btn.active {
       border-color: #ff8a00;
       background: #333;
     }
-    .lang-btn img.flag-icon {
-      display: block;
-      width: 22px;
-      height: auto;
-    }
+    .lang-btn img.flag-icon { display: none; }
 
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      align-items: center;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
     section { padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
     h2 { margin-top: 0; color: #0b1b2b; }
     h3 { margin-bottom: 5px; }
@@ -318,24 +331,17 @@
       <a href="#home" id="nav-home-link">Home</a>
       <a href="#vision" id="nav-vision-link">Digitaler Zwilling &amp; Schichtenbild</a>
       <a href="#tools" id="nav-tools-link">Tools</a>
+      <a href="#toolradar" id="nav-toolradar-link">ToolRadar</a>
       <a href="#demos" id="nav-demos-link">Demos</a>
       <a href="#links" id="nav-links-link">Links</a>
       <a href="#events" id="nav-events-link">Events</a>
     </div>
     <div class="lang-switcher">
       <span class="lang-switcher-label">Sprache:</span>
-      <button class="lang-btn active" data-lang="de" aria-label="Deutsch">
-        <img src="media/flag_de.png" alt="Deutsch" class="flag-icon" />
-      </button>
-      <button class="lang-btn" data-lang="en" aria-label="English">
-        <img src="media/flag_gb.png" alt="English" class="flag-icon" />
-      </button>
-      <button class="lang-btn" data-lang="fr" aria-label="Français">
-        <img src="media/flag_fr.png" alt="Français" class="flag-icon" />
-      </button>
-      <button class="lang-btn" data-lang="es" aria-label="Español (Ecuador)">
-        <img src="media/flag_ec.png" alt="Español (Ecuador)" class="flag-icon" />
-      </button>
+      <button class="lang-btn active" data-lang="de" aria-label="Deutsch">🇩🇪</button>
+      <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧</button>
+      <button class="lang-btn" data-lang="fr" aria-label="Français">🇫🇷</button>
+      <button class="lang-btn" data-lang="es" aria-label="Español (Ecuador)">🇪🇨</button>
     </div>
   </nav>
 
@@ -354,6 +360,7 @@
     <br />
     <a href="#vision" class="btn-primary" id="btn-vision">Digitaler Zwilling &amp; Schichtenbild</a>
     <a href="#demos" class="btn-secondary" id="btn-demos">Demos ansehen</a>
+    <a href="toolradar.html" class="btn-secondary" id="btn-toolradar">ToolRadar öffnen</a>
   </header>
 
   <section id="vision">
@@ -466,19 +473,34 @@
     </div>
   </section>
 
-<section id="tools" class="section">
-  <h2>Tools & Radar</h2>
-  <div class="card-grid">
-    <!-- bestehende Tool-Karten ... -->
+<section id="toolradar" class="section">
+  <h2 id="toolradar-title">ToolRadar</h2>
+  <p id="toolradar-desc">
+    Interaktiver Überblick über Open-Source-Tools entlang des V-Modells – inklusive KI-Fokus, Scoring (0–5) und Auditierbarkeit (Evidence Links).
+    Die Daten werden automatisch per GitHub Actions aktualisiert.
+  </p>
 
-    <a href="toolradar.html" class="card">
-      <h3>ToolRadar: V-Modell & KI</h3>
-      <p>
-        Interaktiver Überblick über Tools entlang des V-Modells – mit KI-Fokus,
-        Scoring-Modell und Auditierbarkeit.
+  <div class="card-grid">
+    <a href="toolradar.html" class="card" aria-label="ToolRadar öffnen">
+      <h3 id="toolradar-card-title">ToolRadar: V-Modell &amp; KI</h3>
+      <p id="toolradar-card-text">
+        RadarChart pro Tool, Filter nach V-Modell-Phase und KI-Anteil, plus Signals &amp; Broken Links aus dem täglichen Scan.
       </p>
     </a>
   </div>
+
+  <div class="cta-row">
+    <a href="toolradar.html" class="btn-primary" id="toolradar-open-btn">ToolRadar öffnen</a>
+    <a href="https://github.com/gudiri1/ibstech-website/actions/workflows/toolradar-scan.yml"
+       class="btn-secondary"
+       id="toolradar-scan-btn"
+       target="_blank"
+       rel="noopener">Scan manuell starten</a>
+  </div>
+
+  <p class="muted small" id="toolradar-note">
+    Hinweis: „Scan manuell starten“ öffnet den Workflow in GitHub Actions (Run workflow). Die Ergebnisse landen automatisch in <span class="mono">/data/toolradar_*.json</span>.
+  </p>
 </section>
 
 
@@ -743,6 +765,7 @@
             'nav-home-link': 'Home',
             'nav-vision-link': 'Digitaler Zwilling & Schichtenbild',
             'nav-tools-link': 'Tools',
+            'nav-toolradar-link': 'ToolRadar',
             'nav-demos-link': 'Demos',
             'nav-links-link': 'Links',
             'nav-events-link': 'Events',
@@ -752,6 +775,7 @@
             'hero-subtitle': 'Digitaler Zwilling und Simulation von KI-, Robotik- und Embedded-Systemen.',
             'btn-vision': 'Digitaler Zwilling & Schichtenbild',
             'btn-demos': 'Demos ansehen',
+            'btn-toolradar': 'ToolRadar öffnen',
 
             'vision-title': 'Digitaler Zwilling & interaktives Schichtenbild',
             'vision-video-title': 'Video: Digitaler Zwilling des klassischen Stacks',
@@ -769,6 +793,13 @@
             'vision-info-text': 'Fahre mit der Maus über „Heute“, „Mitte“ oder „Zukunft“, um den jeweiligen Ansatz kurz erklärt zu bekommen. Das lässt sich in der Präsentation sehr gut live kommentieren.',
 
             'tools-title': 'Tools – KI · Robotik · Embedded',
+            'toolradar-title': 'ToolRadar',
+            'toolradar-desc': 'Interaktiver Überblick über Open-Source-Tools entlang des V-Modells – mit KI-Fokus,
+            'toolradar-card-title': 'ToolRadar: V-Modell & KI',
+            'toolradar-card-text': 'RadarChart pro Tool,
+            'toolradar-open-btn': 'ToolRadar öffnen',
+            'toolradar-scan-btn': 'Scan manuell starten',
+            'toolradar-note': 'Hinweis: „Scan manuell starten“ öffnet den Workflow in GitHub Actions (Run workflow). Ergebnisse landen automatisch in /data/toolradar_*.json.', Filter nach V-Modell-Phase und KI-Anteil, plus Signals & Broken Links aus dem täglichen Scan.', RadarChart, Scoring (0–5) und Evidence Links. Automatische Updates per GitHub Actions.',
             'tools-card1-badge': 'Embedded-KI',
             'tools-card1-title': 'Edge-AI Toolchain (Konzept)',
             'tools-card1-text': 'Pipeline von Datenerfassung über Feature-Engineering bis zur Modellintegration auf Mikrocontrollern (z. B. für MedTech, Automotive oder IoT).',
@@ -840,6 +871,7 @@
             'nav-home-link': 'Home',
             'nav-vision-link': 'Digital twin & layer view',
             'nav-tools-link': 'Tools',
+            'nav-toolradar-link': 'ToolRadar',
             'nav-demos-link': 'Demos',
             'nav-links-link': 'Links',
             'nav-events-link': 'Events',
@@ -849,6 +881,7 @@
             'hero-subtitle': 'Digital twin and simulation of AI, robotics and embedded systems.',
             'btn-vision': 'Digital twin & layer view',
             'btn-demos': 'View demos',
+            'btn-toolradar': 'Open ToolRadar',
 
             'vision-title': 'Digital twin & interactive layer model',
             'vision-video-title': 'Video: Digital twin of the classic stack',
@@ -866,6 +899,13 @@
             'vision-info-text': 'Hover over “Today”, “Middle” or “Future” to get a short explanation of each approach. This works very well for live commentary in your presentation.',
 
             'tools-title': 'Tools – AI · Robotics · Embedded',
+            'toolradar-title': 'ToolRadar',
+            'toolradar-desc': 'Interactive overview of open-source tools across the V-Model – with AI focus,
+            'toolradar-card-title': 'ToolRadar: V-Model & AI',
+            'toolradar-card-text': 'RadarChart per tool,
+            'toolradar-open-btn': 'Open ToolRadar',
+            'toolradar-scan-btn': 'Run scan now',
+            'toolradar-note': 'Note: “Run scan now” opens the GitHub Actions workflow (Run workflow). Results are written to /data/toolradar_*.json automatically.', filters by V-Model phase and AI involvement, plus signals & broken links from the daily scan.', RadarChart, 0–5 scoring and evidence links. Auto-updated via GitHub Actions.',
             'tools-card1-badge': 'Embedded AI',
             'tools-card1-title': 'Edge-AI toolchain (concept)',
             'tools-card1-text': 'Pipeline from data acquisition and feature engineering to model integration on microcontrollers (e.g. for MedTech, automotive or IoT).',
@@ -937,6 +977,7 @@
             'nav-home-link': 'Accueil',
             'nav-vision-link': 'Jumeau numérique & couches',
             'nav-tools-link': 'Outils',
+            'nav-toolradar-link': 'ToolRadar',
             'nav-demos-link': 'Démos',
             'nav-links-link': 'Liens',
             'nav-events-link': 'Événements',
@@ -946,6 +987,7 @@
             'hero-subtitle': 'Jumeau numérique et simulation de systèmes IA, robotiques et embarqués.',
             'btn-vision': 'Jumeau numérique & couches',
             'btn-demos': 'Voir les démos',
+            'btn-toolradar': 'Ouvrir ToolRadar',
 
             'vision-title': 'Jumeau numérique & vue en couches interactive',
             'vision-video-title': 'Vidéo : jumeau numérique de la pile classique',
@@ -963,6 +1005,13 @@
             'vision-info-text': 'Survolez « Aujourd’hui », « Milieu » ou « Futur » pour obtenir une courte explication de chaque approche. Idéal à commenter en direct pendant la présentation.',
 
             'tools-title': 'Outils – IA · Robotique · Embarqué',
+            'toolradar-title': 'ToolRadar',
+            'toolradar-desc': 'Vue interactive des outils open source le long du V-Model – focus IA,
+            'toolradar-card-title': 'ToolRadar : V-Model & IA',
+            'toolradar-card-text': 'RadarChart par outil,
+            'toolradar-open-btn': 'Ouvrir ToolRadar',
+            'toolradar-scan-btn': 'Lancer le scan',
+            'toolradar-note': 'Note : “Lancer le scan” ouvre le workflow GitHub Actions (Run workflow). Les résultats sont écrits automatiquement dans /data/toolradar_*.json.', filtres par phase du V-Model et implication IA, plus signaux & liens cassés issus du scan quotidien.', RadarChart, scoring 0–5 et liens de preuve. Mise à jour automatique via GitHub Actions.',
             'tools-card1-badge': 'IA embarquée',
             'tools-card1-title': 'Toolchain Edge-AI (concept)',
             'tools-card1-text': 'Pipeline allant de l’acquisition des données et l’ingénierie des caractéristiques jusqu’à l’intégration du modèle sur microcontrôleurs (p. ex. pour MedTech, automobile ou IoT).',
@@ -1034,6 +1083,7 @@
             'nav-home-link': 'Inicio',
             'nav-vision-link': 'Gemelo digital y capas',
             'nav-tools-link': 'Herramientas',
+            'nav-toolradar-link': 'ToolRadar',
             'nav-demos-link': 'Demos',
             'nav-links-link': 'Enlaces',
             'nav-events-link': 'Eventos',
@@ -1043,6 +1093,7 @@
             'hero-subtitle': 'Gemelo digital y simulación de sistemas de IA, robótica y embebidos.',
             'btn-vision': 'Gemelo digital y capas',
             'btn-demos': 'Ver demos',
+            'btn-toolradar': 'Abrir ToolRadar',
 
             'vision-title': 'Gemelo digital y vista por capas interactiva',
             'vision-video-title': 'Vídeo: gemelo digital del stack clásico',
@@ -1060,6 +1111,13 @@
             'vision-info-text': 'Pasa el ratón por «Hoy», «Centro» o «Futuro» para obtener una breve explicación de cada enfoque. Es ideal para comentarlo en directo durante la presentación.',
 
             'tools-title': 'Herramientas – IA · Robótica · Embebido',
+            'toolradar-title': 'ToolRadar',
+            'toolradar-desc': 'Visión interactiva de herramientas open source a lo largo del V-Model – foco en IA,
+            'toolradar-card-title': 'ToolRadar: V-Model e IA',
+            'toolradar-card-text': 'RadarChart por herramienta,
+            'toolradar-open-btn': 'Abrir ToolRadar',
+            'toolradar-scan-btn': 'Ejecutar escaneo',
+            'toolradar-note': 'Nota: “Ejecutar escaneo” abre el workflow de GitHub Actions (Run workflow). Los resultados se escriben automáticamente en /data/toolradar_*.json.', filtros por fase del V-Model y nivel de IA, además de señales y enlaces rotos del escaneo diario.', RadarChart, puntuación 0–5 y enlaces de evidencia. Actualización automática vía GitHub Actions.',
             'tools-card1-badge': 'IA embebida',
             'tools-card1-title': 'Toolchain de Edge-AI (concepto)',
             'tools-card1-text': 'Pipeline desde la adquisición de datos y el diseño de características hasta la integración del modelo en microcontroladores (p. ej. para MedTech, automoción o IoT).',
