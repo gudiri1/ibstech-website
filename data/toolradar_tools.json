@@ -1,1 +1,2520 @@
-[]
+[
+  {
+    "ToolName": "AI-Hacking-Village",
+    "VendorOrganisation": "zuwasi",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A demo showing how agentic AI (Sourcegraph Amp) identifies the true critical CERT C vulnerability in an embedded ECU simulator. Static analysis flags many issues, but a medium-severity logic flaw enables illegal race maps on ROAD ECUs. Amp reads context, reprioritizes, and generates fixes.",
+    "VModelPhases": [
+      "Implementierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/zuwasi/AI-Hacking-Village",
+      "https://github.com/zuwasi/AI-Hacking-Village"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "zuwasi/AI-Hacking-Village",
+      "url": "https://github.com/zuwasi/AI-Hacking-Village",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-12T10:18:17Z",
+      "created_at": "2025-12-06T20:34:19Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "APK-insight",
+    "VendorOrganisation": "0xSpect3r",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A browser-based OSINT tool for static analysis of Android applications, identifying permissions, trackers, and other embedded SDKs.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/0xSpect3r/APK-insight",
+      "https://github.com/0xSpect3r/APK-insight"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "0xSpect3r/APK-insight",
+      "url": "https://github.com/0xSpect3r/APK-insight",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-07-22T23:15:24Z",
+      "created_at": "2025-07-22T22:42:15Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Awesome-AECO",
+    "VendorOrganisation": "osama-ata",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A curated index of high-quality open-source tools empowering BIM workflows, CAD modeling, simulation, smart buildings, digital twins, and robotics in the built environment.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/osama-ata/Awesome-AECO",
+      "https://github.com/osama-ata/Awesome-AECO"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "osama-ata/Awesome-AECO",
+      "url": "https://github.com/osama-ata/Awesome-AECO",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-10T20:56:43Z",
+      "created_at": "2025-05-25T21:48:10Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "bias-in-embeddings",
+    "VendorOrganisation": "Anubhuti710",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An analysis and mitigation of gender bias in static word embeddings (GloVe, Word2Vec).",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/Anubhuti710/bias-in-embeddings",
+      "https://github.com/Anubhuti710/bias-in-embeddings"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Anubhuti710/bias-in-embeddings",
+      "url": "https://github.com/Anubhuti710/bias-in-embeddings",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-11-01T10:06:52Z",
+      "created_at": "2025-10-30T12:02:32Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "CI-CD-Jenkins",
+    "VendorOrganisation": "AhmedSamymoh",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A repo focusing on CI/CD integration with Jenkins and Docker, specifically in the automotive and embedded systems domain, including static code analysis and unit testing.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/AhmedSamymoh/CI-CD-Jenkins",
+      "https://github.com/AhmedSamymoh/CI-CD-Jenkins"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "AhmedSamymoh/CI-CD-Jenkins",
+      "url": "https://github.com/AhmedSamymoh/CI-CD-Jenkins",
+      "stars": 7,
+      "forks": 2,
+      "open_issues": 0,
+      "pushed_at": "2025-03-27T04:12:45Z",
+      "created_at": "2024-07-14T06:57:54Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 3,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "CI_FirstEmb_LED1",
+    "VendorOrganisation": "Sugumaran-RnD",
+    "ToolType": "Open Source",
+    "PrimaryUse": "First CI workflow for embedded code with unit and static analysis",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/Sugumaran-RnD/CI_FirstEmb_LED1",
+      "https://github.com/Sugumaran-RnD/CI_FirstEmb_LED1"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Sugumaran-RnD/CI_FirstEmb_LED1",
+      "url": "https://github.com/Sugumaran-RnD/CI_FirstEmb_LED1",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-09-22T05:27:49Z",
+      "created_at": "2025-09-12T07:00:15Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "defenX",
+    "VendorOrganisation": "Rashichandel191",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A machine learning-based system to detect fake banking APKs by analyzing embedded URLs and app behavior. This project combines static and dynamic APK analysis, feature extraction from URLs, and ML models to identify suspicious or phishing links, helping enhance mobile banking security. ",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/Rashichandel191/defenX",
+      "https://github.com/Rashichandel191/defenX"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Rashichandel191/defenX",
+      "url": "https://github.com/Rashichandel191/defenX",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-08-30T09:12:43Z",
+      "created_at": "2025-08-30T07:42:26Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Elevator-simulation-using-ARM-Keil-and-RTOS",
+    "VendorOrganisation": "navinkumar357",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Embedded C, ARM-cortex-m3, EBMC tool, uVision.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/navinkumar357/Elevator-simulation-using-ARM-Keil-and-RTOS",
+      "https://github.com/navinkumar357/Elevator-simulation-using-ARM-Keil-and-RTOS"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "navinkumar357/Elevator-simulation-using-ARM-Keil-and-RTOS",
+      "url": "https://github.com/navinkumar357/Elevator-simulation-using-ARM-Keil-and-RTOS",
+      "stars": 4,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2020-08-05T15:07:33Z",
+      "created_at": "2020-01-26T23:17:09Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "embed-privacy-stubs",
+    "VendorOrganisation": "epiphyt",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Embed Privacy function and class declaration stubs for static analysis by PHPStan",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/epiphyt/embed-privacy-stubs",
+      "https://github.com/epiphyt/embed-privacy-stubs"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "epiphyt/embed-privacy-stubs",
+      "url": "https://github.com/epiphyt/embed-privacy-stubs",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-11-17T20:04:53Z",
+      "created_at": "2025-11-17T20:04:20Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "embedded",
+    "VendorOrganisation": "WilliamChenGitHub",
+    "ToolType": "Open Source",
+    "PrimaryUse": "embedded lib, include Thread Mutex Sem and Event interface of multiple platform(linux windows rtos),  inclue List and Queue data struct implementation and Communication JSON ThreadPool tools",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/WilliamChenGitHub/embedded",
+      "https://github.com/WilliamChenGitHub/embedded"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "WilliamChenGitHub/embedded",
+      "url": "https://github.com/WilliamChenGitHub/embedded",
+      "stars": 1,
+      "forks": 2,
+      "open_issues": 0,
+      "pushed_at": "2024-11-12T06:11:52Z",
+      "created_at": "2023-12-25T06:00:21Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Embedded-Baremetal-RTOS-ARM",
+    "VendorOrganisation": "shawnq8861",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Embedded C and assembly language code, targeted to an ARM7TDMI System-On-Chip.  Used Eclipse IDE, Yagarto GNU tool chains, and OpenOCD compatible JTAG.  Includes a small, custom RTOS and code written for uCOSII.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/shawnq8861/Embedded-Baremetal-RTOS-ARM",
+      "https://github.com/shawnq8861/Embedded-Baremetal-RTOS-ARM"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "shawnq8861/Embedded-Baremetal-RTOS-ARM",
+      "url": "https://github.com/shawnq8861/Embedded-Baremetal-RTOS-ARM",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2016-07-11T18:12:30Z",
+      "created_at": "2016-07-07T01:53:36Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "embedded-c-cpp-template",
+    "VendorOrganisation": "brahimab8",
+    "ToolType": "Open Source",
+    "PrimaryUse": "C/C++ embedded project template with CMake, Unity & CppUTest for unit testing, strict warnings, static analysis, coverage, GitHub Actions CI, and optional cross-compilation for ARM MCUs.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/brahimab8/embedded-c-cpp-template",
+      "https://github.com/brahimab8/embedded-c-cpp-template"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "brahimab8/embedded-c-cpp-template",
+      "url": "https://github.com/brahimab8/embedded-c-cpp-template",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-09-10T20:16:30Z",
+      "created_at": "2025-09-10T14:25:44Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 4,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "embedded-cpp-pro-starter",
+    "VendorOrganisation": "SourabhDhalia",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Professional C++ starter for embedded/firmware + host builds. CMake-based, cross-compilation (ARM GCC), unit tests (GoogleTest), static analysis (clang-tidy, cppcheck), formatting (clang-format), coverage (gcovr), docs (Doxygen), Docker dev container, GitHub Actions CI/CD (build/test/analyze/coverage/release).",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/SourabhDhalia/embedded-cpp-pro-starter",
+      "https://github.com/SourabhDhalia/embedded-cpp-pro-starter"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "SourabhDhalia/embedded-cpp-pro-starter",
+      "url": "https://github.com/SourabhDhalia/embedded-cpp-pro-starter",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-09-02T15:27:08Z",
+      "created_at": "2025-08-31T11:58:54Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 5,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Embedded-Software-role-with-RTOS-skills---Santa-Clara-CA",
+    "VendorOrganisation": "ktp-forked-repos",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This is an excellent opportunity for an experienced Senior Firmware Engineer to develop key elements of an open-source platform for GPS/INS navigation systems.   The role spans development of platform code, drivers, and tools on both 32-bit ARM Cortex platforms as well as in the future small Linux platforms.  Core elements of the firmware are contributed and maintained as open-source projects on GitHub for use by the Aceinna community of customers.  Projects include enhancement of existing code for the immediate release to open source, as well as development of new platform level code for future versions of hardware including at some point a Linux version.   Responsibilities: Write significant amount of well-tested and documented firmware for small embedded hardware platforms Apply logic and software engineering practice to organize code in a sustainable and comprehendible manner for an open-source community  Maintain related GitHub repositories for branches, pull requests, and merge requests.  Help manage GitHub community and identify good contributors on our projects as well as other related open-source projects Help hardware team evaluate new CPU architectures with benchmarks and requirements Develop driver code for both communication protocols, sensors, and other peripherals Perform other job related duties as assigned Develop environment and techniques for testing existing and new systems   Requirements: Expert C/C++ embedded firmware architecture, development, and debugging skills Experience with small RTOS systems with hard real-time constraints, and intensive numerical processing. Experience with writing real-time code on Linux or Linux-like platforms such as Raspberry Pi or similar Experience with hardware serial/bus protocols such as I2C, SPI, UART, CAN, Bluetooth and Ethernet buses Experience with Python and/or Node.JS is desired but not required Experience in debugging of real time systems using oscilloscopes and logical analyzers Very good understanding of HW schematics and working principles of HW components Must be a self-starter and self-motivating individual Must be capable of working in a team Must be capable of training and generating documentation that will be posted on our GitHub account and other online documentation/blog posts Position is located in Santa Clara, CA   Education and Experience: Education: BS or MS in Computer Science or related Technical Field Years of Experience:  7  For more information about ACEINNA please visit our website at aceinna.com To apply directly please send your resume to careers@aceinna.com",
+    "VModelPhases": [
+      "Stakeholder Needs / System Requirements",
+      "Architektur/Design",
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Data/AI Lifecycle",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "core",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/ktp-forked-repos/Embedded-Software-role-with-RTOS-skills---Santa-Clara-CA",
+      "https://github.com/ktp-forked-repos/Embedded-Software-role-with-RTOS-skills---Santa-Clara-CA"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ktp-forked-repos/Embedded-Software-role-with-RTOS-skills---Santa-Clara-CA",
+      "url": "https://github.com/ktp-forked-repos/Embedded-Software-role-with-RTOS-skills---Santa-Clara-CA",
+      "stars": 3,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2018-12-05T19:19:14Z",
+      "created_at": "2019-04-29T23:21:38Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 5,
+      "AuditTraceability": 1,
+      "AIValue": 5,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Embedded-Systems-Diploma-inDetails",
+    "VendorOrganisation": "AbdullahAbdelhakeem6484",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Embedded-Systems-Diploma : C programming - Microcontroller (atmega32) -RTOS-FREE RTOS -Testing-Tooling",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/AbdullahAbdelhakeem6484/Embedded-Systems-Diploma-inDetails",
+      "https://github.com/AbdullahAbdelhakeem6484/Embedded-Systems-Diploma-inDetails"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "AbdullahAbdelhakeem6484/Embedded-Systems-Diploma-inDetails",
+      "url": "https://github.com/AbdullahAbdelhakeem6484/Embedded-Systems-Diploma-inDetails",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2021-02-26T18:55:37Z",
+      "created_at": "2021-02-26T18:43:12Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Embedded-Testing-Tools-In-India",
+    "VendorOrganisation": "meghanaagarwal",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Testing the segments of implanted frameworks is regularly an exceptionally mind boggling process. It requires significant learning of the qualities of the gadgets and stage. Alongside exceptionally gifted test engineers, complex test labs are basic. The testing procedure is genuinely nitty gritty including countless test groupings.   Menlopark Technologies has an installed testing group with exceptionally gifted test engineers. We have executed complex ventures by rapidly adjusting to the test arrangements and utilitarian learning.   We have executed complex undertakings by rapidly adjusting to the test arrangements and utilitarian information.   Wide exhibit of inserted testing administrations crosswise over Real Time Operating Systems (RTOS), improvement stages and programming dialects   Exceptionally gifted group of specialists to do the complex inserted testing forms   Broad involvement with redistributing of inserted programming QA work   Comprehensive Approach - Service incorporates code surveys, documentation and code support   Probably the best challenge confronting semiconductor makers today is accomplishing satisfactory item quality levels while limiting raising test costs. Inserted testing is considered as the most effective testing programs accessible in the market for programming testing. Testing the parts of implanted frameworks is frequently an extremely mind boggling process. It requires significant learning of the qualities of the gadgets and stage. Alongside exceptionally talented test engineers, advanced test labs are fundamental. The implanted testing procedure is genuinely nitty gritty including countless test arrangements.   Fisherman has an inserted testing group with profoundly talented test engineers. We have executed complex ventures by rapidly adjusting to the test arrangements and useful learning. We give thorough testing administrations to implanted programming over a large group of objective gadgets, Real Time Operating Systems (RTOS), advancement stages and programming dialects. Our installed programming testing administrations incorporate code-level testing, just as inclusion investigation, useful testing, stress testing, code audit, troubleshooting and code upkeep.   How We can Help You?   Characterize test goals and practical testing procedure   Recognize implanted programming interfaces   Recognize information and yield flag over these interfaces   Recognize stage similarity testing prerequisites   Characterize manual experiments, test information and anticipated outcomes   Test execution, test the board and deformity goals   Create test bridle utilizing installed apparatuses and emulators for robotized testing   Test Metrics and announcing   A considerable lot of the implanted gadgets in the market need to experience extensive equipment and programming check cycles. This procedure is tedious and needs additional consideration to convey imperfection free item. Since manual testing is a mistake inclined and tedious action, we can't totally depend on it. It is untrustworthy for conveying imperfection free items in the evaluated time. It is especially significant and time basic when there are huge number of gadgets for creation.   Mechanized testing can enable us to accomplish this objective. Robotized testing instruments set aside time and cash of the seller to convey quality item on schedule.   Different mechanized apparatuses are accessible in the market; yet the greater part of them are space explicit and can't be tweaked. Aftek's TestJig is a convenient instrument. It gives a redid answer for dependably computerize the total testing cycle.   TestJig gives an answer for test inserted circuit sheets and the product on the sheets. This arrangement can be utilized for a wide range of testing including practical testing, relapse testing and burden testing.   Equipment testing chiefly manages the testing for generation. It includes the testing of equipment interfaces for creation go/no-go. It likewise incorporates the testing of the finished result with programming running on it. TestJig is helpful for both creation go/no-go testing and final result testing.   Highlights   Utilizing the TestJig arrangement, numerous loads up can be tried at the same time, it spares impressive check time. See the outline beneath. The Device Under Test (DUT) is associated with the Jig board through different interfaces. These Jig sheets are controlled from the focal server associated by means of wired or remote LAN.   Find out about <a href=\"https://menloparktech.com/\">Embedded Testing Tools In India</a>",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/meghanaagarwal/Embedded-Testing-Tools-In-India",
+      "https://github.com/meghanaagarwal/Embedded-Testing-Tools-In-India"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "meghanaagarwal/Embedded-Testing-Tools-In-India",
+      "url": "https://github.com/meghanaagarwal/Embedded-Testing-Tools-In-India",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2020-04-24T08:56:55Z",
+      "created_at": "2020-04-24T08:56:54Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 2,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "File-Queries-Rag-App",
+    "VendorOrganisation": "pavan29903",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A RAG application transforms static documents into interactive knowledge bases by breaking them into chunks and converting them into vector embeddings. These are stored for quick retrieval. User queries are matched to relevant content, which a language model uses to generate accurate, source grounded answers ideal for reliable research and analysis",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/pavan29903/File-Queries-Rag-App",
+      "https://file-queries-rag-app.streamlit.app/"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "pavan29903/File-Queries-Rag-App",
+      "url": "https://github.com/pavan29903/File-Queries-Rag-App",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-07-31T19:06:10Z",
+      "created_at": "2025-07-31T18:24:26Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "FSRDigitalTwin3D-Simulation",
+    "VendorOrganisation": "Neroware",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Interactive, process-oriented, event-discrete Unity simulation tool for human-robot interaction with semantic modelling and skill-based programming",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Neroware/FSRDigitalTwin3D-Simulation",
+      "https://github.com/Neroware/FSRDigitalTwin3D-Simulation"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Neroware/FSRDigitalTwin3D-Simulation",
+      "url": "https://github.com/Neroware/FSRDigitalTwin3D-Simulation",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-16T12:35:35Z",
+      "created_at": "2025-10-21T11:47:15Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "ISMCTS-MRTA-U-Library",
+    "VendorOrganisation": "lidgarbar",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This library implements the ISMCTS (Information Set Monte Carlo Tree Search) algorithm to solve MRTA+U (Multi-Robot Task Allocation with Uncertainty) problems. It also provides comparisons with traditional approaches like auction-based and greedy algorithms, along with performance metrics and real-time simulation tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/lidgarbar/ISMCTS-MRTA-U-Library",
+      "https://github.com/lidgarbar/ISMCTS-MRTA-U-Library"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "lidgarbar/ISMCTS-MRTA-U-Library",
+      "url": "https://github.com/lidgarbar/ISMCTS-MRTA-U-Library",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-02T17:51:03Z",
+      "created_at": "2025-02-26T11:28:12Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "kova-platform",
+    "VendorOrganisation": "israel8787",
+    "ToolType": "Open Source",
+    "PrimaryUse": "🤖 Manage decentralized robotics data networks seamlessly with Kova Platform's web interface, simulation engine, and real-time monitoring tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Release / Operations"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/israel8787/kova-platform",
+      "https://github.com/israel8787/kova-platform"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "israel8787/kova-platform",
+      "url": "https://github.com/israel8787/kova-platform",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-16T14:45:53Z",
+      "created_at": "2025-10-06T22:01:24Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Live-Fintech-AI-Solution-Prototype",
+    "VendorOrganisation": "aksingh0505",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Browser-only stock analysis with grounded answers. Enter a ticker to see financial health, sentiment, and risk, then ask questions in “Ask the Ticker” with source-linked evidence. Runs on static hosting, supports live updates, and exports JSON; uses in-browser retrieval with embeddings or TF‑IDF fallback.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/aksingh0505/Live-Fintech-AI-Solution-Prototype",
+      "https://github.com/aksingh0505/Live-Fintech-AI-Solution-Prototype"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "aksingh0505/Live-Fintech-AI-Solution-Prototype",
+      "url": "https://github.com/aksingh0505/Live-Fintech-AI-Solution-Prototype",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-09-25T15:36:33Z",
+      "created_at": "2025-09-25T13:43:39Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "MalDoc-Static-Analysis",
+    "VendorOrganisation": "RootAware",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This project showcases static analysis of malicious Microsoft Office documents (MalDocs) without execution. It focuses on extracting embedded macros, decoding obfuscated code, and identifying Indicators of Compromise (IOCs). These skills are essential for safe malware analysis and threat detection.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/RootAware/MalDoc-Static-Analysis",
+      "https://github.com/RootAware/MalDoc-Static-Analysis"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "RootAware/MalDoc-Static-Analysis",
+      "url": "https://github.com/RootAware/MalDoc-Static-Analysis",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-06-02T03:07:12Z",
+      "created_at": "2025-06-01T23:31:44Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "malfusion",
+    "VendorOrganisation": "bianca-grama",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A comprehensive machine learning pipeline for classifying malware samples into families using static analysis features, call graph metrics, and graph embeddings.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/bianca-grama/malfusion",
+      "https://github.com/bianca-grama/malfusion"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "bianca-grama/malfusion",
+      "url": "https://github.com/bianca-grama/malfusion",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-11-18T12:20:36Z",
+      "created_at": "2025-11-17T13:39:38Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "MavenAI-Project",
+    "VendorOrganisation": "SyniX-H",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A comprehensive tool for validating ROS2 packages and testing them in Gazebo simulation with robotic arms.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/SyniX-H/MavenAI-Project",
+      "https://github.com/SyniX-H/MavenAI-Project"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "SyniX-H/MavenAI-Project",
+      "url": "https://github.com/SyniX-H/MavenAI-Project",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-15T23:36:40Z",
+      "created_at": "2025-12-15T01:25:43Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "MavenAI-ROS-Code-Checker-Simulation-Tool",
+    "VendorOrganisation": "Pranaav-8491",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A Python-based tool to validate uploaded ROS/ROS2 code (syntax, structure, safety), run the validated node in a Gazebo/CoppeliaSim robotic arm environment, and display the simulation results via a minimal web interface.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Pranaav-8491/MavenAI-ROS-Code-Checker-Simulation-Tool",
+      "https://github.com/Pranaav-8491/MavenAI-ROS-Code-Checker-Simulation-Tool"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Pranaav-8491/MavenAI-ROS-Code-Checker-Simulation-Tool",
+      "url": "https://github.com/Pranaav-8491/MavenAI-ROS-Code-Checker-Simulation-Tool",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-11T13:06:03Z",
+      "created_at": "2025-12-11T13:06:02Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "mcb1700_CMSIS-RTOS_ac-control",
+    "VendorOrganisation": "Jwesner04",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A demo ac-control system using a mcb1700 microprocessor using Keil embedded tools and CMSIS os",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/Jwesner04/mcb1700_CMSIS-RTOS_ac-control",
+      "https://github.com/Jwesner04/mcb1700_CMSIS-RTOS_ac-control"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Jwesner04/mcb1700_CMSIS-RTOS_ac-control",
+      "url": "https://github.com/Jwesner04/mcb1700_CMSIS-RTOS_ac-control",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2016-12-19T17:33:24Z",
+      "created_at": "2016-12-10T18:51:46Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "mcb1700_CMSIS-RTOS_stopwatch",
+    "VendorOrganisation": "Jwesner04",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A demo stopwatch using a mcb1700 microprocessor with Keil embedded tools and CMSIS os",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/Jwesner04/mcb1700_CMSIS-RTOS_stopwatch",
+      "https://github.com/Jwesner04/mcb1700_CMSIS-RTOS_stopwatch"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Jwesner04/mcb1700_CMSIS-RTOS_stopwatch",
+      "url": "https://github.com/Jwesner04/mcb1700_CMSIS-RTOS_stopwatch",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2016-12-19T18:28:59Z",
+      "created_at": "2016-12-19T17:11:02Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "mempool",
+    "VendorOrganisation": "Yanujz",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Deterministic fixed-size memory pool library in C11 for embedded and safety-related systems. No malloc, opaque state, tests, sanitizers, static analysis.",
+    "VModelPhases": [
+      "Implementierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/Yanujz/mempool",
+      "https://yanujz.github.io/mempool/"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Yanujz/mempool",
+      "url": "https://github.com/Yanujz/mempool",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-11-14T13:39:39Z",
+      "created_at": "2025-11-14T09:51:57Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "pdaemon_trace",
+    "VendorOrganisation": "mupuf",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Collection of tools to trace the reclocking policy of NVIDIA's embedded RTOS PDAEMON/PMU",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/mupuf/pdaemon_trace",
+      "https://github.com/mupuf/pdaemon_trace"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mupuf/pdaemon_trace",
+      "url": "https://github.com/mupuf/pdaemon_trace",
+      "stars": 3,
+      "forks": 1,
+      "open_issues": 0,
+      "pushed_at": "2014-10-14T08:24:59Z",
+      "created_at": "2014-10-14T08:15:48Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "PDF-check.sh",
+    "VendorOrganisation": "ATTA-UR-REHMAN1",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Malicious PDF Checker is a professional Bash‑based security tool designed to analyze PDF files for suspicious or potentially harmful content. It detects embedded JavaScript, launch actions, malicious triggers, hidden objects, and other exploit indicators using static analysis—without opening or executing the PDF. Safe, simple, and effective ",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/ATTA-UR-REHMAN1/PDF-check.sh",
+      "https://github.com/ATTA-UR-REHMAN1/PDF-check.sh"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ATTA-UR-REHMAN1/PDF-check.sh",
+      "url": "https://github.com/ATTA-UR-REHMAN1/PDF-check.sh",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-11-23T16:47:08Z",
+      "created_at": "2025-11-23T16:45:16Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "PDF-CHECKER.sh",
+    "VendorOrganisation": "ATTA-UR-REHMAN1",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Malicious PDF Checker is a professional Bash‑based security tool designed to analyze PDF files for suspicious or potentially harmful content. It detects embedded JavaScript, launch actions, malicious triggers, hidden objects, and other exploit indicators using static analysis—without opening or executing the PDF. Safe, simple, and effective ",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/ATTA-UR-REHMAN1/PDF-CHECKER.sh",
+      "https://github.com/ATTA-UR-REHMAN1/PDF-CHECKER.sh"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ATTA-UR-REHMAN1/PDF-CHECKER.sh",
+      "url": "https://github.com/ATTA-UR-REHMAN1/PDF-CHECKER.sh",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-11-23T16:44:16Z",
+      "created_at": "2025-11-23T16:44:16Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "PDF-Malware-Analyzer",
+    "VendorOrganisation": "ParthChavda1",
+    "ToolType": "Open Source",
+    "PrimaryUse": "PDF Malware Analysis Toolkit is a Python-based static analysis framework that inspects malicious PDF files by parsing their internal structure, extracting metadata, objects, and embedded JavaScript, detecting obfuscation and exploit indicators, extracting IOCs, applying rule-based risk scoring, and generating SOC-style malware analysis reports.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/ParthChavda1/PDF-Malware-Analyzer",
+      "https://github.com/ParthChavda1/PDF-Malware-Analyzer"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ParthChavda1/PDF-Malware-Analyzer",
+      "url": "https://github.com/ParthChavda1/PDF-Malware-Analyzer",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-16T14:20:20Z",
+      "created_at": "2025-12-15T16:08:23Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Pengenalan-RTOS-dan-Embedded-Toolchain",
+    "VendorOrganisation": "sinekarlintang",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Hands-on Mentoring Karir Embedded Software Engineering MENTARI HME",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/sinekarlintang/Pengenalan-RTOS-dan-Embedded-Toolchain",
+      "https://github.com/sinekarlintang/Pengenalan-RTOS-dan-Embedded-Toolchain"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "sinekarlintang/Pengenalan-RTOS-dan-Embedded-Toolchain",
+      "url": "https://github.com/sinekarlintang/Pengenalan-RTOS-dan-Embedded-Toolchain",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2024-02-10T09:28:31Z",
+      "created_at": "2024-01-31T12:48:27Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Physical-AI-Humanoid-Robotics-Book",
+    "VendorOrganisation": "faizamairaj",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This book teaches how to build intelligent humanoid robots using modern AI tools. You learn simulations, perception, planning, and robot actions step by step. By the end, you can create a humanoid that sees, thinks, plans, and moves on its own.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/faizamairaj/Physical-AI-Humanoid-Robotics-Book",
+      "https://github.com/faizamairaj/Physical-AI-Humanoid-Robotics-Book"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "faizamairaj/Physical-AI-Humanoid-Robotics-Book",
+      "url": "https://github.com/faizamairaj/Physical-AI-Humanoid-Robotics-Book",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-11T13:51:49Z",
+      "created_at": "2025-12-10T09:52:02Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Physical-AI-Humanoid-Robotics-Textbook",
+    "VendorOrganisation": "Ayeshaaaqil",
+    "ToolType": "Open Source",
+    "PrimaryUse": "📘🤖 Open-source textbook on Physical AI & Humanoid Robotics. Learn embodied intelligence, perception 👁️, motion planning 🚶, control systems 🎛️, simulation 🧪, and real-world robot deployment 🌍 through hands-on projects with Python 🐍, ROS ⚙️ & AI tools ✨. Perfect for students 🎓 and developers 💻 building physical AI systems.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Release / Operations"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Ayeshaaaqil/Physical-AI-Humanoid-Robotics-Textbook",
+      "https://physical-ai-humanoid-robotics-textb-eta.vercel.app"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Ayeshaaaqil/Physical-AI-Humanoid-Robotics-Textbook",
+      "url": "https://github.com/Ayeshaaaqil/Physical-AI-Humanoid-Robotics-Textbook",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-16T12:48:04Z",
+      "created_at": "2025-12-06T14:29:50Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "physical-human-robot-interaction-ft-sensor-3DOF-delta-robot",
+    "VendorOrganisation": "AmirhosseinEhsani80",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Experimental pHRI framework using a 3-DOF Delta robot equipped with a custom six-axis force–torque sensor. Includes calibration tools, admittance and Z-width simulation, hardware-dependent GUI, and experimental datasets used for human hand impedance and virtual-wall studies.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/AmirhosseinEhsani80/physical-human-robot-interaction-ft-sensor-3DOF-delta-robot",
+      "https://github.com/AmirhosseinEhsani80/physical-human-robot-interaction-ft-sensor-3DOF-delta-robot"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "AmirhosseinEhsani80/physical-human-robot-interaction-ft-sensor-3DOF-delta-robot",
+      "url": "https://github.com/AmirhosseinEhsani80/physical-human-robot-interaction-ft-sensor-3DOF-delta-robot",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-12T10:00:43Z",
+      "created_at": "2025-12-10T13:24:37Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Profilio_Website",
+    "VendorOrganisation": "Bacharkita",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Hello, everyone! My name is Bachar Kita, and I'm an Embedded Systems Engineer. Bachelor's Degree in Electrical Engineering with a focus on Embedded Systems.Experience with embedded development tools and platforms (e.g.,VHDL, Arduino, Raspberry Pi, STM32). Familiarity with real-time operating systems (RTOS) and embedded Linux.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/Bacharkita/Profilio_Website",
+      "https://github.com/Bacharkita/Profilio_Website"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Bacharkita/Profilio_Website",
+      "url": "https://github.com/Bacharkita/Profilio_Website",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2024-03-24T10:45:03Z",
+      "created_at": "2024-03-24T10:29:59Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Prompt_To_Gazebo_Sandbox",
+    "VendorOrganisation": "cronenberg64",
+    "ToolType": "Open Source",
+    "PrimaryUse": "AI-powered tool that generates complete ROS2/Gazebo simulation environments from natural language prompts for rapid robotics prototyping",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/cronenberg64/Prompt_To_Gazebo_Sandbox",
+      "https://ptg-forge.netlify.app"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "cronenberg64/Prompt_To_Gazebo_Sandbox",
+      "url": "https://github.com/cronenberg64/Prompt_To_Gazebo_Sandbox",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-11-29T15:52:44Z",
+      "created_at": "2025-06-29T05:26:48Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "reduxwise",
+    "VendorOrganisation": "vertexclique",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Static analysis tool for real-time embedded system scheduling in Rust",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/vertexclique/reduxwise",
+      "https://github.com/vertexclique/reduxwise"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "vertexclique/reduxwise",
+      "url": "https://github.com/vertexclique/reduxwise",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-10-11T20:50:02Z",
+      "created_at": "2025-10-10T14:28:36Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Relationship-between-Economic-Growth-and-CO-Emissions-1970-2022",
+    "VendorOrganisation": "kjistvan",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Interactive visual analysis exploring the link between **economic growth** and **CO₂ emissions**.   Includes animated bar-chart races and scatter plots (Flourish) plus static embeds, built from **open datasets** (World Bank and derived files). The page supports a **language toggle (EN/HU)** without changing the layout.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/kjistvan/Relationship-between-Economic-Growth-and-CO-Emissions-1970-2022",
+      "https://github.com/kjistvan/Relationship-between-Economic-Growth-and-CO-Emissions-1970-2022"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "kjistvan/Relationship-between-Economic-Growth-and-CO-Emissions-1970-2022",
+      "url": "https://github.com/kjistvan/Relationship-between-Economic-Growth-and-CO-Emissions-1970-2022",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-10-14T17:55:07Z",
+      "created_at": "2025-10-14T17:34:40Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "ros-checker-simulator",
+    "VendorOrganisation": "achalkhadse",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Web-based tool to validate ROS/ROS2 nodes, detect safety issues, and run a simple robotic arm simulation.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/achalkhadse/ros-checker-simulator",
+      "https://github.com/achalkhadse/ros-checker-simulator"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "achalkhadse/ros-checker-simulator",
+      "url": "https://github.com/achalkhadse/ros-checker-simulator",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-16T13:42:00Z",
+      "created_at": "2025-12-16T12:57:53Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "ros-code-checker",
+    "VendorOrganisation": "Gyanendra1862",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS2 package validation and simulation tool for robotic arms",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Gyanendra1862/ros-code-checker",
+      "https://github.com/Gyanendra1862/ros-code-checker"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Gyanendra1862/ros-code-checker",
+      "url": "https://github.com/Gyanendra1862/ros-code-checker",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-13T07:33:44Z",
+      "created_at": "2025-12-13T07:04:51Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "ros-code-checker-simulator",
+    "VendorOrganisation": "aditichhteri",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS/ROS2 Code Checker and Robotic Arm Simulation Preview Tool - Validates ROS packages, performs safety checks, and runs simulations in Gazebo with UR5 robotic arm",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/aditichhteri/ros-code-checker-simulator",
+      "https://github.com/aditichhteri/ros-code-checker-simulator"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "aditichhteri/ros-code-checker-simulator",
+      "url": "https://github.com/aditichhteri/ros-code-checker-simulator",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-12T21:07:44Z",
+      "created_at": "2025-12-11T20:08:07Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "ros2-evaluator-tool",
+    "VendorOrganisation": "Codercit23",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS 2 Code Evaluator & Simulator An automated tool designed to test and validate ROS 2 Python nodes. It features a Flask-based web UI for uploading packages, a backend code checker for syntax/structure validation (flake8), and a robust simulation runner that executes code on a UR5e robot in Gazebo.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Codercit23/ros2-evaluator-tool",
+      "https://github.com/Codercit23/ros2-evaluator-tool"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Codercit23/ros2-evaluator-tool",
+      "url": "https://github.com/Codercit23/ros2-evaluator-tool",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-12T11:50:42Z",
+      "created_at": "2025-12-12T11:26:42Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "ros_code_checker_demo",
+    "VendorOrganisation": "adityagautam73",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A simple ROS code checker and simulation preview tool created by Aditya Gautam for the Robotics Intern Task.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/adityagautam73/ros_code_checker_demo",
+      "https://github.com/adityagautam73/ros_code_checker_demo"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "adityagautam73/ros_code_checker_demo",
+      "url": "https://github.com/adityagautam73/ros_code_checker_demo",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-14T20:46:03Z",
+      "created_at": "2025-12-14T20:46:03Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "ros_code_checker_demo_",
+    "VendorOrganisation": "adityagautam73",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A simple ROS code checker and simulation preview tool created by Aditya Gautam for the Robotics Intern Task.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/adityagautam73/ros_code_checker_demo_",
+      "https://github.com/adityagautam73/ros_code_checker_demo_"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "adityagautam73/ros_code_checker_demo_",
+      "url": "https://github.com/adityagautam73/ros_code_checker_demo_",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-15T18:03:52Z",
+      "created_at": "2025-12-14T20:51:01Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "RTOS-Based-System-Monitor",
+    "VendorOrganisation": "Srija72",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Designed and implemented a system monitoring tool using FreeRTOS to track task states, CPU load, and stack usage in real time. Developed multiple tasks to simulate workloads and reported resource usage via UART, showcasing deep understanding of task scheduling, real-time constraints, and embedded system diagnostics.",
+    "VModelPhases": [
+      "Release / Operations"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/Srija72/RTOS-Based-System-Monitor",
+      "https://github.com/Srija72/RTOS-Based-System-Monitor"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Srija72/RTOS-Based-System-Monitor",
+      "url": "https://github.com/Srija72/RTOS-Based-System-Monitor",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-07-11T14:27:14Z",
+      "created_at": "2025-06-02T16:05:19Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Seed_generation_tool",
+    "VendorOrganisation": "Sane212",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A seed generation tool for WEB services of embedded devices based on static taint analysis and fuzz testing",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/Sane212/Seed_generation_tool",
+      "https://github.com/Sane212/Seed_generation_tool"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Sane212/Seed_generation_tool",
+      "url": "https://github.com/Sane212/Seed_generation_tool",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-06-02T05:03:53Z",
+      "created_at": "2025-06-02T05:01:52Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Sensor-and-Sensing-Technology-Course-Project-Outdoor-Sensor-Fusion",
+    "VendorOrganisation": "josepablovr",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS 2 + Docker setup for testing outdoor sensor fusion on the WetExplorer robot, includes simulation, visualization, and plotting tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/josepablovr/Sensor-and-Sensing-Technology-Course-Project-Outdoor-Sensor-Fusion",
+      "https://github.com/josepablovr/Sensor-and-Sensing-Technology-Course-Project-Outdoor-Sensor-Fusion"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "josepablovr/Sensor-and-Sensing-Technology-Course-Project-Outdoor-Sensor-Fusion",
+      "url": "https://github.com/josepablovr/Sensor-and-Sensing-Technology-Course-Project-Outdoor-Sensor-Fusion",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-01T00:20:07Z",
+      "created_at": "2025-10-17T16:55:34Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "SensorFusionSim",
+    "VendorOrganisation": "togunchan",
+    "ToolType": "Open Source",
+    "PrimaryUse": "C++20 real-time sensor-fusion and robotics simulation system with virtual timing, multi-sensor state estimation, kinematic alignment, and live visualization tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/togunchan/SensorFusionSim",
+      "https://github.com/togunchan/SensorFusionSim"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "togunchan/SensorFusionSim",
+      "url": "https://github.com/togunchan/SensorFusionSim",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-01T21:23:42Z",
+      "created_at": "2025-11-16T15:10:42Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "SimPublisher",
+    "VendorOrganisation": "intuitive-robots",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A cross-environment tool to publish objects from simulation for Augmented Reality and Human Robot Interaction.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/intuitive-robots/SimPublisher",
+      "https://intuitive-robots.github.io/iris-project-page/introduction/overview.html"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "intuitive-robots/SimPublisher",
+      "url": "https://github.com/intuitive-robots/SimPublisher",
+      "stars": 36,
+      "forks": 10,
+      "open_issues": 2,
+      "pushed_at": "2025-12-05T17:20:50Z",
+      "created_at": "2023-11-03T12:35:49Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "SO-101_Manipulator_FullStack_Robotics",
+    "VendorOrganisation": "diwyanvithana",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Full-stack robotics framework for the SO-101 manipulator integrating  low-level servo control (Feetech STS3215), MuJoCo physics simulation,  Xbox controller teleoperation, joint calibration tools, and a foundation  for ML-based autonomous control.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/diwyanvithana/SO-101_Manipulator_FullStack_Robotics",
+      "https://github.com/diwyanvithana/SO-101_Manipulator_FullStack_Robotics"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "diwyanvithana/SO-101_Manipulator_FullStack_Robotics",
+      "url": "https://github.com/diwyanvithana/SO-101_Manipulator_FullStack_Robotics",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-04T14:11:22Z",
+      "created_at": "2025-12-04T13:51:17Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "SP2016-Deep-Content-Inspection",
+    "VendorOrganisation": "mathieualexhache",
+    "ToolType": "Open Source",
+    "PrimaryUse": "PowerShell scripts for scanning SharePoint 2016 on-prem documents for enterprise policy violations. Detects macros, embedded scripts, encryption, password protection, corrupt files, and invalid formats using static analysis via Python-based macro inspection engine.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/mathieualexhache/SP2016-Deep-Content-Inspection",
+      "https://github.com/mathieualexhache/SP2016-Deep-Content-Inspection"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mathieualexhache/SP2016-Deep-Content-Inspection",
+      "url": "https://github.com/mathieualexhache/SP2016-Deep-Content-Inspection",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-08-15T17:39:19Z",
+      "created_at": "2025-08-15T16:01:59Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Surgical-Robot-Controller",
+    "VendorOrganisation": "GlebLevashov",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Medical robotics simulation using a Niryo Ned 2 robot and OpenCV to perform image-guided surgical tool alignment on a phantom head",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/GlebLevashov/Surgical-Robot-Controller",
+      "https://github.com/GlebLevashov/Surgical-Robot-Controller"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "GlebLevashov/Surgical-Robot-Controller",
+      "url": "https://github.com/GlebLevashov/Surgical-Robot-Controller",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-14T02:04:18Z",
+      "created_at": "2025-12-14T01:20:01Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "thesis-flowgen",
+    "VendorOrganisation": "lightspot21",
+    "ToolType": "Open Source",
+    "PrimaryUse": "(PoC) Clang/LLVM plugin and tooling of the static analysis flow for embedded software energy consumption described in my thesis",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/lightspot21/thesis-flowgen",
+      "https://github.com/lightspot21/thesis-flowgen"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "lightspot21/thesis-flowgen",
+      "url": "https://github.com/lightspot21/thesis-flowgen",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-03-09T10:55:49Z",
+      "created_at": "2025-03-09T10:51:37Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "traceKashef",
+    "VendorOrganisation": "The-Sent-Horses",
+    "ToolType": "Open Source",
+    "PrimaryUse": "TraceKashef is a modern trace visualization tool for embedded systems, built to decode and analyze RTOS traces (PSF format) in real time. It features a web-based interface powered by WebAssembly and Perspective",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/The-Sent-Horses/traceKashef",
+      "https://github.com/The-Sent-Horses/traceKashef"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "The-Sent-Horses/traceKashef",
+      "url": "https://github.com/The-Sent-Horses/traceKashef",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-05-21T10:18:48Z",
+      "created_at": "2025-05-10T13:08:23Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "unitree_go2w_ros2",
+    "VendorOrganisation": "jj7258",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS2 Humble workspace for the Unitree Go2W (Wheeled) robot. Includes complete 16-motor control drivers, URDF description, and kinematic simulation tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/jj7258/unitree_go2w_ros2",
+      "https://github.com/jj7258/unitree_go2w_ros2"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "jj7258/unitree_go2w_ros2",
+      "url": "https://github.com/jj7258/unitree_go2w_ros2",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-14T22:50:19Z",
+      "created_at": "2025-12-14T22:10:02Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "wikipedia-plagiarism-checker",
+    "VendorOrganisation": "utsavish",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An advanced plagiarism detection system powered by semantic embeddings, TF-IDF, fuzzy matching, and FAISS indexing. It combines static Wikipedia corpora with dynamic, user-generated corpora for robust plagiarism analysis.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/utsavish/wikipedia-plagiarism-checker",
+      "https://github.com/utsavish/wikipedia-plagiarism-checker"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "utsavish/wikipedia-plagiarism-checker",
+      "url": "https://github.com/utsavish/wikipedia-plagiarism-checker",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-09-02T11:57:40Z",
+      "created_at": "2025-09-02T11:57:35Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Word-Embeddings-Repository-for-Turkish",
+    "VendorOrganisation": "Turkish-Word-Embeddings",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Code for \"A Comprehensive Analysis of Static Word Embeddings for Turkish\". Expert Systems with Applications 2024.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/Turkish-Word-Embeddings/Word-Embeddings-Repository-for-Turkish",
+      "https://github.com/Turkish-Word-Embeddings/Word-Embeddings-Repository-for-Turkish"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Turkish-Word-Embeddings/Word-Embeddings-Repository-for-Turkish",
+      "url": "https://github.com/Turkish-Word-Embeddings/Word-Embeddings-Repository-for-Turkish",
+      "stars": 27,
+      "forks": 1,
+      "open_issues": 0,
+      "pushed_at": "2025-02-07T20:37:04Z",
+      "created_at": "2023-02-07T14:38:17Z"
+    },
+    "Scores": {
+      "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "x-clang-tidy",
+    "VendorOrganisation": "slyshykO",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Rust tool that makes it easy to use clang-tidy for static analysis of cross-compiled (embedded) C/C++ projects",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/slyshykO/x-clang-tidy",
+      "https://github.com/slyshykO/x-clang-tidy"
+    ],
+    "LastVerifiedDate": "2025-12-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "slyshykO/x-clang-tidy",
+      "url": "https://github.com/slyshykO/x-clang-tidy",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-12T08:47:04Z",
+      "created_at": "2025-05-28T07:26:54Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  }
+]
