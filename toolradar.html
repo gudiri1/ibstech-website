@@ -1,1990 +1,534 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <title>ToolRadar – V-Modell & KI-Integration | IBSTech</title>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToolRadar – V-Modell & KI (Open Source)</title>
   <style>
-    :root {
-      --bg: #020617;
-      --bg-alt: #020617;
-      --surface: #0f172a;
-      --surface-alt: #020617;
-      --accent: #38bdf8;
-      --accent-soft: rgba(56, 189, 248, 0.12);
-      --text: #e5e7eb;
-      --text-muted: #9ca3af;
-      --border: #1f2937;
-      --radius-lg: 18px;
-      --radius-xl: 22px;
-      --shadow-soft: 0 24px 60px rgba(15, 23, 42, 0.8);
-      --shadow-subtle: 0 18px 45px rgba(15, 23, 42, 0.7);
-      --danger: #f97373;
-      --success: #4ade80;
-      --info: #38bdf8;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-      background: radial-gradient(circle at top, #0b1120 0, #020617 55%, #000 100%);
-      color: var(--text);
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(18px);
-      background: radial-gradient(circle at top, #020617ee 0, #020617f5 60%, #02061700 100%);
-      border-bottom: 1px solid rgba(148, 163, 184, 0.2);
-    }
-
-    .header-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0.85rem 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .brand-logo {
-      width: 32px;
-      height: 32px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 25% 20%, #38bdf8, #0ea5e9 40%, #4f46e5 70%);
-      box-shadow: 0 0 25px rgba(56, 189, 248, 0.7);
-    }
-
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      gap: 0.1rem;
-    }
-
-    .brand-title {
-      font-weight: 650;
-      font-size: 1.05rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .brand-subtitle {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
-
-    .nav {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      font-size: 0.9rem;
-    }
-
-    .nav a {
-      padding: 0.35rem 0.8rem;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      color: var(--text-muted);
-      text-decoration: none;
-      transition: all 0.18s ease-out;
-      white-space: nowrap;
-    }
-
-    .nav a:hover {
-      color: var(--text);
-      border-color: rgba(148, 163, 184, 0.4);
-      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.9), #020617);
-    }
-
-    .nav a.nav-primary {
-      border-color: rgba(56, 189, 248, 0.9);
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(37, 99, 235, 0.3));
-      color: #e0f2fe;
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
-    }
-
-    main {
-      max-width: 1200px;
-      margin: 1.5rem auto 3rem;
-      padding: 0 1.5rem 3rem;
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 1.4fr);
-      gap: 1.75rem;
-    }
-
-    @media (max-width: 960px) {
-      main {
-        grid-template-columns: minmax(0, 1fr);
-      }
-      .nav {
-        display: none;
-      }
-    }
-
-    .content {
-      background: radial-gradient(circle at top left, #020617, #020617);
-      border-radius: 28px;
-      padding: 1.5rem 1.5rem 2.25rem;
-      border: 1px solid rgba(148, 163, 184, 0.25);
-      box-shadow: var(--shadow-soft);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .content::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 0% 0%, rgba(56, 189, 248, 0.18), transparent 55%),
-        radial-gradient(circle at 90% 0%, rgba(37, 99, 235, 0.24), transparent 60%);
-      opacity: 0.8;
-      pointer-events: none;
-      z-index: -1;
-    }
-
-    .content-inner {
-      position: relative;
-      z-index: 1;
-    }
-
-    h1 {
-      font-size: clamp(1.7rem, 2.1vw, 2rem);
-      margin: 0 0 0.75rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #e0f2fe;
-    }
-
-    h2 {
-      font-size: 1.25rem;
-      margin: 1.6rem 0 0.75rem;
-      color: #e5e7eb;
-    }
-
-    h3 {
-      font-size: 1.05rem;
-      margin: 1.2rem 0 0.4rem;
-      color: #d1d5db;
-    }
-
-    h4 {
-      font-size: 0.95rem;
-      margin: 1rem 0 0.35rem;
-      color: #d1d5db;
-    }
-
-    p {
-      margin: 0.4rem 0 0.6rem;
-      line-height: 1.6;
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
-    ul {
-      margin: 0.3rem 0 0.8rem 1.2rem;
-      padding: 0;
-      color: var(--text-muted);
-      font-size: 0.93rem;
-    }
-
-    li {
-      margin: 0.2rem 0;
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.2rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.9), #020617);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--text-muted);
-      margin-bottom: 0.35rem;
-    }
-
-    .pill-dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 30% 30%, #a5f3fc, #38bdf8);
-      box-shadow: 0 0 10px rgba(56, 189, 248, 0.9);
-    }
-
-    .intro-highlight {
-      padding: 0.6rem 0.9rem;
-      border-radius: 14px;
-      background: rgba(15, 23, 42, 0.85);
-      border: 1px solid rgba(148, 163, 184, 0.3);
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-
-    .table-wrapper {
-      margin: 0.8rem 0 1.3rem;
-      padding: 0.75rem;
-      border-radius: 16px;
-      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.96), #020617);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.86rem;
-      min-width: 640px;
-    }
-
-    th,
-    td {
-      padding: 0.5rem 0.65rem;
-      border-bottom: 1px solid rgba(55, 65, 81, 0.8);
-      vertical-align: top;
-      text-align: left;
-    }
-
-    th {
-      font-weight: 600;
-      color: #e5e7eb;
-      white-space: nowrap;
-    }
-
-    thead tr {
-      background: linear-gradient(
-        90deg,
-        rgba(15, 23, 42, 0.95),
-        rgba(15, 23, 42, 0.7)
-      );
-    }
-
-    tbody tr:nth-child(even) {
-      background: rgba(15, 23, 42, 0.6);
-    }
-
-    tbody tr.agent-highlight {
-      background: rgba(34, 197, 94, 0.15);
-      box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.35) inset;
-    }
-
-    tbody tr.agent-new {
-      background: rgba(56, 189, 248, 0.18);
-      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4) inset;
-    }
-
-    code {
-      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
-        Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 0.83rem;
-    }
-
-    pre {
-      margin: 0.8rem 0 1.3rem;
-      padding: 0.9rem 1rem;
-      border-radius: 16px;
-      background: radial-gradient(circle at top left, #020617, #020617);
-      border: 1px solid rgba(15, 23, 42, 1);
-      overflow-x: auto;
-      box-shadow: var(--shadow-subtle);
-      font-size: 0.83rem;
-      line-height: 1.5;
-    }
-
-    .side-panel {
-      position: sticky;
-      top: 4.5rem;
-      align-self: flex-start;
-      background: radial-gradient(circle at top, #020617, #020617);
-      border-radius: 26px;
-      padding: 1.1rem 1.1rem 1.4rem;
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      box-shadow: var(--shadow-soft);
-      display: flex;
-      flex-direction: column;
-      gap: 0.9rem;
-      min-width: 0;
-    }
-
-    .side-panel h2 {
-      font-size: 1rem;
-      margin: 0;
-    }
-
-    .side-panel p {
-      font-size: 0.85rem;
-      margin: 0.15rem 0 0.4rem;
-      color: var(--text-muted);
-    }
-
-    .side-list {
-      list-style: none;
-      padding: 0;
-      margin: 0.2rem 0 0.4rem;
-      font-size: 0.86rem;
-    }
-
-    .side-list li {
-      padding: 0.22rem 0;
-      display: flex;
-      align-items: baseline;
-      gap: 0.4rem;
-      color: var(--text-muted);
-    }
-
-    .side-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 18px;
-      height: 18px;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.4);
-      font-size: 0.7rem;
-      color: var(--text-muted);
-      flex-shrink: 0;
-    }
-
-    .side-chip {
-      display: inline-flex;
-      padding: 0.15rem 0.45rem;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.4);
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-muted);
-      margin-top: 0.1rem;
-    }
-
-    .back-link {
-      font-size: 0.82rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-    }
-
-    .back-link span {
-      font-size: 1rem;
-      line-height: 1;
-    }
-
-    /* Agenten-Panel */
-
-    .agent-panel {
-      margin-top: 1.5rem;
-      padding: 1rem;
-      border-radius: 18px;
-      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.98), #020617);
-      border: 1px solid rgba(148, 163, 184, 0.4);
-      box-shadow: var(--shadow-subtle);
-    }
-
-    .agent-panel-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.6rem;
-      flex-wrap: wrap;
-    }
-
-    .agent-title {
-      font-size: 0.98rem;
-      font-weight: 600;
-      color: #e5e7eb;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .agent-status-pill {
-      font-size: 0.72rem;
-      padding: 0.15rem 0.5rem;
-      border-radius: 999px;
-      border: 1px solid rgba(56, 189, 248, 0.6);
-      color: #bae6fd;
-      background: rgba(56, 189, 248, 0.12);
-      text-transform: uppercase;
-      letter-spacing: 0.11em;
-    }
-
-    .agent-controls {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin: 0.4rem 0 0.6rem;
-    }
-
-    .agent-controls button {
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.55);
-      background: radial-gradient(circle at top, rgba(15, 23, 42, 1), #020617);
-      color: var(--text);
-      font-size: 0.8rem;
-      padding: 0.35rem 0.8rem;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      transition: all 0.18s ease-out;
-    }
-
-    .agent-controls button:hover {
-      border-color: rgba(56, 189, 248, 0.9);
-      box-shadow: 0 0 16px rgba(56, 189, 248, 0.4);
-      transform: translateY(-1px);
-    }
-
-    .agent-controls button span {
-      font-size: 0.95rem;
-      line-height: 1;
-    }
-
-    .agent-meta {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-bottom: 0.5rem;
-    }
-
-    .agent-log {
-      border-radius: 12px;
-      border: 1px solid rgba(31, 41, 55, 0.9);
-      background: rgba(15, 23, 42, 0.9);
-      max-height: 260px;
-      overflow-y: auto;
-      padding: 0.5rem 0.65rem;
-      font-size: 0.8rem;
-    }
-
-    .agent-log-entry {
-      padding: 0.25rem 0.3rem;
-      border-bottom: 1px solid rgba(31, 41, 55, 0.95);
-      display: flex;
-      gap: 0.4rem;
-      align-items: flex-start;
-    }
-
-    .agent-log-entry:last-child {
-      border-bottom: none;
-    }
-
-    .agent-log-tag {
-      font-size: 0.7rem;
-      padding: 0.05rem 0.4rem;
-      border-radius: 999px;
-      text-transform: uppercase;
-      letter-spacing: 0.11em;
-      flex-shrink: 0;
-    }
-
-    .agent-log-tag.info {
-      border: 1px solid rgba(56, 189, 248, 0.8);
-      color: #bae6fd;
-      background: rgba(56, 189, 248, 0.1);
-    }
-
-    .agent-log-tag.success {
-      border: 1px solid rgba(34, 197, 94, 0.8);
-      color: #bbf7d0;
-      background: rgba(34, 197, 94, 0.12);
-    }
-
-    .agent-log-tag.warning {
-      border: 1px solid rgba(234, 179, 8, 0.8);
-      color: #fef9c3;
-      background: rgba(234, 179, 8, 0.12);
-    }
-
-    .agent-log-tag.error {
-      border: 1px solid rgba(248, 113, 113, 0.8);
-      color: #fee2e2;
-      background: rgba(248, 113, 113, 0.12);
-    }
-
-    .agent-log-text {
-      color: var(--text-muted);
-      line-height: 1.4;
-    }
-
-    .agent-log-time {
-      opacity: 0.7;
-      font-size: 0.72rem;
-      margin-left: 0.2rem;
-    }
-
-    .agent-badge-inline {
-      font-size: 0.72rem;
-      padding: 0.05rem 0.4rem;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.5);
-      margin-left: 0.35rem;
-    }
-
-    .agent-inline-hint {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      margin-top: 0.25rem;
-    }
-
-    .agent-small {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
-
-    .agent-form {
-      margin-top: 0.6rem;
-      padding-top: 0.5rem;
-      border-top: 1px dashed rgba(55, 65, 81, 0.9);
-    }
-
-    .agent-form label {
-      display: block;
-      font-size: 0.8rem;
-      margin-bottom: 0.1rem;
-      color: var(--text-muted);
-    }
-
-    .agent-form input {
-      width: 100%;
-      padding: 0.35rem 0.55rem;
-      border-radius: 999px;
-      border: 1px solid rgba(55, 65, 81, 0.9);
-      background: #020617;
-      color: var(--text);
-      font-size: 0.8rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .agent-form-row {
-      display: flex;
-      gap: 0.4rem;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .agent-form-row input {
-      flex: 1;
-      min-width: 120px;
-      margin-bottom: 0;
-    }
-
-    .agent-form button {
-      margin-top: 0.35rem;
-    }
-
-    @media (max-width: 960px) {
-      .side-panel {
-        position: static;
-        order: -1;
-      }
-    }
+    :root{
+      --bg:#0b1220;
+      --panel:#0f1a33;
+      --panel2:#0c1630;
+      --line:#223055;
+      --text:#e7eefc;
+      --muted:#a7b7dd;
+      --ok:#7ee787;
+      --err:#ff7b72;
+      --btn:#2b63ff;
+      --btn2:#1b2a52;
+      --pill:#2a3e78;
+    }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background:var(--bg); color:var(--text); }
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:16px 20px; background:var(--panel); border-bottom:1px solid var(--line);
+      position:sticky; top:0; z-index:10;
+    }
+    a{ color:#9cc2ff; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .wrap{ max-width:1200px; margin:0 auto; padding:20px; }
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:16px;
+      margin:14px 0;
+    }
+    h1,h2,h3{ margin:0 0 10px 0; }
+    .row{ display:flex; gap:14px; flex-wrap:wrap; }
+    .row > *{ flex:1; min-width:260px; }
+    .muted{ color:var(--muted); }
+    .small{ font-size:12px; }
+    .status{ margin-top:8px; }
+    .ok{ color:var(--ok); }
+    .err{ color:var(--err); }
+    .controls{
+      display:flex; gap:10px; flex-wrap:wrap;
+      align-items:flex-end;
+    }
+    input, select{
+      width:100%;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid var(--pill);
+      background:var(--bg);
+      color:var(--text);
+      outline:none;
+    }
+    label{ display:block; margin:0 0 6px 0; }
+    button{
+      background:var(--btn);
+      border:none;
+      color:white;
+      padding:10px 12px;
+      border-radius:10px;
+      cursor:pointer;
+      font-weight:700;
+    }
+    button.secondary{
+      background:var(--btn2);
+      border:1px solid var(--pill);
+    }
+    .pill{
+      display:inline-block;
+      padding:2px 8px;
+      border-radius:999px;
+      border:1px solid var(--pill);
+      margin:2px 6px 0 0;
+      font-size:12px;
+      color:#cfe0ff;
+      white-space:nowrap;
+    }
+    table{ width:100%; border-collapse:collapse; }
+    th, td{ border-bottom:1px solid var(--line); padding:10px; vertical-align:top; text-align:left; }
+    th{ color:#bcd3ff; font-size:13px; position:sticky; top:62px; background:var(--panel); }
+    .grid2{ display:grid; grid-template-columns: 1.2fr 1fr; gap:14px; }
+    @media (max-width: 980px){ .grid2{ grid-template-columns: 1fr; } th{ top:62px; } }
+    .canvas-wrap{
+      background:var(--panel2);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px;
+    }
+    canvas{ width:100%; height:auto; display:block; }
+    .kv{ display:grid; grid-template-columns: 160px 1fr; gap:8px 10px; }
+    .kv div{ padding:2px 0; }
+    .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-inner">
-      <div class="brand">
-        <div class="brand-logo"></div>
-        <div class="brand-text">
-          <div class="brand-title">IBSTech Portal</div>
-          <div class="brand-subtitle">Embedded · KI · Robotik · Digital Twins</div>
-        </div>
-      </div>
-      <nav class="nav">
-        <a href="index.html" class="back-link">
-          <span>←</span> Zurück zum Portal
-        </a>
-        <a href="#vmodell">V-Modell</a>
-        <a href="#schema">JSON-Schema</a>
-        <a href="#scoring">Scoring</a>
-        <a href="#pipeline">Auto-Update</a>
-        <a href="#seed">Seed-Liste</a>
-        <a href="#agents" class="nav-primary">Agenten</a>
-      </nav>
+    <div>
+      <div style="font-weight:800;">ToolRadar</div>
+      <div class="muted small">Open Source · V-Modell-Mapping · Heuristische Scores (0–5) · RadarChart</div>
+    </div>
+    <div class="small">
+      <a href="./index.html">↩ Zur Hauptseite</a>
+      <span class="muted"> · </span>
+      <a id="runLink" href="#" target="_blank" rel="noopener">Scan manuell starten</a>
     </div>
   </header>
 
-  <main>
-    <article class="content">
-      <div class="content-inner">
-        <div class="pill">
-          <div class="pill-dot"></div>
-          ToolRadar · V-Modell · KI-Integration
+  <div class="wrap">
+    <div class="card">
+      <div class="row">
+        <div>
+          <div class="muted small">Datenquelle</div>
+          <div class="mono small">/data/toolradar_tools.json</div>
         </div>
-        <h1 id="top">ToolRadar: V-Modell-Taxonomie und KI-Integration</h1>
-        <p class="intro-highlight">
-          Dieses ToolRadar beschreibt, wie Tools entlang des V-Modells für Embedded-,
-          MedTech- und Robotik-Systeme klassifiziert, mit KI-Funktionen bewertet
-          und über eine (agentenbasierte) Auto-Update-Pipeline aktuell gehalten werden.
-        </p>
+        <div class="status small" id="status">Bereit.</div>
+      </div>
+      <div class="muted small" id="meta" style="margin-top:10px;"></div>
+    </div>
 
-        <!-- 1. V-Modell-Taxonomie -->
-        <h2 id="vmodell">1. V-Modell-Taxonomie und KI-Unterstützung</h2>
-        <p>
-          Grundlage ist eine strukturierte Taxonomie der V-Modell-Phasen plus
-          Querschnittsaktivitäten. Für jede Phase werden typische Tool-Kategorien
-          und konkrete KI-Anwendungsfälle beschrieben.
-        </p>
-
-        <h3>V-Modell-Phasen</h3>
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>V-Modell-Phase</th>
-                <th>Typische Tool-Kategorien</th>
-                <th>KI-Unterstützung (Anwendungsfälle)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>1. Stakeholder Needs / System Requirements</strong></td>
-                <td>
-                  Requirements Engineering (RE),<br />
-                  ALM-Tools,<br />
-                  MBSE-Tools
-                </td>
-                <td>
-                  <strong>Analyse &amp; Qualität:</strong>
-                  KI-gestützte Analyse von Anforderungen (Vollständigkeit,
-                  Konsistenz, Eindeutigkeit), automatische Generierung von
-                  Akzeptanzkriterien.<br />
-                  <strong>Traceability:</strong>
-                  Intelligente Verknüpfung von Anforderungen zu Testfällen
-                  und Code-Artefakten.
-                </td>
-              </tr>
-              <tr>
-                <td><strong>2. Architektur/Design</strong></td>
-                <td>
-                  MBSE-Tools (z.&nbsp;B. SysML),<br />
-                  Architektur-Modellierung,<br />
-                  Simulationssoftware,<br />
-                  HiL-Umgebungen
-                </td>
-                <td>
-                  <strong>Entwurfsoptimierung:</strong>
-                  KI-gestützte Bewertung von Architekturvarianten
-                  (Performance, Energieverbrauch), automatische Generierung
-                  von Schnittstellendefinitionen.<br />
-                  <strong>Simulation:</strong>
-                  Beschleunigung von Simulationen, Anomalieerkennung
-                  in Simulationsergebnissen.
-                </td>
-              </tr>
-              <tr>
-                <td><strong>3. Implementierung</strong></td>
-                <td>
-                  IDEs, Compiler, Debugger,<br />
-                  statische/dynamische Code-Analyse,<br />
-                  Versionskontrolle (SCM)
-                </td>
-                <td>
-                  <strong>Code-Generierung:</strong>
-                  KI-Copilots für Code-Vervollständigung,
-                  Funktionsgenerierung und Refactoring.<br />
-                  <strong>Code Review:</strong>
-                  Automatisierte Erkennung von Bugs, Sicherheitslücken
-                  und Code Smells.
-                </td>
-              </tr>
-              <tr>
-                <td><strong>4. Integration &amp; Test (Komponenten)</strong></td>
-                <td>
-                  Unit-Test-Frameworks,<br />
-                  CI/CD-Pipelines,<br />
-                  Test-Management-Tools
-                </td>
-                <td>
-                  <strong>Testgenerierung:</strong>
-                  Automatische Erstellung von Unit-Tests und Testdaten
-                  auf Basis von Code-Struktur oder Anforderungen.<br />
-                  <strong>Fehlerdiagnose:</strong>
-                  Intelligente Analyse von Build-Logs und Test-Reports
-                  zur schnelleren Ursachenfindung.
-                </td>
-              </tr>
-              <tr>
-                <td><strong>5. System Integration &amp; Validierung</strong></td>
-                <td>
-                  System-Test-Plattformen,<br />
-                  HiL/SiL-Systeme,<br />
-                  Testautomatisierung,<br />
-                  QA-Tools
-                </td>
-                <td>
-                  <strong>Testfall-Priorisierung:</strong>
-                  KI-basierte Auswahl der wichtigsten Testfälle basierend auf
-                  Code-Änderungen und Risikobewertung.<br />
-                  <strong>Validierung:</strong>
-                  Verarbeitung großer Mengen von Sensor- und Log-Daten
-                  zur automatischen Verifikationsprüfung.
-                </td>
-              </tr>
-              <tr>
-                <td><strong>6. Release / Operations</strong></td>
-                <td>
-                  Monitoring &amp; Observability (APM, Logging),<br />
-                  Incident-Management,<br />
-                  Deployment-Tools (z.&nbsp;B. Docker, Kubernetes)
-                </td>
-                <td>
-                  <strong>Anomalieerkennung:</strong>
-                  Echtzeit-Erkennung von ungewöhnlichem Systemverhalten
-                  (Performance-Einbrüche, Sicherheitsvorfälle) in Log-
-                  und Metrikdaten.<br />
-                  <strong>Predictive Maintenance:</strong>
-                  Vorhersage von Ausfällen auf Basis von Betriebsdaten.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>Querschnittsaktivitäten</h3>
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Querschnittsaktivität</th>
-                <th>Typische Tool-Kategorien</th>
-                <th>KI-Unterstützung (Anwendungsfälle)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Safety &amp; Security</strong></td>
-                <td>
-                  FMEA/FTA-Tools,<br />
-                  SIEM-Systeme,<br />
-                  Vulnerability Scanner,<br />
-                  Threat-Modeling-Tools
-                </td>
-                <td>
-                  <strong>Threat Modeling:</strong>
-                  Automatisierte Identifizierung potenzieller Angriffsvektoren.<br />
-                  <strong>Compliance-Check:</strong>
-                  KI-gestützte Überprüfung von Artefakten gegen Normen
-                  (z.&nbsp;B. ISO&nbsp;26262, IEC&nbsp;62304).
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Data/AI Lifecycle</strong></td>
-                <td>
-                  MLOps-Plattformen,<br />
-                  Data Versioning Tools,<br />
-                  Feature Stores,<br />
-                  Experiment Tracking
-                </td>
-                <td>
-                  <strong>Modell-Validierung:</strong>
-                  Automatische Überwachung der Modell-Performance
-                  und Drift-Erkennung im Betrieb.<br />
-                  <strong>Daten-Governance:</strong>
-                  Sicherstellung der Datenqualität und Einhaltung
-                  von Datenschutzbestimmungen.
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Documentation &amp; Audit</strong></td>
-                <td>
-                  Dokumentations-Generatoren (z.&nbsp;B. Sphinx, Doxygen),<br />
-                  Audit-Management-Tools,<br />
-                  Wissensmanagement-Systeme
-                </td>
-                <td>
-                  <strong>Dokumentations-Generierung:</strong>
-                  Automatische Erstellung von technischen Handbüchern
-                  und Audit-Trails aus Code und ALM-Daten.<br />
-                  <strong>Wissens-Retrieval:</strong>
-                  Intelligente Suche und Q&amp;A auf Basis der Projektdokumentation.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- 2. Tool-Datenmodell -->
-        <h2 id="schema">2. Tool-Datenmodell (JSON-Schema)</h2>
-        <p>
-          Das JSON-Schema definiert die Struktur eines Tool-Eintrags. Es stellt sicher,
-          dass V-Modell-Zuordnung, KI-Fokus und Auditierbarkeit konsistent erfasst
-          werden.
-        </p>
-        <pre><code>{
-  "type": "object",
-  "properties": {
-    "ToolName": {
-      "type": "string",
-      "description": "Der offizielle Name des Tools."
-    },
-    "VendorOrganisation": {
-      "type": "string",
-      "description": "Der Hersteller oder die Organisation, die das Tool pflegt."
-    },
-    "ToolType": {
-      "type": "string",
-      "enum": ["Commercial", "Open Source", "Managed Service"],
-      "description": "Klassifizierung des Lizenzmodells."
-    },
-    "PrimaryUse": {
-      "type": "string",
-      "description": "Die Hauptfunktion des Tools (z.B. Requirements Management, Code Analysis)."
-    },
-    "VModelPhases": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [
-          "Stakeholder Needs / System Requirements",
-          "Architektur/Design",
-          "Implementierung",
-          "Integration & Test (Komponenten)",
-          "System Integration & Validierung",
-          "Release / Operations",
-          "Safety & Security",
-          "Data/AI Lifecycle",
-          "Documentation & Audit"
-        ]
-      },
-      "description": "Die V-Modell-Phasen, in denen das Tool primär eingesetzt wird."
-    },
-    "AIInvolvement": {
-      "type": "string",
-      "enum": ["none", "assisted", "core"],
-      "description": "Grad der KI-Integration: 'none' (keine), 'assisted' (KI-Funktionen als Helfer, z.B. Copilot), 'core' (KI ist zentraler Bestandteil der Hauptfunktion)."
-    },
-    "KeyFeatures": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "Liste der wichtigsten Funktionen des Tools."
-    },
-    "Integration": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "Wichtige Integrationspunkte (z.B. GitHub Actions, Jira, ROS2, Docker)."
-    },
-    "Deployment": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": ["Cloud", "On-Prem", "Edge"]
-      },
-      "description": "Verfügbare Bereitstellungsmodelle."
-    },
-    "Licensing": {
-      "type": "string",
-      "description": "Details zur Lizenzierung (z.B. GPLv3, Subscription-Tier)."
-    },
-    "Maturity": {
-      "type": "string",
-      "description": "Reifegrad-Einschätzung (z.B. TRL-Level, 'Established', 'Emerging')."
-    },
-    "EvidenceLinks": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "url"
-      },
-      "minItems": 2,
-      "description": "Mindestens zwei belastbare Quellen (URLs) zur Validierung der Tool-Informationen."
-    },
-    "LastVerifiedDate": {
-      "type": "string",
-      "format": "date",
-      "description": "Datum der letzten manuellen oder automatischen Überprüfung der Tool-Daten."
-    },
-    "UpdateSignal": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": ["RSS", "API", "ReleaseNotes", "GitHubReleases", "VendorBlog"]
-      },
-      "description": "Quellen, die für den automatischen Update-Mechanismus genutzt werden können."
-    },
-    "RiskFlags": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "Wichtige Risikohinweise (z.B. data residency, medical compliance relevance, Vendor Lock-in)."
-    },
-    "Notes": {
-      "type": "string",
-      "description": "Zusätzliche Anmerkungen oder Kontext."
-    }
-  },
-  "required": [
-    "ToolName",
-    "VendorOrganisation",
-    "ToolType",
-    "PrimaryUse",
-    "VModelPhases",
-    "AIInvolvement",
-    "EvidenceLinks",
-    "LastVerifiedDate"
-  ]
-}</code></pre>
-
-        <!-- 3. Scoring-Modell -->
-        <h2 id="scoring">3. Scoring-Modell und Radar-Visualisierung</h2>
-
-        <h3>3.1 Scoring-Modell (0–5)</h3>
-        <p>
-          Jedes Tool wird entlang von sieben Dimensionen mit 0–5 Punkten bewertet
-          (0 = nicht vorhanden, 5 = exzellent / Branchenstandard).
-        </p>
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Kriterium</th>
-                <th>Beschreibung</th>
-                <th>Skala (0–5)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Reifegrad (Maturity)</strong></td>
-                <td>Stabilität, Dokumentation, Verbreitung und Langzeitunterstützung.</td>
-                <td>0: Alpha/Beta · 5: Industriestandard, langjährig etabliert.</td>
-              </tr>
-              <tr>
-                <td><strong>Integrationsfähigkeit (Integration)</strong></td>
-                <td>Einfachheit und Tiefe der Anbindung an andere Tools (ALM, CI/CD, MBSE).</td>
-                <td>0: Keine API · 5: Breites Ökosystem, standardisierte, bidirektionale APIs.</td>
-              </tr>
-              <tr>
-                <td><strong>Echtzeit/Embedded-Tauglichkeit</strong></td>
-                <td>Eignung für Embedded-Plattformen, Ressourcen-Footprint, RTOS-Support.</td>
-                <td>0: Nur Cloud/Desktop · 5: Speziell für Embedded/RTOS, geringer Footprint.</td>
-              </tr>
-              <tr>
-                <td><strong>Audit/Traceability</strong></td>
-                <td>Fähigkeit, Audit Trails und Normen-Nachweise abzubilden.</td>
-                <td>0: Keine Protokollierung · 5: Native Normen-Unterstützung, automatische Traceability.</td>
-              </tr>
-              <tr>
-                <td><strong>KI-Nutzen (AI Value)</strong></td>
-                <td>Praktischer Mehrwert der KI-Funktionen (Effizienz, Qualität, Innovation).</td>
-                <td>0: Keine KI · 5: Transformativ, klarer Wettbewerbsvorteil.</td>
-              </tr>
-              <tr>
-                <td><strong>Total Cost of Ownership (TCO)</strong></td>
-                <td>Lizenz, Wartung, Betrieb, Trainingsaufwand – über die Lebensdauer.</td>
-                <td>0: Sehr hohe Kosten/Komplexität · 5: Geringe Kosten, einfache Wartung.</td>
-              </tr>
-              <tr>
-                <td><strong>Community/Support</strong></td>
-                <td>Hersteller-Support und Aktivität der Community.</td>
-                <td>0: Kein Support · 5: Große Community, exzellenter Support.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>3.2 Radar-Klassifikation (Adopt/Trial/Assess/Hold)</h3>
-        <p>
-          Die Visualisierung kann als Blasenplot oder Radar-Diagramm aufgebaut werden:
-          z.&nbsp;B. Reifegrad vs. KI-Nutzen, Blasengröße = TCO oder Verbreitung.
-        </p>
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Klassifikation</th>
-                <th>Bedeutung</th>
-                <th>Empfehlung</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Adopt</strong></td>
-                <td>Etablierte, bewährte Tools mit hohem Reifegrad und Nutzen.</td>
-                <td>Standardisieren und flächendeckend einsetzen.</td>
-              </tr>
-              <tr>
-                <td><strong>Trial</strong></td>
-                <td>Tools mit hohem Potenzial, aber mittlerem Reifegrad oder höherer Komplexität.</td>
-                <td>Pilotprojekte starten, Integration testen.</td>
-              </tr>
-              <tr>
-                <td><strong>Assess</strong></td>
-                <td>Neue oder spezialisierte Tools mit unklarer Relevanz.</td>
-                <td>Markt beobachten, Machbarkeitsstudien durchführen.</td>
-              </tr>
-              <tr>
-                <td><strong>Hold</strong></td>
-                <td>Veraltete oder riskante Tools mit geringem Mehrwert.</td>
-                <td>Nicht einsetzen, Ablösung planen.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p>
-          Zusätzlich können Tools nach Domänen getaggt werden
-          (MedTech, Automotive, Industrial, Robotics), um Filter im Dashboard zu ermöglichen.
-        </p>
-
-        <!-- 4. Pipeline & Auto-Update -->
-        <h2 id="pipeline">4. Recherche-Pipeline und Auto-Update-System</h2>
-
-        <h3>4.1 Validierungsregeln ("No-Guessing"-Checkliste)</h3>
-        <ul>
-          <li><strong>Quellenpflicht:</strong> Jede Information benötigt mindestens eine Quelle in <code>EvidenceLinks</code>.</li>
-          <li><strong>V-Modell-Begründung:</strong> Zuordnung zur Phase im Feld <code>Notes</code> begründen.</li>
-          <li><strong>Duplikatsprüfung:</strong> Synonyme, Rebrands und ähnliche Produkte prüfen.</li>
-          <li><strong>Konfliktmarkierung:</strong> Widersprüche in Quellen via <code>RiskFlags</code> kennzeichnen.</li>
-          <li><strong>Aktualitäts-Check:</strong> <code>LastVerifiedDate</code> regelmäßig aktualisieren.</li>
-        </ul>
-
-        <h3>4.2 Auto-Update-Architektur</h3>
-        <p>
-          Zwei Hauptkomponenten: ein täglicher <strong>Signal Ingestor</strong> und
-          ein wöchentlicher <strong>Re-Validator</strong>. In dieser Demo-Version
-          werden sie von Agenten im Browser simuliert.
-        </p>
-
-        <h4>Signal Ingestor (täglich)</h4>
-        <pre><code>FUNCTION SignalIngestor():
-  FOR EACH Tool IN ToolRadar_Database:
-    FOR EACH SignalSource IN Tool.UpdateSignal:
-      IF SignalSource IS "RSS" OR "VendorBlog":
-        new_entries = FetchAndParseRSS(SignalSource.URL)
-      ELSE IF SignalSource IS "GitHubReleases":
-        new_entries = FetchGitHubReleases(Tool.VendorOrganisation, Tool.ToolName)
-      ELSE IF SignalSource IS "API":
-        new_entries = QueryVendorAPI(Tool.ToolName)
-
-      FOR EACH Entry IN new_entries:
-        IF Entry IS "New Feature" OR "Major Bugfix" OR "CVE":
-          ChangeLog.AddEntry(Tool.ToolName, Entry.Type, Entry.Description, Entry.Source, TODAY())
-          Tool.LastVerifiedDate = TODAY()
-          IF Entry IS "CVE":
-            Tool.RiskFlags.Add("Security Vulnerability")
-
-          // Benachrichtigung für manuelle Prüfung auslösen
-          ManualReviewQueue.Add(Tool.ToolName, "Signal-Update")
-        END IF
-      END FOR
-    END FOR
-  END FOR</code></pre>
-
-        <h4>Re-Validator (wöchentlich)</h4>
-        <pre><code>FUNCTION WeeklyReValidator():
-  TopTools = FilterTools(ToolRadar_Database, Score_Aggregate > 4.0 OR Classification = "Adopt")
-
-  FOR EACH Tool IN TopTools:
-    // 1. Source Integrity Check: Sind alle EvidenceLinks noch erreichbar?
-    IF NOT AllLinksValid(Tool.EvidenceLinks):
-      Tool.RiskFlags.Add("Broken Evidence Link")
-      ManualReviewQueue.Add(Tool.ToolName, "Broken Link")
-      CONTINUE
-
-    // 2. Automated Feature Check (z.B. Web-Scraping der Feature-Seite)
-    // feature_match_score = AutomatedFeatureMatch(Tool.KeyFeatures, Tool.VendorURL)
-
-    // 3. Score Re-Evaluation
-    // IF ChangeLog.HasMajorChange(Tool) AND Tool.LastVerifiedDate &lt; 7_DAYS_AGO:
-    //   Tool.Score_Maturity = RecalculateScore(Tool.Score_Maturity, ChangeLog)
-
-    Tool.LastVerifiedDate = TODAY()
-  END FOR</code></pre>
-
-        <p><strong>Outputs:</strong> ToolRadar-Datenbank, ChangeLog, ManualReviewQueue, Signals-Feed.</p>
-
-        <!-- 5. Seed-Liste -->
-        <h2 id="seed">5. Seed-Liste (Startbestand)</h2>
-        <p>
-          Startbestand von ca. 40 Tools mit Fokus auf KI-Integration entlang der gesamten
-          V-Modell-Kette (Embedded Systems, MedTech, Robotik).
-        </p>
-
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>ToolName</th>
-                <th>Vendor/Organisation</th>
-                <th>ToolType</th>
-                <th>Primary Use</th>
-                <th>VModelPhases (Kurz)</th>
-                <th>AIInvolvement</th>
-              </tr>
-            </thead>
-            <tbody id="toolradar-seed-body">
-              <tr data-toolname="Jama Connect">
-                <td><strong>Jama Connect</strong></td>
-                <td>Jama Software</td>
-                <td>Commercial</td>
-                <td>Requirements Management</td>
-                <td>Requirements, Documentation &amp; Audit</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="Polarion ALM">
-                <td><strong>Polarion ALM</strong></td>
-                <td>Siemens</td>
-                <td>Commercial</td>
-                <td>Application Lifecycle Management</td>
-                <td>Requirements, Integration &amp; Test, Documentation</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="CATIA Magic (Cameo)">
-                <td><strong>CATIA Magic (Cameo)</strong></td>
-                <td>Dassault Systèmes</td>
-                <td>Commercial</td>
-                <td>MBSE</td>
-                <td>Architektur/Design, Requirements</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="Rhapsody">
-                <td><strong>Rhapsody</strong></td>
-                <td>IBM</td>
-                <td>Commercial</td>
-                <td>MBSE, Systems Design</td>
-                <td>Architektur/Design, Implementierung</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="Ansys SCADE Suite">
-                <td><strong>Ansys SCADE Suite</strong></td>
-                <td>Ansys</td>
-                <td>Commercial</td>
-                <td>Embedded Software Design, Codegen</td>
-                <td>Architektur/Design, Implementierung, Safety &amp; Security</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="GitHub Copilot">
-                <td><strong>GitHub Copilot</strong></td>
-                <td>GitHub / Microsoft</td>
-                <td>Commercial</td>
-                <td>Code Generation, Code Review</td>
-                <td>Implementierung</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="Parasoft C/C++test">
-                <td><strong>Parasoft C/C++test</strong></td>
-                <td>Parasoft</td>
-                <td>Commercial</td>
-                <td>Static/Dynamic Code Analysis, Unit Tests</td>
-                <td>Implementierung, Integration &amp; Test, Safety &amp; Security</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="Axivion Suite">
-                <td><strong>Axivion Suite</strong></td>
-                <td>Axivion</td>
-                <td>Commercial</td>
-                <td>Static Code Analysis, Arch-Checks</td>
-                <td>Implementierung, Safety &amp; Security</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="ETAS Embedded AI Coder">
-                <td><strong>ETAS Embedded AI Coder</strong></td>
-                <td>ETAS (Bosch)</td>
-                <td>Commercial</td>
-                <td>AI Model → C-Code</td>
-                <td>Implementierung, Data/AI Lifecycle</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="NVIDIA Isaac Sim">
-                <td><strong>NVIDIA Isaac Sim</strong></td>
-                <td>NVIDIA</td>
-                <td>Commercial</td>
-                <td>Robotics Simulation, Synthetic Data</td>
-                <td>System Integration &amp; Validierung, Data/AI Lifecycle</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="Keysight Eggplant">
-                <td><strong>Keysight Eggplant</strong></td>
-                <td>Keysight</td>
-                <td>Commercial</td>
-                <td>AI-powered Test Automation</td>
-                <td>Integration &amp; Test, System Integration &amp; Validierung</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="Duality AI">
-                <td><strong>Duality AI</strong></td>
-                <td>Duality AI</td>
-                <td>Commercial</td>
-                <td>Digital Twin Simulation</td>
-                <td>Architektur/Design, System Integration &amp; Validierung</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="AWS SageMaker">
-                <td><strong>AWS SageMaker</strong></td>
-                <td>AWS</td>
-                <td>Commercial</td>
-                <td>MLOps, Deployment</td>
-                <td>Data/AI Lifecycle, Release / Operations</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="Google Vertex AI">
-                <td><strong>Google Vertex AI</strong></td>
-                <td>Google Cloud</td>
-                <td>Commercial</td>
-                <td>AI Platform, MLOps</td>
-                <td>Data/AI Lifecycle, Release / Operations</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="MLflow">
-                <td><strong>MLflow</strong></td>
-                <td>Databricks</td>
-                <td>Open Source</td>
-                <td>Experiment Tracking, MLOps</td>
-                <td>Data/AI Lifecycle, Integration &amp; Test</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="Fiddler AI">
-                <td><strong>Fiddler AI</strong></td>
-                <td>Fiddler AI</td>
-                <td>Commercial</td>
-                <td>AI Observability &amp; Monitoring</td>
-                <td>Data/AI Lifecycle, Release / Operations</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="Harness">
-                <td><strong>Harness</strong></td>
-                <td>Harness</td>
-                <td>Commercial</td>
-                <td>CI/CD, DevOps</td>
-                <td>Integration &amp; Test, Release / Operations</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="Jenkins">
-                <td><strong>Jenkins</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>CI/CD Automation</td>
-                <td>Integration &amp; Test, Release / Operations</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Doxygen">
-                <td><strong>Doxygen</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>Doc-Generation</td>
-                <td>Documentation &amp; Audit, Implementierung</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Sphinx">
-                <td><strong>Sphinx</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>Doc-Generation</td>
-                <td>Documentation &amp; Audit</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Jira">
-                <td><strong>Jira</strong></td>
-                <td>Atlassian</td>
-                <td>Commercial</td>
-                <td>Project Management, ALM</td>
-                <td>Requirements, Integration &amp; Test</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="Confluence">
-                <td><strong>Confluence</strong></td>
-                <td>Atlassian</td>
-                <td>Commercial</td>
-                <td>Knowledge Management</td>
-                <td>Documentation &amp; Audit</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="OpenCV">
-                <td><strong>OpenCV</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>Computer Vision Library</td>
-                <td>Data/AI Lifecycle, Implementierung</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="TensorFlow Lite">
-                <td><strong>TensorFlow Lite</strong></td>
-                <td>Google</td>
-                <td>Open Source</td>
-                <td>Edge AI Deployment</td>
-                <td>Data/AI Lifecycle, Implementierung, Edge</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="PyTorch Mobile">
-                <td><strong>PyTorch Mobile</strong></td>
-                <td>Meta</td>
-                <td>Open Source</td>
-                <td>Mobile/Edge AI</td>
-                <td>Data/AI Lifecycle, Implementierung, Edge</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="QEMU">
-                <td><strong>QEMU</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>System Emulation</td>
-                <td>Integration &amp; Test, System Integration &amp; Validierung</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Valgrind">
-                <td><strong>Valgrind</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>Memory Debugging, Profiling</td>
-                <td>Implementierung, Integration &amp; Test</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Docker">
-                <td><strong>Docker</strong></td>
-                <td>Docker</td>
-                <td>Commercial / OSS</td>
-                <td>Containerization, Deployment</td>
-                <td>Integration &amp; Test, Release / Operations</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Kubernetes">
-                <td><strong>Kubernetes</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>Container Orchestration</td>
-                <td>Release / Operations</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Prometheus">
-                <td><strong>Prometheus</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>Monitoring, Alerting</td>
-                <td>Release / Operations</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Grafana">
-                <td><strong>Grafana</strong></td>
-                <td>Grafana Labs</td>
-                <td>Commercial / OSS</td>
-                <td>Visualization, Dashboards</td>
-                <td>Release / Operations</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Snyk">
-                <td><strong>Snyk</strong></td>
-                <td>Snyk</td>
-                <td>Commercial</td>
-                <td>Security Scanning</td>
-                <td>Safety &amp; Security, Implementierung</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="Coverity">
-                <td><strong>Coverity</strong></td>
-                <td>Synopsys</td>
-                <td>Commercial</td>
-                <td>SAST</td>
-                <td>Safety &amp; Security, Implementierung</td>
-                <td>assisted</td>
-              </tr>
-              <tr data-toolname="FMEA-Pro (APIS IQ)">
-                <td><strong>FMEA-Pro (APIS IQ)</strong></td>
-                <td>APIS</td>
-                <td>Commercial</td>
-                <td>FMEA/FTA Analysis</td>
-                <td>Safety &amp; Security, Architektur/Design</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="ROS 2">
-                <td><strong>ROS 2</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>Robotics Middleware</td>
-                <td>Implementierung, Integration &amp; Test</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Gazebo (Ignition)">
-                <td><strong>Gazebo (Ignition)</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>Robotics Simulation</td>
-                <td>Architektur/Design, System Integration &amp; Validierung</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="ClearML">
-                <td><strong>ClearML</strong></td>
-                <td>ClearML</td>
-                <td>Commercial / OSS</td>
-                <td>MLOps, Experiment Tracking</td>
-                <td>Data/AI Lifecycle, Integration &amp; Test</td>
-                <td>core</td>
-              </tr>
-              <tr data-toolname="DVC">
-                <td><strong>DVC</strong></td>
-                <td>Iterative</td>
-                <td>Open Source</td>
-                <td>Data Versioning</td>
-                <td>Data/AI Lifecycle</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Modelica / Dymola">
-                <td><strong>Modelica / Dymola</strong></td>
-                <td>Dassault Systèmes</td>
-                <td>Commercial</td>
-                <td>Multi-Domain Modeling &amp; Simulation</td>
-                <td>Architektur/Design, System Integration &amp; Validierung</td>
-                <td>none</td>
-              </tr>
-              <tr data-toolname="Qdrant">
-                <td><strong>Qdrant</strong></td>
-                <td>Open Source</td>
-                <td>Open Source</td>
-                <td>Vector Database</td>
-                <td>Data/AI Lifecycle, Release / Operations</td>
-                <td>core</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- 6. Dashboard & LMS -->
-        <h2 id="dashboard">6. Dashboard-Konzept und LMS-Integration</h2>
-
-        <h3>6.1 Beispiel-Dashboard-Konzept</h3>
-        <p>
-          Das Dashboard kann als zentrale Einstiegsseite dienen, mit Executive Summary,
-          V-Modell-Matrix, Tool-Detail-Ansicht, Trends &amp; Signals sowie Export/API.
-        </p>
-        <ul>
-          <li><strong>Overview:</strong> Top-Trends, neue/abgekündigte Tools, Radar-Heatmap.</li>
-          <li><strong>V-Modell-Matrix:</strong> Filter nach Phase, Domäne, AIInvolvement.</li>
-          <li><strong>Tool Detail:</strong> Profil, Scoring-Spider-Chart, EvidenceLinks, ChangeLog.</li>
-          <li><strong>Trends &amp; Signals:</strong> täglicher Signals-Feed, wöchentlicher Re-Validation-Report.</li>
-          <li><strong>Export/API:</strong> JSON/CSV-Export und REST-Endpunkte.</li>
-        </ul>
-
-        <h3>6.2 LMS-Integration (CodeS-LMS)</h3>
-        <p>
-          Kursmodule im LMS werden mit V-Modell-Phasen und Domänen getaggt;
-          das LMS ruft über die ToolRadar-API passende Tools ab und zeigt
-          „Recommended Tools“ und „Alternatives“ direkt im Kurs an.
-        </p>
-        <pre><code>// Pseudocode für die Anzeige im LMS-Modul
-FUNCTION DisplayRecommendedTools(ModuleTags):
-  phase = ModuleTags.VModelPhase
-  domain = ModuleTags.Domain
-
-  // 1. Top-Tools (Adopt/Trial)
-  recommended_tools = ToolRadar_API.GetTools(
-    phase=phase,
-    domain=domain,
-    min_score=3.5
-  )
-
-  // 2. Emerging Tools (Assess)
-  emerging_tools = ToolRadar_API.GetTools(
-    phase=phase,
-    domain=domain,
-    classification="Assess"
-  )
-
-  PRINT "Recommended Tools (Adopt/Trial):"
-  FOR EACH tool IN recommended_tools:
-    PRINT "- " + tool.ToolName + " (Score: " + tool.Score_Aggregate + ")"
-
-  PRINT "Alternatives & Emerging Tools (Assess):"
-  FOR EACH tool IN emerging_tools:
-    PRINT "- " + tool.ToolName + " (KI-Fokus: " + tool.AIInvolvement + ")"</code></pre>
-
-        <p>
-          Damit wird das ToolRadar in die Lernpfade integriert und bleibt durch
-          die Auto-Update-Pipeline auditierbar.
-        </p>
-
-        <!-- 7. Agenten-basiertes ToolRadar (laufende Demo) -->
-        <h2 id="agents">7. Agenten-basierter ToolRadar (laufende Demo)</h2>
-        <p>
-          Im folgenden Abschnitt wird das Konzept mit drei Agenten im Browser demonstriert:
-          <span class="agent-badge-inline">Scout-Agent</span> (Signals &amp; neue Tools),
-          <span class="agent-badge-inline">Validator-Agent</span> (Top-Tools prüfen) und
-          <span class="agent-badge-inline">Classifier-Agent</span> (Klassifikation / KI-Fokus).
-        </p>
-        <p class="agent-inline-hint">
-          Die Agenten laufen lokal im Browser – ideal für eine Demo auf GitHub Pages.
-          Externe Web-Suchen und echte Cron-Jobs würden später über einen Backend-Service
-          angebunden werden.
-        </p>
-
-        <div class="agent-panel">
-          <div class="agent-panel-header">
-            <div class="agent-title">
-              Agenten-Konsole
-              <span class="agent-status-pill" id="agent-status-pill">
-                Idle · lokal
-              </span>
-            </div>
+    <div class="grid2">
+      <div class="card">
+        <h2>RadarChart</h2>
+        <div class="row">
+          <div>
+            <label class="small muted">Tool auswählen</label>
+            <select id="toolSelect"></select>
           </div>
-
-          <div class="agent-controls">
-            <button id="daily-scan-btn" type="button">
-              <span>▶</span> Täglicher Scan (Scout)
-            </button>
-            <button id="weekly-validate-btn" type="button">
-              <span>✔</span> Wöchentliche Re-Validierung
-            </button>
-            <button id="highlight-core-ai-btn" type="button">
-              <span>★</span> Core-KI-Tools hervorheben
-            </button>
-            <button id="clear-highlights-btn" type="button">
-              <span>⨯</span> Hervorhebungen zurücksetzen
-            </button>
+          <div>
+            <label class="small muted">Dimensionen</label>
+            <select id="dimPreset">
+              <option value="default" selected>Standard (7D)</option>
+              <option value="quality">Quality Fokus</option>
+              <option value="cost">Cost/Community Fokus</option>
+            </select>
           </div>
+        </div>
 
-          <div class="agent-meta">
-            <span class="agent-small" id="last-daily-run">
-              Letzter täglicher Scan: – 
-            </span>
-            <br />
-            <span class="agent-small" id="last-weekly-run">
-              Letzte wöchentliche Re-Validierung: – 
-            </span>
-          </div>
+        <div class="canvas-wrap" style="margin-top:12px;">
+          <canvas id="radar" width="520" height="520"></canvas>
+        </div>
 
-          <div class="agent-form">
-            <h4>Neues Tool vorschlagen (Classifier-Agent)</h4>
-            <div class="agent-form-row">
-              <input
-                type="text"
-                id="new-tool-name"
-                placeholder="ToolName (z.B. Manus.AI)"
-              />
-              <input
-                type="text"
-                id="new-tool-domain"
-                placeholder="Domäne (z.B. Requirements, MLOps, Robotics)"
-              />
-            </div>
-            <button id="suggest-tool-btn" type="button">
-              <span>➕</span> Tool-Vorschlag klassifizieren &amp; in Seed-Liste aufnehmen
-            </button>
-            <p class="agent-small">
-              Der Classifier-Agent nutzt heuristische Regeln (Keywords), um die V-Modell-Phase
-              und den KI-Fokus zu schätzen. In einer produktiven Version würde hier ein echtes
-              LLM/Agenten-System gegen Vendor-Dokumentation arbeiten.
-            </p>
-          </div>
-
-          <div id="agent-log" class="agent-log">
-            <!-- Log-Einträge werden hier per JavaScript eingefügt -->
-          </div>
+        <div style="margin-top:12px;" class="small muted">
+          Scores sind heuristisch aus GitHub-Metadaten/Keywords abgeleitet (Stars, Aktualität, Beschreibung).
         </div>
       </div>
-    </article>
 
-    <aside class="side-panel">
-      <a href="index.html" class="back-link">
-        <span>←</span> Zurück zum IBSTech-Portal
-      </a>
-      <h2>Navigation</h2>
-      <p>Direktsprünge in die wichtigsten Abschnitte des ToolRadars:</p>
-      <ul class="side-list">
-        <li><span class="side-badge">1</span><a href="#vmodell">V-Modell-Taxonomie</a></li>
-        <li><span class="side-badge">2</span><a href="#schema">Tool-JSON-Schema</a></li>
-        <li><span class="side-badge">3</span><a href="#scoring">Scoring &amp; Radar</a></li>
-        <li><span class="side-badge">4</span><a href="#pipeline">Auto-Update-Pipeline</a></li>
-        <li><span class="side-badge">5</span><a href="#seed">Seed-Liste</a></li>
-        <li><span class="side-badge">6</span><a href="#dashboard">Dashboard &amp; LMS</a></li>
-        <li><span class="side-badge">7</span><a href="#agents">Agenten-Konsole</a></li>
-      </ul>
-
-      <div>
-        <div class="side-chip">Use-Case</div>
-        <p>
-          Geplant ist, dieses ToolRadar später über eine Backend-API mit echten
-          Web-Signalen zu füttern. Die Agenten-Demo hier zeigt bereits,
-          wie sich tägliche und wöchentliche Tasks strukturieren lassen.
-        </p>
+      <div class="card">
+        <h2>Tool Details</h2>
+        <div id="toolDetails" class="kv small"></div>
+        <div style="margin-top:12px;">
+          <div class="muted small">Evidence</div>
+          <div id="evidence" class="small"></div>
+        </div>
       </div>
-    </aside>
-  </main>
+    </div>
 
-  <script>
-    // -------------------------------
-    // Agenten-Datenmodell (vereinfachte Sicht)
-    // -------------------------------
+    <div class="card">
+      <h2>Filter & Liste</h2>
+      <div class="row">
+        <div>
+          <label class="small muted">Suche (Name/Vendor/Use)</label>
+          <input id="q" placeholder="z.B. zephyr, simulation, analysis, mlops..." />
+        </div>
+        <div>
+          <label class="small muted">V-Modell Phase</label>
+          <select id="phase">
+            <option value="">Alle</option>
+            <option>Stakeholder Needs / System Requirements</option>
+            <option>Architektur/Design</option>
+            <option>Implementierung</option>
+            <option>Integration & Test (Komponenten)</option>
+            <option>System Integration & Validierung</option>
+            <option>Release / Operations</option>
+            <option>Safety & Security</option>
+            <option>Data/AI Lifecycle</option>
+            <option>Documentation & Audit</option>
+          </select>
+        </div>
+        <div>
+          <label class="small muted">AI Involvement</label>
+          <select id="ai">
+            <option value="">Alle</option>
+            <option value="none">none</option>
+            <option value="assisted">assisted</option>
+            <option value="core">core</option>
+          </select>
+        </div>
+      </div>
 
-    const toolMeta = [
-      { name: "Jama Connect", classification: "Adopt", ai: "assisted" },
-      { name: "Polarion ALM", classification: "Adopt", ai: "assisted" },
-      { name: "CATIA Magic (Cameo)", classification: "Trial", ai: "assisted" },
-      { name: "Rhapsody", classification: "Trial", ai: "assisted" },
-      { name: "Ansys SCADE Suite", classification: "Adopt", ai: "none" },
-      { name: "GitHub Copilot", classification: "Adopt", ai: "core" },
-      { name: "Parasoft C/C++test", classification: "Adopt", ai: "assisted" },
-      { name: "Axivion Suite", classification: "Adopt", ai: "none" },
-      { name: "ETAS Embedded AI Coder", classification: "Trial", ai: "core" },
-      { name: "NVIDIA Isaac Sim", classification: "Trial", ai: "core" },
-      { name: "Keysight Eggplant", classification: "Trial", ai: "core" },
-      { name: "Duality AI", classification: "Assess", ai: "core" },
-      { name: "AWS SageMaker", classification: "Adopt", ai: "core" },
-      { name: "Google Vertex AI", classification: "Adopt", ai: "core" },
-      { name: "MLflow", classification: "Adopt", ai: "assisted" },
-      { name: "Fiddler AI", classification: "Assess", ai: "core" },
-      { name: "Harness", classification: "Trial", ai: "assisted" },
-      { name: "Jenkins", classification: "Adopt", ai: "none" },
-      { name: "Doxygen", classification: "Adopt", ai: "none" },
-      { name: "Sphinx", classification: "Adopt", ai: "none" },
-      { name: "Jira", classification: "Adopt", ai: "assisted" },
-      { name: "Confluence", classification: "Adopt", ai: "assisted" },
-      { name: "OpenCV", classification: "Adopt", ai: "core" },
-      { name: "TensorFlow Lite", classification: "Adopt", ai: "core" },
-      { name: "PyTorch Mobile", classification: "Trial", ai: "core" },
-      { name: "QEMU", classification: "Adopt", ai: "none" },
-      { name: "Valgrind", classification: "Adopt", ai: "none" },
-      { name: "Docker", classification: "Adopt", ai: "none" },
-      { name: "Kubernetes", classification: "Adopt", ai: "none" },
-      { name: "Prometheus", classification: "Adopt", ai: "none" },
-      { name: "Grafana", classification: "Adopt", ai: "none" },
-      { name: "Snyk", classification: "Trial", ai: "assisted" },
-      { name: "Coverity", classification: "Trial", ai: "assisted" },
-      { name: "FMEA-Pro (APIS IQ)", classification: "Adopt", ai: "none" },
-      { name: "ROS 2", classification: "Adopt", ai: "none" },
-      { name: "Gazebo (Ignition)", classification: "Adopt", ai: "none" },
-      { name: "ClearML", classification: "Trial", ai: "core" },
-      { name: "DVC", classification: "Adopt", ai: "none" },
-      { name: "Modelica / Dymola", classification: "Adopt", ai: "none" },
-      { name: "Qdrant", classification: "Trial", ai: "core" }
-    ];
+      <div style="overflow:auto; margin-top:12px;">
+        <table>
+          <thead>
+            <tr>
+              <th style="min-width:220px;">Tool</th>
+              <th style="min-width:160px;">Vendor</th>
+              <th style="min-width:260px;">Phasen</th>
+              <th style="min-width:90px;">AI</th>
+              <th style="min-width:90px;">Class</th>
+              <th style="min-width:160px;">Repo</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
 
-    // Kandidatenliste für "neue" Tools (Simulation)
-    const candidateTools = [
-      { name: "Manus.AI", domain: "Agentic Orchestration", classification: "Assess", ai: "core" },
-      { name: "Edge Impulse", domain: "Embedded ML", classification: "Trial", ai: "core" },
-      { name: "GitLab Duo", domain: "DevSecOps", classification: "Assess", ai: "assisted" },
-      { name: "Copilot for Azure", domain: "Cloud Ops", classification: "Assess", ai: "core" }
-    ];
+    <div class="card">
+      <h2>Signals & Broken Links</h2>
+      <div class="row">
+        <div>
+          <button class="secondary" id="refresh">Neu laden</button>
+        </div>
+      </div>
 
-    // -------------------------------
-    // Utility: Agenten-Log
-    // -------------------------------
+      <h3 style="margin-top:12px;">Signals</h3>
+      <div id="signals" class="small muted" style="white-space:pre-wrap;"></div>
 
-    const agentLogEl = document.getElementById("agent-log");
-    const statusPill = document.getElementById("agent-status-pill");
-    const lastDailyRunEl = document.getElementById("last-daily-run");
-    const lastWeeklyRunEl = document.getElementById("last-weekly-run");
+      <h3 style="margin-top:12px;">Broken Links</h3>
+      <div id="broken" class="small muted" style="white-space:pre-wrap;"></div>
+    </div>
+  </div>
 
-    function formatTime(date) {
-      return date.toLocaleString("de-DE", {
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit"
-      });
+<script>
+  const DATA_TOOLS = "./data/toolradar_tools.json";
+  const DATA_META = "./data/toolradar_meta.json";
+  const DATA_SIGNALS = "./data/toolradar_signals.json";
+
+  let TOOLS = [];
+  let META = null;
+  let SIGNALS = null;
+
+  const DIMENSIONS = ["Maturity","Integration","EmbeddedFit","AuditTraceability","AIValue","TCO","CommunitySupport"];
+
+  function setStatus(msg, cls="muted"){
+    const el = document.getElementById("status");
+    el.className = `status small ${cls}`;
+    el.textContent = msg;
+  }
+
+  function escapeHtml(s){
+    return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  function fmtPills(list){
+    return (list || []).map(x => `<span class="pill">${escapeHtml(x)}</span>`).join("");
+  }
+
+  function toolKey(t){ return (t?.ToolName || "").toLowerCase().trim(); }
+
+  async function loadAll(){
+    setStatus("Lade JSON…");
+    try{
+      const [toolsRes, metaRes, sigRes] = await Promise.all([
+        fetch(DATA_TOOLS, {cache:"no-store"}),
+        fetch(DATA_META, {cache:"no-store"}),
+        fetch(DATA_SIGNALS, {cache:"no-store"}),
+      ]);
+      TOOLS = await toolsRes.json();
+      META = await metaRes.json();
+      SIGNALS = await sigRes.json();
+
+      const metaText = `Last run (UTC): ${META?.lastRunUtc || "n/a"} · Tools: ${META?.toolsCount ?? TOOLS.length}`;
+      document.getElementById("meta").textContent = metaText;
+
+      setStatus(`OK: ${TOOLS.length} Tools geladen.`, "ok");
+      initUI();
+      renderTable();
+      renderSignals();
+    }catch(e){
+      setStatus(`Fehler beim Laden: ${e}`, "err");
     }
+  }
 
-    function logAgent(message, level = "info") {
-      const entry = document.createElement("div");
-      entry.className = "agent-log-entry";
+  function initUI(){
+    // GitHub Actions link
+    const runLink = document.getElementById("runLink");
+    runLink.href = "https://github.com/gudiri1/ibstech-website/actions/workflows/toolradar-scan.yml";
 
-      const tag = document.createElement("span");
-      tag.className = "agent-log-tag " + level;
-      tag.textContent =
-        level === "success"
-          ? "OK"
-          : level === "warning"
-          ? "Warn"
-          : level === "error"
-          ? "Error"
-          : "Info";
+    // Filters
+    ["q","phase","ai"].forEach(id => document.getElementById(id).addEventListener("input", renderTable));
+    document.getElementById("refresh").addEventListener("click", loadAll);
 
-      const text = document.createElement("div");
-      text.className = "agent-log-text";
-      const time = document.createElement("span");
-      time.className = "agent-log-time";
-      time.textContent = " · " + formatTime(new Date());
-
-      text.textContent = message;
-      text.appendChild(time);
-      entry.appendChild(tag);
-      entry.appendChild(text);
-
-      agentLogEl.insertBefore(entry, agentLogEl.firstChild);
+    // Tool selector
+    const sel = document.getElementById("toolSelect");
+    sel.innerHTML = "";
+    const sorted = [...TOOLS].sort((a,b)=> (a.ToolName||"").localeCompare(b.ToolName||""));
+    for(const t of sorted){
+      const opt = document.createElement("option");
+      opt.value = toolKey(t);
+      opt.textContent = t.ToolName || "Unnamed";
+      sel.appendChild(opt);
     }
-
-    function setStatus(text) {
-      statusPill.textContent = text;
+    if(sorted.length){
+      sel.value = toolKey(sorted[0]);
+      renderToolDetails(sorted[0]);
+      drawRadar(sorted[0], DIMENSIONS);
     }
-
-    // -------------------------------
-    // Agenten-Operationen
-    // -------------------------------
-
-    function getRowByToolName(name) {
-      return document.querySelector('tr[data-toolname="' + name.replace(/"/g, "&quot;") + '"]');
-    }
-
-    function clearHighlights() {
-      document.querySelectorAll("#toolradar-seed-body tr").forEach((tr) => {
-        tr.classList.remove("agent-highlight", "agent-new");
-      });
-      logAgent("Alle Hervorhebungen im ToolRadar wurden zurückgesetzt.", "info");
-      setStatus("Idle · lokal");
-    }
-
-    function highlightCoreAITools() {
-      clearHighlights();
-      toolMeta
-        .filter((t) => t.ai === "core")
-        .forEach((t) => {
-          const row = getRowByToolName(t.name);
-          if (row) row.classList.add("agent-highlight");
-        });
-      logAgent(
-        "Classifier-Agent: Alle Tools mit KI-Fokus 'core' wurden im Seed-Raster hervorgehoben.",
-        "success"
-      );
-      setStatus("Classifier aktiv · core-AI hervorgehoben");
-    }
-
-    function runWeeklyValidation() {
-      clearHighlights();
-      const important = toolMeta.filter(
-        (t) => t.classification === "Adopt" || t.classification === "Trial"
-      );
-      important.forEach((t) => {
-        const row = getRowByToolName(t.name);
-        if (row) row.classList.add("agent-highlight");
-      });
-
-      const now = new Date();
-      localStorage.setItem("toolradar_lastWeeklyRun", now.toISOString());
-      lastWeeklyRunEl.textContent = "Letzte wöchentliche Re-Validierung: " + formatTime(now);
-
-      logAgent(
-        "Validator-Agent: " +
-          important.length +
-          " Adopt/Trial-Tools für wöchentliche Re-Validierung markiert.",
-        "success"
-      );
-      setStatus("Validator aktiv · " + important.length + " Tools markiert");
-    }
-
-    function addNewToolToTable(tool) {
-      const tbody = document.getElementById("toolradar-seed-body");
-      if (!tbody) return;
-
-      // Prüfen, ob schon vorhanden
-      if (getRowByToolName(tool.name)) {
-        logAgent(
-          "Scout-Agent: '" +
-            tool.name +
-            "' ist bereits im Seed-Bestand vorhanden – kein Duplikat angelegt.",
-          "warning"
-        );
-        return;
+    sel.addEventListener("change", ()=>{
+      const t = TOOLS.find(x => toolKey(x) === sel.value);
+      if(t){
+        renderToolDetails(t);
+        drawRadar(t, getDims());
       }
+    });
 
+    document.getElementById("dimPreset").addEventListener("change", ()=>{
+      const t = TOOLS.find(x => toolKey(x) === document.getElementById("toolSelect").value);
+      if(t) drawRadar(t, getDims());
+    });
+  }
+
+  function getDims(){
+    const preset = document.getElementById("dimPreset").value;
+    if(preset === "quality"){
+      return ["Maturity","AuditTraceability","Integration","CommunitySupport","EmbeddedFit","AIValue","TCO"];
+    }
+    if(preset === "cost"){
+      return ["TCO","CommunitySupport","Maturity","Integration","EmbeddedFit","AIValue","AuditTraceability"];
+    }
+    return DIMENSIONS;
+  }
+
+  function renderToolDetails(t){
+    const d = document.getElementById("toolDetails");
+    const scores = t.Scores || {};
+    const repo = t.Repo || {};
+
+    d.innerHTML = `
+      <div class="muted">Name</div><div><strong>${escapeHtml(t.ToolName)}</strong></div>
+      <div class="muted">Vendor</div><div>${escapeHtml(t.VendorOrganisation)}</div>
+      <div class="muted">Type</div><div>${escapeHtml(t.ToolType)}</div>
+      <div class="muted">PrimaryUse</div><div>${escapeHtml(t.PrimaryUse)}</div>
+      <div class="muted">VModel</div><div>${fmtPills(t.VModelPhases)}</div>
+      <div class="muted">AI</div><div><span class="pill">${escapeHtml(t.AIInvolvement)}</span></div>
+      <div class="muted">Class</div><div><span class="pill">${escapeHtml(t.Classification || "")}</span></div>
+      <div class="muted">LastVerified</div><div>${escapeHtml(t.LastVerifiedDate)}</div>
+      <div class="muted">Stars</div><div>${escapeHtml(repo.stars ?? "")}</div>
+      <div class="muted">Forks</div><div>${escapeHtml(repo.forks ?? "")}</div>
+      <div class="muted">Updated</div><div>${escapeHtml(repo.pushed_at ?? "")}</div>
+      <div class="muted">Scores</div>
+      <div>${Object.keys(scores).map(k=>`<span class="pill">${escapeHtml(k)}:${escapeHtml(scores[k])}</span>`).join("")}</div>
+    `;
+
+    const ev = document.getElementById("evidence");
+    const links = (t.EvidenceLinks || []).slice(0,2);
+    ev.innerHTML = links.map(u => `<div><a href="${u}" target="_blank" rel="noopener">${escapeHtml(u)}</a></div>`).join("");
+  }
+
+  function filteredTools(){
+    const q = (document.getElementById("q").value || "").toLowerCase().trim();
+    const phase = document.getElementById("phase").value || "";
+    const ai = document.getElementById("ai").value || "";
+
+    return TOOLS.filter(t=>{
+      const blob = `${t.ToolName||""} ${t.VendorOrganisation||""} ${t.PrimaryUse||""}`.toLowerCase();
+      if(q && !blob.includes(q)) return false;
+      if(ai && (t.AIInvolvement||"").toLowerCase() !== ai) return false;
+      if(phase){
+        const phases = t.VModelPhases || [];
+        if(!phases.includes(phase)) return false;
+      }
+      return true;
+    });
+  }
+
+  function renderTable(){
+    const list = filteredTools();
+    const tb = document.getElementById("tbody");
+    tb.innerHTML = "";
+
+    for(const t of list){
+      const repo = t.Repo || {};
       const tr = document.createElement("tr");
-      tr.setAttribute("data-toolname", tool.name);
-      tr.classList.add("agent-new");
-
       tr.innerHTML = `
-        <td><strong>${tool.name}</strong></td>
-        <td>${tool.vendor || "tbd"}</td>
-        <td>${tool.toolType || "tbd"}</td>
-        <td>${tool.primaryUse || tool.domain || "tbd"}</td>
-        <td>${tool.vModelShort || "tbd"}</td>
-        <td>${tool.ai || "assisted"}</td>
+        <td>
+          <strong>${escapeHtml(t.ToolName)}</strong>
+          <div class="muted small">${escapeHtml(t.PrimaryUse || "")}</div>
+        </td>
+        <td>${escapeHtml(t.VendorOrganisation || "")}</td>
+        <td>${fmtPills(t.VModelPhases)}</td>
+        <td><span class="pill">${escapeHtml(t.AIInvolvement || "")}</span></td>
+        <td><span class="pill">${escapeHtml(t.Classification || "")}</span></td>
+        <td class="small">
+          ${repo.url ? `<a href="${repo.url}" target="_blank" rel="noopener">Repo</a>` : ""}
+          <div class="muted small">★ ${escapeHtml(repo.stars ?? "")} · Forks ${escapeHtml(repo.forks ?? "")}</div>
+        </td>
       `;
-
-      tbody.insertBefore(tr, tbody.firstChild);
-    }
-
-    function runDailyScan() {
-      // Simulierter "Signal Ingestor": nimmt ein neues Tool aus der Kandidatenliste
-      setStatus("Scout aktiv · Scan läuft …");
-
-      // Wähle zufälliges Kandidaten-Tool
-      const candidatesNotPresent = candidateTools.filter(
-        (c) => !getRowByToolName(c.name)
-      );
-      if (candidatesNotPresent.length === 0) {
-        logAgent(
-          "Scout-Agent: Keine neuen Kandidaten-Tools in der Demo-Liste gefunden. Seed-Bestand ist aktuell.",
-          "info"
-        );
-      } else {
-        const picked =
-          candidatesNotPresent[
-            Math.floor(Math.random() * candidatesNotPresent.length)
-          ];
-
-        // Heuristische Klassifikation in V-Modell + AI-Fokus (grob)
-        let vModelShort = "Data/AI Lifecycle";
-        if (/requirements/i.test(picked.domain)) vModelShort = "Requirements";
-        else if (/DevSecOps|CI\/CD|DevOps/i.test(picked.domain))
-          vModelShort = "Integration & Test, Release";
-        else if (/Embedded|Edge/i.test(picked.domain))
-          vModelShort = "Implementierung, Edge";
-        else if (/Robotics/i.test(picked.domain))
-          vModelShort = "System Integration & Validierung";
-
-        const newTool = {
-          name: picked.name,
-          vendor: "tbd",
-          toolType: "tbd",
-          primaryUse: picked.domain,
-          vModelShort,
-          ai: picked.ai
-        };
-
-        addNewToolToTable(newTool);
-        logAgent(
-          "Scout-Agent: Neues Kandidaten-Tool '" +
-            picked.name +
-            "' mit Domäne '" +
-            picked.domain +
-            "' in Seed-Liste eingefügt (Status: " +
-            picked.classification +
-            ").",
-          "success"
-        );
-      }
-
-      const now = new Date();
-      localStorage.setItem("toolradar_lastDailyRun", now.toISOString());
-      lastDailyRunEl.textContent = "Letzter täglicher Scan: " + formatTime(now);
-      setStatus("Scout abgeschlossen · letzter Scan " + formatTime(now));
-    }
-
-    function suggestNewTool() {
-      const nameInput = document.getElementById("new-tool-name");
-      const domainInput = document.getElementById("new-tool-domain");
-      const name = (nameInput.value || "").trim();
-      const domain = (domainInput.value || "").trim();
-
-      if (!name) {
-        logAgent(
-          "Classifier-Agent: Kein ToolName angegeben – Vorschlag wird verworfen.",
-          "error"
-        );
-        return;
-      }
-
-      // Einfacher Heuristik-Classifer auf Basis der Domain-Keywords
-      let ai = "assisted";
-      if (/agent|copilot|ai|ml|model/i.test(domain)) ai = "core";
-      if (/documentation|doc|wiki/i.test(domain)) ai = "none";
-
-      let vModelShort = "Data/AI Lifecycle";
-      if (/requirement|stakeholder/i.test(domain))
-        vModelShort = "Requirements";
-      else if (/mbse|architecture|design|sysml|model/i.test(domain))
-        vModelShort = "Architektur/Design";
-      else if (/ci\/cd|testing|test|integration|pipeline/i.test(domain))
-        vModelShort = "Integration & Test";
-      else if (/release|ops|operations|monitoring|observability/i.test(domain))
-        vModelShort = "Release / Operations";
-      else if (/safety|security|fmea|sast|vuln/i.test(domain))
-        vModelShort = "Safety & Security";
-      else if (/robot|cobot|humanoid/i.test(domain))
-        vModelShort = "System Integration & Validierung";
-      else if (/doc|documentation|audit/i.test(domain))
-        vModelShort = "Documentation & Audit";
-
-      const newTool = {
-        name,
-        vendor: "tbd",
-        toolType: "tbd",
-        primaryUse: domain || "tbd",
-        vModelShort,
-        ai
-      };
-
-      addNewToolToTable(newTool);
-      toolMeta.push({
-        name,
-        classification: "Assess",
-        ai
+      tr.style.cursor = "pointer";
+      tr.addEventListener("click", ()=>{
+        document.getElementById("toolSelect").value = toolKey(t);
+        renderToolDetails(t);
+        drawRadar(t, getDims());
+        window.scrollTo({top: 0, behavior: "smooth"});
       });
+      tb.appendChild(tr);
+    }
+  }
 
-      logAgent(
-        "Classifier-Agent: Tool '" +
-          name +
-          "' heuristisch als '" +
-          vModelShort +
-          "' mit KI-Fokus '" +
-          ai +
-          "' klassifiziert und in die Seed-Liste aufgenommen (Status: Assess).",
-        "success"
-      );
+  function renderSignals(){
+    const sigEl = document.getElementById("signals");
+    const broEl = document.getElementById("broken");
+    const s = SIGNALS || {};
+    const lines = [];
+    lines.push(`generated_at_utc: ${s.generated_at_utc || "n/a"}`);
+    lines.push("");
 
-      nameInput.value = "";
-      domainInput.value = "";
-      setStatus("Classifier aktiv · neues Tool aufgenommen");
+    const sigs = s.signals || [];
+    if(!sigs.length){
+      lines.push("(keine Signals)");
+    } else {
+      for(const x of sigs.slice(0,60)){
+        if(x.type === "ERROR"){
+          lines.push(`[ERROR] ${x.message}`);
+        } else {
+          lines.push(`[${x.type}] ${x.tool || ""} (${x.vendor || ""})`);
+        }
+      }
+    }
+    sigEl.textContent = lines.join("\n");
+
+    const broken = s.broken_links || [];
+    if(!broken.length){
+      broEl.textContent = "(keine Broken Links)";
+    } else {
+      broEl.textContent = broken.slice(0,80).map(b => `- ${b.tool}: ${b.link} (${b.info})`).join("\n");
+    }
+  }
+
+  function drawRadar(tool, dims){
+    const canvas = document.getElementById("radar");
+    const ctx = canvas.getContext("2d");
+    const w = canvas.width, h = canvas.height;
+
+    ctx.clearRect(0,0,w,h);
+
+    // Geometry
+    const cx = w/2, cy = h/2;
+    const padding = 90;
+    const radius = Math.min(w,h)/2 - padding;
+
+    // Background
+    ctx.fillStyle = "rgba(12, 22, 48, 1)";
+    ctx.fillRect(0,0,w,h);
+
+    const levels = 5;
+
+    // Grid
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "rgba(255,255,255,0.08)";
+    for(let l=1;l<=levels;l++){
+      const r = radius * (l/levels);
+      ctx.beginPath();
+      for(let i=0;i<dims.length;i++){
+        const a = -Math.PI/2 + (i*(2*Math.PI/dims.length));
+        const x = cx + r*Math.cos(a);
+        const y = cy + r*Math.sin(a);
+        if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+      }
+      ctx.closePath();
+      ctx.stroke();
     }
 
-    // -------------------------------
-    // Event-Handler & Initialisierung
-    // -------------------------------
+    // Axes + labels
+    ctx.strokeStyle = "rgba(255,255,255,0.14)";
+    ctx.fillStyle = "rgba(231,238,252,0.95)";
+    ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
 
-    document.getElementById("daily-scan-btn").addEventListener("click", runDailyScan);
-    document
-      .getElementById("weekly-validate-btn")
-      .addEventListener("click", runWeeklyValidation);
-    document
-      .getElementById("highlight-core-ai-btn")
-      .addEventListener("click", highlightCoreAITools);
-    document
-      .getElementById("clear-highlights-btn")
-      .addEventListener("click", clearHighlights);
-    document
-      .getElementById("suggest-tool-btn")
-      .addEventListener("click", suggestNewTool);
+    for(let i=0;i<dims.length;i++){
+      const a = -Math.PI/2 + (i*(2*Math.PI/dims.length));
+      const x = cx + radius*Math.cos(a);
+      const y = cy + radius*Math.sin(a);
 
-    // Letzte Laufzeiten aus localStorage lesen
-    (function initLastRuns() {
-      const lastDaily = localStorage.getItem("toolradar_lastDailyRun");
-      const lastWeekly = localStorage.getItem("toolradar_lastWeeklyRun");
-      if (lastDaily) {
-        lastDailyRunEl.textContent =
-          "Letzter täglicher Scan: " + formatTime(new Date(lastDaily));
-      }
-      if (lastWeekly) {
-        lastWeeklyRunEl.textContent =
-          "Letzte wöchentliche Re-Validierung: " +
-          formatTime(new Date(lastWeekly));
-      }
-      logAgent(
-        "Agenten-System initialisiert. Seed-Bestand enthält " +
-          toolMeta.length +
-          " vordefinierte Tools.",
-        "info"
-      );
-    })();
-  </script>
+      ctx.beginPath();
+      ctx.moveTo(cx,cy);
+      ctx.lineTo(x,y);
+      ctx.stroke();
+
+      const lx = cx + (radius+18)*Math.cos(a);
+      const ly = cy + (radius+18)*Math.sin(a);
+
+      const label = dims[i];
+      ctx.textAlign = (Math.cos(a) > 0.2) ? "left" : (Math.cos(a) < -0.2) ? "right" : "center";
+      ctx.textBaseline = (Math.sin(a) > 0.2) ? "top" : (Math.sin(a) < -0.2) ? "bottom" : "middle";
+      ctx.fillText(label, lx, ly);
+    }
+
+    // Polygon
+    const scores = tool.Scores || {};
+    const values = dims.map(d => Math.max(0, Math.min(5, Number(scores[d] ?? 0))));
+
+    ctx.beginPath();
+    for(let i=0;i<dims.length;i++){
+      const a = -Math.PI/2 + (i*(2*Math.PI/dims.length));
+      const r = radius * (values[i]/levels);
+      const x = cx + r*Math.cos(a);
+      const y = cy + r*Math.sin(a);
+      if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+    }
+    ctx.closePath();
+    ctx.fillStyle = "rgba(43, 99, 255, 0.25)";
+    ctx.strokeStyle = "rgba(43, 99, 255, 0.85)";
+    ctx.lineWidth = 2;
+    ctx.fill();
+    ctx.stroke();
+
+    // Points
+    ctx.fillStyle = "rgba(231,238,252,0.9)";
+    for(let i=0;i<dims.length;i++){
+      const a = -Math.PI/2 + (i*(2*Math.PI/dims.length));
+      const r = radius * (values[i]/levels);
+      const x = cx + r*Math.cos(a);
+      const y = cy + r*Math.sin(a);
+      ctx.beginPath();
+      ctx.arc(x,y,3,0,2*Math.PI);
+      ctx.fill();
+    }
+
+    // Title
+    ctx.fillStyle = "rgba(231,238,252,0.95)";
+    ctx.font = "700 14px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "top";
+    ctx.fillText(tool.ToolName || "Tool", cx, 14);
+  }
+
+  loadAll();
+</script>
 </body>
 </html>
