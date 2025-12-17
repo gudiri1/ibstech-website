@@ -715,6 +715,49 @@
     }
   },
   {
+    "ToolName": "frontier_exploration_sim",
+    "VendorOrganisation": "MarineRock10",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A ROS2 package for frontier exploration simulation using TurtleBot3 in Gazebo environments. This package provides tools to convert laser scan data to point clouds and simulate robot exploration in various world configurations.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/MarineRock10/frontier_exploration_sim",
+      "https://github.com/MarineRock10/frontier_exploration_sim"
+    ],
+    "LastVerifiedDate": "2025-12-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "MarineRock10/frontier_exploration_sim",
+      "url": "https://github.com/MarineRock10/frontier_exploration_sim",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-17T02:54:20Z",
+      "created_at": "2025-12-17T02:51:58Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "FSRDigitalTwin3D-Simulation",
     "VendorOrganisation": "Neroware",
     "ToolType": "Open Source",
@@ -1382,6 +1425,48 @@
       "Maturity": 0,
       "Integration": 1,
       "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "physical-ai-book",
+    "VendorOrganisation": "Sidra-Noman",
+    "ToolType": "Open Source",
+    "PrimaryUse": "his book introduces Physical AI and Humanoid Robotics, guiding readers from core concepts to real-world implementation using modern robotics and AI tools. It focuses on hands-on learning, bridging simulation and physical systems to build intelligent, embodied robots using docusaurus and spec-kit-plus",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Sidra-Noman/physical-ai-book",
+      "https://physical-ai-book-peach.vercel.app"
+    ],
+    "LastVerifiedDate": "2025-12-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Sidra-Noman/physical-ai-book",
+      "url": "https://github.com/Sidra-Noman/physical-ai-book",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-16T20:50:48Z",
+      "created_at": "2025-12-16T20:38:18Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
