@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projekt Komponenten – Fachgebiete | IBSTech Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --bg:#0b1b2b;
+      --accent:#ff8a00;
+      --text:#222;
+      --muted:#5b6675;
+      --card:#ffffff;
+      --line:#d8dde8;
+      --soft:#f6f8fc;
+    }
+    body{font-family:Arial,sans-serif;margin:0;line-height:1.55;color:var(--text);background:#fff;}
+    nav{
+      background:#111;color:#fff;padding:10px 20px;position:sticky;top:0;z-index:10;
+      display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    }
+    nav a{color:#fff;text-decoration:none;font-size:0.9rem}
+    nav a:hover{text-decoration:underline}
+    .nav-links{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+    .lang-switcher{margin-left:auto;display:flex;gap:6px;align-items:center}
+    .lang-switcher-label{font-size:0.8rem;opacity:0.7;margin-right:4px}
+    .lang-btn{background:#222;border:1px solid #444;border-radius:4px;padding:2px 4px;cursor:pointer}
+    .lang-btn.active{border-color:var(--accent);background:#333}
+    .lang-btn img.flag-icon{display:block;width:22px;height:auto}
+
+    header{
+      background:var(--bg);color:#fff;padding:34px 20px;text-align:center;
+    }
+    header h1{margin:0 0 6px}
+    header p{margin:0 auto;max-width:980px;opacity:0.95}
+    .pill-row{margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+    .pill{border:1px solid rgba(255,255,255,.45);background:rgba(0,0,0,.12);border-radius:999px;padding:4px 10px;font-size:.85rem}
+
+    .wrap{max-width:1200px;margin:0 auto;padding:26px 20px}
+    .grid{
+      display:grid;
+      grid-template-columns: 280px 1fr;
+      gap:18px;
+      align-items:start;
+    }
+    @media (max-width: 920px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    .panel{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px}
+    .panel h2{margin:0 0 10px;font-size:1.1rem;color:var(--bg)}
+    .toc a{display:block;padding:8px 10px;border-radius:8px;color:var(--bg);text-decoration:none;border:1px solid transparent}
+    .toc a:hover{border-color:var(--accent);background:#fff}
+    .search{display:flex;gap:8px;margin-top:10px}
+    .search input{
+      width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);font-size:0.95rem;
+      outline:none;background:#fff;
+    }
+    .search button{
+      padding:10px 12px;border-radius:10px;border:0;background:var(--accent);font-weight:bold;cursor:pointer;
+    }
+    .hint{margin-top:10px;color:var(--muted);font-size:0.9rem}
+
+    .content{display:flex;flex-direction:column;gap:14px}
+    .card{
+      border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;
+      box-shadow:0 2px 10px rgba(0,0,0,.06);
+    }
+    .card-header{
+      padding:14px 16px;background:linear-gradient(135deg,#f5f7fb,#e7ebf5);
+      display:flex;align-items:flex-start;justify-content:space-between;gap:12px
+    }
+    .card-header h3{margin:0;color:var(--bg)}
+    .card-header p{margin:4px 0 0;color:var(--muted);font-size:0.92rem}
+    .badge{display:inline-block;padding:3px 10px;border-radius:999px;background:#e3e7ef;color:var(--bg);font-size:.75rem;margin-top:2px}
+    .card-body{padding:14px 16px;background:#fff}
+
+    details.sub{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--soft);margin:10px 0}
+    details.sub > summary{cursor:pointer;font-weight:bold;color:var(--bg)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{border:1px solid #cfd6e6;background:#fff;border-radius:999px;padding:6px 10px;font-size:.85rem}
+    .subnote{margin:8px 0 0;color:var(--muted);font-size:.9rem}
+
+    .footer{margin-top:30px;padding:18px 20px;background:var(--bg);color:#fff;text-align:center;font-size:.9rem}
+    .footer a{color:#fff}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-links">
+      <a href="index.html" id="nav-home">← Zurück</a>
+      <a href="#overview" id="nav-overview">Überblick</a>
+      <a href="#project" id="nav-project">Project</a>
+      <a href="#signals" id="nav-signals">Signals</a>
+      <a href="#ai" id="nav-ai">KI-Algorithmen</a>
+      <a href="#software" id="nav-software">Software</a>
+      <a href="#embedded" id="nav-embedded">Embedded</a>
+      <a href="#connectivity" id="nav-connectivity">Connectivity</a>
+    </div>
+
+    <div class="lang-switcher">
+      <span class="lang-switcher-label" id="lang-label">Sprache:</span>
+      <button class="lang-btn active" data-lang="de" aria-label="Deutsch">
+        <img src="media/flag_de.png" alt="Deutsch" class="flag-icon" />
+      </button>
+      <button class="lang-btn" data-lang="en" aria-label="English">
+        <img src="media/flag_gb.png" alt="English" class="flag-icon" />
+      </button>
+      <button class="lang-btn" data-lang="fr" aria-label="Français">
+        <img src="media/flag_fr.png" alt="Français" class="flag-icon" />
+      </button>
+      <button class="lang-btn" data-lang="es" aria-label="Español (Ecuador)">
+        <img src="media/flag_ec.png" alt="Español (Ecuador)" class="flag-icon" />
+      </button>
+    </div>
+  </nav>
+
+  <header id="overview">
+    <h1 id="hero-title">Projekt Komponenten – Fachgebiete</h1>
+    <p id="hero-sub">
+      Diese Seite ist ein <b>Komponenten- und Themenkatalog</b> für technische Systeme (Embedded · Robotik · KI · Cloud).
+      Sie ist von der Struktur des Embedded-AI-Konfigurators inspiriert, dient hier aber ausschließlich als <b>Übersicht + Deep-Dive</b>.
+    </p>
+    <div class="pill-row">
+      <span class="pill">V-Modell</span>
+      <span class="pill">Digitaler Zwilling</span>
+      <span class="pill">Signale & Sensorik</span>
+      <span class="pill">KI-Algorithmen</span>
+      <span class="pill">Software & DevOps</span>
+      <span class="pill">Embedded & Connectivity</span>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="grid">
+      <aside class="panel">
+        <h2 id="toc-title">Inhaltsverzeichnis</h2>
+        <div class="toc">
+          <a href="#project">1) Project</a>
+          <a href="#signals">2) Signals</a>
+          <a href="#ai">3) KI-Algorithmen</a>
+          <a href="#software">4) Software</a>
+          <a href="#embedded">5) Embedded</a>
+          <a href="#connectivity">6) Connectivity</a>
+        </div>
+
+        <div class="search" style="margin-top:14px">
+          <input id="searchBox" type="search" placeholder="Suche nach Begriffen (z. B. ‚ISO 26262‘, ‚UWB‘, ‚CMake‘) …" />
+          <button id="clearBtn" type="button" title="Suche zurücksetzen">×</button>
+        </div>
+        <div class="hint" id="search-hint">
+          Tipp: Suche filtert die Chips in allen Bereichen. Ideal, um im Gespräch schnell von „Überblick“ zu „Detail“ zu springen.
+        </div>
+      </aside>
+
+      <main class="content" id="content"></main>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>
+      Quelle der Taxonomie (Inspiration): <span class="mono">embedded.ai/configurator</span>.
+      Diese Seite zeigt eine eigenständige, nicht-konfigurierende Übersicht.
+    </div>
+  </div>
+
+<script>
+/**
+ * Taxonomie: komprimiert als "Übersicht + Optionslisten".
+ * (Struktur inspiriert durch: https://www.embedded.ai/configurator/ )
+ */
+const taxonomy = [
+  {
+    id: "project",
+    badge: "Projekt-Setup",
+    title: "Project",
+    subtitle: "Projektform, Branche, Projektmanagement, Qualitäts-/Compliance-Aspekte.",
+    sections: [
+      { name: "Projektbeschreibung", items: ["Erläuterung (Freitext)"] },
+      { name: "Branche", items: [
+        "Automotive","Medical","Energietechnik","Smart Sensors","Weiße Ware","Home Automation",
+        "Autonomes Fahren","Robotik","Industrieautomation","Vorausschauende Instandhaltung","Weitere"
+      ]},
+      { name: "Projektform", items: [
+        "Machbarkeitsstudie/Recherche",
+        "Machbarkeitsnachweis (Proof of Concept): Entwicklung Demonstrator",
+        "Entwicklung Produktvorstufe: Prototyp",
+        "Serienentwicklung: Serienprototyp",
+        "Durchführung der Serienproduktion",
+        "Redesign (Neugestaltung)",
+        "Weitere"
+      ]},
+      { name: "Projektmanagement", items: [
+        "Vorgehensmodelle: Scrum","Vorgehensmodelle: Kanban","Vorgehensmodelle: Wasserfall-Modell",
+        "Vorgehensmodelle: V-Modell","Vorgehensmodelle: Hybrides Modell",
+        "Werkzeuge: OpenProject","Werkzeuge: Projektron BCS","Werkzeuge: Jira","Werkzeuge: Confluence",
+        "Requirement Engineering (Wünsche/Tools)","Defect Management (Wünsche/Tools)"
+      ]},
+      { name: "Qualitätsmanagement / Normen / Zertifizierungen", items: [
+        "ISO 9001","ISO 26262 (ASIL)","ISO 27001","TISAX","IATF 16949","ASPICE","CE","GS"
+      ]}
+    ]
+  },
+  {
+    id: "signals",
+    badge: "Sensorik & DSP",
+    title: "Signals",
+    subtitle: "Signalformen, Sensoren, Signalverarbeitung, Anwendungen.",
+    sections: [
+      { name: "Physische Signalform", items: [
+        "Akustisch (Tiergeräusche, Sprache, Instrumente, Umwelt)",
+        "Ultraschall (Events, Abstände, Muster)",
+        "Optisch (Bilder, Video, 3D-Bilder, Time-of-Flight, Spektral, Ereignisse)",
+        "Infrarot / Thermisch",
+        "Funk (UWB, RFID, BLE, WLAN, Mobilfunk)",
+        "Elektrisch (Ladung/Spannung/Strom, Feldstärke, Potential, Bioelektrik)",
+        "Magnetisch",
+        "Mechanisch (Druck, Kraft, Beschleunigung, Vibration, Ultraschall)",
+        "Beschleunigung / Bewegung (IMU, Erschütterung, Aktivität)"
+      ]},
+      { name: "Sensor", items: [
+        "Akustische Signale (Mikrofone, Arrays)",
+        "Kamera / Bildsensor",
+        "3D-Kamera / Depth",
+        "Infrarotkamera / Thermalsensor",
+        "Ultraschall-Transducer",
+        "IMU (Accel/Gyro)",
+        "UWB Radar / UWB Ranging / UWB Localization",
+        "FMCW Radar / Radar",
+        "LIDAR",
+        "BLE Daten",
+        "ToF Sensor",
+        "Magnetometer",
+        "Vibrationssensor",
+        "Weitere"
+      ]},
+      { name: "Signalverarbeitung", items: [
+        "Signal Transformation: DFT/FFT, STFT, Wavelets, DCT, Chirp-Z, (Sonstige)",
+        "Nonlinear Filtering (Median, Morphology)",
+        "Adaptive Filtering (LMS, RLS)",
+        "Time/Frequency/Cepstral Features (MFCC, iVector, etc.)",
+        "Bewegungs-/Trajektorienmerkmale (Quaternionen, Trilateration)",
+        "Multimodale Fusion"
+      ]},
+      { name: "Anwendungen", items: [
+        "Biometrie / Identifikation","Ereigniserkennung","Zustands-/Anomalieerkennung",
+        "Qualitätskontrolle","Tracking/Localization","Speech/Audio","Vision/Inspection","Weitere"
+      ]}
+    ]
+  },
+  {
+    id: "ai",
+    badge: "ML & KI",
+    title: "KI-Algorithmen",
+    subtitle: "KI-Anwendung, Algorithmen, Data Engineering, ML Engineering.",
+    sections: [
+      { name: "KI-Anwendung", items: [
+        "Klassifikation","Regression/Schätzung","Detektion","Segmentierung",
+        "Zeitreihenanalyse","Anomalieerkennung","Prädiktion","Weitere"
+      ]},
+      { name: "Algorithmen", items: [
+        "Feature Engineering: Time/Space Domain Features","Feature Engineering: Spectral Features",
+        "Feature Engineering: Cepstrale Features (MFB/MFCC)","Cluster (K-Means)","PCA / ICA",
+        "Klassifikatoren konventionell: Bayes, Logistic Regression, GMM, HMM, SVM, Sequenz-Matching",
+        "DNN: MLP, CNN, RNN, LSTM, Transformer (BERT/GPT)"
+      ]},
+      { name: "Data Engineering", items: [
+        "Data Akquisition (Audio, Ultraschall, Bilder, 3D, IMU, UWB, Radar, LIDAR, BLE, …)",
+        "Korpus Management","Labeling/Annotation","Data Quality Checks",
+        "Data Versioning (z. B. DVC)","Synthetic Data (Simulation/Digital Twin)"
+      ]},
+      { name: "Machine Learning Engineering", items: [
+        "Training: Supervised / Unsupervised / Transfer Learning / Deep Learning",
+        "Tuning: Parameter-Optimierung, Data Augmentation, Domain Adaptation, Robustness",
+        "Tooling: Experiment Tracking (z. B. MLflow), Model Registry, CI für ML, Deployment/Monitoring"
+      ]}
+    ]
+  },
+  {
+    id: "software",
+    badge: "Software & DevOps",
+    title: "Software",
+    subtitle: "Plattformen, Sprachen/Frameworks, Entwicklungstools, DevOps.",
+    sections: [
+      { name: "Plattformen", items: [
+        "Embedded",
+        "Mobile: Android, iOS",
+        "Desktop: Linux, Windows, MacOS",
+        "Server: Native, Container, Kubernetes",
+        "GPU: CUDA",
+        "Browser: Chrome, Firefox, Safari"
+      ]},
+      { name: "Sprachen & Frameworks", items: [
+        "Markup: HTML, XML, Markdown, LaTeX",
+        "Interpreter: Python, MATLAB, Simulink, batch/shell, JavaScript, Julia, Lua",
+        "Compiler: C, C++, C#, Java, Kotlin, DART, SQL, CUDA, Rust",
+        "Frameworks: Flutter, React, React Native, Qt, JavaFX, Gluon, Xamarin, mono"
+      ]},
+      { name: "Entwicklungstools", items: [
+        "Dokumentation/Diagramme: GraphViz, LaTeX, MS Office, LibreOffice",
+        "Build Systeme: CMake, qmake, Gradle, Maven, Make, Autotools"
+      ]},
+      { name: "DevOps / CI", items: [
+        "GitLab: Git, Issue Tracking, CI/CD, Pages",
+        "Package Manager: Conan, PyPI, Artifactory",
+        "Static Analysis/Formatting: ClangFormat, ClangTidy, CppCheck, MyPy, black/isort",
+        "Build Stage: MSBuild, clang, gcc, Apple clang",
+        "Unit Test: Catch2, Google Test, Code Coverage",
+        "Echtzeit-Analyse: Integrationstest, Profiling, Belastungstest, Valgrind",
+        "Deployment: Deploy Software, Upload Packages, Deploy auto documentation"
+      ]}
+    ]
+  },
+  {
+    id: "embedded",
+    badge: "HW & Embedded",
+    title: "Embedded",
+    subtitle: "CPU, Elektronik-Design, Embedded SW, Gehäuse, Optik.",
+    sections: [
+      { name: "CPU", items: [
+        "Typ: MCU, DSP, Fixed Point, Floating Point, PSoC",
+        "Wortbreite: 8/16/32/64 Bit",
+        "Architektur: ARM, MIPS, RXv2, ARC, CR816, AVR, RISC-V",
+        "Hersteller (Beispiele): Renesas, NXP, Microchip, Atmel, ST, TI, ADI, Nordic, Infineon, Raspberry Pi, onsemi",
+        "CPU-Leistung: <10 / <20 / <50 / <100 / <200 / >200 MHz"
+      ]},
+      { name: "Elektronik-Design", items: [
+        "Prototyping (Labormuster, Prototyp)","Serienfertigung",
+        "Zertifizierung (falls erforderlich)"
+      ]},
+      { name: "Embedded Softwareentwicklung", items: [
+        "Programmiersprache: C, C++, Java, MicroPython, Assembly",
+        "Embedded OS: Embedded Linux, INTEGRITY, VxWorks, QNX, RTOS, OpenWrt, embedded Java, kein OS/native HAL",
+        "Embedded IDE: Keil µVision, CLion, IAR, MPLAB, Eclipse, VisualDSP++, Code Composer, e² studio, Green Hills MULTI, STM32CubeIDE",
+        "Tooling: Eval-Kit, ICE, Lauterbach µTrace, JLINK, ST-Link, Logic Analyzer"
+      ]},
+      { name: "Gehäuse", items: [
+        "Material: Kunststoff, Metall",
+        "Eigenschaften: verschraubt, SnapIn, ultraschall verschweisst, verschweisst, verklebt",
+        "Fertigung (Beispiele): Spritzguss, Vakuumdruckguss, 3D-Druck (FDM/SLA/SLS/MJF)"
+      ]},
+      { name: "Optik", items: [
+        "Optik-Design","Optik-Fertigung: Prototypische Herstellung, Serienfertigung, End-of-Line-Test"
+      ]}
+    ]
+  },
+  {
+    id: "connectivity",
+    badge: "Kommunikation",
+    title: "Connectivity",
+    subtitle: "Anwendungsbereiche, Verbindung (wired/wireless), Protokolle.",
+    sections: [
+      { name: "Anwendungsbereich", items: [
+        "Client-Server-Systeme","Cloud Computing","Internet of Things (IoT)","Sensornetzwerk","Car2X","Mobile Anwendungen",
+        "Smart City","Smart Country","Weitere"
+      ]},
+      { name: "Verbindung", items: [
+        "Wired: RS232/485, Ethernet, CAN, LIN, USB, SPI, I²C (Beispiele)",
+        "Wireless: BLE, Wi‑Fi, UWB, Zigbee/Thread, LTE/5G, LoRaWAN (Beispiele)"
+      ]},
+      { name: "Protokolle", items: [
+        "IP: TCP/UDP, HTTP/REST, WebSocket",
+        "IoT: MQTT, CoAP",
+        "Industrial/Robotics: DDS (ROS2), OPC UA (Beispiele)",
+        "Security: TLS, Zertifikate/PKI (Beispiele)"
+      ]}
+    ]
+  },
+];
+
+function render(){
+  const root = document.getElementById("content");
+  root.innerHTML = "";
+
+  taxonomy.forEach(cat=>{
+    const card = document.createElement("section");
+    card.className = "card";
+    card.id = cat.id;
+
+    card.innerHTML = `
+      <div class="card-header">
+        <div>
+          <div class="badge">${cat.badge}</div>
+          <h3>${cat.title}</h3>
+          <p>${cat.subtitle}</p>
+        </div>
+        <div style="text-align:right; color:#556; font-size:.85rem;">
+          <div class="mono">#${cat.id}</div>
+        </div>
+      </div>
+      <div class="card-body">
+        ${cat.sections.map(sec => `
+          <details class="sub" open>
+            <summary>${sec.name}</summary>
+            <div class="chips">
+              ${sec.items.map(i => `<span class="chip" data-chip="${escapeHtml(i)}">${escapeHtml(i)}</span>`).join("")}
+            </div>
+          </details>
+        `).join("")}
+      </div>
+    `;
+    root.appendChild(card);
+  });
+}
+
+function escapeHtml(str){
+  return String(str)
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll(""","&quot;")
+    .replaceAll("'","&#039;");
+}
+
+function applySearch(q){
+  q = (q || "").trim().toLowerCase();
+  const chips = document.querySelectorAll("[data-chip]");
+  chips.forEach(chip=>{
+    const text = chip.getAttribute("data-chip").toLowerCase();
+    const hit = !q || text.includes(q);
+    chip.style.display = hit ? "inline-block" : "none";
+  });
+
+  // Subsections ohne sichtbare Chips einklappen (optional)
+  document.querySelectorAll("details.sub").forEach(det=>{
+    const hasVisible = Array.from(det.querySelectorAll("[data-chip]")).some(c => c.style.display !== "none");
+    det.style.display = hasVisible ? "block" : "none";
+  });
+
+  // Categories ohne sichtbare subsections ausblenden
+  taxonomy.forEach(cat=>{
+    const catEl = document.getElementById(cat.id);
+    if(!catEl) return;
+    const hasVisibleSub = Array.from(catEl.querySelectorAll("details.sub")).some(d => d.style.display !== "none");
+    catEl.style.display = hasVisibleSub ? "block" : "none";
+  });
+}
+
+render();
+
+// Search wiring
+const sb = document.getElementById("searchBox");
+const cb = document.getElementById("clearBtn");
+sb.addEventListener("input", ()=>applySearch(sb.value));
+cb.addEventListener("click", ()=>{
+  sb.value = "";
+  applySearch("");
+  sb.focus();
+});
+
+// Lightweight i18n for key labels (lists remain technical terms)
+const i18n = {
+  de: { "Sprache:":"Sprache:", "Überblick":"Überblick", "Inhaltsverzeichnis":"Inhaltsverzeichnis", "← Zurück":"← Zurück" },
+  en: { "Sprache:":"Language:", "Überblick":"Overview", "Inhaltsverzeichnis":"Contents", "← Zurück":"← Back" },
+  fr: { "Sprache:":"Langue :", "Überblick":"Aperçu", "Inhaltsverzeichnis":"Sommaire", "← Zurück":"← Retour" },
+  es: { "Sprache:":"Idioma:", "Überblick":"Resumen", "Inhaltsverzeichnis":"Contenido", "← Zurück":"← Volver" },
+};
+
+function setLang(lang){
+  document.documentElement.lang = lang;
+  document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active", b.dataset.lang===lang));
+
+  const t = i18n[lang] || i18n.de;
+  document.getElementById("lang-label").textContent = t["Sprache:"];
+  document.getElementById("nav-overview").textContent = t["Überblick"];
+  document.getElementById("toc-title").textContent = t["Inhaltsverzeichnis"];
+  document.getElementById("nav-home").textContent = t["← Zurück"];
+}
+
+document.querySelectorAll(".lang-btn").forEach(btn=>{
+  btn.addEventListener("click", ()=>setLang(btn.dataset.lang));
+});
+</script>
+
+</body>
+</html>
