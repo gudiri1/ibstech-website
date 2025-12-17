@@ -1,478 +1,1526 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <title>Projekt Komponenten – Fachgebiete | IBSTech Portal</title>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projekt Komponenten · Fachgebiete</title>
+  <meta name="description" content="Übersicht & Deep-Dive Explorer für Projekt-Komponenten und Fachgebiete in Embedded · Robotik · KI." />
   <style>
     :root{
-      --bg:#0b1b2b;
-      --accent:#ff8a00;
-      --text:#222;
-      --muted:#5b6675;
-      --card:#ffffff;
-      --line:#d8dde8;
-      --soft:#f6f8fc;
+      --bg0:#070A12;
+      --bg1:#0B1022;
+      --card:#0F1733cc;
+      --card2:#111B3FCC;
+      --stroke:rgba(255,255,255,.10);
+      --stroke2:rgba(255,255,255,.14);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.72);
+      --muted2:rgba(255,255,255,.58);
+      --accent:#6EE7FF;
+      --accent2:#A78BFA;
+      --good:#34D399;
+      --warn:#FBBF24;
+      --bad:#F87171;
+      --shadow: 0 18px 55px rgba(0,0,0,.45);
+      --radius: 18px;
     }
-    body{font-family:Arial,sans-serif;margin:0;line-height:1.55;color:var(--text);background:#fff;}
-    nav{
-      background:#111;color:#fff;padding:10px 20px;position:sticky;top:0;z-index:10;
-      display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 15% 10%, rgba(167,139,250,.22), transparent 60%),
+        radial-gradient(800px 500px at 80% 20%, rgba(110,231,255,.18), transparent 60%),
+        radial-gradient(900px 600px at 50% 90%, rgba(52,211,153,.10), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
     }
-    nav a{color:#fff;text-decoration:none;font-size:0.9rem}
-    nav a:hover{text-decoration:underline}
-    .nav-links{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-    .lang-switcher{margin-left:auto;display:flex;gap:6px;align-items:center}
-    .lang-switcher-label{font-size:0.8rem;opacity:0.7;margin-right:4px}
-    .lang-btn{background:#222;border:1px solid #444;border-radius:4px;padding:2px 4px;cursor:pointer}
-    .lang-btn.active{border-color:var(--accent);background:#333}
-    .lang-btn img.flag-icon{display:block;width:22px;height:auto}
-
+    a{color:inherit}
+    .wrap{max-width:1120px; margin:0 auto; padding:18px 18px 60px;}
     header{
-      background:var(--bg);color:#fff;padding:34px 20px;text-align:center;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px;
+      padding:12px 0 8px;
     }
-    header h1{margin:0 0 6px}
-    header p{margin:0 auto;max-width:980px;opacity:0.95}
-    .pill-row{margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-    .pill{border:1px solid rgba(255,255,255,.45);background:rgba(0,0,0,.12);border-radius:999px;padding:4px 10px;font-size:.85rem}
+    .brand{
+      display:flex; align-items:center; gap:10px; text-decoration:none;
+      font-weight:800; letter-spacing:.2px;
+    }
+    .brand .dot{
+      width:12px; height:12px; border-radius:999px;
+      background:linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow:0 0 0 3px rgba(255,255,255,.06);
+    }
+    nav{
+      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    }
+    .navlink{
+      text-decoration:none;
+      padding:8px 10px;
+      border:1px solid transparent;
+      border-radius:12px;
+      color:var(--muted);
+    }
+    .navlink:hover{border-color:var(--stroke); color:var(--text); background:rgba(255,255,255,.03)}
+    .lang{
+      display:flex; align-items:center; gap:8px;
+      padding-left:8px; border-left:1px solid var(--stroke);
+    }
+    .flagbtn{
+      width:34px; height:30px;
+      border-radius:12px;
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.03);
+      display:inline-flex; align-items:center; justify-content:center;
+      cursor:pointer;
+      box-shadow:0 6px 18px rgba(0,0,0,.25);
+      transition:transform .08s ease, border-color .12s ease, background .12s ease;
+    }
+    .flagbtn:hover{transform:translateY(-1px); border-color:var(--stroke2); background:rgba(255,255,255,.05)}
+    .flagbtn img{width:20px; height:20px; display:block}
+    .hero{
+      margin-top:12px;
+      padding:18px;
+      border:1px solid var(--stroke);
+      border-radius:var(--radius);
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      box-shadow:var(--shadow);
+    }
+    .hero h1{margin:0 0 8px; font-size:28px; letter-spacing:.2px}
+    .hero p{margin:0; color:var(--muted); line-height:1.45}
+    .hero .sub{
+      margin-top:10px;
+      display:flex; flex-wrap:wrap; gap:8px;
+      color:var(--muted2);
+      font-size:13px;
+    }
+    .pill{
+      border:1px solid var(--stroke);
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.03);
+    }
 
-    .wrap{max-width:1200px;margin:0 auto;padding:26px 20px}
+    .panel{
+      margin-top:16px;
+      border:1px solid var(--stroke);
+      border-radius:var(--radius);
+      background:rgba(255,255,255,.03);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .toolbar{
+      display:flex; gap:10px; align-items:center; justify-content:space-between;
+      padding:12px 14px;
+      border-bottom:1px solid var(--stroke);
+      background:rgba(0,0,0,.10);
+    }
+    .lefttools{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      cursor:pointer;
+      padding:9px 12px;
+      border-radius:14px;
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.03);
+      color:var(--text);
+      box-shadow:0 6px 20px rgba(0,0,0,.25);
+      transition:transform .08s ease, border-color .12s ease, background .12s ease;
+      user-select:none;
+    }
+    .btn:hover{transform:translateY(-1px); border-color:var(--stroke2); background:rgba(255,255,255,.05)}
+    .btn:disabled{opacity:.55; cursor:not-allowed; transform:none}
+    .crumbs{
+      display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:13px;
+      max-width:720px;
+    }
+    .crumbs a{
+      text-decoration:none;
+      color:var(--muted);
+      border:1px solid transparent;
+      padding:4px 8px;
+      border-radius:999px;
+    }
+    .crumbs a:hover{border-color:var(--stroke); color:var(--text); background:rgba(255,255,255,.03)}
+    .righttools{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+    }
+    .search{
+      width:min(420px, 70vw);
+      display:flex; align-items:center; gap:8px;
+      padding:9px 12px;
+      border-radius:14px;
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.03);
+    }
+    .search input{
+      width:100%;
+      outline:none;
+      border:none;
+      color:var(--text);
+      background:transparent;
+      font-size:14px;
+    }
+    .search input::placeholder{color:rgba(255,255,255,.45)}
+    .content{
+      padding:14px;
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:14px;
+    }
+    @media (max-width: 980px){
+      .content{grid-template-columns:1fr}
+    }
+
     .grid{
       display:grid;
-      grid-template-columns: 280px 1fr;
-      gap:18px;
-      align-items:start;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap:12px;
     }
-    @media (max-width: 920px){
-      .grid{grid-template-columns:1fr}
+    @media (max-width: 980px){
+      .grid{grid-template-columns: repeat(2, minmax(0, 1fr));}
     }
-
-    .panel{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px}
-    .panel h2{margin:0 0 10px;font-size:1.1rem;color:var(--bg)}
-    .toc a{display:block;padding:8px 10px;border-radius:8px;color:var(--bg);text-decoration:none;border:1px solid transparent}
-    .toc a:hover{border-color:var(--accent);background:#fff}
-    .search{display:flex;gap:8px;margin-top:10px}
-    .search input{
-      width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);font-size:0.95rem;
-      outline:none;background:#fff;
+    @media (max-width: 560px){
+      .grid{grid-template-columns:1fr;}
     }
-    .search button{
-      padding:10px 12px;border-radius:10px;border:0;background:var(--accent);font-weight:bold;cursor:pointer;
-    }
-    .hint{margin-top:10px;color:var(--muted);font-size:0.9rem}
-
-    .content{display:flex;flex-direction:column;gap:14px}
     .card{
-      border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;
-      box-shadow:0 2px 10px rgba(0,0,0,.06);
+      border:1px solid var(--stroke);
+      border-radius:16px;
+      padding:12px;
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      box-shadow:0 14px 40px rgba(0,0,0,.30);
+      cursor:pointer;
+      transition:transform .10s ease, border-color .12s ease, background .12s ease;
+      min-height:92px;
     }
-    .card-header{
-      padding:14px 16px;background:linear-gradient(135deg,#f5f7fb,#e7ebf5);
-      display:flex;align-items:flex-start;justify-content:space-between;gap:12px
+    .card:hover{transform:translateY(-2px); border-color:var(--stroke2); background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03))}
+    .card h3{
+      margin:0;
+      font-size:15px;
+      letter-spacing:.2px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
     }
-    .card-header h3{margin:0;color:var(--bg)}
-    .card-header p{margin:4px 0 0;color:var(--muted);font-size:0.92rem}
-    .badge{display:inline-block;padding:3px 10px;border-radius:999px;background:#e3e7ef;color:var(--bg);font-size:.75rem;margin-top:2px}
-    .card-body{padding:14px 16px;background:#fff}
+    .card p{
+      margin:7px 0 0;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.35;
+    }
+    .kicker{
+      display:inline-flex; align-items:center; gap:6px;
+      font-size:12px;
+      color:var(--muted2);
+      margin-top:8px;
+      flex-wrap:wrap;
+    }
+    .tag{
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.03);
+      border-radius:999px;
+      padding:3px 8px;
+    }
+    .arrow{
+      width:22px; height:22px; border-radius:10px;
+      border:1px solid var(--stroke);
+      display:inline-flex; align-items:center; justify-content:center;
+      color:rgba(255,255,255,.78);
+      background:rgba(0,0,0,.12);
+      flex:0 0 auto;
+    }
 
-    details.sub{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--soft);margin:10px 0}
-    details.sub > summary{cursor:pointer;font-weight:bold;color:var(--bg)}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .chip{border:1px solid #cfd6e6;background:#fff;border-radius:999px;padding:6px 10px;font-size:.85rem}
-    .subnote{margin:8px 0 0;color:var(--muted);font-size:.9rem}
-
-    .footer{margin-top:30px;padding:18px 20px;background:var(--bg);color:#fff;text-align:center;font-size:.9rem}
-    .footer a{color:#fff}
-    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+    .detail{
+      border:1px solid var(--stroke);
+      border-radius:16px;
+      padding:12px;
+      background:rgba(0,0,0,.12);
+      box-shadow:0 14px 40px rgba(0,0,0,.25);
+    }
+    .detail h2{
+      margin:0 0 8px;
+      font-size:16px;
+      letter-spacing:.2px;
+    }
+    .detail p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.45;
+      font-size:13.5px;
+    }
+    .sectiontitle{
+      margin:12px 0 8px;
+      color:rgba(255,255,255,.86);
+      font-size:12px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px}
+    .chip{
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.03);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      color:rgba(255,255,255,.84);
+      cursor:pointer;
+      transition:transform .08s ease, border-color .12s ease, background .12s ease;
+    }
+    .chip:hover{transform:translateY(-1px); border-color:var(--stroke2); background:rgba(255,255,255,.05)}
+    .mini{
+      margin-top:10px;
+      padding-top:10px;
+      border-top:1px dashed rgba(255,255,255,.16);
+      color:rgba(255,255,255,.70);
+      font-size:12.5px;
+      line-height:1.45;
+    }
+    .note{
+      margin-top:10px;
+      padding:10px 12px;
+      border:1px solid rgba(110,231,255,.25);
+      background:rgba(110,231,255,.06);
+      border-radius:14px;
+      color:rgba(255,255,255,.80);
+      font-size:13px;
+      line-height:1.45;
+    }
+    .results{
+      margin-top:8px;
+      border:1px solid var(--stroke);
+      border-radius:14px;
+      overflow:hidden;
+      background:rgba(0,0,0,.10);
+    }
+    .resrow{
+      padding:10px 12px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      cursor:pointer;
+    }
+    .resrow:hover{background:rgba(255,255,255,.03)}
+    .resrow:last-child{border-bottom:none}
+    .respath{color:var(--muted2); font-size:12px}
+    .restitle{font-size:14px; margin-top:2px}
+    footer{
+      margin-top:14px;
+      color:rgba(255,255,255,.55);
+      font-size:12.5px;
+      line-height:1.45;
+    }
+    .smalllink{color:rgba(255,255,255,.72)}
+    .smalllink:hover{color:rgba(255,255,255,.92)}
+    .kbd{
+      border:1px solid rgba(255,255,255,.18);
+      padding:2px 6px;
+      border-radius:8px;
+      background:rgba(0,0,0,.18);
+      font-size:12px;
+      color:rgba(255,255,255,.72);
+    }
   </style>
 </head>
+
 <body>
-
-  <nav>
-    <div class="nav-links">
-      <a href="index.html" id="nav-home">← Zurück</a>
-      <a href="#overview" id="nav-overview">Überblick</a>
-      <a href="#project" id="nav-project">Project</a>
-      <a href="#signals" id="nav-signals">Signals</a>
-      <a href="#ai" id="nav-ai">KI-Algorithmen</a>
-      <a href="#software" id="nav-software">Software</a>
-      <a href="#embedded" id="nav-embedded">Embedded</a>
-      <a href="#connectivity" id="nav-connectivity">Connectivity</a>
-    </div>
-
-    <div class="lang-switcher">
-      <span class="lang-switcher-label" id="lang-label">Sprache:</span>
-      <button class="lang-btn active" data-lang="de" aria-label="Deutsch">
-        <img src="media/flag_de.png" alt="Deutsch" class="flag-icon" />
-      </button>
-      <button class="lang-btn" data-lang="en" aria-label="English">
-        <img src="media/flag_gb.png" alt="English" class="flag-icon" />
-      </button>
-      <button class="lang-btn" data-lang="fr" aria-label="Français">
-        <img src="media/flag_fr.png" alt="Français" class="flag-icon" />
-      </button>
-      <button class="lang-btn" data-lang="es" aria-label="Español (Ecuador)">
-        <img src="media/flag_ec.png" alt="Español (Ecuador)" class="flag-icon" />
-      </button>
-    </div>
-  </nav>
-
-  <header id="overview">
-    <h1 id="hero-title">Projekt Komponenten – Fachgebiete</h1>
-    <p id="hero-sub">
-      Diese Seite ist ein <b>Komponenten- und Themenkatalog</b> für technische Systeme (Embedded · Robotik · KI · Cloud).
-      Sie ist von der Struktur des Embedded-AI-Konfigurators inspiriert, dient hier aber ausschließlich als <b>Übersicht + Deep-Dive</b>.
-    </p>
-    <div class="pill-row">
-      <span class="pill">V-Modell</span>
-      <span class="pill">Digitaler Zwilling</span>
-      <span class="pill">Signale & Sensorik</span>
-      <span class="pill">KI-Algorithmen</span>
-      <span class="pill">Software & DevOps</span>
-      <span class="pill">Embedded & Connectivity</span>
-    </div>
-  </header>
-
   <div class="wrap">
-    <div class="grid">
-      <aside class="panel">
-        <h2 id="toc-title">Inhaltsverzeichnis</h2>
-        <div class="toc">
-          <a href="#project">1) Project</a>
-          <a href="#signals">2) Signals</a>
-          <a href="#ai">3) KI-Algorithmen</a>
-          <a href="#software">4) Software</a>
-          <a href="#embedded">5) Embedded</a>
-          <a href="#connectivity">6) Connectivity</a>
+    <header>
+      <a class="brand" href="index.html" title="Zurück zur Startseite">
+        <span class="dot"></span>
+        <span>ibstech · Portal</span>
+      </a>
+
+      <nav>
+        <a class="navlink" href="index.html#demos">Demos</a>
+        <a class="navlink" href="index.html#tools">Tools</a>
+        <a class="navlink" href="toolradar.html">ToolRadar</a>
+        <div class="lang" aria-label="Sprache">
+          <!-- Twemoji SVGs: stabil (keine Emoji-Font-Abhängigkeit) -->
+          <button class="flagbtn" title="Deutsch" data-lang="de" aria-label="Deutsch">
+            <img alt="DE" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1e9-1f1ea.svg">
+          </button>
+          <button class="flagbtn" title="English" data-lang="en" aria-label="English">
+            <img alt="GB" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1ec-1f1e7.svg">
+          </button>
+          <button class="flagbtn" title="Français" data-lang="fr" aria-label="Français">
+            <img alt="FR" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1eb-1f1f7.svg">
+          </button>
+          <button class="flagbtn" title="Español (EC)" data-lang="es" aria-label="Español (Ecuador)">
+            <img alt="EC" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1ea-1f1e8.svg">
+          </button>
         </div>
+      </nav>
+    </header>
 
-        <div class="search" style="margin-top:14px">
-          <input id="searchBox" type="search" placeholder="Suche nach Begriffen (z. B. ‚ISO 26262‘, ‚UWB‘, ‚CMake‘) …" />
-          <button id="clearBtn" type="button" title="Suche zurücksetzen">×</button>
+    <section class="hero">
+      <h1>Projekt Komponenten · Fachgebiete</h1>
+      <p>
+        Diese Seite ist ein <strong>Explorer</strong> (kein Konfigurator): Du klickst dich von einem Fachgebiet in die
+        Unterebenen – bis hin zu konkreten Komponenten, Verfahren und Varianten. Ideal, um in Präsentationen
+        „vom Überblick ins Detail“ zu zoomen.
+      </p>
+      <div class="sub">
+        <span class="pill">Drill-Down Navigation</span>
+        <span class="pill">Suche (lokal + global)</span>
+        <span class="pill">Komponenten · Methoden · Optionen</span>
+        <span class="pill">Embedded · KI · Robotik · Cloud</span>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Explorer">
+      <div class="toolbar">
+        <div class="lefttools">
+          <button id="btnBack" class="btn" type="button" disabled>
+            ← Zurück
+          </button>
+          <div class="crumbs" id="crumbs" aria-label="Breadcrumbs"></div>
         </div>
-        <div class="hint" id="search-hint">
-          Tipp: Suche filtert die Chips in allen Bereichen. Ideal, um im Gespräch schnell von „Überblick“ zu „Detail“ zu springen.
+        <div class="righttools">
+          <div class="search" role="search">
+            <span style="opacity:.75">⌕</span>
+            <input id="q" type="search" placeholder="Suchen (z.B. Kalman, BLE, ISO 26262, Zephyr, Radar …)" autocomplete="off" />
+          </div>
         </div>
-      </aside>
+      </div>
 
-      <main class="content" id="content"></main>
-    </div>
-  </div>
-
-  <div class="footer">
-    <div>
-      Quelle der Taxonomie (Inspiration): <span class="mono">embedded.ai/configurator</span>.
-      Diese Seite zeigt eine eigenständige, nicht-konfigurierende Übersicht.
-    </div>
-  </div>
-
-<script>
-/**
- * Taxonomie: komprimiert als "Übersicht + Optionslisten".
- * (Struktur inspiriert durch: https://www.embedded.ai/configurator/ )
- */
-const taxonomy = [
-  {
-    id: "project",
-    badge: "Projekt-Setup",
-    title: "Project",
-    subtitle: "Projektform, Branche, Projektmanagement, Qualitäts-/Compliance-Aspekte.",
-    sections: [
-      { name: "Projektbeschreibung", items: ["Erläuterung (Freitext)"] },
-      { name: "Branche", items: [
-        "Automotive","Medical","Energietechnik","Smart Sensors","Weiße Ware","Home Automation",
-        "Autonomes Fahren","Robotik","Industrieautomation","Vorausschauende Instandhaltung","Weitere"
-      ]},
-      { name: "Projektform", items: [
-        "Machbarkeitsstudie/Recherche",
-        "Machbarkeitsnachweis (Proof of Concept): Entwicklung Demonstrator",
-        "Entwicklung Produktvorstufe: Prototyp",
-        "Serienentwicklung: Serienprototyp",
-        "Durchführung der Serienproduktion",
-        "Redesign (Neugestaltung)",
-        "Weitere"
-      ]},
-      { name: "Projektmanagement", items: [
-        "Vorgehensmodelle: Scrum","Vorgehensmodelle: Kanban","Vorgehensmodelle: Wasserfall-Modell",
-        "Vorgehensmodelle: V-Modell","Vorgehensmodelle: Hybrides Modell",
-        "Werkzeuge: OpenProject","Werkzeuge: Projektron BCS","Werkzeuge: Jira","Werkzeuge: Confluence",
-        "Requirement Engineering (Wünsche/Tools)","Defect Management (Wünsche/Tools)"
-      ]},
-      { name: "Qualitätsmanagement / Normen / Zertifizierungen", items: [
-        "ISO 9001","ISO 26262 (ASIL)","ISO 27001","TISAX","IATF 16949","ASPICE","CE","GS"
-      ]}
-    ]
-  },
-  {
-    id: "signals",
-    badge: "Sensorik & DSP",
-    title: "Signals",
-    subtitle: "Signalformen, Sensoren, Signalverarbeitung, Anwendungen.",
-    sections: [
-      { name: "Physische Signalform", items: [
-        "Akustisch (Tiergeräusche, Sprache, Instrumente, Umwelt)",
-        "Ultraschall (Events, Abstände, Muster)",
-        "Optisch (Bilder, Video, 3D-Bilder, Time-of-Flight, Spektral, Ereignisse)",
-        "Infrarot / Thermisch",
-        "Funk (UWB, RFID, BLE, WLAN, Mobilfunk)",
-        "Elektrisch (Ladung/Spannung/Strom, Feldstärke, Potential, Bioelektrik)",
-        "Magnetisch",
-        "Mechanisch (Druck, Kraft, Beschleunigung, Vibration, Ultraschall)",
-        "Beschleunigung / Bewegung (IMU, Erschütterung, Aktivität)"
-      ]},
-      { name: "Sensor", items: [
-        "Akustische Signale (Mikrofone, Arrays)",
-        "Kamera / Bildsensor",
-        "3D-Kamera / Depth",
-        "Infrarotkamera / Thermalsensor",
-        "Ultraschall-Transducer",
-        "IMU (Accel/Gyro)",
-        "UWB Radar / UWB Ranging / UWB Localization",
-        "FMCW Radar / Radar",
-        "LIDAR",
-        "BLE Daten",
-        "ToF Sensor",
-        "Magnetometer",
-        "Vibrationssensor",
-        "Weitere"
-      ]},
-      { name: "Signalverarbeitung", items: [
-        "Signal Transformation: DFT/FFT, STFT, Wavelets, DCT, Chirp-Z, (Sonstige)",
-        "Nonlinear Filtering (Median, Morphology)",
-        "Adaptive Filtering (LMS, RLS)",
-        "Time/Frequency/Cepstral Features (MFCC, iVector, etc.)",
-        "Bewegungs-/Trajektorienmerkmale (Quaternionen, Trilateration)",
-        "Multimodale Fusion"
-      ]},
-      { name: "Anwendungen", items: [
-        "Biometrie / Identifikation","Ereigniserkennung","Zustands-/Anomalieerkennung",
-        "Qualitätskontrolle","Tracking/Localization","Speech/Audio","Vision/Inspection","Weitere"
-      ]}
-    ]
-  },
-  {
-    id: "ai",
-    badge: "ML & KI",
-    title: "KI-Algorithmen",
-    subtitle: "KI-Anwendung, Algorithmen, Data Engineering, ML Engineering.",
-    sections: [
-      { name: "KI-Anwendung", items: [
-        "Klassifikation","Regression/Schätzung","Detektion","Segmentierung",
-        "Zeitreihenanalyse","Anomalieerkennung","Prädiktion","Weitere"
-      ]},
-      { name: "Algorithmen", items: [
-        "Feature Engineering: Time/Space Domain Features","Feature Engineering: Spectral Features",
-        "Feature Engineering: Cepstrale Features (MFB/MFCC)","Cluster (K-Means)","PCA / ICA",
-        "Klassifikatoren konventionell: Bayes, Logistic Regression, GMM, HMM, SVM, Sequenz-Matching",
-        "DNN: MLP, CNN, RNN, LSTM, Transformer (BERT/GPT)"
-      ]},
-      { name: "Data Engineering", items: [
-        "Data Akquisition (Audio, Ultraschall, Bilder, 3D, IMU, UWB, Radar, LIDAR, BLE, …)",
-        "Korpus Management","Labeling/Annotation","Data Quality Checks",
-        "Data Versioning (z. B. DVC)","Synthetic Data (Simulation/Digital Twin)"
-      ]},
-      { name: "Machine Learning Engineering", items: [
-        "Training: Supervised / Unsupervised / Transfer Learning / Deep Learning",
-        "Tuning: Parameter-Optimierung, Data Augmentation, Domain Adaptation, Robustness",
-        "Tooling: Experiment Tracking (z. B. MLflow), Model Registry, CI für ML, Deployment/Monitoring"
-      ]}
-    ]
-  },
-  {
-    id: "software",
-    badge: "Software & DevOps",
-    title: "Software",
-    subtitle: "Plattformen, Sprachen/Frameworks, Entwicklungstools, DevOps.",
-    sections: [
-      { name: "Plattformen", items: [
-        "Embedded",
-        "Mobile: Android, iOS",
-        "Desktop: Linux, Windows, MacOS",
-        "Server: Native, Container, Kubernetes",
-        "GPU: CUDA",
-        "Browser: Chrome, Firefox, Safari"
-      ]},
-      { name: "Sprachen & Frameworks", items: [
-        "Markup: HTML, XML, Markdown, LaTeX",
-        "Interpreter: Python, MATLAB, Simulink, batch/shell, JavaScript, Julia, Lua",
-        "Compiler: C, C++, C#, Java, Kotlin, DART, SQL, CUDA, Rust",
-        "Frameworks: Flutter, React, React Native, Qt, JavaFX, Gluon, Xamarin, mono"
-      ]},
-      { name: "Entwicklungstools", items: [
-        "Dokumentation/Diagramme: GraphViz, LaTeX, MS Office, LibreOffice",
-        "Build Systeme: CMake, qmake, Gradle, Maven, Make, Autotools"
-      ]},
-      { name: "DevOps / CI", items: [
-        "GitLab: Git, Issue Tracking, CI/CD, Pages",
-        "Package Manager: Conan, PyPI, Artifactory",
-        "Static Analysis/Formatting: ClangFormat, ClangTidy, CppCheck, MyPy, black/isort",
-        "Build Stage: MSBuild, clang, gcc, Apple clang",
-        "Unit Test: Catch2, Google Test, Code Coverage",
-        "Echtzeit-Analyse: Integrationstest, Profiling, Belastungstest, Valgrind",
-        "Deployment: Deploy Software, Upload Packages, Deploy auto documentation"
-      ]}
-    ]
-  },
-  {
-    id: "embedded",
-    badge: "HW & Embedded",
-    title: "Embedded",
-    subtitle: "CPU, Elektronik-Design, Embedded SW, Gehäuse, Optik.",
-    sections: [
-      { name: "CPU", items: [
-        "Typ: MCU, DSP, Fixed Point, Floating Point, PSoC",
-        "Wortbreite: 8/16/32/64 Bit",
-        "Architektur: ARM, MIPS, RXv2, ARC, CR816, AVR, RISC-V",
-        "Hersteller (Beispiele): Renesas, NXP, Microchip, Atmel, ST, TI, ADI, Nordic, Infineon, Raspberry Pi, onsemi",
-        "CPU-Leistung: <10 / <20 / <50 / <100 / <200 / >200 MHz"
-      ]},
-      { name: "Elektronik-Design", items: [
-        "Prototyping (Labormuster, Prototyp)","Serienfertigung",
-        "Zertifizierung (falls erforderlich)"
-      ]},
-      { name: "Embedded Softwareentwicklung", items: [
-        "Programmiersprache: C, C++, Java, MicroPython, Assembly",
-        "Embedded OS: Embedded Linux, INTEGRITY, VxWorks, QNX, RTOS, OpenWrt, embedded Java, kein OS/native HAL",
-        "Embedded IDE: Keil µVision, CLion, IAR, MPLAB, Eclipse, VisualDSP++, Code Composer, e² studio, Green Hills MULTI, STM32CubeIDE",
-        "Tooling: Eval-Kit, ICE, Lauterbach µTrace, JLINK, ST-Link, Logic Analyzer"
-      ]},
-      { name: "Gehäuse", items: [
-        "Material: Kunststoff, Metall",
-        "Eigenschaften: verschraubt, SnapIn, ultraschall verschweisst, verschweisst, verklebt",
-        "Fertigung (Beispiele): Spritzguss, Vakuumdruckguss, 3D-Druck (FDM/SLA/SLS/MJF)"
-      ]},
-      { name: "Optik", items: [
-        "Optik-Design","Optik-Fertigung: Prototypische Herstellung, Serienfertigung, End-of-Line-Test"
-      ]}
-    ]
-  },
-  {
-    id: "connectivity",
-    badge: "Kommunikation",
-    title: "Connectivity",
-    subtitle: "Anwendungsbereiche, Verbindung (wired/wireless), Protokolle.",
-    sections: [
-      { name: "Anwendungsbereich", items: [
-        "Client-Server-Systeme","Cloud Computing","Internet of Things (IoT)","Sensornetzwerk","Car2X","Mobile Anwendungen",
-        "Smart City","Smart Country","Weitere"
-      ]},
-      { name: "Verbindung", items: [
-        "Wired: RS232/485, Ethernet, CAN, LIN, USB, SPI, I²C (Beispiele)",
-        "Wireless: BLE, Wi‑Fi, UWB, Zigbee/Thread, LTE/5G, LoRaWAN (Beispiele)"
-      ]},
-      { name: "Protokolle", items: [
-        "IP: TCP/UDP, HTTP/REST, WebSocket",
-        "IoT: MQTT, CoAP",
-        "Industrial/Robotics: DDS (ROS2), OPC UA (Beispiele)",
-        "Security: TLS, Zertifikate/PKI (Beispiele)"
-      ]}
-    ]
-  },
-];
-
-function render(){
-  const root = document.getElementById("content");
-  root.innerHTML = "";
-
-  taxonomy.forEach(cat=>{
-    const card = document.createElement("section");
-    card.className = "card";
-    card.id = cat.id;
-
-    card.innerHTML = `
-      <div class="card-header">
+      <div class="content">
         <div>
-          <div class="badge">${cat.badge}</div>
-          <h3>${cat.title}</h3>
-          <p>${cat.subtitle}</p>
-        </div>
-        <div style="text-align:right; color:#556; font-size:.85rem;">
-          <div class="mono">#${cat.id}</div>
-        </div>
-      </div>
-      <div class="card-body">
-        ${cat.sections.map(sec => `
-          <details class="sub" open>
-            <summary>${sec.name}</summary>
-            <div class="chips">
-              ${sec.items.map(i => `<span class="chip" data-chip="${escapeHtml(i)}">${escapeHtml(i)}</span>`).join("")}
+          <div id="grid" class="grid" aria-label="Kacheln"></div>
+
+          <div id="resultsWrap" style="display:none; margin-top:12px;">
+            <div class="sectiontitle">Suchtreffer</div>
+            <div id="results" class="results" aria-label="Suchtrefferliste"></div>
+            <div class="mini">
+              Tipp: Mit <span class="kbd">Enter</span> auf einen Treffer navigieren oder anklicken.
             </div>
-          </details>
-        `).join("")}
+          </div>
+        </div>
+
+        <aside class="detail" aria-label="Details">
+          <h2 id="detailTitle">Start</h2>
+          <p id="detailDesc">
+            Wähle links ein Fachgebiet. Du kannst danach immer weiter „reinzoomen“.
+            Wenn du die Suche nutzt, bekommst du zusätzlich globale Treffer über alle Ebenen.
+          </p>
+
+          <div class="sectiontitle">Quick-Actions</div>
+          <div class="chips">
+            <span class="chip" data-quick="signals">Signals → Sensor → IMU</span>
+            <span class="chip" data-quick="project">Project → Qualitätsmanagement</span>
+            <span class="chip" data-quick="ai">KI-Algorithmen → DNN</span>
+            <span class="chip" data-quick="software">Software → Plattformen → Server</span>
+            <span class="chip" data-quick="connectivity">Connectivity → Protokolle</span>
+          </div>
+
+          <div id="detailExtra" class="mini"></div>
+
+          <div class="note" style="margin-top:12px;">
+            Inhaltlich inspiriert durch den „Projektkonfigurator“ von Embedded AI (Dresden) und für das Portal als
+            <strong>Komponenten-Landkarte</strong> erweitert (ohne Angebots-/Konfigurationslogik).
+          </div>
+        </aside>
       </div>
-    `;
-    root.appendChild(card);
-  });
-}
+    </section>
 
-function escapeHtml(str){
-  return String(str)
-    .replaceAll("&","&amp;")
-    .replaceAll("<","&lt;")
-    .replaceAll(">","&gt;")
-    .replaceAll(""","&quot;")
-    .replaceAll("'","&#039;");
-}
+    <footer>
+      <div>
+        Navigation: <a class="smalllink" href="index.html">Startseite</a> ·
+        <a class="smalllink" href="toolradar.html">ToolRadar</a>
+      </div>
+    </footer>
+  </div>
 
-function applySearch(q){
-  q = (q || "").trim().toLowerCase();
-  const chips = document.querySelectorAll("[data-chip]");
-  chips.forEach(chip=>{
-    const text = chip.getAttribute("data-chip").toLowerCase();
-    const hit = !q || text.includes(q);
-    chip.style.display = hit ? "inline-block" : "none";
-  });
+  <script>
+    // -------------------------
+    // Datenmodell (Explorer Tree)
+    // -------------------------
+    // Wichtig: Fokus = Übersicht + Drill-Down, nicht "Konfiguration".
+    // Struktur: Gebiet -> Untergebiet -> Themen/Optionen -> Varianten
+    const DATA = {
+      id: "root",
+      title: "Fachgebiete",
+      desc: "Überblick über alle involvierten Projekt-Komponenten und Disziplinen.",
+      children: [
+        {
+          id: "project",
+          title: "Project",
+          subtitle: "Branche · Projektform · PM · Qualität",
+          desc: "Projektkontext, Vorgehen, Qualitätsrahmen und typische Management-Entscheidungen.",
+          tags: ["V-Modell", "Agil/Hybrid", "Normen"],
+          children: [
+            { id: "project_intro", title: "Einleitung", desc: "Projektarbeit als Grundlage für F&E, Prototyping, Serienentwicklung und Produktgestaltung." },
+            {
+              id: "project_beschreibung",
+              title: "Projektbeschreibung",
+              desc: "Kurzbeschreibung, Ziel, Constraints und Stakeholder-Kontext (später: Requirements & Traceability).",
+              options: [
+                { label: "Zielbild / Systemgrenzen", detail: "Was gehört zum System – und was nicht? (Scope, Interfaces, Betriebsumgebung)" },
+                { label: "Use Cases", detail: "Wesentliche Nutzer- und Betriebsfälle, inkl. Safety-/Security-relevanter Szenarien" },
+                { label: "Risiken & Annahmen", detail: "Technische, regulatorische und organisatorische Risiken; offene Annahmen dokumentieren" }
+              ]
+            },
+            {
+              id: "project_branche",
+              title: "Branche",
+              desc: "Domänen beeinflussen Normen, Datenlage, Safety/Security, Validierungstiefe und Time-to-Market.",
+              options: [
+                { label: "Automotive", detail: "Funktionale Sicherheit, hohe Traceability, lange Produktzyklen" },
+                { label: "Medical", detail: "Regulatorik, klinische Validierung, Daten-/Privacy-Anforderungen" },
+                { label: "Energietechnik", detail: "Robustheit, Security, lange Lebensdauer, Feldbetrieb" },
+                { label: "Smart Sensors", detail: "Kleine Systeme, energieeffizient, Edge-AI/Signalverarbeitung" },
+                { label: "Weiße Ware", detail: "Kosten/Skalierung, Wartbarkeit, Connectivity, Qualitätsprozesse" },
+                { label: "Home Automation", detail: "Interoperabilität, Security, App/Cloud-Integration" },
+                { label: "Autonomes Fahren", detail: "Sensorfusion, Simulation, Safety-Case, Datenpipelines" },
+                { label: "Robotik", detail: "Perception-Planning-Control, Echtzeit, Safety, Simulation" },
+                { label: "Industrieautomation", detail: "SPS/OT-Security, Zuverlässigkeit, Standards (z.B. OPC UA)" },
+                { label: "Vorausschauende Instandhaltung", detail: "Anomalie, Condition Monitoring, Flotten-Analytik" },
+                { label: "Weitere", detail: "Spezialdomänen (Rail, Aerospace, Defense, Consumer, …)" }
+              ]
+            },
+            {
+              id: "project_form",
+              title: "Projektform",
+              desc: "Typische Phasen über den Produktentwicklungszyklus.",
+              options: [
+                { label: "Machbarkeitsstudie/Recherche", detail: "Technische/ökonomische Machbarkeit, Risiken, Datenlage" },
+                { label: "PoC/Demonstrator", detail: "Nachweis eines Kernprinzips (Algorithmus, Sensorik, Pipeline)" },
+                { label: "Produktvorstufe/Prototyp", detail: "Architektur, MVP, Tests, erste Integration" },
+                { label: "Serienentwicklung/Serienprototyp", detail: "Qualifizierung, Produktionsnähe, Validierungstiefe" },
+                { label: "Serienproduktion", detail: "Fertigung, Prüfmittel, Traceability, Service/Updates" },
+                { label: "Redesign (Neugestaltung)", detail: "Kostenoptimierung, EOL-Teile, Re-Architektur" },
+                { label: "Weitere", detail: "z.B. Migration, Plattformwechsel, Re-Certification" }
+              ]
+            },
+            {
+              id: "project_pm",
+              title: "Projekt Management",
+              desc: "Vorgehensmodelle, Tools, Requirements/Defects und Qualitätsmanagement.",
+              children: [
+                {
+                  id: "project_pm_models",
+                  title: "PM-Vorgehensmodelle",
+                  desc: "Auswahl abhängig von Projekttyp, Regulierung, Teamstruktur und Änderungsrate.",
+                  options: [
+                    { label: "Scrum", detail: "Iterativ, inkrementell, Sprint-basiert" },
+                    { label: "Kanban", detail: "Flow-basiert, WIP-Limit, kontinuierliche Lieferung" },
+                    { label: "Wasserfall", detail: "Linear, klare Phasen, planungsgetrieben" },
+                    { label: "V-Modell", detail: "Verifikation/Validierung entlang Systemzerlegung und Testpyramide" },
+                    { label: "Hybrid", detail: "Kombination (z.B. V-Modell + agile Entwicklung auf Komponentenebene)" }
+                  ]
+                },
+                {
+                  id: "project_pm_tools",
+                  title: "PM-Werkzeuge",
+                  desc: "Standard-Tooling für Planung, Tracking, Wissensmanagement.",
+                  options: [
+                    { label: "OpenProject", detail: "Open-Source Projektmanagement (Planung, Tasks, Roadmaps)" },
+                    { label: "Projektron BCS", detail: "Webbasierte PM-Suite (DACH-stark)" },
+                    { label: "Jira", detail: "Issue/Project Tracking, Agile Boards" },
+                    { label: "Confluence", detail: "Wissensmanagement, Dokumentation, kollaborative Specs" }
+                  ]
+                },
+                {
+                  id: "project_pm_re",
+                  title: "Anforderungsanalyse (RE)",
+                  desc: "Erhebung, Dokumentation, Konsistenz, Eindeutigkeit, Traceability bis Test/Code."
+                },
+                {
+                  id: "project_pm_defects",
+                  title: "Fehler-/Mängelmanagement (Defect Management)",
+                  desc: "Systematisches Finden, Priorisieren, Fixen und Verifizieren von Fehlern (inkl. Root-Cause)."
+                },
+                {
+                  id: "project_pm_quality",
+                  title: "Qualitätsmanagement (Normen/Standards/Zertifikate)",
+                  desc: "Relevante Standards hängen von Domäne/Produktklasse ab – hier die häufigsten.",
+                  options: [
+                    { label: "ISO 9001", detail: "Qualitätsmanagementsystem (organisationale Prozesse)" },
+                    { label: "ISO 26262", detail: "Funktionale Sicherheit Automotive (ASIL A–D)" },
+                    { label: "ISO 27001", detail: "Informationssicherheitsmanagement (ISMS)" },
+                    { label: "TISAX", detail: "Automotive-Security-Assessment-Standard" },
+                    { label: "IATF 16949", detail: "QMS speziell für Automotive-Lieferkette" },
+                    { label: "ASPICE", detail: "Prozessreife/-fähigkeit für Embedded/Automotive Software" },
+                    { label: "CE", detail: "EU-Konformität (Richtlinien abhängig vom Produkt)" },
+                    { label: "GS", detail: "„Geprüfte Sicherheit“ (freiwilliges Prüfzeichen, DE)" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
 
-  // Subsections ohne sichtbare Chips einklappen (optional)
-  document.querySelectorAll("details.sub").forEach(det=>{
-    const hasVisible = Array.from(det.querySelectorAll("[data-chip]")).some(c => c.style.display !== "none");
-    det.style.display = hasVisible ? "block" : "none";
-  });
+        {
+          id: "signals",
+          title: "Signals",
+          subtitle: "Signalform · Sensor · DSP · Anwendungen",
+          desc: "Signalformen, Sensorik und Signalverarbeitung – als Grundlage für klassische Algorithmen und KI.",
+          tags: ["DSP", "Sensorik", "Fusion"],
+          children: [
+            { id: "signals_intro", title: "Einleitung", desc: "Signale übertragen Information von Quelle über Medium zum Sensor; danach folgt digitale Signalverarbeitung/Erkennung." },
 
-  // Categories ohne sichtbare subsections ausblenden
-  taxonomy.forEach(cat=>{
-    const catEl = document.getElementById(cat.id);
-    if(!catEl) return;
-    const hasVisibleSub = Array.from(catEl.querySelectorAll("details.sub")).some(d => d.style.display !== "none");
-    catEl.style.display = hasVisibleSub ? "block" : "none";
-  });
-}
+            {
+              id: "signals_form",
+              title: "Physische Signalform",
+              desc: "Welche physikalische Größe trägt die Information?",
+              children: [
+                { id: "sig_akustisch", title: "Akustisch", desc: "Hörbarer Schall (ca. 16 Hz – 20 kHz).", options:[
+                  { label:"Tiergeräusche", detail:"Erkennung/Monitoring" },
+                  { label:"Glasbruch", detail:"Alarm/Intrusion" },
+                  { label:"Fahrzeuggeräusche", detail:"NVH/Fehlerbilder" },
+                  { label:"Maschinengeräusche", detail:"Condition Monitoring" },
+                  { label:"Umgebungsgeräusche", detail:"Context/Scene" }
+                ]},
+                { id: "sig_ultraschall", title: "Ultraschall", desc: "Akustisch oberhalb 20 kHz.", options:[
+                  { label:"Maschinengeräusche", detail:"Hochfrequente Muster, Verschleiß" },
+                  { label:"Fledermaus", detail:"Bioakustik / Events" },
+                  { label:"Messeinrichtung mit Ultraschall", detail:"ToF / Abstand / Material" }
+                ]},
+                { id: "sig_optisch", title: "Optisch", desc: "Sichtbares Licht / Bildsignale.", options:[
+                  { label:"Fingerabdruck", detail:"Biometrie" },
+                  { label:"Bewegung im Bild", detail:"Tracking/Events" },
+                  { label:"Werkstück in der Produktion", detail:"Inspection/QA" }
+                ]},
+                { id: "sig_infrarot", title: "Infrarot", desc: "IR-Signale (Thermal/IR-Imaging oder Übertragung).", options:[
+                  { label:"Wärmeemission eines Gebäudes", detail:"Thermal Inspection" },
+                  { label:"IR-Bewegungsbild eines Menschen", detail:"Presence/Tracking" },
+                  { label:"IR-Datenübertragung", detail:"Optische Kommunikation" }
+                ]},
+                { id: "sig_funk", title: "Funk", desc: "RF-Signale auf Funkwellen moduliert.", options:[
+                  { label:"< 30 kHz", detail:"z.B. EMV-Störungen" },
+                  { label:"30 kHz – 3 MHz", detail:"LF / RFID (je nach System)" },
+                  { label:"3 MHz – 3 GHz", detail:"LoRa, BLE, WLAN (je nach Band)" },
+                  { label:"> 3 GHz", detail:"UWB, Radar, WLAN (je nach System)" }
+                ]},
+                { id: "sig_beschl", title: "Beschleunigung", desc: "Bewegungsereignisse via Beschleunigung messbar.", options:[
+                  { label:"Abbremsen eines Autos", detail:"Event Detection" },
+                  { label:"Sturz eines Menschen", detail:"Fall Detection" },
+                  { label:"Energiesparmodus bei Ruhelage", detail:"Wake/Sleep" }
+                ]},
+                { id: "sig_kraft", title: "Kraft", desc: "Kräfte/Änderungen zeigen Zustände von Anlagen/Fahrzeugen an." },
+                { id: "sig_druck", title: "Druck", desc: "Druck in Flüssigkeiten/Gasen; u.a. Höhe/Prozesszustand ableitbar." }
+              ]
+            },
 
-render();
+            {
+              id: "signals_sensor",
+              title: "Sensor",
+              desc: "Sensoren wandeln physikalische Signale in elektrische und dann digitale Signale um.",
+              children: [
+                {
+                  id: "sens_mikrofon",
+                  title: "Mikrofon",
+                  desc: "Akustik → elektrisch. Viele Varianten – Auswahl projektspezifisch.",
+                  children: [
+                    { id:"mic_types", title:"Varianten (Beispiele)", desc:"Typische Mikrofonklassen und Schnittstellen.",
+                      options:[
+                        { label:"MEMS-Mikrofon", detail:"Kompakt, robust; oft PDM/I²S-Output" },
+                        { label:"Elektret-Kondensator", detail:"Weit verbreitet; analog, Vorverstärker nötig" },
+                        { label:"Dynamisch", detail:"Robust, eher für höhere Pegel" },
+                        { label:"Richtcharakteristik", detail:"Omni / Cardioid / Arrays für Beamforming" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  id: "sens_ultra",
+                  title: "Ultraschall-Wandler",
+                  desc: "Senden/Empfangen von Ultraschall; Wahl projektspezifisch.",
+                  children: [
+                    { id:"ultra_types", title:"Varianten (Beispiele)", desc:"Typische Wandlerprinzipien.",
+                      options:[
+                        { label:"Piezo-Wandler", detail:"Standard in vielen ToF-Anwendungen" },
+                        { label:"CMUT (kapazitiv)", detail:"Mikrostrukturierte Ultraschallwandler (spezialisierter)" }
+                      ]
+                    }
+                  ]
+                },
+                { id: "sens_cam2d", title: "2D-Kamera IC (CMOS/CCD)", desc: "Flächenkamera (Mono/Farbe/IR-sensitiv), verschiedene Auflösungen." },
+                { id: "sens_cam3d", title: "3D-Kamera IC (CMOS)", desc: "Mehrblick/Depth-Sensing zur 3D-Rekonstruktion." },
+                { id: "sens_ircam", title: "IR-Kamera IC (CMOS)", desc: "Wärmebild/IR-Imaging (Infrarotstrahlung als Bild)." },
+                { id: "sens_uwb_r", title: "UWB-Ranger", desc: "UWB zur präzisen Abstand-/Lokalisierungsmessung." },
+                { id: "sens_uwb_radar", title: "UWB-µRADAR", desc: "UWB-Radar mit kurzen Impulsen für Distanz/Bewegung." },
+                { id: "sens_ble", title: "Bluetooth Low Energy (BLE)", desc: "Kurzstrecken-Funk (typ. ~10 m), low power." },
+                {
+                  id: "sens_radar",
+                  title: "RADAR",
+                  desc: "Objekterfassung + Abstand + Relativgeschwindigkeit.",
+                  children: [
+                    { id:"radar_types", title:"Varianten (Beispiele)", desc:"Radar ist eine Familie von Verfahren.",
+                      options:[
+                        { label:"FMCW-Radar", detail:"Dauerstrich/Frequenzmodulation, sehr verbreitet" },
+                        { label:"Impulsradar", detail:"Kurze Pulse, klassische Radararchitektur" },
+                        { label:"UWB-Radar", detail:"Sehr breites Spektrum / kurze Impulse" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  id: "sens_lidar",
+                  title: "LIDAR",
+                  desc: "Laserbasiertes 3D-Scanning (optische Distanzmessung).",
+                  children: [
+                    { id:"lidar_types", title:"Varianten (Beispiele)", desc:"Häufige Lidar-Prinzipien.",
+                      options:[
+                        { label:"ToF-Lidar", detail:"Time-of-Flight, verbreitet im Consumer/Industrial" },
+                        { label:"FMCW-Lidar", detail:"Emerging; zusätzlich Geschwindigkeitsinformation möglich" }
+                      ]
+                    }
+                  ]
+                },
+                { id: "sens_imu", title: "IMU-Sensor", desc: "Kombination aus Beschleunigung + Gyro (+ Magnetometer) für Orientierung/Bewegung." },
+                { id: "sens_array", title: "Array", desc: "Sensorarray/Geometrie – z.B. Mikrofon-Array für Beamforming." }
+              ]
+            },
 
-// Search wiring
-const sb = document.getElementById("searchBox");
-const cb = document.getElementById("clearBtn");
-sb.addEventListener("input", ()=>applySearch(sb.value));
-cb.addEventListener("click", ()=>{
-  sb.value = "";
-  applySearch("");
-  sb.focus();
-});
+            {
+              id: "signals_dsp",
+              title: "Signalverarbeitung",
+              desc: "Vorverarbeitung, Analyse, Transformation und bild-/signalbasierte Methoden.",
+              children: [
+                { id:"dsp_prep", title:"Signalaufbereitung", desc:"Vorbereitung/Filterung/Resampling.",
+                  options:[
+                    { label:"Abtastratenanpassung", detail:"Interpolation / Dezimierung" },
+                    { label:"Extrapolation von Werten", detail:"Schätzung von Verläufen / Randfortführung bei Bildern" },
+                    { label:"Digitalfilter-Design", detail:"FIR: Tief-/Hoch-/Bandpass/Bandsperre" },
+                    { label:"Analogfilter + Bilinear", detail:"Chebyshev/Butterworth/Cauer → digital" }
+                  ]
+                },
+                { id:"dsp_adapt", title:"Adaptive Filter", desc:"Filter, die Parameter im Betrieb anpassen.",
+                  options:[
+                    { label:"Kalman-Filter", detail:"Zustandsschätzung (Zeit-/Frequenzbereich)" },
+                    { label:"Partikel-Filter", detail:"Sequential Monte-Carlo" },
+                    { label:"(N)LMS", detail:"(Normalized) Least-Mean-Squares" },
+                    { label:"RLS", detail:"Recursive Least Squares" },
+                    { label:"Block-adaptive Filter", detail:"Frequenzbereich/partitioniert" }
+                  ]
+                },
+                { id:"dsp_analysis", title:"Signalanalyse", desc:"Zerlegung/Feature-Gewinnung in Zeit/Frequenz.",
+                  options:[
+                    { label:"Spektrale Analyse", detail:"Frequenzanteile/Leistung" },
+                    { label:"Filterbank-Analyse", detail:"Parallele Filter, bessere Isolation" },
+                    { label:"Cepstrale Analyse", detail:"Spektrale Hüllkurve / homomorph" },
+                    { label:"Envelope", detail:"Einhüllende" },
+                    { label:"Peak Detection", detail:"Lokale Maxima" },
+                    { label:"Changepoint Detection", detail:"Wechselpunkte in Mittelwert/Varianz" },
+                    { label:"LDA", detail:"Lineare Diskriminanzanalyse" },
+                    { label:"LPC", detail:"Linear Predictive Coding / Hüllkurve / LTI-Transfer" }
+                  ]
+                },
+                { id:"dsp_stoch", title:"Stochastische Analyse", desc:"Noise/Outlier/Verteilungen/robuste Statistik.",
+                  options:[
+                    { label:"Rauschanalyse", detail:"Noise analysis" },
+                    { label:"Outlier/Novelty", detail:"Ausreißer-/Neuartigkeitserkennung" },
+                    { label:"GMM", detail:"Gaussian Mixture Models (typ. via EM)" },
+                    { label:"Momente", detail:"Mittelwert/Varianz/Schiefe/Kurtosis" },
+                    { label:"Kovarianz/Korrelation", detail:"Beziehungen in Datensätzen" },
+                    { label:"Robuste Statistik", detail:"Median/MAD, robuste PCA etc." }
+                  ]
+                },
+                { id:"dsp_img", title:"Bildanalyse", desc:"Kantenerkennung, Segmentierung, Geometrie/Strukturen.",
+                  options:[
+                    { label:"Edge Detection", detail:"Kantenerkennung" },
+                    { label:"Segmentierung", detail:"Binarisierung/Objekte isolieren" },
+                    { label:"Histogrammausgleich", detail:"Kontrastnormalisierung" },
+                    { label:"Beleuchtungsausgleich", detail:"Homomorphe Filterung u.a." },
+                    { label:"Hough-Transformation", detail:"Linien/Kreise/Parabeln" }
+                  ]
+                },
+                { id:"dsp_xform", title:"Signaltransformation", desc:"Fourier/DCT/Wavelets/Koordinaten-Transformation.",
+                  options:[
+                    { label:"DFT/FFT", detail:"Fourier-Koeffizienten" },
+                    { label:"DCT", detail:"z.B. JPEG-Kompression" },
+                    { label:"Hilbert-Transformation", detail:"Analytisches Signal/Envelope" },
+                    { label:"Wavelet-Transformation", detail:"Variable Zeit-Frequenzauflösung" },
+                    { label:"Koordinaten-Transformation", detail:"Affine Transformationen (2D/3D)" }
+                  ]
+                }
+              ]
+            },
 
-// Lightweight i18n for key labels (lists remain technical terms)
-const i18n = {
-  de: { "Sprache:":"Sprache:", "Überblick":"Überblick", "Inhaltsverzeichnis":"Inhaltsverzeichnis", "← Zurück":"← Zurück" },
-  en: { "Sprache:":"Language:", "Überblick":"Overview", "Inhaltsverzeichnis":"Contents", "← Zurück":"← Back" },
-  fr: { "Sprache:":"Langue :", "Überblick":"Aperçu", "Inhaltsverzeichnis":"Sommaire", "← Zurück":"← Retour" },
-  es: { "Sprache:":"Idioma:", "Überblick":"Resumen", "Inhaltsverzeichnis":"Contenido", "← Zurück":"← Volver" },
-};
+            {
+              id: "signals_apps",
+              title: "Anwendungen",
+              desc: "Typische Verarbeitungspfade/Use-Cases, die sich aus Signalen + Sensorik ergeben.",
+              children: [
+                { id:"app_state", title:"Zustandsschätzung", desc:"Tracking/Schätzung von Zuständen.",
+                  options:[
+                    { label:"Movement Tracking", detail:"Verfolgung bewegter Objekte/Personen" },
+                    { label:"Prozessmodellierung", detail:"Biologisch/chemisch/meteorologisch u.a." }
+                  ]
+                },
+                { id:"app_audio", title:"Audioverarbeitung", desc:"Enhancement, Denoising, Echo-Cancellation, Separation.",
+                  options:[
+                    { label:"Signal Enhancement", detail:"Qualitätsverbesserung" },
+                    { label:"Denoising", detail:"Noise cancellation" },
+                    { label:"Echo-Unterdrückung", detail:"Freisprechen/Telekom" },
+                    { label:"Blinde Quellentrennung", detail:"Mehrere Sprecher/Quellen isolieren" }
+                  ]
+                },
+                { id:"app_img", title:"Bildverarbeitung", desc:"Industrie-Vision, Doku-Processing, Games/AR u.a." },
+                { id:"app_imu", title:"IMU-Verarbeitung", desc:"Motion features, Gait, Fall Detection, Odometrie." },
+                { id:"app_uwb_r", title:"UWB Ranging", desc:"Abstand/Präsenz/Bewegung aus UWB-Messwerten." },
+                { id:"app_uwb_radar", title:"UWB Radar", desc:"Presence/Intrusion/Seat occupancy etc.",
+                  options:[
+                    { label:"(C)PD", detail:"(Child) Presence Detection (Vitalsignale/Bewegung)" },
+                    { label:"Intrusion detection", detail:"Einbruchserkennung" },
+                    { label:"Seat occupancy", detail:"Sitzbelegungserkennung" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
 
-function setLang(lang){
-  document.documentElement.lang = lang;
-  document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active", b.dataset.lang===lang));
+        {
+          id: "ai",
+          title: "KI-Algorithmen",
+          subtitle: "KI-Anwendung · Algorithmen · Data/ML-Engineering",
+          desc: "Algorithmischer Kern: Erkennung, Klassifikation, Fusion – von Feature-Engineering bis DNN.",
+          tags: ["ML", "DNN", "MLOps-nahe"],
+          children: [
+            { id:"ai_intro", title:"Einleitung", desc:"Erkennungs-/Entscheidungssysteme werden in mehreren Arbeitsschritten erzeugt, optimiert und robust gemacht." },
 
-  const t = i18n[lang] || i18n.de;
-  document.getElementById("lang-label").textContent = t["Sprache:"];
-  document.getElementById("nav-overview").textContent = t["Überblick"];
-  document.getElementById("toc-title").textContent = t["Inhaltsverzeichnis"];
-  document.getElementById("nav-home").textContent = t["← Zurück"];
-}
+            {
+              id:"ai_use",
+              title:"KI-Anwendung",
+              desc:"Welche Art von Problem soll gelöst werden?",
+              children:[
+                { id:"ai_loc", title:"Ortung/Lokalisierung", desc:"Position entfernter Objekte/Personen relativ zum Beobachter.",
+                  options:[
+                    { label:"Präsenz/Anzahl", detail:"Presence/Count" },
+                    { label:"Distanz", detail:"Distance estimation" },
+                    { label:"Position", detail:"Coordinates" },
+                    { label:"Geschwindigkeit", detail:"Velocity" },
+                    { label:"Tracking", detail:"Objekt-Positionstracking" },
+                    { label:"Umgebungskarte", detail:"Map/Occupancy" }
+                  ]
+                },
+                { id:"ai_gest", title:"Gesten oder Posen", desc:"Körperteile/Posen als Klassifikations-/Trackingproblem.",
+                  options:[
+                    { label:"Finger", detail:"Fine-grained" }, { label:"Hand", detail:"Hand poses" }, { label:"Arm", detail:"Upper limb" },
+                    { label:"Fuß", detail:"Lower limb" }, { label:"Gesicht", detail:"Face gestures" }, { label:"Körper", detail:"Full body pose" }
+                  ]
+                },
+                { id:"ai_bio", title:"Biometrie & Vitalparameter", desc:"Identität, Lebewesen, Puls/Atmung, Bewegung.",
+                  options:[
+                    { label:"Lebewesenerkennung", detail:"Mensch/Tier u.a." },
+                    { label:"Child Presence Detection", detail:"CPD" },
+                    { label:"Herzschlag/Puls", detail:"Vital" },
+                    { label:"Atmung", detail:"Respiration pattern" },
+                    { label:"Schrittzahl", detail:"Counting" },
+                    { label:"ID per Voice", detail:"Speaker ID" },
+                    { label:"ID per Fingerabdruck", detail:"Fingerprint" },
+                    { label:"ID per Gang", detail:"Gait ID" },
+                    { label:"ID per Gesichtsprofil", detail:"Face ID" }
+                  ]
+                },
+                { id:"ai_audio_cls", title:"Klassifikation akustischer Signale", desc:"Sprache/Musik/Geräusche.",
+                  options:[
+                    { label:"Sprach-Pause-Detektion", detail:"Speech activity/pauses" },
+                    { label:"Tiergeräusche", detail:"Animal sounds" },
+                    { label:"Glasbruch", detail:"Intrusion" },
+                    { label:"Maschinengeräusche", detail:"Tool wear / condition" },
+                    { label:"Fahrzeuggeräusche", detail:"Testfahrt-Fehlerbilder" },
+                    { label:"Umgebungsgeräusche", detail:"Wind/Masse/Noise" }
+                  ]
+                },
+                { id:"ai_ultra_evt", title:"Ultraschall-Events", desc:"Ultraschallmuster/Events.",
+                  options:[
+                    { label:"Ultraschallvibrationsmuster", detail:"Pattern" },
+                    { label:"Erkennung Fledermäuse", detail:"Bioacoustics" }
+                  ]
+                },
+                { id:"ai_img_seq", title:"Bilder & Bildfolgen", desc:"Objekte/Events/3D Rekonstruktion.",
+                  options:[
+                    { label:"Objekterkennung", detail:"Detection" },
+                    { label:"Objektklassifizierung", detail:"Classification" },
+                    { label:"Bewegungstrajektorien", detail:"From frames" },
+                    { label:"Events", detail:"Temporal events" },
+                    { label:"3D-Rekonstruktion", detail:"3D" }
+                  ]
+                },
+                { id:"ai_imu", title:"IMU Daten", desc:"Fall/Sturz, Bewegung, Ganganalyse, Odometrie.",
+                  options:[
+                    { label:"Ganganalyse", detail:"Gait analysis" },
+                    { label:"Schrittzählung", detail:"Step counting" },
+                    { label:"Orientierung", detail:"Attitude/heading" },
+                    { label:"Wake-up", detail:"Low-energy wake" },
+                    { label:"Odometrie", detail:"Dead-reckoning" }
+                  ]
+                },
+                { id:"ai_uwb", title:"UWB-Ranging", desc:"Präsenz/Distanz/Trilateration.",
+                  options:[
+                    { label:"Anwesenheit", detail:"Presence" },
+                    { label:"Distanz", detail:"Distance" },
+                    { label:"Annäherung", detail:"Approach" },
+                    { label:"Trilateration", detail:"Positioning" }
+                  ]
+                },
+                { id:"ai_radar", title:"UWB- & FMCW-Radar", desc:"Präsenz, Distanz, Vital, Bewegung.",
+                  options:[
+                    { label:"Lebewesenerkennung", detail:"Living detection" },
+                    { label:"Herzschlag/Puls", detail:"Vital" },
+                    { label:"Atmung", detail:"Respiration" },
+                    { label:"Sturz", detail:"Fall events" }
+                  ]
+                },
+                { id:"ai_ble", title:"BLE", desc:"Signalstärke/Entfernung/Datentransfer.",
+                  options:[
+                    { label:"Datentransfer", detail:"Payloads" },
+                    { label:"Feldstärke", detail:"RSSI" },
+                    { label:"Entfernung", detail:"Proximity" }
+                  ]
+                }
+              ]
+            },
 
-document.querySelectorAll(".lang-btn").forEach(btn=>{
-  btn.addEventListener("click", ()=>setLang(btn.dataset.lang));
-});
-</script>
+            {
+              id:"ai_algos",
+              title:"Algorithmen",
+              desc:"Feature-Engineering, klassische Klassifikatoren und DNN-Familien.",
+              children:[
+                { id:"ai_feat", title:"Feature Engineering", desc:"Domänenwissen → Features aus Rohdaten.",
+                  options:[
+                    { label:"Time/Space Features", detail:"Zeit-/Ortsdomäne" },
+                    { label:"Spectral Features", detail:"Frequenzmerkmale" },
+                    { label:"Cepstrale Features", detail:"Cepstrum/MFCC" },
+                    { label:"MFCC", detail:"Mel-Frequency Cepstral Coeff." },
+                    { label:"K-Means Cluster", detail:"Unsupervised features" },
+                    { label:"Trajektorien", detail:"Motion paths" },
+                    { label:"Multimodale Fusion", detail:"Sensorfusion" },
+                    { label:"PCA/ICA", detail:"Dimensionsreduktion" }
+                  ]
+                },
+                { id:"ai_classic", title:"Klassifikatoren (konventionell)", desc:"Klassische/statistische Modelle.",
+                  options:[
+                    { label:"Bayes", detail:"Naive Bayes u.a." },
+                    { label:"Logistic Regression", detail:"Linear classifier" },
+                    { label:"GMM", detail:"Gaussian mixture" },
+                    { label:"HMM", detail:"Hidden Markov" },
+                    { label:"SVM", detail:"Support Vector Machine" },
+                    { label:"Neural Network", detail:"Shallow/klassisch" },
+                    { label:"Sequenz-Matching", detail:"DTW u.a." }
+                  ]
+                },
+                { id:"ai_dnn", title:"DNN Klassifikatoren", desc:"Tiefe Netze/Transformer-Familien.",
+                  options:[
+                    { label:"MLP", detail:"Multilayer Perceptron" },
+                    { label:"CNN", detail:"Convolutional Neural Network" },
+                    { label:"RNN/LSTM", detail:"Sequenzen/Zeitreihen" },
+                    { label:"BERT", detail:"Transformer Encoder" },
+                    { label:"GPT", detail:"Transformer Decoder (generativ)" }
+                  ]
+                }
+              ]
+            },
 
+            {
+              id:"ai_data",
+              title:"Data Engineering",
+              desc:"Datenakquise, Korpus/Dataset-Engineering, Annotation/Normalisierung.",
+              children:[
+                { id:"ai_acq", title:"Data Akquisition", desc:"Messungen/Logging/Time-stamps für verschiedene Modalitäten.",
+                  options:[
+                    { label:"Akustische Signale", detail:"Audio" },
+                    { label:"Bilder/Bildfolgen", detail:"2D/Video" },
+                    { label:"3D-Bilder", detail:"Depth/Pointcloud" },
+                    { label:"IMU", detail:"Inertial" },
+                    { label:"UWB", detail:"Ranging/Radar" },
+                    { label:"LIDAR", detail:"Pointcloud" },
+                    { label:"BLE Daten", detail:"RSSI/Packets" },
+                    { label:"Weitere", detail:"Domänenspezifisch" }
+                  ]
+                },
+                { id:"ai_corpus", title:"Korpus/Dataset Management", desc:"Annotation, DB-Engineering, Normalisierung, Split-Strategien.",
+                  options:[
+                    { label:"Manuelle Annotation", detail:"Labeling" },
+                    { label:"Annotation Tooling", detail:"Label-Tools" },
+                    { label:"Database Engineering", detail:"Storage/Schema" },
+                    { label:"Data Normalization", detail:"Cleaning/Normalization" },
+                    { label:"Dataset Engineering", detail:"Train/Dev/Test repräsentativ & disjunkt" }
+                  ]
+                }
+              ]
+            },
+
+            {
+              id:"ai_ml",
+              title:"Machine Learning Engineering",
+              desc:"Training, Tuning, Tooling und Performance-Evaluation.",
+              children:[
+                { id:"ml_train", title:"ML Training", desc:"Lernparadigmen & Modellaufbau.",
+                  options:[
+                    { label:"Supervised", detail:"Mit Labels" },
+                    { label:"Unsupervised", detail:"Explorativ" },
+                    { label:"Transfer Learning", detail:"Vortrainiert → Zielproblem" },
+                    { label:"Deep Learning", detail:"DNN-Training" }
+                  ]
+                },
+                { id:"ml_tune", title:"ML Tuning", desc:"Optimierung von Parametern, Daten, Robustheit.",
+                  options:[
+                    { label:"Performance Optimization", detail:"Accuracy/Recall/… verbessern" },
+                    { label:"Parameter Optimization", detail:"Hyperparameter" },
+                    { label:"Data Augmentation", detail:"synthetisch/Transformationen" },
+                    { label:"Domain Adaptation", detail:"Shift/Drift" },
+                    { label:"Robustness", detail:"Umwelt-/Noise-Robustheit" },
+                    { label:"Compute Optimization", detail:"Latenz/Footprint" }
+                  ]
+                },
+                { id:"ml_tooling", title:"ML Tooling", desc:"Frameworks/Plattformen.",
+                  options:[
+                    { label:"TensorFlow", detail:"Open-Source ML Framework" },
+                    { label:"Keras", detail:"High-level API" },
+                    { label:"Kubeflow", detail:"ML Workflows auf Kubernetes" },
+                    { label:"WEKA", detail:"ML Toolkit" },
+                    { label:"scikit-learn", detail:"Klassische ML-Lib" },
+                    { label:"NLTK", detail:"NLP Toolkit" },
+                    { label:"Ray/RLlib", detail:"Distributed/ RL" }
+                  ]
+                },
+                { id:"ml_perf", title:"ML Performance", desc:"Evaluation/Reports/Metriken.",
+                  options:[
+                    { label:"Evaluations-Pipeline", detail:"Wiederholbar, automatisiert" },
+                    { label:"Confusion Matrix", detail:"FP/FN/TP/TN" },
+                    { label:"Metrics Engineering", detail:"Accuracy, F1, Error rate, …" },
+                    { label:"Cross Validation", detail:"Robuste Schätzung" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          id: "software",
+          title: "Software",
+          subtitle: "Plattformen · Sprachen · Tools · DevOps",
+          desc: "Softwareentwicklung über Embedded, Mobile, Desktop, Server/Cloud – inkl. Tooling und Delivery.",
+          tags: ["CI/CD", "Tooling", "Plattformen"],
+          children: [
+            { id:"sw_intro", title:"Einleitung", desc:"Professionelle Softwareentwicklung als Baustein für KI-/Embedded-Systeme." },
+
+            {
+              id:"sw_platforms",
+              title:"Plattformen",
+              desc:"Wo läuft die Software?",
+              children:[
+                { id:"sw_embedded", title:"Embedded", desc:"MCU/MPU-Zielsysteme (RTOS/Linux), Peripherie-nah, Echtzeit." },
+                { id:"sw_mobile", title:"Mobile", desc:"Software auf mobilen Endgeräten.", options:[
+                  { label:"Android", detail:"App/SDK" },
+                  { label:"iOS", detail:"App/SDK" }
+                ]},
+                { id:"sw_desktop", title:"Desktop", desc:"Software auf PCs/Laptops.", options:[
+                  { label:"Linux", detail:"Desktop/Engineering" },
+                  { label:"Windows", detail:"Desktop/Engineering" },
+                  { label:"macOS", detail:"Desktop/Engineering" }
+                ]},
+                { id:"sw_server", title:"Server", desc:"Backend/Services.", options:[
+                  { label:"Nativ", detail:"Direkt auf Server" },
+                  { label:"Container", detail:"Docker/OCI" },
+                  { label:"Kubernetes", detail:"Orchestriert" }
+                ]},
+                { id:"sw_gpu", title:"GPU", desc:"Compute auf GPU.", options:[
+                  { label:"CUDA", detail:"NVIDIA API" }
+                ]},
+                { id:"sw_browser", title:"Browser", desc:"Direkt im Browser.", options:[
+                  { label:"Chrome", detail:"Web" },
+                  { label:"Firefox", detail:"Web" },
+                  { label:"Safari", detail:"Web" }
+                ]}
+              ]
+            },
+
+            {
+              id:"sw_lang",
+              title:"Sprachen & Frameworks",
+              desc:"Typische Sprachen/Frameworks in Embedded-/KI-Projekten.",
+              options:[
+                { label:"C/C++", detail:"Firmware/RTOS/Performance-kritisch" },
+                { label:"Python", detail:"ML, Tools, Prototyping, Pipelines" },
+                { label:"Rust", detail:"Safety/Concurrency, wachsende Embedded-Nutzung" },
+                { label:"Zephyr / FreeRTOS", detail:"RTOS-Layer" },
+                { label:"Linux", detail:"Edge/Robotics/AI-Gateways" },
+                { label:"ROS 2", detail:"Robotik-Middleware" },
+                { label:"OpenCV", detail:"Computer Vision" },
+                { label:"TensorFlow Lite / ONNX Runtime", detail:"Edge-Inference" }
+              ]
+            },
+
+            {
+              id:"sw_tools",
+              title:"Entwicklungstools",
+              desc:"IDE, Build, Debug, Analyse und Collaboration.",
+              options:[
+                { label:"Git (GitHub/GitLab)", detail:"Versionskontrolle + PR-Review" },
+                { label:"CMake/Bazel", detail:"Buildsystem" },
+                { label:"GCC/Clang", detail:"Compiler toolchains" },
+                { label:"GDB/JTAG/SWD", detail:"Debugging auf Target" },
+                { label:"Static Analysis", detail:"MISRA, Security, Architekturregeln" },
+                { label:"Test Frameworks", detail:"Unit/Integration/HIL" },
+                { label:"Docs", detail:"Sphinx/Doxygen/Markdown" }
+              ]
+            },
+
+            {
+              id:"sw_devops",
+              title:"DevOps",
+              desc:"Automatisierung von Build, Test, Release, Monitoring.",
+              options:[
+                { label:"CI/CD (Jenkins/GitHub Actions/GitLab CI)", detail:"Automatisierte Pipelines" },
+                { label:"Container (Docker)", detail:"Reproduzierbare Builds/Deploys" },
+                { label:"Observability", detail:"Logs/Metriken/Tracing" },
+                { label:"OTA Updates", detail:"Firmware/App/Model Updates" }
+              ]
+            }
+          ]
+        },
+
+        {
+          id: "embedded",
+          title: "Embedded",
+          subtitle: "CPU · Elektronik · SW-Dev · Gehäuse · Optik",
+          desc: "Plattform- und Produktkomponenten: von CPU/PCB bis Gehäuse/Optik – inkl. Echtzeit und Safety.",
+          tags: ["RTOS", "PCB", "Echtzeit"],
+          children: [
+            { id:"emb_intro", title:"Einleitung", desc:"Embedded AI läuft oft auf Elektronikplatinen; Ziel ist robust, energieeffizient, echtzeitfähig." },
+
+            {
+              id:"emb_cpu",
+              title:"CPU",
+              desc:"Rechenplattformen, Architekturen und Beschleuniger.",
+              options:[
+                { label:"MCU (Cortex-M / RISC-V)", detail:"Low-power, echtzeitnah" },
+                { label:"MPU (Cortex-A / x86)", detail:"Linux-fähig, mehr Ressourcen" },
+                { label:"DSP/NPU", detail:"Signal/Inference-Beschleunigung" },
+                { label:"GPU (Edge)", detail:"Parallelität (Vision/Simulation/Training-nah)" }
+              ]
+            },
+            {
+              id:"emb_elec",
+              title:"Elektronik-Design",
+              desc:"Schaltplan/PCB/Power/EMV – Grundlage für zuverlässigen Feldbetrieb.",
+              options:[
+                { label:"Power Management", detail:"Batterie/Regler/Charging" },
+                { label:"Analog Front-End", detail:"ADC, Verstärker, Filter" },
+                { label:"PCB Layout", detail:"Signal integrity, EMI/EMC" },
+                { label:"Production Test", detail:"Testpunkte, Jigs, Traceability" }
+              ]
+            },
+            {
+              id:"emb_sw",
+              title:"Embedded Softwareentwicklung",
+              desc:"Treiber, RTOS/Linux, Protokolle, Safety Mechanismen.",
+              options:[
+                { label:"RTOS Tasks/Interrupts", detail:"Timing/Determinismus" },
+                { label:"Treiber/Peripherie", detail:"I²C/SPI/UART/ADC/Timers" },
+                { label:"Bootloader/Update", detail:"Secure boot, OTA" },
+                { label:"Safety Patterns", detail:"Fail-safe states, Watchdogs, Diagnostics" },
+                { label:"Security", detail:"Keys, secure storage, secure comms" }
+              ]
+            },
+            {
+              id:"emb_case",
+              title:"Gehäuse",
+              desc:"Mechanik, Schutz, Ergonomie, Produktionsfähigkeit.",
+              options:[
+                { label:"IP-Schutz", detail:"Staub/Wasser je nach Produktklasse" },
+                { label:"Materialwahl", detail:"Kunststoff/Metall, Gewicht, Kosten" },
+                { label:"Thermik", detail:"Wärmeabfuhr, Komfort" }
+              ]
+            },
+            {
+              id:"emb_optics",
+              title:"Optik",
+              desc:"Kameras/Linsen/Beleuchtung/Optik-Stack.",
+              options:[
+                { label:"Lens/FOCUS", detail:"Sichtfeld/Schärfe" },
+                { label:"Beleuchtung", detail:"IR/Visible – kontrollierte Bedingungen" },
+                { label:"Kalibrierung", detail:"Intrinsics/Extrinsics" }
+              ]
+            }
+          ]
+        },
+
+        {
+          id: "connectivity",
+          title: "Connectivity",
+          subtitle: "Anwendungsbereich · Verbindung · Protokolle",
+          desc: "Wie Systeme kommunizieren: Gerätekopplung, Edge/Cloud, Fieldbus – inkl. Protokollauswahl.",
+          tags: ["BLE", "WLAN", "OT/IT"],
+          children: [
+            { id:"con_intro", title:"Einleitung", desc:"Connectivity verbindet Embedded-Devices mit Apps, Gateways, Cloud und OT-Systemen." },
+
+            {
+              id:"con_area",
+              title:"Anwendungsbereich",
+              desc:"Wozu wird Connectivity genutzt?",
+              options:[
+                { label:"Datentransfer", detail:"Messdaten/Features/Events" },
+                { label:"Device Management", detail:"Provisioning, Inventory, Config" },
+                { label:"OTA Updates", detail:"Firmware/Model/App" },
+                { label:"Telemetry/Monitoring", detail:"Logs, Metriken, Alarme" }
+              ]
+            },
+            {
+              id:"con_link",
+              title:"Verbindung",
+              desc:"Medium/Topologie: kabelgebunden vs. drahtlos vs. Gateway.",
+              options:[
+                { label:"Wired", detail:"Ethernet/RS-485/CAN/USB" },
+                { label:"Wireless", detail:"BLE/WLAN/LoRa/UWB/Cellular" },
+                { label:"Gateway", detail:"Edge-Gateway als Protokoll-Übersetzer & Compute-Knoten" }
+              ]
+            },
+            {
+              id:"con_proto",
+              title:"Protokolle",
+              desc:"Protokollfamilien – Auswahl abhängig von Latenz, Power, Security, Reichweite.",
+              children:[
+                { id:"p_ble", title:"BLE", desc:"Kurzstrecke, low power, Pairing/Services." },
+                { id:"p_wifi", title:"WLAN", desc:"Hoher Durchsatz, IP-basiert, mehr Power." },
+                { id:"p_eth", title:"Ethernet", desc:"Robust, industriell, deterministisch mit TSN (wenn nötig)." },
+                { id:"p_can", title:"CAN / CAN-FD", desc:"Automotive/Industrial, busbasiert." },
+                { id:"p_lin", title:"LIN", desc:"Low-cost Automotive Sub-bus." },
+                { id:"p_rs485", title:"RS-485 / Modbus", desc:"Industrial Fieldbus-klassisch." },
+                { id:"p_mqtt", title:"MQTT", desc:"Pub/Sub, IoT/Telemetry." },
+                { id:"p_http", title:"HTTP/REST", desc:"Service APIs, Web/Cloud." },
+                { id:"p_opcua", title:"OPC UA", desc:"Industrial Interoperabilität (OT/IT)." }
+              ]
+            }
+          ]
+        }
+      ]
+    };
+
+    // -------------------------
+    // Explorer State
+    // -------------------------
+    const state = {
+      path: [],        // array of node ids from root children down
+      selected: null,  // currently selected node id (for details)
+      query: "",
+      results: [],
+      focusIndex: 0
+    };
+
+    const elGrid = document.getElementById("grid");
+    const elCrumbs = document.getElementById("crumbs");
+    const elBack = document.getElementById("btnBack");
+    const elQ = document.getElementById("q");
+    const elDetailTitle = document.getElementById("detailTitle");
+    const elDetailDesc = document.getElementById("detailDesc");
+    const elDetailExtra = document.getElementById("detailExtra");
+    const elResultsWrap = document.getElementById("resultsWrap");
+    const elResults = document.getElementById("results");
+
+    function findNodeByPath(path){
+      let node = DATA;
+      for(const id of path){
+        node = (node.children || []).find(c => c.id === id);
+        if(!node) return null;
+      }
+      return node;
+    }
+
+    function getCurrentNode(){
+      return findNodeByPath(state.path) || DATA;
+    }
+
+    function buildBreadcrumb(){
+      const parts = [{title:"Fachgebiete", path:[]}];
+      let acc = [];
+      for(const id of state.path){
+        acc = acc.concat([id]);
+        const n = findNodeByPath(acc);
+        if(n) parts.push({title:n.title, path:[...acc]});
+      }
+      return parts;
+    }
+
+    function setDetails(node){
+      elDetailTitle.textContent = node.title || "Start";
+      elDetailDesc.textContent = node.desc || "—";
+      const tags = (node.tags || []).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join(" ");
+      const hint = node.subtitle ? `<div class="mini"><strong style="color:rgba(255,255,255,.82)">Fokus:</strong> ${escapeHtml(node.subtitle)}<div style="margin-top:8px">${tags}</div></div>` : (tags ? `<div class="mini">${tags}</div>` : "");
+      const extra = [];
+
+      if(node.options && node.options.length){
+        extra.push(`<div class="sectiontitle">Optionen / Bausteine</div>`);
+        extra.push(`<div class="chips">` + node.options.map(o =>
+          `<span class="chip" data-op="${escapeHtml(o.label)}" data-opd="${escapeHtml(o.detail || "")}">${escapeHtml(o.label)}</span>`
+        ).join("") + `</div>`);
+      }
+
+      if(node.children && node.children.length){
+        extra.push(`<div class="mini">Unterebenen: <strong>${node.children.length}</strong> · Klick links auf eine Kachel, um tiefer einzutauchen.</div>`);
+      }
+
+      elDetailExtra.innerHTML = hint + extra.join("");
+      wireOptionChips();
+    }
+
+    function wireOptionChips(){
+      document.querySelectorAll('.chip[data-op]').forEach(chip => {
+        chip.onclick = () => {
+          const t = chip.getAttribute("data-op") || "";
+          const d = chip.getAttribute("data-opd") || "";
+          elDetailTitle.textContent = t;
+          elDetailDesc.textContent = d || "—";
+          elDetailExtra.innerHTML = `<div class="mini">Zurück: nutze Breadcrumbs oder den Zurück-Button.</div>`;
+        };
+      });
+
+      document.querySelectorAll('.chip[data-quick]').forEach(chip => {
+        chip.onclick = () => {
+          const key = chip.getAttribute("data-quick");
+          if(key === "signals") navigateTo(["signals","signals_sensor","sens_imu"]);
+          if(key === "project") navigateTo(["project","project_pm","project_pm_quality"]);
+          if(key === "ai") navigateTo(["ai","ai_algos","ai_dnn"]);
+          if(key === "software") navigateTo(["software","sw_platforms","sw_server"]);
+          if(key === "connectivity") navigateTo(["connectivity","con_proto"]);
+        };
+      });
+    }
+
+    function renderGrid(){
+      const node = getCurrentNode();
+      const children = (node.children || []);
+      const q = state.query.trim().toLowerCase();
+
+      // lokale Filterung auf aktueller Ebene
+      const filtered = q ? children.filter(c =>
+        (c.title || "").toLowerCase().includes(q) ||
+        (c.desc || "").toLowerCase().includes(q) ||
+        (c.subtitle || "").toLowerCase().includes(q)
+      ) : children;
+
+      elGrid.innerHTML = filtered.map(c => `
+        <div class="card" role="button" tabindex="0" data-id="${escapeHtml(c.id)}">
+          <h3>
+            <span>${escapeHtml(c.title)}</span>
+            <span class="arrow">›</span>
+          </h3>
+          <p>${escapeHtml(c.subtitle || c.desc || "")}</p>
+          <div class="kicker">
+            ${(c.tags || []).slice(0,3).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
+            ${c.options && c.options.length ? `<span class="tag">Optionen: ${c.options.length}</span>` : ""}
+            ${c.children && c.children.length ? `<span class="tag">Ebenen: ${c.children.length}</span>` : ""}
+          </div>
+        </div>
+      `).join("");
+
+      // Wire clicks + keyboard
+      elGrid.querySelectorAll(".card").forEach(card => {
+        card.addEventListener("click", () => openChild(card.getAttribute("data-id")));
+        card.addEventListener("keydown", (e) => {
+          if(e.key === "Enter" || e.key === " "){
+            e.preventDefault();
+            openChild(card.getAttribute("data-id"));
+          }
+        });
+      });
+
+      // Standard: Details = aktueller Knoten (oder erster Child)
+      setDetails(node);
+    }
+
+    function renderCrumbs(){
+      const parts = buildBreadcrumb();
+      elCrumbs.innerHTML = parts.map((p, idx) => {
+        const isLast = idx === parts.length - 1;
+        if(isLast) return `<span style="color:rgba(255,255,255,.88); font-weight:650">${escapeHtml(p.title)}</span>`;
+        return `<a href="#" data-crumb="${idx}">${escapeHtml(p.title)}</a><span style="opacity:.5">/</span>`;
+      }).join(" ");
+
+      elCrumbs.querySelectorAll("a[data-crumb]").forEach(a => {
+        a.onclick = (e) => {
+          e.preventDefault();
+          const idx = Number(a.getAttribute("data-crumb"));
+          // idx 0 = root
+          if(idx === 0) state.path = [];
+          else state.path = state.path.slice(0, idx);
+          state.query = "";
+          elQ.value = "";
+          hideResults();
+          refresh();
+        };
+      });
+    }
+
+    function openChild(childId){
+      if(!childId) return;
+      const node = getCurrentNode();
+      const child = (node.children || []).find(c => c.id === childId);
+      if(!child) return;
+      // Wenn Child weitere Ebenen hat, navigieren wir rein; ansonsten zeigen wir Details.
+      if(child.children && child.children.length){
+        state.path.push(child.id);
+        state.query = "";
+        elQ.value = "";
+        hideResults();
+        refresh();
+      } else {
+        // Leaf: nur Details
+        setDetails(child);
+      }
+    }
+
+    function refresh(){
+      elBack.disabled = state.path.length === 0;
+      renderCrumbs();
+      renderGrid();
+    }
+
+    function navigateTo(path){
+      state.path = [...path];
+      state.query = "";
+      elQ.value = "";
+      hideResults();
+      refresh();
+      // set details to the node
+      const node = findNodeByPath(path);
+      if(node) setDetails(node);
+      window.scrollTo({top:0, behavior:"smooth"});
+    }
+
+    // -------------------------
+    // Global Search (DFS)
+    // -------------------------
+    function dfs(node, pathAcc, out, q){
+      const hay = ((node.title||"") + " " + (node.subtitle||"") + " " + (node.desc||"")).toLowerCase();
+      const optHay = (node.options || []).map(o => (o.label||"") + " " + (o.detail||"")).join(" ").toLowerCase();
+      if(q && (hay.includes(q) || optHay.includes(q))){
+        // exclude root
+        if(node.id !== "root") out.push({ node, path:[...pathAcc] });
+      }
+      (node.children || []).forEach(ch => dfs(ch, pathAcc.concat([ch.id]), out, q));
+    }
+
+    function showResults(items){
+      state.results = items;
+      state.focusIndex = 0;
+      elResultsWrap.style.display = items.length ? "block" : "none";
+      if(!items.length){ elResults.innerHTML = ""; return; }
+
+      elResults.innerHTML = items.slice(0, 25).map((r, i) => {
+        const prettyPath = ["Fachgebiete"].concat(r.path.map(id => {
+          const n = findNodeByPath(["root"].includes(id)?[]:[id]); // fallback (not used)
+          return id;
+        }));
+        return `
+          <div class="resrow" tabindex="0" data-i="${i}">
+            <div class="respath">${escapeHtml(renderPathTitles(r.path))}</div>
+            <div class="restitle">${escapeHtml(r.node.title)}</div>
+          </div>
+        `;
+      }).join("");
+
+      elResults.querySelectorAll(".resrow").forEach(row => {
+        row.onclick = () => {
+          const i = Number(row.getAttribute("data-i"));
+          const r = items[i];
+          if(!r) return;
+          // navigate to parent that contains this node if possible:
+          // We navigate to r.path up to node itself if it has children; else to its parent and show details.
+          const node = findNodeByPath(r.path);
+          if(node && node.children && node.children.length){
+            navigateTo(r.path);
+          } else {
+            // parent navigation
+            const parentPath = r.path.slice(0, -1);
+            state.path = parentPath;
+            hideResults();
+            refresh();
+            setDetails(node || findNodeByPath(parentPath) || getCurrentNode());
+          }
+        };
+        row.addEventListener("keydown", (e) => {
+          if(e.key === "Enter"){
+            e.preventDefault();
+            row.click();
+          }
+        });
+      });
+    }
+
+    function hideResults(){
+      elResultsWrap.style.display = "none";
+      elResults.innerHTML = "";
+      state.results = [];
+    }
+
+    function renderPathTitles(path){
+      // Convert ids -> titles by walking the tree
+      const titles = ["Fachgebiete"];
+      let acc = [];
+      for(const id of path){
+        acc.push(id);
+        const n = findNodeByPath(acc);
+        if(n) titles.push(n.title);
+      }
+      return titles.join(" / ");
+    }
+
+    // -------------------------
+    // Events
+    // -------------------------
+    elBack.onclick = () => {
+      if(state.path.length === 0) return;
+      state.path.pop();
+      state.query = "";
+      elQ.value = "";
+      hideResults();
+      refresh();
+    };
+
+    elQ.addEventListener("input", () => {
+      state.query = elQ.value || "";
+      const q = state.query.trim().toLowerCase();
+
+      // lokale Filterung immer sofort
+      renderGrid();
+
+      // globale Suche erst ab 3 Zeichen
+      if(q.length >= 3){
+        const out = [];
+        dfs(DATA, [], out, q);
+        // sort: exact title match first, then shorter paths
+        out.sort((a,b) => {
+          const at = (a.node.title||"").toLowerCase();
+          const bt = (b.node.title||"").toLowerCase();
+          const aExact = at === q, bExact = bt === q;
+          if(aExact && !bExact) return -1;
+          if(bExact && !aExact) return 1;
+          return a.path.length - b.path.length;
+        });
+        showResults(out);
+      } else {
+        hideResults();
+      }
+    });
+
+    // Minimal “Language buttons” placeholder:
+    // (Du hattest auf der Hauptseite automatische Übersetzung; hier lassen wir es bewusst simpel.)
+    document.querySelectorAll('.flagbtn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        alert("Sprachumschaltung ist in dieser Seite noch nicht aktiv.\n" +
+              "Aktuell ausgewählt: " + (lang || "—") + "\n\n" +
+              "Wenn du willst, kann ich dir die gleiche Auto-Translate-Logik wie in index.html hier integrieren.");
+      });
+    });
+
+    // Initial render
+    refresh();
+    wireOptionChips();
+
+    function escapeHtml(s){
+      return String(s || "")
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+    }
+  </script>
 </body>
 </html>
