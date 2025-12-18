@@ -1,20 +1,28 @@
 {
-  "generated_at_utc": "2025-12-17T04:01:47Z",
+  "generated_at_utc": "2025-12-18T04:02:47Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "frontier_exploration_sim",
-      "vendor": "MarineRock10",
+      "tool": "cpp-analysis-benchmark",
+      "vendor": "shaharlevi818",
       "evidence": [
-        "https://github.com/MarineRock10/frontier_exploration_sim"
+        "https://github.com/shaharlevi818/cpp-analysis-benchmark"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "physical-ai-book",
-      "vendor": "Sidra-Noman",
+      "tool": "robotics-task",
+      "vendor": "tansgr3-creator",
       "evidence": [
-        "https://github.com/Sidra-Noman/physical-ai-book"
+        "https://github.com/tansgr3-creator/robotics-task"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "ros-checker-sim-tool",
+      "vendor": "k-basamma",
+      "evidence": [
+        "https://github.com/k-basamma/ros-checker-sim-tool"
       ]
     }
   ],

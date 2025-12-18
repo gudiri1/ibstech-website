@@ -249,6 +249,47 @@
     }
   },
   {
+    "ToolName": "cpp-analysis-benchmark",
+    "VendorOrganisation": "shaharlevi818",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Automated C++ Quality Assurance Framework tailored for Embedded Systems. A Python-based orchestration tool utilizing OOP to manage static (CppCheck, Clang-Tidy) and dynamic (Valgrind, ASAN) analysis tools within a Dockerized environment.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/shaharlevi818/cpp-analysis-benchmark",
+      "https://github.com/shaharlevi818/cpp-analysis-benchmark"
+    ],
+    "LastVerifiedDate": "2025-12-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "shaharlevi818/cpp-analysis-benchmark",
+      "url": "https://github.com/shaharlevi818/cpp-analysis-benchmark",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-17T16:48:00Z",
+      "created_at": "2025-12-17T16:37:46Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "defenX",
     "VendorOrganisation": "Rashichandel191",
     "ToolType": "Open Source",
@@ -1759,6 +1800,90 @@
       "Maturity": 1,
       "Integration": 1,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "robotics-task",
+    "VendorOrganisation": "tansgr3-creator",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Simple ROS Code Checker and Simulation Preview Tool",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/tansgr3-creator/robotics-task",
+      "https://github.com/tansgr3-creator/robotics-task"
+    ],
+    "LastVerifiedDate": "2025-12-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "tansgr3-creator/robotics-task",
+      "url": "https://github.com/tansgr3-creator/robotics-task",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-17T17:33:50Z",
+      "created_at": "2025-12-17T15:13:22Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "ros-checker-sim-tool",
+    "VendorOrganisation": "k-basamma",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A ROS/ROS2 code checker and simulation preview tool for a 6-DOF robotic arm using Gazebo and a Flask web interface.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/k-basamma/ros-checker-sim-tool",
+      "https://github.com/k-basamma/ros-checker-sim-tool"
+    ],
+    "LastVerifiedDate": "2025-12-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "k-basamma/ros-checker-sim-tool",
+      "url": "https://github.com/k-basamma/ros-checker-sim-tool",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-17T09:17:49Z",
+      "created_at": "2025-12-17T07:56:33Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
