@@ -1,30 +1,5 @@
 {
-  "generated_at_utc": "2025-12-18T04:02:47Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "cpp-analysis-benchmark",
-      "vendor": "shaharlevi818",
-      "evidence": [
-        "https://github.com/shaharlevi818/cpp-analysis-benchmark"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "robotics-task",
-      "vendor": "tansgr3-creator",
-      "evidence": [
-        "https://github.com/tansgr3-creator/robotics-task"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "ros-checker-sim-tool",
-      "vendor": "k-basamma",
-      "evidence": [
-        "https://github.com/k-basamma/ros-checker-sim-tool"
-      ]
-    }
-  ],
+  "generated_at_utc": "2025-12-19T04:04:22Z",
+  "signals": [],
   "broken_links": []
 }
