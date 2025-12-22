@@ -1263,6 +1263,48 @@
     }
   },
   {
+    "ToolName": "My-Dinner-With-LIMO",
+    "VendorOrganisation": "El-Maktab",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This project aims to apply the concepts of cognitive robotics to implement multi-robot exploration and map merging using known initial poses, and then apply it on Gazebo and RViz simulation tools using a real-life robot model in a realistic environment.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/El-Maktab/My-Dinner-With-LIMO",
+      "https://github.com/El-Maktab/My-Dinner-With-LIMO"
+    ],
+    "LastVerifiedDate": "2025-12-22",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "El-Maktab/My-Dinner-With-LIMO",
+      "url": "https://github.com/El-Maktab/My-Dinner-With-LIMO",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-21T10:47:57Z",
+      "created_at": "2025-12-15T00:42:34Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "pdaemon_trace",
     "VendorOrganisation": "mupuf",
     "ToolType": "Open Source",
