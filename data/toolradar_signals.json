@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2025-12-24T04:04:43Z",
+  "generated_at_utc": "2025-12-25T04:07:07Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "RSMA",
-      "vendor": "GrimDarkTech",
+      "tool": "prism",
+      "vendor": "guyvolvo",
       "evidence": [
-        "https://github.com/GrimDarkTech/RSMA"
+        "https://github.com/guyvolvo/prism"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "Robotics-AI",
+      "vendor": "AbisaidMartinez",
+      "evidence": [
+        "https://github.com/AbisaidMartinez/Robotics-AI"
       ]
     }
   ],

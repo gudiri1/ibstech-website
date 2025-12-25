@@ -1684,6 +1684,47 @@
     }
   },
   {
+    "ToolName": "prism",
+    "VendorOrganisation": "guyvolvo",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Prism is a static malware analysis framework designed to safely inspect suspicious files and generate actionable insights. It dissects files—PDFs, executables, and Office documents—into metadata, strings, embedded scripts, and structural indicators to reveal hidden threats",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/guyvolvo/prism",
+      "https://github.com/guyvolvo/prism"
+    ],
+    "LastVerifiedDate": "2025-12-25",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "guyvolvo/prism",
+      "url": "https://github.com/guyvolvo/prism",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-24T22:51:24Z",
+      "created_at": "2025-12-22T16:08:46Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Profilio_Website",
     "VendorOrganisation": "Bacharkita",
     "ToolType": "Open Source",
@@ -1840,6 +1881,49 @@
     },
     "Scores": {
       "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Robotics-AI",
+    "VendorOrganisation": "AbisaidMartinez",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This repository contains simulation scripts, data processing tools, and GUI components developed as part of my project developed at CINVESTAV Campus Saltillo. The project focuses on ultrasonic tomography using finite-difference methods and machine learning for image reconstruction, anomaly detection, and pattern classification.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/AbisaidMartinez/Robotics-AI",
+      "https://github.com/AbisaidMartinez/Robotics-AI"
+    ],
+    "LastVerifiedDate": "2025-12-25",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "AbisaidMartinez/Robotics-AI",
+      "url": "https://github.com/AbisaidMartinez/Robotics-AI",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-24T11:54:09Z",
+      "created_at": "2025-09-03T23:57:03Z"
+    },
+    "Scores": {
+      "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
