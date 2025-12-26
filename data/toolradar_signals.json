@@ -1,22 +1,5 @@
 {
-  "generated_at_utc": "2025-12-25T04:07:07Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "prism",
-      "vendor": "guyvolvo",
-      "evidence": [
-        "https://github.com/guyvolvo/prism"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Robotics-AI",
-      "vendor": "AbisaidMartinez",
-      "evidence": [
-        "https://github.com/AbisaidMartinez/Robotics-AI"
-      ]
-    }
-  ],
+  "generated_at_utc": "2025-12-26T04:04:31Z",
+  "signals": [],
   "broken_links": []
 }
