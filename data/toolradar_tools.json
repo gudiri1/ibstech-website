@@ -841,6 +841,49 @@
     }
   },
   {
+    "ToolName": "InverseKinematicsVisualizer",
+    "VendorOrganisation": "Solid-V",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A Python based simulation tool that calculates and visualizes the joint angles required for a 2-degree-of-freedom (2-DOF) robotic arm or leg to reach a specific coordinate in 2D plane.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Solid-V/InverseKinematicsVisualizer",
+      "https://github.com/Solid-V/InverseKinematicsVisualizer"
+    ],
+    "LastVerifiedDate": "2025-12-29",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Solid-V/InverseKinematicsVisualizer",
+      "url": "https://github.com/Solid-V/InverseKinematicsVisualizer",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2025-12-28T21:25:33Z",
+      "created_at": "2025-12-28T21:20:00Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "ISMCTS-MRTA-U-Library",
     "VendorOrganisation": "lidgarbar",
     "ToolType": "Open Source",
