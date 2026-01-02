@@ -1475,6 +1475,49 @@
     }
   },
   {
+    "ToolName": "pdf-malware",
+    "VendorOrganisation": "aneesa-123",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This report includes static analysis of PDF files, extraction of embedded objects, detection of suspicious patterns, IOC extraction, risk scoring, and detailed documentation.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/aneesa-123/pdf-malware",
+      "https://github.com/aneesa-123/pdf-malware"
+    ],
+    "LastVerifiedDate": "2026-01-02",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "aneesa-123/pdf-malware",
+      "url": "https://github.com/aneesa-123/pdf-malware",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-01T16:34:23Z",
+      "created_at": "2026-01-01T16:34:22Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "PDF-Malware-Analyzer",
     "VendorOrganisation": "ParthChavda1",
     "ToolType": "Open Source",
