@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-01-02T04:10:43Z",
+  "generated_at_utc": "2026-01-03T04:02:10Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "pdf-malware",
+      "tool": "CodeAssist_python",
+      "vendor": "SRIRAM231005",
+      "evidence": [
+        "https://github.com/SRIRAM231005/CodeAssist_python"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "pdf-malware-analysis",
       "vendor": "aneesa-123",
       "evidence": [
-        "https://github.com/aneesa-123/pdf-malware"
+        "https://github.com/aneesa-123/pdf-malware-analysis"
       ]
     }
   ],
