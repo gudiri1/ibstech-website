@@ -1602,6 +1602,47 @@
     }
   },
   {
+    "ToolName": "pdf-malware-analysis-web-toolkit",
+    "VendorOrganisation": "pramod-shinde-2303",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A web-based static PDF malware analysis framework that inspects document structure, embedded JavaScript, and Indicators of Compromise (IOCs), performs automated risk assessment, and generates SOC-ready security reports without executing files.",
+    "VModelPhases": [
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/pramod-shinde-2303/pdf-malware-analysis-web-toolkit",
+      "https://github.com/pramod-shinde-2303/pdf-malware-analysis-web-toolkit"
+    ],
+    "LastVerifiedDate": "2026-01-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "pramod-shinde-2303/pdf-malware-analysis-web-toolkit",
+      "url": "https://github.com/pramod-shinde-2303/pdf-malware-analysis-web-toolkit",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-03T05:50:36Z",
+      "created_at": "2026-01-03T05:23:08Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "PDF-Malware-Analyzer",
     "VendorOrganisation": "ParthChavda1",
     "ToolType": "Open Source",
