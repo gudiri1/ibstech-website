@@ -1,14 +1,5 @@
 {
-  "generated_at_utc": "2026-01-04T04:18:58Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "pdf-malware-analysis-web-toolkit",
-      "vendor": "pramod-shinde-2303",
-      "evidence": [
-        "https://github.com/pramod-shinde-2303/pdf-malware-analysis-web-toolkit"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-01-05T04:34:05Z",
+  "signals": [],
   "broken_links": []
 }
