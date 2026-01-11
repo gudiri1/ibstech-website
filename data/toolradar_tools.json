@@ -2441,6 +2441,48 @@
     }
   },
   {
+    "ToolName": "ROS2_2D_Mapping_SLAM_Toolbox",
+    "VendorOrganisation": "yashbhaskar",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This ROS 2 package contains a complete robot URDF model integrated with essential sensors and plugins for 2D SLAM mapping using slam_toolbox. It includes RGB-D camera, LiDAR, IMU, and odometry plugins with Gazebo and RViz support, enabling real-time 2D mapping, map generation, saving and sensor visualization in simulation.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/yashbhaskar/ROS2_2D_Mapping_SLAM_Toolbox",
+      "https://github.com/yashbhaskar/ROS2_2D_Mapping_SLAM_Toolbox"
+    ],
+    "LastVerifiedDate": "2026-01-11",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "yashbhaskar/ROS2_2D_Mapping_SLAM_Toolbox",
+      "url": "https://github.com/yashbhaskar/ROS2_2D_Mapping_SLAM_Toolbox",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-10T18:16:58Z",
+      "created_at": "2026-01-10T17:48:45Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "ros_code_checker_demo",
     "VendorOrganisation": "adityagautam73",
     "ToolType": "Open Source",
@@ -2851,6 +2893,48 @@
     "Scores": {
       "Maturity": 1,
       "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "static_malware_detection_in_PDF",
+    "VendorOrganisation": "JeswinMickle",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A lightweight, web-based malware detection system that identifies obfuscated malicious content embedded in PDF documents using static analysis techniques. This project is designed for non-expert users, offering fast, safe, and reliable PDF inspection without executing the file.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/JeswinMickle/static_malware_detection_in_PDF",
+      "https://github.com/JeswinMickle/static_malware_detection_in_PDF"
+    ],
+    "LastVerifiedDate": "2026-01-11",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "JeswinMickle/static_malware_detection_in_PDF",
+      "url": "https://github.com/JeswinMickle/static_malware_detection_in_PDF",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-10T06:02:56Z",
+      "created_at": "2026-01-10T05:30:17Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
       "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
