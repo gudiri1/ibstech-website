@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-01-13T04:10:03Z",
-  "signals": [],
+  "generated_at_utc": "2026-01-14T04:16:45Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "SorathiyaDhavalkumar",
+      "vendor": "SorathiyaDhavalkumar",
+      "evidence": [
+        "https://github.com/SorathiyaDhavalkumar/SorathiyaDhavalkumar"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "kova-platform",

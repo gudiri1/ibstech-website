@@ -2860,6 +2860,47 @@
     }
   },
   {
+    "ToolName": "SorathiyaDhavalkumar",
+    "VendorOrganisation": "SorathiyaDhavalkumar",
+    "ToolType": "Open Source",
+    "PrimaryUse": "## Hi, I'm Dhavalkumar Sorathiya 🎓 Master's student in Embedded System Design   🔧 Focus: Bare-metal, RTOS, drivers, ARM Cortex-M   📍 Tools: C, C++, STM32, FreeRTOS, Git, Linux    ### What you'll find here: - Embedded drivers written from scratch - RTOS-based applications - Hardware–software integration projects",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/SorathiyaDhavalkumar/SorathiyaDhavalkumar",
+      "https://github.com/SorathiyaDhavalkumar/SorathiyaDhavalkumar"
+    ],
+    "LastVerifiedDate": "2026-01-14",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "SorathiyaDhavalkumar/SorathiyaDhavalkumar",
+      "url": "https://github.com/SorathiyaDhavalkumar/SorathiyaDhavalkumar",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-13T15:29:12Z",
+      "created_at": "2026-01-13T15:29:12Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 5,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "SP2016-Deep-Content-Inspection",
     "VendorOrganisation": "mathieualexhache",
     "ToolType": "Open Source",
