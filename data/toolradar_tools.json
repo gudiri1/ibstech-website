@@ -83,6 +83,48 @@
     }
   },
   {
+    "ToolName": "automatic-test-cypress",
+    "VendorOrganisation": "dendie-sanjaya",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Cypress is a tool that allows us to perform that simulation automatically. Cypress, a loyal robot assistant that never gets tired. You only need to teach it once (write code), and it will do the checking forever—day and night, fast, and accurate. Let's start the journey of building this robot!",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/dendie-sanjaya/automatic-test-cypress",
+      "https://github.com/dendie-sanjaya/automatic-test-cypress"
+    ],
+    "LastVerifiedDate": "2026-01-15",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "dendie-sanjaya/automatic-test-cypress",
+      "url": "https://github.com/dendie-sanjaya/automatic-test-cypress",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-14T03:09:59Z",
+      "created_at": "2026-01-06T06:27:00Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Awesome-AECO",
     "VendorOrganisation": "osama-ata",
     "ToolType": "Open Source",

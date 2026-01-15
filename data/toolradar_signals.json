@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-01-14T04:16:45Z",
+  "generated_at_utc": "2026-01-15T04:11:53Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "SorathiyaDhavalkumar",
-      "vendor": "SorathiyaDhavalkumar",
+      "tool": "automatic-test-cypress",
+      "vendor": "dendie-sanjaya",
       "evidence": [
-        "https://github.com/SorathiyaDhavalkumar/SorathiyaDhavalkumar"
+        "https://github.com/dendie-sanjaya/automatic-test-cypress"
       ]
     }
   ],
