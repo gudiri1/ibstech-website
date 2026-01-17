@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-01-16T04:10:02Z",
-  "signals": [],
+  "generated_at_utc": "2026-01-17T04:03:06Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Sem-Mono2Micro-Semantic",
+      "vendor": "SaileshDevarasetti",
+      "evidence": [
+        "https://github.com/SaileshDevarasetti/Sem-Mono2Micro-Semantic"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "kova-platform",
