@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-01-19T04:20:09Z",
-  "signals": [],
+  "generated_at_utc": "2026-01-20T04:14:56Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "esp32-devops-analyzer",
+      "vendor": "elross913",
+      "evidence": [
+        "https://github.com/elross913/esp32-devops-analyzer"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "kova-platform",
