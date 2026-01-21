@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-01-20T04:14:56Z",
+  "generated_at_utc": "2026-01-21T04:14:18Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "esp32-devops-analyzer",
-      "vendor": "elross913",
+      "tool": "firmware-ai",
+      "vendor": "alimoaz838",
       "evidence": [
-        "https://github.com/elross913/esp32-devops-analyzer"
+        "https://github.com/alimoaz838/firmware-ai"
       ]
     }
   ],

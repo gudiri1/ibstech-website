@@ -881,6 +881,47 @@
     }
   },
   {
+    "ToolName": "firmware-ai",
+    "VendorOrganisation": "alimoaz838",
+    "ToolType": "Open Source",
+    "PrimaryUse": "AI-powered static analysis and debugging assistant for embedded firmware (STM32, nRF52, RP2040). Local + hybrid AI. Understands CubeMX, HAL, linker scripts, startup code, and build logs.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/alimoaz838/firmware-ai",
+      "https://github.com/alimoaz838/firmware-ai"
+    ],
+    "LastVerifiedDate": "2026-01-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "alimoaz838/firmware-ai",
+      "url": "https://github.com/alimoaz838/firmware-ai",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-20T21:42:49Z",
+      "created_at": "2026-01-20T21:09:20Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "frontier_exploration_sim",
     "VendorOrganisation": "MarineRock10",
     "ToolType": "Open Source",
