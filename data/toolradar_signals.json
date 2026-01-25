@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-01-24T04:06:07Z",
+  "generated_at_utc": "2026-01-25T04:30:58Z",
   "signals": [],
   "broken_links": [
     {
@@ -15,6 +15,11 @@
     {
       "tool": "pdf-malware-analysis",
       "link": "https://github.com/aneesa-123/pdf-malware-analysis",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "SorathiyaDhavalkumar",
+      "link": "https://github.com/SorathiyaDhavalkumar/SorathiyaDhavalkumar",
       "info": "HTTP Error 404: Not Found"
     }
   ]
