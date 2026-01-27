@@ -2020,6 +2020,49 @@
     }
   },
   {
+    "ToolName": "PortfolioWebsite",
+    "VendorOrganisation": "KalebSabo",
+    "ToolType": "Open Source",
+    "PrimaryUse": "My portfolio! As a passionate engineer, maker, and game developer, I blend creativity with technical expertise to bring innovative ideas to life. My work spans interactive simulations, robotics, 3D-printed designs, and game prototyping, often leveraging tools like 3D printing, simulation software, and game engines such as Godot.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/KalebSabo/PortfolioWebsite",
+      "https://kalebsabo.com/"
+    ],
+    "LastVerifiedDate": "2026-01-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "KalebSabo/PortfolioWebsite",
+      "url": "https://github.com/KalebSabo/PortfolioWebsite",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-26T22:25:54Z",
+      "created_at": "2025-03-20T00:21:48Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "prism",
     "VendorOrganisation": "guyvolvo",
     "ToolType": "Open Source",
@@ -2139,6 +2182,48 @@
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "rafatiyan.github.io",
+    "VendorOrganisation": "rafatiyan",
+    "ToolType": "Open Source",
+    "PrimaryUse": "🦾 Enhance robotic simulations with Metamorphosis, a minimalist tool for morphology randomization in Isaac Sim, suitable for research and development.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/rafatiyan/rafatiyan.github.io",
+      "https://github.com/rafatiyan/metamorphosis"
+    ],
+    "LastVerifiedDate": "2026-01-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "rafatiyan/rafatiyan.github.io",
+      "url": "https://github.com/rafatiyan/rafatiyan.github.io",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-26T12:16:47Z",
+      "created_at": "2026-01-26T12:16:21Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
       "TCO": 5,
       "CommunitySupport": 1
     }
