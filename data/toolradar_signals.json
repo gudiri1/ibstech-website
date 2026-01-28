@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-01-27T04:16:00Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "PortfolioWebsite",
-      "vendor": "KalebSabo",
-      "evidence": [
-        "https://github.com/KalebSabo/PortfolioWebsite"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "rafatiyan.github.io",
-      "vendor": "rafatiyan",
-      "evidence": [
-        "https://github.com/rafatiyan/rafatiyan.github.io"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-01-28T04:14:09Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
