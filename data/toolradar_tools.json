@@ -125,6 +125,49 @@
     }
   },
   {
+    "ToolName": "AutoTyper",
+    "VendorOrganisation": "Himanshu-369",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A sophisticated automation tool designed to simulate realistic human typing patterns. Unlike standard autotypers that output text with robotic precision, this engine introduces intentional imperfections, cognitive pauses, and fatigue simulation to mimic a real person behind the keyboard.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Himanshu-369/AutoTyper",
+      "https://github.com/Himanshu-369/AutoTyper"
+    ],
+    "LastVerifiedDate": "2026-01-30",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Himanshu-369/AutoTyper",
+      "url": "https://github.com/Himanshu-369/AutoTyper",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-29T15:26:55Z",
+      "created_at": "2026-01-29T07:02:11Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Awesome-AECO",
     "VendorOrganisation": "osama-ata",
     "ToolType": "Open Source",
@@ -1507,6 +1550,49 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "PAROL6-ROS2-MOVEIT",
+    "VendorOrganisation": "Amr-khaled-alwaqa",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This repository provides a complete integration of the PAROL6 6-DOF robotic arm with ROS 2 using MoveIt 2 for advanced motion planning and control. The project includes URDF/Xacro models, MoveIt configuration files, and tools for simulation and motion execution. ",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Amr-khaled-alwaqa/PAROL6-ROS2-MOVEIT",
+      "https://github.com/Amr-khaled-alwaqa/PAROL6-ROS2-MOVEIT"
+    ],
+    "LastVerifiedDate": "2026-01-30",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Amr-khaled-alwaqa/PAROL6-ROS2-MOVEIT",
+      "url": "https://github.com/Amr-khaled-alwaqa/PAROL6-ROS2-MOVEIT",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-29T13:56:28Z",
+      "created_at": "2026-01-29T13:43:36Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,

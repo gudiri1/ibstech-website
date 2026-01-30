@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-01-29T04:48:25Z",
-  "signals": [],
+  "generated_at_utc": "2026-01-30T04:50:50Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "AutoTyper",
+      "vendor": "Himanshu-369",
+      "evidence": [
+        "https://github.com/Himanshu-369/AutoTyper"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "PAROL6-ROS2-MOVEIT",
+      "vendor": "Amr-khaled-alwaqa",
+      "evidence": [
+        "https://github.com/Amr-khaled-alwaqa/PAROL6-ROS2-MOVEIT"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
