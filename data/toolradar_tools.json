@@ -1896,6 +1896,49 @@
     }
   },
   {
+    "ToolName": "PDF_Malware_Analysis",
+    "VendorOrganisation": "Soumya586",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This cybersecurity project focuses on analyzing malicious PDF files using static analysis techniques. It extracts metadata, embedded objects, JavaScript, and IOCs to detect phishing, exploits, and hidden payloads, helping understand real-world PDF-based cyber attacks and defense methods.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Soumya586/PDF_Malware_Analysis",
+      "https://github.com/Soumya586/PDF_Malware_Analysis"
+    ],
+    "LastVerifiedDate": "2026-01-31",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Soumya586/PDF_Malware_Analysis",
+      "url": "https://github.com/Soumya586/PDF_Malware_Analysis",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-01-30T16:23:11Z",
+      "created_at": "2026-01-30T16:22:23Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Pengenalan-RTOS-dan-Embedded-Toolchain",
     "VendorOrganisation": "sinekarlintang",
     "ToolType": "Open Source",

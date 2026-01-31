@@ -1,20 +1,12 @@
 {
-  "generated_at_utc": "2026-01-30T04:50:50Z",
+  "generated_at_utc": "2026-01-31T04:43:31Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "AutoTyper",
-      "vendor": "Himanshu-369",
+      "tool": "PDF_Malware_Analysis",
+      "vendor": "Soumya586",
       "evidence": [
-        "https://github.com/Himanshu-369/AutoTyper"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "PAROL6-ROS2-MOVEIT",
-      "vendor": "Amr-khaled-alwaqa",
-      "evidence": [
-        "https://github.com/Amr-khaled-alwaqa/PAROL6-ROS2-MOVEIT"
+        "https://github.com/Soumya586/PDF_Malware_Analysis"
       ]
     }
   ],
@@ -37,6 +29,11 @@
     {
       "tool": "pdf-malware-analysis",
       "link": "https://github.com/aneesa-123/pdf-malware-analysis",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "ROS2_2D_Mapping_SLAM_Toolbox",
+      "link": "https://github.com/yashbhaskar/ROS2_2D_Mapping_SLAM_Toolbox",
       "info": "HTTP Error 404: Not Found"
     },
     {
