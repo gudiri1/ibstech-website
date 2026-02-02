@@ -2149,6 +2149,48 @@
     }
   },
   {
+    "ToolName": "PID-Sim",
+    "VendorOrganisation": "Cole789",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A terminal-driven PID simulation tool written in C++ that models and visualizes closed-loop control across multiple simulated systems. Users can interactively select a system (linear robot, quadrotor altitude, or pendulum), tune PID gains on the fly, switch models mid-simulation, and observe the system response plotted live via Gnuplot.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Cole789/PID-Sim",
+      "https://github.com/Cole789/PID-Sim"
+    ],
+    "LastVerifiedDate": "2026-02-02",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Cole789/PID-Sim",
+      "url": "https://github.com/Cole789/PID-Sim",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-01T07:13:52Z",
+      "created_at": "2026-02-01T06:57:32Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "PortfolioWebsite",
     "VendorOrganisation": "KalebSabo",
     "ToolType": "Open Source",
