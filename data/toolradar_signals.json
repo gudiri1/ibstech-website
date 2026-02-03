@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-02-02T05:07:12Z",
+  "generated_at_utc": "2026-02-03T04:57:46Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "PID-Sim",
-      "vendor": "Cole789",
+      "tool": "ros2-lidar-utils",
+      "vendor": "JcNavjot",
       "evidence": [
-        "https://github.com/Cole789/PID-Sim"
+        "https://github.com/JcNavjot/ros2-lidar-utils"
       ]
     }
   ],
@@ -34,11 +34,6 @@
     {
       "tool": "ROS2_2D_Mapping_SLAM_Toolbox",
       "link": "https://github.com/yashbhaskar/ROS2_2D_Mapping_SLAM_Toolbox",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "SorathiyaDhavalkumar",
-      "link": "https://github.com/SorathiyaDhavalkumar/SorathiyaDhavalkumar",
       "info": "HTTP Error 404: Not Found"
     }
   ]

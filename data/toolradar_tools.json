@@ -2864,6 +2864,48 @@
     }
   },
   {
+    "ToolName": "ros2-lidar-utils",
+    "VendorOrganisation": "JcNavjot",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS2 utilities and debugging tools for working with LaserScan data on real robots and simulations",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/JcNavjot/ros2-lidar-utils",
+      "https://github.com/JcNavjot/ros2-lidar-utils"
+    ],
+    "LastVerifiedDate": "2026-02-03",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "JcNavjot/ros2-lidar-utils",
+      "url": "https://github.com/JcNavjot/ros2-lidar-utils",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-02T17:23:08Z",
+      "created_at": "2026-02-02T16:57:59Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "ROS2_2D_Mapping_SLAM_Toolbox",
     "VendorOrganisation": "yashbhaskar",
     "ToolType": "Open Source",
