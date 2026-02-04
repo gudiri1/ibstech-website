@@ -1813,6 +1813,48 @@
     }
   },
   {
+    "ToolName": "PDF-Malware-Analysis-Toolkit",
+    "VendorOrganisation": "priyank5548",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A Python-based static analysis tool that inspects PDF internal structure to detect malicious JavaScript, obfuscated streams, embedded payloads, and indicators of compromise using object & stream level parsing inspired by pdfid, pdf-parser, peepdf, and qpdf methodologies.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/priyank5548/PDF-Malware-Analysis-Toolkit",
+      "https://github.com/priyank5548/PDF-Malware-Analysis-Toolkit"
+    ],
+    "LastVerifiedDate": "2026-02-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "priyank5548/PDF-Malware-Analysis-Toolkit",
+      "url": "https://github.com/priyank5548/PDF-Malware-Analysis-Toolkit",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-03T11:22:46Z",
+      "created_at": "2026-02-03T09:04:05Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "pdf-malware-analysis-web-toolkit",
     "VendorOrganisation": "pramod-shinde-2303",
     "ToolType": "Open Source",
