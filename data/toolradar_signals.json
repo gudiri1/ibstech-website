@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-02-04T04:50:55Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "PDF-Malware-Analysis-Toolkit",
-      "vendor": "priyank5548",
-      "evidence": [
-        "https://github.com/priyank5548/PDF-Malware-Analysis-Toolkit"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-02-05T04:58:49Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
