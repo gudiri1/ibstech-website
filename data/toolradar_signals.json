@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-02-07T04:47:38Z",
-  "signals": [],
+  "generated_at_utc": "2026-02-08T05:10:22Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Fusion_2_URDF",
+      "vendor": "haringuyen-uark",
+      "evidence": [
+        "https://github.com/haringuyen-uark/Fusion_2_URDF"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
@@ -20,6 +29,11 @@
     {
       "tool": "pdf-malware-analysis",
       "link": "https://github.com/aneesa-123/pdf-malware-analysis",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "pdf-malware-analysis-web-toolkit",
+      "link": "https://github.com/pramod-shinde-2303/pdf-malware-analysis-web-toolkit",
       "info": "HTTP Error 404: Not Found"
     },
     {
