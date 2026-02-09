@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-02-08T05:10:22Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "Fusion_2_URDF",
-      "vendor": "haringuyen-uark",
-      "evidence": [
-        "https://github.com/haringuyen-uark/Fusion_2_URDF"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-02-09T05:12:22Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
