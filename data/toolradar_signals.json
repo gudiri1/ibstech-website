@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-02-10T05:13:22Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "EncoderModel",
-      "vendor": "devil5th",
-      "evidence": [
-        "https://github.com/devil5th/EncoderModel"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-02-11T05:12:20Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
