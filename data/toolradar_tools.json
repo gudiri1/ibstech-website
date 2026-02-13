@@ -1,5 +1,47 @@
 [
   {
+    "ToolName": "Agentic-Bug-Hunter-",
+    "VendorOrganisation": "21-Muskan",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An Agentic AI that eliminates coding hallucinations by uniquely combining Generative AI (for reasoning) with Static Analysis (for mathematical proof) and RAG (for proprietary knowledge) to detect and fix bugs in embedded systems with unmatched accuracy.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/21-Muskan/Agentic-Bug-Hunter-",
+      "https://github.com/21-Muskan/Agentic-Bug-Hunter-"
+    ],
+    "LastVerifiedDate": "2026-02-13",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "21-Muskan/Agentic-Bug-Hunter-",
+      "url": "https://github.com/21-Muskan/Agentic-Bug-Hunter-",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-12T12:05:58Z",
+      "created_at": "2026-02-12T05:49:26Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "AI-Hacking-Village",
     "VendorOrganisation": "zuwasi",
     "ToolType": "Open Source",
@@ -2348,6 +2390,49 @@
       "open_issues": 0,
       "pushed_at": "2026-01-26T22:25:54Z",
       "created_at": "2025-03-20T00:21:48Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "principia-cli",
+    "VendorOrganisation": "principia-cloud",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Principia is an open-source CLI tool for building robotics simulations from natural language.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/principia-cloud/principia-cli",
+      "https://github.com/principia-cloud/principia-cli"
+    ],
+    "LastVerifiedDate": "2026-02-13",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "principia-cloud/principia-cli",
+      "url": "https://github.com/principia-cloud/principia-cli",
+      "stars": 16,
+      "forks": 2,
+      "open_issues": 0,
+      "pushed_at": "2026-02-12T17:50:35Z",
+      "created_at": "2026-02-10T02:00:06Z"
     },
     "Scores": {
       "Maturity": 2,
