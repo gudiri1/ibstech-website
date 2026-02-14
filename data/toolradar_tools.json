@@ -1049,6 +1049,49 @@
     }
   },
   {
+    "ToolName": "firmware-lens",
+    "VendorOrganisation": "luca8744",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Privacy-first static analysis pipeline for embedded firmware. Extracts AST, symbols and call graphs from projects and generates multi-level documentation using LLMs",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/luca8744/firmware-lens",
+      "https://github.com/luca8744/firmware-lens"
+    ],
+    "LastVerifiedDate": "2026-02-14",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "luca8744/firmware-lens",
+      "url": "https://github.com/luca8744/firmware-lens",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-13T21:18:33Z",
+      "created_at": "2026-02-13T11:04:08Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "frontier_exploration_sim",
     "VendorOrganisation": "MarineRock10",
     "ToolType": "Open Source",
@@ -1678,6 +1721,49 @@
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Panchakarma-Manufacturing-Agent",
+    "VendorOrganisation": "PSivaMallikarjun",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Panchakarma Agent is a multi-agent AI manufacturing system that automates stone, wood, metal, tool, and gold production. It converts user intent, images, and measurements into precise designs, CNC and robotic fabrication code, simulation, execution, billing, and delivery workflows end-to-end.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/PSivaMallikarjun/Panchakarma-Manufacturing-Agent",
+      "https://github.com/PSivaMallikarjun/Panchakarma-Manufacturing-Agent"
+    ],
+    "LastVerifiedDate": "2026-02-14",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "PSivaMallikarjun/Panchakarma-Manufacturing-Agent",
+      "url": "https://github.com/PSivaMallikarjun/Panchakarma-Manufacturing-Agent",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-13T19:44:02Z",
+      "created_at": "2026-02-13T19:21:30Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 3,
       "TCO": 5,
       "CommunitySupport": 1
     }
