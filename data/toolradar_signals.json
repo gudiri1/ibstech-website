@@ -1,20 +1,20 @@
 {
-  "generated_at_utc": "2026-02-14T04:51:33Z",
+  "generated_at_utc": "2026-02-15T05:02:31Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "firmware-lens",
-      "vendor": "luca8744",
+      "tool": "CPU_load_optimizer_C",
+      "vendor": "AMZ93-sudo",
       "evidence": [
-        "https://github.com/luca8744/firmware-lens"
+        "https://github.com/AMZ93-sudo/CPU_load_optimizer_C"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "Panchakarma-Manufacturing-Agent",
-      "vendor": "PSivaMallikarjun",
+      "tool": "MikuMotionTools",
+      "vendor": "T-K-233",
       "evidence": [
-        "https://github.com/PSivaMallikarjun/Panchakarma-Manufacturing-Agent"
+        "https://github.com/T-K-233/MikuMotionTools"
       ]
     }
   ],

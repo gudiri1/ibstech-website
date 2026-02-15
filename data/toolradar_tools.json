@@ -458,6 +458,47 @@
     }
   },
   {
+    "ToolName": "CPU_load_optimizer_C",
+    "VendorOrganisation": "AMZ93-sudo",
+    "ToolType": "Open Source",
+    "PrimaryUse": "CPU Load Optimizer — Static Analysis Tool for Embedded C/H Source Code",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/AMZ93-sudo/CPU_load_optimizer_C",
+      "https://github.com/AMZ93-sudo/CPU_load_optimizer_C"
+    ],
+    "LastVerifiedDate": "2026-02-15",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "AMZ93-sudo/CPU_load_optimizer_C",
+      "url": "https://github.com/AMZ93-sudo/CPU_load_optimizer_C",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-14T20:32:04Z",
+      "created_at": "2026-02-14T19:49:01Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "defenX",
     "VendorOrganisation": "Rashichandel191",
     "ToolType": "Open Source",
@@ -1678,6 +1719,48 @@
       "Integration": 1,
       "EmbeddedFit": 2,
       "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "MikuMotionTools",
+    "VendorOrganisation": "T-K-233",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Tool to bridge Blender animation and physics-based robotic simulation",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/T-K-233/MikuMotionTools",
+      "https://github.com/T-K-233/MikuMotionTools"
+    ],
+    "LastVerifiedDate": "2026-02-15",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "T-K-233/MikuMotionTools",
+      "url": "https://github.com/T-K-233/MikuMotionTools",
+      "stars": 16,
+      "forks": 1,
+      "open_issues": 3,
+      "pushed_at": "2026-02-15T04:26:03Z",
+      "created_at": "2025-07-25T18:46:54Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
       "CommunitySupport": 1
