@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-02-15T05:02:31Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "CPU_load_optimizer_C",
-      "vendor": "AMZ93-sudo",
-      "evidence": [
-        "https://github.com/AMZ93-sudo/CPU_load_optimizer_C"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "MikuMotionTools",
-      "vendor": "T-K-233",
-      "evidence": [
-        "https://github.com/T-K-233/MikuMotionTools"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-02-16T05:10:20Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
