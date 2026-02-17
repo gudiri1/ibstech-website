@@ -2862,6 +2862,48 @@
     }
   },
   {
+    "ToolName": "Robotics",
+    "VendorOrganisation": "kawtharzaidan95-max",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Tools and experiments for quadruped robot locomotion, control, and simulation.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/kawtharzaidan95-max/Robotics",
+      "https://github.com/kawtharzaidan95-max/Robotics"
+    ],
+    "LastVerifiedDate": "2026-02-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "kawtharzaidan95-max/Robotics",
+      "url": "https://github.com/kawtharzaidan95-max/Robotics",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-16T08:26:22Z",
+      "created_at": "2026-02-16T08:26:22Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Robotics-AI",
     "VendorOrganisation": "AbisaidMartinez",
     "ToolType": "Open Source",
