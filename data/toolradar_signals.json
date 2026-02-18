@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-02-17T05:02:46Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "Robotics",
-      "vendor": "kawtharzaidan95-max",
-      "evidence": [
-        "https://github.com/kawtharzaidan95-max/Robotics"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-02-18T05:03:29Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
