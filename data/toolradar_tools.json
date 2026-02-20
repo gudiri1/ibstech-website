@@ -417,6 +417,48 @@
     }
   },
   {
+    "ToolName": "Collision-Expansion-Viewer",
+    "VendorOrganisation": "a-710",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A Python tool made as a project for uni for visualizing collision expansion around shapes and obstacles, useful for path planning and robotics simulations.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/a-710/Collision-Expansion-Viewer",
+      "https://github.com/a-710/Collision-Expansion-Viewer"
+    ],
+    "LastVerifiedDate": "2026-02-20",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "a-710/Collision-Expansion-Viewer",
+      "url": "https://github.com/a-710/Collision-Expansion-Viewer",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-20T00:51:59Z",
+      "created_at": "2026-02-20T00:47:21Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "cpp-analysis-benchmark",
     "VendorOrganisation": "shaharlevi818",
     "ToolType": "Open Source",

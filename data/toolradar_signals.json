@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-02-19T05:02:42Z",
-  "signals": [],
+  "generated_at_utc": "2026-02-20T04:57:20Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Collision-Expansion-Viewer",
+      "vendor": "a-710",
+      "evidence": [
+        "https://github.com/a-710/Collision-Expansion-Viewer"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
@@ -20,11 +29,6 @@
     {
       "tool": "pdf-malware-analysis",
       "link": "https://github.com/aneesa-123/pdf-malware-analysis",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "ROS2_2D_Mapping_SLAM_Toolbox",
-      "link": "https://github.com/yashbhaskar/ROS2_2D_Mapping_SLAM_Toolbox",
       "info": "HTTP Error 404: Not Found"
     }
   ]
