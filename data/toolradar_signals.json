@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-02-20T04:57:20Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "Collision-Expansion-Viewer",
-      "vendor": "a-710",
-      "evidence": [
-        "https://github.com/a-710/Collision-Expansion-Viewer"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-02-21T04:46:56Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
