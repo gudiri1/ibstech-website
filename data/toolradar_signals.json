@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-02-21T04:46:56Z",
-  "signals": [],
+  "generated_at_utc": "2026-02-22T04:59:02Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "sentence-embedding-behavior-analysis",
+      "vendor": "navneet-raghav",
+      "evidence": [
+        "https://github.com/navneet-raghav/sentence-embedding-behavior-analysis"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
@@ -20,6 +29,11 @@
     {
       "tool": "pdf-malware-analysis",
       "link": "https://github.com/aneesa-123/pdf-malware-analysis",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "Robotics",
+      "link": "https://github.com/kawtharzaidan95-max/Robotics",
       "info": "HTTP Error 404: Not Found"
     }
   ]
