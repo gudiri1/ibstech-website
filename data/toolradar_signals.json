@@ -1,19 +1,15 @@
 {
-  "generated_at_utc": "2026-02-23T05:08:33Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "industrial-robotic-cell-simulation",
-      "vendor": "AdrianGonzalez-stack",
-      "evidence": [
-        "https://github.com/AdrianGonzalez-stack/industrial-robotic-cell-simulation"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-02-24T05:01:48Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
       "link": "https://github.com/dendie-sanjaya/automatic-test-cypress",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "EncoderModel",
+      "link": "https://github.com/devil5th/EncoderModel",
       "info": "HTTP Error 404: Not Found"
     },
     {
