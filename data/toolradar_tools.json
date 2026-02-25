@@ -541,6 +541,48 @@
     }
   },
   {
+    "ToolName": "DeadCodeFinder",
+    "VendorOrganisation": "nxi1kor",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A comprehensive static code analysis tool for C/C++ projects that leverages **cppcheck** to identify dead code, analyze impact, and generate detailed HTML reports. Designed specifically for embedded systems with a conservative approach to avoid breaking pointer-heavy code.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/nxi1kor/DeadCodeFinder",
+      "https://github.com/nxi1kor/DeadCodeFinder"
+    ],
+    "LastVerifiedDate": "2026-02-25",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "nxi1kor/DeadCodeFinder",
+      "url": "https://github.com/nxi1kor/DeadCodeFinder",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-24T09:55:27Z",
+      "created_at": "2026-02-24T09:54:12Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "defenX",
     "VendorOrganisation": "Rashichandel191",
     "ToolType": "Open Source",
