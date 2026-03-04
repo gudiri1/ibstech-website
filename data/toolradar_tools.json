@@ -1934,6 +1934,48 @@
     }
   },
   {
+    "ToolName": "mujoco-mcp-server",
+    "VendorOrganisation": "Rongxuan-Zhou",
+    "ToolType": "Open Source",
+    "PrimaryUse": "MuJoCo physics simulation as MCP tools for Claude Code — sim, render, analyze, control robots, and run RL environments.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Rongxuan-Zhou/mujoco-mcp-server",
+      "https://github.com/Rongxuan-Zhou/mujoco-mcp-server"
+    ],
+    "LastVerifiedDate": "2026-03-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Rongxuan-Zhou/mujoco-mcp-server",
+      "url": "https://github.com/Rongxuan-Zhou/mujoco-mcp-server",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-03-03T19:39:35Z",
+      "created_at": "2026-03-03T19:20:47Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "My-Dinner-With-LIMO",
     "VendorOrganisation": "El-Maktab",
     "ToolType": "Open Source",
