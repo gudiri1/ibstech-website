@@ -376,6 +376,47 @@
     }
   },
   {
+    "ToolName": "ClaudeRTOS-Insight",
+    "VendorOrganisation": "xogizmft32",
+    "ToolType": "Open Source",
+    "PrimaryUse": "AI-powered debugging and monitoring tool for FreeRTOS embedded systems",
+    "VModelPhases": [
+      "Release / Operations"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/xogizmft32/ClaudeRTOS-Insight",
+      "https://github.com/xogizmft32/ClaudeRTOS-Insight"
+    ],
+    "LastVerifiedDate": "2026-03-05",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "xogizmft32/ClaudeRTOS-Insight",
+      "url": "https://github.com/xogizmft32/ClaudeRTOS-Insight",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-03-04T06:02:42Z",
+      "created_at": "2026-03-04T05:49:51Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "CodeAssist_python",
     "VendorOrganisation": "SRIRAM231005",
     "ToolType": "Open Source",

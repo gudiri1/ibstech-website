@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-03-04T04:50:26Z",
+  "generated_at_utc": "2026-03-05T04:54:17Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "mujoco-mcp-server",
-      "vendor": "Rongxuan-Zhou",
+      "tool": "ClaudeRTOS-Insight",
+      "vendor": "xogizmft32",
       "evidence": [
-        "https://github.com/Rongxuan-Zhou/mujoco-mcp-server"
+        "https://github.com/xogizmft32/ClaudeRTOS-Insight"
       ]
     }
   ],
@@ -15,6 +15,11 @@
       "tool": "automatic-test-cypress",
       "link": "https://github.com/dendie-sanjaya/automatic-test-cypress",
       "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "Embedded-Testing-Tools-In-India",
+      "link": "https://github.com/meghanaagarwal/Embedded-Testing-Tools-In-India",
+      "info": "HTTP Error 503: Service Unavailable"
     },
     {
       "tool": "EncoderModel",
