@@ -2526,6 +2526,48 @@
     }
   },
   {
+    "ToolName": "pdfmalwareanalysistoolkit",
+    "VendorOrganisation": "kirangarad12jan-svg",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Python-based toolkit for analyzing suspicious PDF files and detecting malicious indicators such as embedded JavaScript, URLs, and hidden objects. The tool performs static malware analysis and generates a structured security report with risk scoring.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/kirangarad12jan-svg/pdfmalwareanalysistoolkit",
+      "https://github.com/kirangarad12jan-svg/pdfmalwareanalysistoolkit"
+    ],
+    "LastVerifiedDate": "2026-03-06",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "kirangarad12jan-svg/pdfmalwareanalysistoolkit",
+      "url": "https://github.com/kirangarad12jan-svg/pdfmalwareanalysistoolkit",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-03-05T12:31:48Z",
+      "created_at": "2026-03-05T12:17:40Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Pengenalan-RTOS-dan-Embedded-Toolchain",
     "VendorOrganisation": "sinekarlintang",
     "ToolType": "Open Source",
