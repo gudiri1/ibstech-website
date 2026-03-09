@@ -1639,6 +1639,47 @@
     }
   },
   {
+    "ToolName": "llm-key-scanner",
+    "VendorOrganisation": "alexh-scrt",
+    "ToolType": "Open Source",
+    "PrimaryUse": "llm_key_scanner is a static analysis CLI tool that inspects Android APK and iOS IPA files for hardcoded LLM API keys from providers such as OpenAI, Anthropic, Google Gemini, Cohere, Mistral, and more. It decompresses mobile app packages, searches all embedded text resources, binaries, and config files using regex patterns tuned for each provider's ",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/alexh-scrt/llm-key-scanner",
+      "https://github.com/alexh-scrt/llm-key-scanner"
+    ],
+    "LastVerifiedDate": "2026-03-09",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "alexh-scrt/llm-key-scanner",
+      "url": "https://github.com/alexh-scrt/llm-key-scanner",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-03-08T08:30:15Z",
+      "created_at": "2026-03-08T08:30:14Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "MalDoc-Static-Analysis",
     "VendorOrganisation": "RootAware",
     "ToolType": "Open Source",
