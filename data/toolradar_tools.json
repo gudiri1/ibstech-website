@@ -1132,6 +1132,48 @@
     }
   },
   {
+    "ToolName": "engineering-ai-stack.",
+    "VendorOrganisation": "Thompson002",
+    "ToolType": "Open Source",
+    "PrimaryUse": "🛠️ Engineering AI Stack – Explore 200+ AI tools used in CAD, simulation, robotics, and manufacturing. 📚 Access tutorials, learning resources, and interact with an AI chatbot for engineering guidance.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Thompson002/engineering-ai-stack.",
+      "https://github.com/Thompson002/engineering-ai-stack."
+    ],
+    "LastVerifiedDate": "2026-03-13",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Thompson002/engineering-ai-stack.",
+      "url": "https://github.com/Thompson002/engineering-ai-stack.",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-03-13T04:53:25Z",
+      "created_at": "2026-03-13T04:53:25Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "esp32-devops-analyzer",
     "VendorOrganisation": "elross913",
     "ToolType": "Open Source",
@@ -3187,6 +3229,48 @@
     "Scores": {
       "Maturity": 1,
       "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Robot_Vacuum_Cleaner_ROS2",
+    "VendorOrganisation": "maxonbejenari",
+    "ToolType": "Open Source",
+    "PrimaryUse": "The Robot Vacuum Cleaner project aims to build a functional, smart vacuuming robot.Main reason for the project is to master ROS2, Nav2, Object detection, Simulation tools",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/maxonbejenari/Robot_Vacuum_Cleaner_ROS2",
+      "https://github.com/maxonbejenari/Robot_Vacuum_Cleaner_ROS2"
+    ],
+    "LastVerifiedDate": "2026-03-13",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "maxonbejenari/Robot_Vacuum_Cleaner_ROS2",
+      "url": "https://github.com/maxonbejenari/Robot_Vacuum_Cleaner_ROS2",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-03-12T20:58:34Z",
+      "created_at": "2026-03-12T20:33:26Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
