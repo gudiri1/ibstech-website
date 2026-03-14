@@ -1,20 +1,12 @@
 {
-  "generated_at_utc": "2026-03-13T04:54:47Z",
+  "generated_at_utc": "2026-03-14T04:51:54Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "engineering-ai-stack.",
-      "vendor": "Thompson002",
+      "tool": "franka_mujoco",
+      "vendor": "chuankepang",
       "evidence": [
-        "https://github.com/Thompson002/engineering-ai-stack."
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Robot_Vacuum_Cleaner_ROS2",
-      "vendor": "maxonbejenari",
-      "evidence": [
-        "https://github.com/maxonbejenari/Robot_Vacuum_Cleaner_ROS2"
+        "https://github.com/chuankepang/franka_mujoco"
       ]
     }
   ],
