@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-03-17T05:01:54Z",
-  "signals": [],
+  "generated_at_utc": "2026-03-18T05:05:56Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "embedded-cicd-pipeline",
+      "vendor": "aabhakadam",
+      "evidence": [
+        "https://github.com/aabhakadam/embedded-cicd-pipeline"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
@@ -25,11 +34,6 @@
     {
       "tool": "pdf-malware-analysis",
       "link": "https://github.com/aneesa-123/pdf-malware-analysis",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "Robotics",
-      "link": "https://github.com/kawtharzaidan95-max/Robotics",
       "info": "HTTP Error 404: Not Found"
     }
   ]

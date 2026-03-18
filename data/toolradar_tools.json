@@ -875,6 +875,48 @@
     }
   },
   {
+    "ToolName": "embedded-cicd-pipeline",
+    "VendorOrganisation": "aabhakadam",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Automated build, test and static analysis pipeline for embedded C++ sensor software",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/aabhakadam/embedded-cicd-pipeline",
+      "https://github.com/aabhakadam/embedded-cicd-pipeline"
+    ],
+    "LastVerifiedDate": "2026-03-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "aabhakadam/embedded-cicd-pipeline",
+      "url": "https://github.com/aabhakadam/embedded-cicd-pipeline",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-03-17T23:42:47Z",
+      "created_at": "2026-03-17T17:53:18Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "embedded-cpp-pro-starter",
     "VendorOrganisation": "SourabhDhalia",
     "ToolType": "Open Source",
