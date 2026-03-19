@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-03-18T05:05:56Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "embedded-cicd-pipeline",
-      "vendor": "aabhakadam",
-      "evidence": [
-        "https://github.com/aabhakadam/embedded-cicd-pipeline"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-03-19T05:02:38Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
