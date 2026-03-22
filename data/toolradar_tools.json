@@ -4039,6 +4039,49 @@
     }
   },
   {
+    "ToolName": "RTOSploit",
+    "VendorOrganisation": "Indspl0it",
+    "ToolType": "Open Source",
+    "PrimaryUse": "RTOSploit is a security testing framework purpose-built for embedded RTOS firmware. It combines static analysis, CVE correlation, vulnerability assessment, exploit and payload generation, peripheral firmware auto-rehosting, grey-box fuzzing, and automated reporting - all running entirely in software via QEMU emulation. ",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Indspl0it/RTOSploit",
+      "https://github.com/Indspl0it/RTOSploit"
+    ],
+    "LastVerifiedDate": "2026-03-22",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Indspl0it/RTOSploit",
+      "url": "https://github.com/Indspl0it/RTOSploit",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-03-21T10:04:03Z",
+      "created_at": "2026-03-21T08:06:00Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Seed_generation_tool",
     "VendorOrganisation": "Sane212",
     "ToolType": "Open Source",
