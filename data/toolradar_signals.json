@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-03-22T05:00:49Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "RTOSploit",
-      "vendor": "Indspl0it",
-      "evidence": [
-        "https://github.com/Indspl0it/RTOSploit"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-03-23T05:14:07Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
