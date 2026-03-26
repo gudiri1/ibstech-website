@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-25T05:03:44Z",
+  "generated_at_utc": "2026-03-26T05:16:28Z",
   "signals": [],
   "broken_links": [
     {
@@ -25,6 +25,11 @@
     {
       "tool": "pdf-malware-analysis",
       "link": "https://github.com/aneesa-123/pdf-malware-analysis",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "pdf-malware-analysis-web-toolkit",
+      "link": "https://github.com/pramod-shinde-2303/pdf-malware-analysis-web-toolkit",
       "info": "HTTP Error 404: Not Found"
     }
   ]
