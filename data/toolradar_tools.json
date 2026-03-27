@@ -667,6 +667,48 @@
     }
   },
   {
+    "ToolName": "Drawing_Robotic_Arm",
+    "VendorOrganisation": "Anany444",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An AR4 based Robotic Arm in Gazebo simulation which takes user drawn input image and generate a trajectory using MoveIt2 C++ API which is followed by the end effector tool and visualised in Rviz.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Anany444/Drawing_Robotic_Arm",
+      "https://github.com/Anany444/Drawing_Robotic_Arm"
+    ],
+    "LastVerifiedDate": "2026-03-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Anany444/Drawing_Robotic_Arm",
+      "url": "https://github.com/Anany444/Drawing_Robotic_Arm",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-03-26T16:09:53Z",
+      "created_at": "2026-03-18T01:32:19Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Elevator-simulation-using-ARM-Keil-and-RTOS",
     "VendorOrganisation": "navinkumar357",
     "ToolType": "Open Source",
