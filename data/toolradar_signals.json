@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-03-27T05:17:48Z",
+  "generated_at_utc": "2026-03-28T05:02:50Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Drawing_Robotic_Arm",
-      "vendor": "Anany444",
+      "tool": "swarm-demonstration-tool",
+      "vendor": "mattes-kraus",
       "evidence": [
-        "https://github.com/Anany444/Drawing_Robotic_Arm"
+        "https://github.com/mattes-kraus/swarm-demonstration-tool"
       ]
     }
   ],

@@ -4626,6 +4626,48 @@
     }
   },
   {
+    "ToolName": "swarm-demonstration-tool",
+    "VendorOrganisation": "mattes-kraus",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Turtlebot 4 simulation with adjustable arena for robot swarm experiments.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/mattes-kraus/swarm-demonstration-tool",
+      "https://github.com/mattes-kraus/swarm-demonstration-tool"
+    ],
+    "LastVerifiedDate": "2026-03-28",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mattes-kraus/swarm-demonstration-tool",
+      "url": "https://github.com/mattes-kraus/swarm-demonstration-tool",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 1,
+      "pushed_at": "2026-03-27T11:44:54Z",
+      "created_at": "2024-09-26T11:59:47Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "thesis-flowgen",
     "VendorOrganisation": "lightspot21",
     "ToolType": "Open Source",
