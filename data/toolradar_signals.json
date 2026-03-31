@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-30T05:32:54Z",
+  "generated_at_utc": "2026-03-31T05:19:05Z",
   "signals": [],
   "broken_links": [
     {
@@ -11,6 +11,11 @@
       "tool": "EncoderModel",
       "link": "https://github.com/devil5th/EncoderModel",
       "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "firmware-ai",
+      "link": "https://github.com/alimoaz838/firmware-ai",
+      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
     },
     {
       "tool": "kova-platform",
