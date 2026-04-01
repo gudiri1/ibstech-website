@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-31T05:19:05Z",
+  "generated_at_utc": "2026-04-01T05:30:58Z",
   "signals": [],
   "broken_links": [
     {
@@ -11,11 +11,6 @@
       "tool": "EncoderModel",
       "link": "https://github.com/devil5th/EncoderModel",
       "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "firmware-ai",
-      "link": "https://github.com/alimoaz838/firmware-ai",
-      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
     },
     {
       "tool": "kova-platform",
@@ -30,11 +25,6 @@
     {
       "tool": "pdf-malware-analysis",
       "link": "https://github.com/aneesa-123/pdf-malware-analysis",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "pdf-malware-analysis-web-toolkit",
-      "link": "https://github.com/pramod-shinde-2303/pdf-malware-analysis-web-toolkit",
       "info": "HTTP Error 404: Not Found"
     }
   ]
