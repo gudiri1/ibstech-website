@@ -2312,6 +2312,48 @@
     }
   },
   {
+    "ToolName": "OApkscan",
+    "VendorOrganisation": "owlsecx",
+    "ToolType": "Open Source",
+    "PrimaryUse": "OApkscan performs deep static analysis on mobile application packages. It identifies dangerous permission combinations, stalkerware indicators, hardcoded credentials, embedded URLs/IPs, suspicious native libraries, and many other red flags. It works offline and requires no emulator or root.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/owlsecx/OApkscan",
+      "https://github.com/owlsecx/OApkscan"
+    ],
+    "LastVerifiedDate": "2026-04-03",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "owlsecx/OApkscan",
+      "url": "https://github.com/owlsecx/OApkscan",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-02T23:09:41Z",
+      "created_at": "2026-04-02T23:08:27Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Panchakarma-Manufacturing-Agent",
     "VendorOrganisation": "PSivaMallikarjun",
     "ToolType": "Open Source",
