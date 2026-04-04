@@ -4043,6 +4043,50 @@
     }
   },
   {
+    "ToolName": "ros2_robotics_ws",
+    "VendorOrganisation": "OmniaAhmed22",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This repository contains a ROS 2 workspace for simulating, controlling, and testing robotic systems. It provides projects like  teleoperation via keyboard, odometry publishing, and Gazebo-based simulation. Visualization tools include RViz2 and PlotJuggler for real-time debugging, trajectory analysis, and odometry tracking.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/OmniaAhmed22/ros2_robotics_ws",
+      "https://github.com/OmniaAhmed22/ros2_robotics_ws"
+    ],
+    "LastVerifiedDate": "2026-04-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "OmniaAhmed22/ros2_robotics_ws",
+      "url": "https://github.com/OmniaAhmed22/ros2_robotics_ws",
+      "stars": 0,
+      "forks": 1,
+      "open_issues": 2,
+      "pushed_at": "2026-04-03T21:35:55Z",
+      "created_at": "2025-09-05T10:06:09Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "ros_code_checker_demo",
     "VendorOrganisation": "adityagautam73",
     "ToolType": "Open Source",
