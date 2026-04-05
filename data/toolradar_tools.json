@@ -709,6 +709,48 @@
     }
   },
   {
+    "ToolName": "drone-packaging-simulation-unity",
+    "VendorOrganisation": "jorgefajardom-coder",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Unity-based simulation of a robotic drone assembly cell with articulated arms, C# control systems, JSON-driven motion sequences, gripper and suction tools, multi-arm coordination, and virtual process validation. Focused on robotics, automation, industrial workflows, and realistic interaction between components and mechanisms.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/jorgefajardom-coder/drone-packaging-simulation-unity",
+      "https://github.com/jorgefajardom-coder/drone-packaging-simulation-unity"
+    ],
+    "LastVerifiedDate": "2026-04-05",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "jorgefajardom-coder/drone-packaging-simulation-unity",
+      "url": "https://github.com/jorgefajardom-coder/drone-packaging-simulation-unity",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-04T23:05:16Z",
+      "created_at": "2026-04-04T05:48:04Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Elevator-simulation-using-ARM-Keil-and-RTOS",
     "VendorOrganisation": "navinkumar357",
     "ToolType": "Open Source",
@@ -4505,6 +4547,48 @@
     }
   },
   {
+    "ToolName": "serial-metamorphic-manipulator-ros2",
+    "VendorOrganisation": "StravopodisNikos",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS2 modular framework for modeling, synthesis, visualization, simulation & control for serial metamorphic manipulator robot class. Operation of robot prototype also supported in future releases. Developed on screw theory tools core also available for non-ros designs.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/StravopodisNikos/serial-metamorphic-manipulator-ros2",
+      "https://github.com/StravopodisNikos/serial-metamorphic-manipulator-ros2"
+    ],
+    "LastVerifiedDate": "2026-04-05",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "StravopodisNikos/serial-metamorphic-manipulator-ros2",
+      "url": "https://github.com/StravopodisNikos/serial-metamorphic-manipulator-ros2",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-04T12:38:43Z",
+      "created_at": "2026-04-04T11:31:10Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "SimPublisher",
     "VendorOrganisation": "intuitive-robots",
     "ToolType": "Open Source",
@@ -4749,6 +4833,50 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Surgical_Arm",
+    "VendorOrganisation": "Madhvendra05",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This repository contains a complete development pipeline for a robotic surgical arm using ROS 2 (Humble). The system supports simulation (Gazebo) as well as real hardware deployment, and focuses on precision manipulation, control, and surgical tool interaction.  It integrates MoveIt 2, ros2_control, and custom motion planning and control nodes for ",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung",
+      "Release / Operations"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Madhvendra05/Surgical_Arm",
+      "https://github.com/Madhvendra05/Surgical_Arm"
+    ],
+    "LastVerifiedDate": "2026-04-05",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Madhvendra05/Surgical_Arm",
+      "url": "https://github.com/Madhvendra05/Surgical_Arm",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-04T11:06:00Z",
+      "created_at": "2026-04-04T10:09:32Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,

@@ -1,12 +1,28 @@
 {
-  "generated_at_utc": "2026-04-04T05:00:59Z",
+  "generated_at_utc": "2026-04-05T05:20:53Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "ros2_robotics_ws",
-      "vendor": "OmniaAhmed22",
+      "tool": "drone-packaging-simulation-unity",
+      "vendor": "jorgefajardom-coder",
       "evidence": [
-        "https://github.com/OmniaAhmed22/ros2_robotics_ws"
+        "https://github.com/jorgefajardom-coder/drone-packaging-simulation-unity"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "serial-metamorphic-manipulator-ros2",
+      "vendor": "StravopodisNikos",
+      "evidence": [
+        "https://github.com/StravopodisNikos/serial-metamorphic-manipulator-ros2"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "Surgical_Arm",
+      "vendor": "Madhvendra05",
+      "evidence": [
+        "https://github.com/Madhvendra05/Surgical_Arm"
       ]
     }
   ],
