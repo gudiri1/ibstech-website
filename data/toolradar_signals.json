@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-04-06T05:33:20Z",
-  "signals": [],
+  "generated_at_utc": "2026-04-07T05:19:25Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Graph-Tree-Generator-for-LLMs",
+      "vendor": "duftcola-dev",
+      "evidence": [
+        "https://github.com/duftcola-dev/Graph-Tree-Generator-for-LLMs"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",

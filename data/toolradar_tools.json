@@ -1680,6 +1680,47 @@
     }
   },
   {
+    "ToolName": "Graph-Tree-Generator-for-LLMs",
+    "VendorOrganisation": "duftcola-dev",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A tree-sitter-based static analysis tool that extracts structural graphs from codebases, stores them in a SQLite database with vector embeddings, and exposes them as MCP tools for LLMs.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/duftcola-dev/Graph-Tree-Generator-for-LLMs",
+      "https://github.com/duftcola-dev/Graph-Tree-Generator-for-LLMs"
+    ],
+    "LastVerifiedDate": "2026-04-07",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "duftcola-dev/Graph-Tree-Generator-for-LLMs",
+      "url": "https://github.com/duftcola-dev/Graph-Tree-Generator-for-LLMs",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-06T12:57:31Z",
+      "created_at": "2026-04-06T12:38:18Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "industrial-robotic-cell-simulation",
     "VendorOrganisation": "AdrianGonzalez-stack",
     "ToolType": "Open Source",
