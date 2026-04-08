@@ -417,6 +417,47 @@
     }
   },
   {
+    "ToolName": "claudio",
+    "VendorOrganisation": "noamwiseman",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Multi-plugin monorepo for embedded agentic tools — Claude Code plugins for firmware, RTOS, and bare-metal C/C++/Rust/Python development.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/noamwiseman/claudio",
+      "https://github.com/noamwiseman/claudio"
+    ],
+    "LastVerifiedDate": "2026-04-08",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "noamwiseman/claudio",
+      "url": "https://github.com/noamwiseman/claudio",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-07T21:04:52Z",
+      "created_at": "2026-04-07T14:36:33Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 5,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "CodeAssist_python",
     "VendorOrganisation": "SRIRAM231005",
     "ToolType": "Open Source",

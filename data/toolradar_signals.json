@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-04-07T05:19:25Z",
+  "generated_at_utc": "2026-04-08T05:20:46Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Graph-Tree-Generator-for-LLMs",
-      "vendor": "duftcola-dev",
+      "tool": "claudio",
+      "vendor": "noamwiseman",
       "evidence": [
-        "https://github.com/duftcola-dev/Graph-Tree-Generator-for-LLMs"
+        "https://github.com/noamwiseman/claudio"
       ]
     }
   ],
