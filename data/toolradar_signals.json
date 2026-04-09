@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-04-08T05:20:46Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "claudio",
-      "vendor": "noamwiseman",
-      "evidence": [
-        "https://github.com/noamwiseman/claudio"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-04-09T05:21:02Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
