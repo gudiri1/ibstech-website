@@ -4837,6 +4837,47 @@
     }
   },
   {
+    "ToolName": "Static-Malware-Analysis-Shell-v2.0",
+    "VendorOrganisation": "mallazai",
+    "ToolType": "Open Source",
+    "PrimaryUse": "SMASHER is a Python 3 command-line tool designed for the safe, static inspection of Windows executables. It allows analysts to examine a file’s metadata, structure, and embedded strings without ever executing the code, ensuring a secure environment for threat assessment.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/mallazai/Static-Malware-Analysis-Shell-v2.0",
+      "https://github.com/mallazai/Static-Malware-Analysis-Shell-v2.0"
+    ],
+    "LastVerifiedDate": "2026-04-10",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mallazai/Static-Malware-Analysis-Shell-v2.0",
+      "url": "https://github.com/mallazai/Static-Malware-Analysis-Shell-v2.0",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-09T09:22:12Z",
+      "created_at": "2026-04-09T09:14:11Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "static_malware_detection_in_PDF",
     "VendorOrganisation": "JeswinMickle",
     "ToolType": "Open Source",

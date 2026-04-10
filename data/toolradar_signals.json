@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-04-09T05:21:02Z",
-  "signals": [],
+  "generated_at_utc": "2026-04-10T05:32:53Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Static-Malware-Analysis-Shell-v2.0",
+      "vendor": "mallazai",
+      "evidence": [
+        "https://github.com/mallazai/Static-Malware-Analysis-Shell-v2.0"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
