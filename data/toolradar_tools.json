@@ -1383,6 +1383,48 @@
     }
   },
   {
+    "ToolName": "fastbit-ci-tools",
+    "VendorOrganisation": "FASTBIT-EMBEDDED",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Reusable GitHub Actions for Fastbit CI: ARM GCC toolchain, static analysis, coverage tools",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/FASTBIT-EMBEDDED/fastbit-ci-tools",
+      "https://github.com/FASTBIT-EMBEDDED/fastbit-ci-tools"
+    ],
+    "LastVerifiedDate": "2026-04-11",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "FASTBIT-EMBEDDED/fastbit-ci-tools",
+      "url": "https://github.com/FASTBIT-EMBEDDED/fastbit-ci-tools",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-10T07:30:33Z",
+      "created_at": "2026-04-10T07:16:10Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "File-Queries-Rag-App",
     "VendorOrganisation": "pavan29903",
     "ToolType": "Open Source",
@@ -5081,6 +5123,47 @@
     },
     "Scores": {
       "Maturity": 0,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "toolchain",
+    "VendorOrganisation": "embedom",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Embedded toolchain, format and static code analysis binary files",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/embedom/toolchain",
+      "https://github.com/embedom/toolchain"
+    ],
+    "LastVerifiedDate": "2026-04-11",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "embedom/toolchain",
+      "url": "https://github.com/embedom/toolchain",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-10T18:03:15Z",
+      "created_at": "2026-04-10T16:57:21Z"
+    },
+    "Scores": {
+      "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 2,
       "AuditTraceability": 1,
