@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-04-14T05:31:56Z",
+  "generated_at_utc": "2026-04-15T05:32:08Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "embed-toolkit",
-      "vendor": "Oct7love",
+      "tool": "cpp-ai-agent-toolkit",
+      "vendor": "Lificholdell2",
       "evidence": [
-        "https://github.com/Oct7love/embed-toolkit"
+        "https://github.com/Lificholdell2/cpp-ai-agent-toolkit"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "Drift_Take_Home_Assignment",
+      "vendor": "courtniedangco-creator",
+      "evidence": [
+        "https://github.com/courtniedangco-creator/Drift_Take_Home_Assignment"
       ]
     }
   ],

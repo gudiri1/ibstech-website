@@ -541,6 +541,49 @@
     }
   },
   {
+    "ToolName": "cpp-ai-agent-toolkit",
+    "VendorOrganisation": "Lificholdell2",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A C++ toolkit for developing real-time AI agents, featuring optimized data structures, algorithm implementations, and integration with simulation environments. Ideal for robotics and game AI.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Lificholdell2/cpp-ai-agent-toolkit",
+      "https://github.com/Lificholdell2/cpp-ai-agent-toolkit"
+    ],
+    "LastVerifiedDate": "2026-04-15",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Lificholdell2/cpp-ai-agent-toolkit",
+      "url": "https://github.com/Lificholdell2/cpp-ai-agent-toolkit",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-14T11:43:10Z",
+      "created_at": "2026-04-14T11:43:05Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "cpp-analysis-benchmark",
     "VendorOrganisation": "shaharlevi818",
     "ToolType": "Open Source",
@@ -745,6 +788,50 @@
       "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Drift_Take_Home_Assignment",
+    "VendorOrganisation": "courtniedangco-creator",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Set up, build, and run a complete robotics simulation from scratch. Build a specific robot model, design a home environment, and execute a tidying task. with simulation tooling: URDF/SDF authoring, world construction, launch orchestration, and your ability to produce a simulation that actually runs and does something meaningful.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung",
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "core",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/courtniedangco-creator/Drift_Take_Home_Assignment",
+      "https://github.com/courtniedangco-creator/Drift_Take_Home_Assignment"
+    ],
+    "LastVerifiedDate": "2026-04-15",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "courtniedangco-creator/Drift_Take_Home_Assignment",
+      "url": "https://github.com/courtniedangco-creator/Drift_Take_Home_Assignment",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-07T00:43:53Z",
+      "created_at": "2026-04-06T23:04:55Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 5,
       "TCO": 5,
       "CommunitySupport": 1
     }
