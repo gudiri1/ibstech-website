@@ -1,20 +1,20 @@
 {
-  "generated_at_utc": "2026-04-15T05:32:08Z",
+  "generated_at_utc": "2026-04-16T05:37:43Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "cpp-ai-agent-toolkit",
-      "vendor": "Lificholdell2",
+      "tool": "domain_adaptation_sentiment_analysis-",
+      "vendor": "addytrunks",
       "evidence": [
-        "https://github.com/Lificholdell2/cpp-ai-agent-toolkit"
+        "https://github.com/addytrunks/domain_adaptation_sentiment_analysis-"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "Drift_Take_Home_Assignment",
-      "vendor": "courtniedangco-creator",
+      "tool": "robot-tool-changer-simulation-robodk",
+      "vendor": "Leowu-netizen",
       "evidence": [
-        "https://github.com/courtniedangco-creator/Drift_Take_Home_Assignment"
+        "https://github.com/Leowu-netizen/robot-tool-changer-simulation-robodk"
       ]
     }
   ],
