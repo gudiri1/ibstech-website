@@ -751,6 +751,47 @@
     }
   },
   {
+    "ToolName": "domain_adaptation_sentiment_analysis",
+    "VendorOrganisation": "addytrunks",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Sentiment Analysis of Noisy Domain-Specific Text: A Comparative Study of Static Embeddings vs. Fine-Tuned Transformers.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/addytrunks/domain_adaptation_sentiment_analysis",
+      "https://github.com/addytrunks/domain_adaptation_sentiment_analysis"
+    ],
+    "LastVerifiedDate": "2026-04-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "addytrunks/domain_adaptation_sentiment_analysis",
+      "url": "https://github.com/addytrunks/domain_adaptation_sentiment_analysis",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-16T08:16:43Z",
+      "created_at": "2026-04-16T08:11:41Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "domain_adaptation_sentiment_analysis-",
     "VendorOrganisation": "addytrunks",
     "ToolType": "Open Source",
@@ -2563,6 +2604,47 @@
     }
   },
   {
+    "ToolName": "mkdbg",
+    "VendorOrganisation": "illusional-micropogonias93",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Diagnose embedded firmware crashes over UART with mkdbg, a crash report tool for RTOS systems that needs no debug probe",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/illusional-micropogonias93/mkdbg",
+      "https://github.com/illusional-micropogonias93/mkdbg"
+    ],
+    "LastVerifiedDate": "2026-04-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "illusional-micropogonias93/mkdbg",
+      "url": "https://github.com/illusional-micropogonias93/mkdbg",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-17T03:25:10Z",
+      "created_at": "2026-04-17T01:02:22Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "mujoco-mcp-server",
     "VendorOrganisation": "Rongxuan-Zhou",
     "ToolType": "Open Source",
@@ -3655,6 +3737,48 @@
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "pybullet",
+    "VendorOrganisation": "mmajajohanne",
+    "ToolType": "Open Source",
+    "PrimaryUse": "PyBullet simulation of a robot arm with a virtual IMU on the tool flange. Generates ground-truth motion data for sensor fusion experiments.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/mmajajohanne/pybullet",
+      "https://github.com/mmajajohanne/pybullet"
+    ],
+    "LastVerifiedDate": "2026-04-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mmajajohanne/pybullet",
+      "url": "https://github.com/mmajajohanne/pybullet",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-16T13:28:28Z",
+      "created_at": "2026-04-16T12:43:17Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
       "TCO": 5,
       "CommunitySupport": 1
     }

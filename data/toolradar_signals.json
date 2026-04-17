@@ -1,20 +1,28 @@
 {
-  "generated_at_utc": "2026-04-16T05:37:43Z",
+  "generated_at_utc": "2026-04-17T05:35:41Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "domain_adaptation_sentiment_analysis-",
+      "tool": "domain_adaptation_sentiment_analysis",
       "vendor": "addytrunks",
       "evidence": [
-        "https://github.com/addytrunks/domain_adaptation_sentiment_analysis-"
+        "https://github.com/addytrunks/domain_adaptation_sentiment_analysis"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "robot-tool-changer-simulation-robodk",
-      "vendor": "Leowu-netizen",
+      "tool": "mkdbg",
+      "vendor": "illusional-micropogonias93",
       "evidence": [
-        "https://github.com/Leowu-netizen/robot-tool-changer-simulation-robodk"
+        "https://github.com/illusional-micropogonias93/mkdbg"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "pybullet",
+      "vendor": "mmajajohanne",
+      "evidence": [
+        "https://github.com/mmajajohanne/pybullet"
       ]
     }
   ],
@@ -22,6 +30,16 @@
     {
       "tool": "automatic-test-cypress",
       "link": "https://github.com/dendie-sanjaya/automatic-test-cypress",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "claudio",
+      "link": "https://github.com/noamwiseman/claudio",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "domain_adaptation_sentiment_analysis-",
+      "link": "https://github.com/addytrunks/domain_adaptation_sentiment_analysis-",
       "info": "HTTP Error 404: Not Found"
     },
     {
