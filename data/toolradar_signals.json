@@ -1,31 +1,6 @@
 {
-  "generated_at_utc": "2026-04-17T05:35:41Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "domain_adaptation_sentiment_analysis",
-      "vendor": "addytrunks",
-      "evidence": [
-        "https://github.com/addytrunks/domain_adaptation_sentiment_analysis"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "mkdbg",
-      "vendor": "illusional-micropogonias93",
-      "evidence": [
-        "https://github.com/illusional-micropogonias93/mkdbg"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "pybullet",
-      "vendor": "mmajajohanne",
-      "evidence": [
-        "https://github.com/mmajajohanne/pybullet"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-04-18T05:16:49Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
