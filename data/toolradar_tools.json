@@ -2687,6 +2687,48 @@
     }
   },
   {
+    "ToolName": "Multi-Robot-Nav",
+    "VendorOrganisation": "roccosalazar",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Multi-Robot-Nav is a ROS 2 framework for multi-robot LiDAR SLAM, combining simulation, decentralized SLAM, and evaluation tools for consistent map building across multiple robots.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/roccosalazar/Multi-Robot-Nav",
+      "https://github.com/roccosalazar/Multi-Robot-Nav"
+    ],
+    "LastVerifiedDate": "2026-04-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "roccosalazar/Multi-Robot-Nav",
+      "url": "https://github.com/roccosalazar/Multi-Robot-Nav",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-20T11:48:38Z",
+      "created_at": "2026-03-24T15:58:31Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "My-Dinner-With-LIMO",
     "VendorOrganisation": "El-Maktab",
     "ToolType": "Open Source",

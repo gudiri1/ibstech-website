@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-04-20T05:48:15Z",
-  "signals": [],
+  "generated_at_utc": "2026-04-21T05:34:54Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Multi-Robot-Nav",
+      "vendor": "roccosalazar",
+      "evidence": [
+        "https://github.com/roccosalazar/Multi-Robot-Nav"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
