@@ -499,6 +499,47 @@
     }
   },
   {
+    "ToolName": "codeiq",
+    "VendorOrganisation": "RandomCodeSpace",
+    "ToolType": "Open Source",
+    "PrimaryUse": "CLI + server for a deterministic code knowledge graph. 97 detectors across 35+ languages, Neo4j Embedded, Spring AI MCP server, REST API, and web UI. Pure static analysis — no AI, no external APIs, no telemetry.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/RandomCodeSpace/codeiq",
+      "https://github.com/RandomCodeSpace/codeiq"
+    ],
+    "LastVerifiedDate": "2026-04-24",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "RandomCodeSpace/codeiq",
+      "url": "https://github.com/RandomCodeSpace/codeiq",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-23T18:43:37Z",
+      "created_at": "2026-03-28T02:47:47Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Collision-Expansion-Viewer",
     "VendorOrganisation": "a-710",
     "ToolType": "Open Source",
