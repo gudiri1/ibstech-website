@@ -1,5 +1,47 @@
 [
   {
+    "ToolName": "Agentic-Bug-Hunter",
+    "VendorOrganisation": "21-Muskan",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An Agentic AI that eliminates coding hallucinations by uniquely combining Generative AI (for reasoning) with Static Analysis (for mathematical proof) and RAG (for proprietary knowledge) to detect and fix bugs in embedded systems with unmatched accuracy.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Hold",
+    "EvidenceLinks": [
+      "https://github.com/21-Muskan/Agentic-Bug-Hunter",
+      "https://github.com/21-Muskan/Agentic-Bug-Hunter"
+    ],
+    "LastVerifiedDate": "2026-04-26",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "21-Muskan/Agentic-Bug-Hunter",
+      "url": "https://github.com/21-Muskan/Agentic-Bug-Hunter",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-02-12T12:05:58Z",
+      "created_at": "2026-02-12T05:49:26Z"
+    },
+    "Scores": {
+      "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Agentic-Bug-Hunter-",
     "VendorOrganisation": "21-Muskan",
     "ToolType": "Open Source",
@@ -574,6 +616,47 @@
     "Scores": {
       "Maturity": 2,
       "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "context-os",
+    "VendorOrganisation": "sravan27",
+    "ToolType": "Open Source",
+    "PrimaryUse": "−40.9% Claude Code tokens on live A/B (36 real claude calls, p=5e-7). 400-line stdlib Python hook: static-analysis RAG against a pre-built repo graph — no embeddings, no server. Cross-repo MRR 0.545 vs 0.461 best baseline (+18.2%) on 3 unseen OSS repos. CI-gated regression floor. MIT.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/sravan27/context-os",
+      "https://github.com/sravan27/context-os/releases/tag/v2.8.0"
+    ],
+    "LastVerifiedDate": "2026-04-26",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "sravan27/context-os",
+      "url": "https://github.com/sravan27/context-os",
+      "stars": 7,
+      "forks": 2,
+      "open_issues": 0,
+      "pushed_at": "2026-04-25T11:46:01Z",
+      "created_at": "2026-04-06T17:01:24Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,

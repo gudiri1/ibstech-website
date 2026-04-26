@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-04-25T05:21:38Z",
-  "signals": [],
+  "generated_at_utc": "2026-04-26T05:46:06Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Agentic-Bug-Hunter",
+      "vendor": "21-Muskan",
+      "evidence": [
+        "https://github.com/21-Muskan/Agentic-Bug-Hunter"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "context-os",
+      "vendor": "sravan27",
+      "evidence": [
+        "https://github.com/sravan27/context-os"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
