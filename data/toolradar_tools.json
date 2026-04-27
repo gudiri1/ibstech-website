@@ -1717,6 +1717,47 @@
     }
   },
   {
+    "ToolName": "esp32c3-rtos-shell",
+    "VendorOrganisation": "assix",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A FreeRTOS-based embedded shell appliance for the ESP32-C3. Features a Unix-style CLI over USB-Serial and Telnet, Wi-Fi integration, local SPIFFS storage, and an I2C OLED dashboard. Includes a custom Python-style micro-scripting engine and networking tools (wget, ping) for remote LAN automation and headless diagnostics.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/assix/esp32c3-rtos-shell",
+      "https://github.com/assix/esp32c3-rtos-shell"
+    ],
+    "LastVerifiedDate": "2026-04-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "assix/esp32c3-rtos-shell",
+      "url": "https://github.com/assix/esp32c3-rtos-shell",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-26T06:46:26Z",
+      "created_at": "2026-04-26T06:39:39Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "fastbit-ci-tools",
     "VendorOrganisation": "FASTBIT-EMBEDDED",
     "ToolType": "Open Source",

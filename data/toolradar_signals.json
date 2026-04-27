@@ -1,20 +1,12 @@
 {
-  "generated_at_utc": "2026-04-26T05:46:06Z",
+  "generated_at_utc": "2026-04-27T06:09:15Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Agentic-Bug-Hunter",
-      "vendor": "21-Muskan",
+      "tool": "esp32c3-rtos-shell",
+      "vendor": "assix",
       "evidence": [
-        "https://github.com/21-Muskan/Agentic-Bug-Hunter"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "context-os",
-      "vendor": "sravan27",
-      "evidence": [
-        "https://github.com/sravan27/context-os"
+        "https://github.com/assix/esp32c3-rtos-shell"
       ]
     }
   ],
@@ -25,9 +17,19 @@
       "info": "HTTP Error 404: Not Found"
     },
     {
+      "tool": "ClaudeRTOS-Insight",
+      "link": "https://github.com/xogizmft32/ClaudeRTOS-Insight",
+      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
+    },
+    {
       "tool": "claudio",
       "link": "https://github.com/noamwiseman/claudio",
       "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "CodeAssist_python",
+      "link": "https://github.com/SRIRAM231005/CodeAssist_python",
+      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
     },
     {
       "tool": "domain_adaptation_sentiment_analysis-",
