@@ -790,6 +790,93 @@
     }
   },
   {
+    "ToolName": "crx-forensics",
+    "VendorOrganisation": "Jz8Root",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Static analysis CLI for Chrome Extension (.crx) packages. Parses CRX2/CRX3, scores permissions, detects Chrome Debugger Protocol abuse, embedded secrets, and produces a malicious/suspicious/clean risk verdict.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Jz8Root/crx-forensics",
+      "https://github.com/Jz8Root/crx-forensics"
+    ],
+    "LastVerifiedDate": "2026-04-28",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Jz8Root/crx-forensics",
+      "url": "https://github.com/Jz8Root/crx-forensics",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-28T03:13:32Z",
+      "created_at": "2026-04-28T03:13:27Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "cycle-timer",
+    "VendorOrganisation": "eduardo-bido",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Cycle Timer is a specialized simulation tool for industrial automation engineers to evaluate robotic palletizing cells. It performs precise calculations of robot occupancy, line throughput (BPM), and critical buffer accumulation during pallet transitions, ensuring system stability and identifying production bottlenecks before deployment.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung",
+      "Release / Operations"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/eduardo-bido/cycle-timer",
+      "https://github.com/eduardo-bido/cycle-timer"
+    ],
+    "LastVerifiedDate": "2026-04-28",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "eduardo-bido/cycle-timer",
+      "url": "https://github.com/eduardo-bido/cycle-timer",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-27T19:19:51Z",
+      "created_at": "2026-04-27T19:14:13Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "DeadCodeFinder",
     "VendorOrganisation": "nxi1kor",
     "ToolType": "Open Source",
@@ -1412,6 +1499,48 @@
       "Maturity": 1,
       "Integration": 5,
       "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "embedded-firmware-security",
+    "VendorOrganisation": "Ntandolis431",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Static security analysis of the D-Link DIR-868L router firmware (v2.05WWb02). Includes discovery of hardcoded credentials, command injection vectors, custom QEMU emulation scripts, and detailed CWE/CVSS documentation.",
+    "VModelPhases": [
+      "Safety & Security",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Ntandolis431/embedded-firmware-security",
+      "https://github.com/Ntandolis431/embedded-firmware-security"
+    ],
+    "LastVerifiedDate": "2026-04-28",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Ntandolis431/embedded-firmware-security",
+      "url": "https://github.com/Ntandolis431/embedded-firmware-security",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-27T08:56:24Z",
+      "created_at": "2026-04-27T08:22:57Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
@@ -2174,6 +2303,49 @@
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "image-malware-detection-tool",
+    "VendorOrganisation": "mnadeem9533-hack",
+    "ToolType": "Open Source",
+    "PrimaryUse": "The Image Malware Detection Tool is a cybersecurity project designed to analyze image files (JPG, PNG) and detect hidden malicious content. Attackers often embed malware inside images using techniques like steganography or exploit vulnerabilities in image processing libraries. This tool helps identify such threats using static analysis .",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/mnadeem9533-hack/image-malware-detection-tool",
+      "https://github.com/mnadeem9533-hack/image-malware-detection-tool"
+    ],
+    "LastVerifiedDate": "2026-04-28",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mnadeem9533-hack/image-malware-detection-tool",
+      "url": "https://github.com/mnadeem9533-hack/image-malware-detection-tool",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-27T13:44:32Z",
+      "created_at": "2026-04-27T13:38:32Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
       "TCO": 5,
       "CommunitySupport": 1
     }

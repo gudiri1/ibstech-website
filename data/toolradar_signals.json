@@ -1,12 +1,36 @@
 {
-  "generated_at_utc": "2026-04-27T06:09:15Z",
+  "generated_at_utc": "2026-04-28T06:13:02Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "esp32c3-rtos-shell",
-      "vendor": "assix",
+      "tool": "crx-forensics",
+      "vendor": "Jz8Root",
       "evidence": [
-        "https://github.com/assix/esp32c3-rtos-shell"
+        "https://github.com/Jz8Root/crx-forensics"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "cycle-timer",
+      "vendor": "eduardo-bido",
+      "evidence": [
+        "https://github.com/eduardo-bido/cycle-timer"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "embedded-firmware-security",
+      "vendor": "Ntandolis431",
+      "evidence": [
+        "https://github.com/Ntandolis431/embedded-firmware-security"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "image-malware-detection-tool",
+      "vendor": "mnadeem9533-hack",
+      "evidence": [
+        "https://github.com/mnadeem9533-hack/image-malware-detection-tool"
       ]
     }
   ],
@@ -17,19 +41,9 @@
       "info": "HTTP Error 404: Not Found"
     },
     {
-      "tool": "ClaudeRTOS-Insight",
-      "link": "https://github.com/xogizmft32/ClaudeRTOS-Insight",
-      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
-    },
-    {
       "tool": "claudio",
       "link": "https://github.com/noamwiseman/claudio",
       "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "CodeAssist_python",
-      "link": "https://github.com/SRIRAM231005/CodeAssist_python",
-      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
     },
     {
       "tool": "domain_adaptation_sentiment_analysis-",
@@ -44,16 +58,6 @@
     {
       "tool": "kova-platform",
       "link": "https://github.com/israel8787/kova-platform",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "pdf-malware",
-      "link": "https://github.com/aneesa-123/pdf-malware",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "pdf-malware-analysis",
-      "link": "https://github.com/aneesa-123/pdf-malware-analysis",
       "info": "HTTP Error 404: Not Found"
     }
   ]
