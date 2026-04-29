@@ -1,39 +1,6 @@
 {
-  "generated_at_utc": "2026-04-28T06:13:02Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "crx-forensics",
-      "vendor": "Jz8Root",
-      "evidence": [
-        "https://github.com/Jz8Root/crx-forensics"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "cycle-timer",
-      "vendor": "eduardo-bido",
-      "evidence": [
-        "https://github.com/eduardo-bido/cycle-timer"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "embedded-firmware-security",
-      "vendor": "Ntandolis431",
-      "evidence": [
-        "https://github.com/Ntandolis431/embedded-firmware-security"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "image-malware-detection-tool",
-      "vendor": "mnadeem9533-hack",
-      "evidence": [
-        "https://github.com/mnadeem9533-hack/image-malware-detection-tool"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-04-29T06:07:21Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
