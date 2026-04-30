@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-04-29T06:07:21Z",
-  "signals": [],
+  "generated_at_utc": "2026-04-30T06:10:57Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "codebase-analyzer",
+      "vendor": "kkazei",
+      "evidence": [
+        "https://github.com/kkazei/codebase-analyzer"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
@@ -26,6 +35,11 @@
       "tool": "kova-platform",
       "link": "https://github.com/israel8787/kova-platform",
       "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "malfusion",
+      "link": "https://github.com/bianca-grama/malfusion",
+      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
     }
   ]
 }
