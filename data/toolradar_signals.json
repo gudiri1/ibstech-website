@@ -1,12 +1,36 @@
 {
-  "generated_at_utc": "2026-04-30T06:10:57Z",
+  "generated_at_utc": "2026-05-01T06:21:49Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "codebase-analyzer",
-      "vendor": "kkazei",
+      "tool": "Image-Malware-Analyser",
+      "vendor": "NullBlood04",
       "evidence": [
-        "https://github.com/kkazei/codebase-analyzer"
+        "https://github.com/NullBlood04/Image-Malware-Analyser"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "robot-dynamics-force-control-toolbox",
+      "vendor": "kevintechroy",
+      "evidence": [
+        "https://github.com/kevintechroy/robot-dynamics-force-control-toolbox"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "static_Analysis_pipeline_for_embedded_systems",
+      "vendor": "imabhi165",
+      "evidence": [
+        "https://github.com/imabhi165/static_Analysis_pipeline_for_embedded_systems"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "turtlebot-mpc",
+      "vendor": "severinswoboda99-alt",
+      "evidence": [
+        "https://github.com/severinswoboda99-alt/turtlebot-mpc"
       ]
     }
   ],
@@ -35,11 +59,6 @@
       "tool": "kova-platform",
       "link": "https://github.com/israel8787/kova-platform",
       "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "malfusion",
-      "link": "https://github.com/bianca-grama/malfusion",
-      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
     }
   ]
 }

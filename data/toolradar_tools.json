@@ -2349,6 +2349,48 @@
     }
   },
   {
+    "ToolName": "Image-Malware-Analyser",
+    "VendorOrganisation": "NullBlood04",
+    "ToolType": "Open Source",
+    "PrimaryUse": "It is a Forensic Malware Analysis tool that can identify the malicious payload embedded within image files using static methods.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/NullBlood04/Image-Malware-Analyser",
+      "https://github.com/NullBlood04/Image-Malware-Analyser"
+    ],
+    "LastVerifiedDate": "2026-05-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "NullBlood04/Image-Malware-Analyser",
+      "url": "https://github.com/NullBlood04/Image-Malware-Analyser",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-30T14:31:49Z",
+      "created_at": "2025-12-03T10:01:48Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "image-malware-detection-tool",
     "VendorOrganisation": "mnadeem9533-hack",
     "ToolType": "Open Source",
@@ -4328,6 +4370,48 @@
     }
   },
   {
+    "ToolName": "robot-dynamics-force-control-toolbox",
+    "VendorOrganisation": "kevintechroy",
+    "ToolType": "Open Source",
+    "PrimaryUse": "MATLAB GUI toolbox for serial robot kinematics, dynamics simulation, compliance control, and impedance force control.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/kevintechroy/robot-dynamics-force-control-toolbox",
+      "https://github.com/kevintechroy/robot-dynamics-force-control-toolbox"
+    ],
+    "LastVerifiedDate": "2026-05-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "kevintechroy/robot-dynamics-force-control-toolbox",
+      "url": "https://github.com/kevintechroy/robot-dynamics-force-control-toolbox",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-30T15:47:16Z",
+      "created_at": "2026-04-30T15:45:00Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "robot-tool-changer-simulation-robodk",
     "VendorOrganisation": "Leowu-netizen",
     "ToolType": "Open Source",
@@ -5675,6 +5759,47 @@
     }
   },
   {
+    "ToolName": "static_Analysis_pipeline_for_embedded_systems",
+    "VendorOrganisation": "imabhi165",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Open-source tool (discovered via GitHub search)",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/imabhi165/static_Analysis_pipeline_for_embedded_systems",
+      "https://github.com/imabhi165/static_Analysis_pipeline_for_embedded_systems"
+    ],
+    "LastVerifiedDate": "2026-05-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "imabhi165/static_Analysis_pipeline_for_embedded_systems",
+      "url": "https://github.com/imabhi165/static_Analysis_pipeline_for_embedded_systems",
+      "stars": 0,
+      "forks": 1,
+      "open_issues": 1,
+      "pushed_at": "2026-04-30T10:10:11Z",
+      "created_at": "2026-04-06T03:07:11Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "static_malware_detection_in_PDF",
     "VendorOrganisation": "JeswinMickle",
     "ToolType": "Open Source",
@@ -6004,6 +6129,48 @@
       "Integration": 1,
       "EmbeddedFit": 3,
       "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "turtlebot-mpc",
+    "VendorOrganisation": "severinswoboda99-alt",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A Linear MPC for a TurtleBot3 Burger mobile robot, including basic path planning and evaluation tools, both for simulation and real hardware. Created within the framework of a Bachelor thesis.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/severinswoboda99-alt/turtlebot-mpc",
+      "https://github.com/severinswoboda99-alt/turtlebot-mpc"
+    ],
+    "LastVerifiedDate": "2026-05-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "severinswoboda99-alt/turtlebot-mpc",
+      "url": "https://github.com/severinswoboda99-alt/turtlebot-mpc",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-04-30T13:13:11Z",
+      "created_at": "2026-03-30T17:37:54Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
       "CommunitySupport": 1
