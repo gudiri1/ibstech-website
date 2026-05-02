@@ -1,36 +1,20 @@
 {
-  "generated_at_utc": "2026-05-01T06:21:49Z",
+  "generated_at_utc": "2026-05-02T05:43:32Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Image-Malware-Analyser",
-      "vendor": "NullBlood04",
+      "tool": "Mapping-3D-Manufacturing-Warehouse",
+      "vendor": "Ahmed-Malik4147",
       "evidence": [
-        "https://github.com/NullBlood04/Image-Malware-Analyser"
+        "https://github.com/Ahmed-Malik4147/Mapping-3D-Manufacturing-Warehouse"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "robot-dynamics-force-control-toolbox",
-      "vendor": "kevintechroy",
+      "tool": "Sentiment-Analysis---Recurrent-Architectures-vs.-Embeddings",
+      "vendor": "DenizhanOngun",
       "evidence": [
-        "https://github.com/kevintechroy/robot-dynamics-force-control-toolbox"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "static_Analysis_pipeline_for_embedded_systems",
-      "vendor": "imabhi165",
-      "evidence": [
-        "https://github.com/imabhi165/static_Analysis_pipeline_for_embedded_systems"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "turtlebot-mpc",
-      "vendor": "severinswoboda99-alt",
-      "evidence": [
-        "https://github.com/severinswoboda99-alt/turtlebot-mpc"
+        "https://github.com/DenizhanOngun/Sentiment-Analysis---Recurrent-Architectures-vs.-Embeddings"
       ]
     }
   ],

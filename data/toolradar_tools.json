@@ -2772,6 +2772,48 @@
     }
   },
   {
+    "ToolName": "Mapping-3D-Manufacturing-Warehouse",
+    "VendorOrganisation": "Ahmed-Malik4147",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A simulation-based project that models and visualizes a 3D manufacturing warehouse environment using physics-based tools. This system focuses on representing warehouse layouts, robot movement, and object interactions in a virtual 3D space.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Ahmed-Malik4147/Mapping-3D-Manufacturing-Warehouse",
+      "https://github.com/Ahmed-Malik4147/Mapping-3D-Manufacturing-Warehouse"
+    ],
+    "LastVerifiedDate": "2026-05-02",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Ahmed-Malik4147/Mapping-3D-Manufacturing-Warehouse",
+      "url": "https://github.com/Ahmed-Malik4147/Mapping-3D-Manufacturing-Warehouse",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-01T12:22:14Z",
+      "created_at": "2026-05-01T12:21:06Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "MavenAI-Project",
     "VendorOrganisation": "SyniX-H",
     "ToolType": "Open Source",
@@ -5498,6 +5540,47 @@
       "open_issues": 0,
       "pushed_at": "2026-02-21T11:06:57Z",
       "created_at": "2026-02-21T06:46:28Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Sentiment-Analysis---Recurrent-Architectures-vs.-Embeddings",
+    "VendorOrganisation": "DenizhanOngun",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Comparative study of Bi-LSTM and Bi-GRU architectures using Static (GloVe) vs. Contextual (BERT) embeddings for sentiment analysis on the IMDb dataset. Includes t-SNE latent space visualizations and performance scaling analysis.",
+    "VModelPhases": [
+      "Architektur/Design"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/DenizhanOngun/Sentiment-Analysis---Recurrent-Architectures-vs.-Embeddings",
+      "https://github.com/DenizhanOngun/Sentiment-Analysis---Recurrent-Architectures-vs.-Embeddings"
+    ],
+    "LastVerifiedDate": "2026-05-02",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "DenizhanOngun/Sentiment-Analysis---Recurrent-Architectures-vs.-Embeddings",
+      "url": "https://github.com/DenizhanOngun/Sentiment-Analysis---Recurrent-Architectures-vs.-Embeddings",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-01T15:10:50Z",
+      "created_at": "2026-05-01T13:28:06Z"
     },
     "Scores": {
       "Maturity": 2,
