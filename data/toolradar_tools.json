@@ -4454,6 +4454,48 @@
     }
   },
   {
+    "ToolName": "robot-simulation-2026",
+    "VendorOrganisation": "boazmichael",
+    "ToolType": "Open Source",
+    "PrimaryUse": "webots-gazebo tools for simulation of turtlebot3 (and with manipulator) and Universal Robotic Arm.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/boazmichael/robot-simulation-2026",
+      "https://github.com/boazmichael/robot-simulation-2026"
+    ],
+    "LastVerifiedDate": "2026-05-03",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "boazmichael/robot-simulation-2026",
+      "url": "https://github.com/boazmichael/robot-simulation-2026",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-02T11:17:20Z",
+      "created_at": "2026-05-02T10:57:57Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "robot-tool-changer-simulation-robodk",
     "VendorOrganisation": "Leowu-netizen",
     "ToolType": "Open Source",

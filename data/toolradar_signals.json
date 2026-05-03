@@ -1,20 +1,12 @@
 {
-  "generated_at_utc": "2026-05-02T05:43:32Z",
+  "generated_at_utc": "2026-05-03T06:11:13Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Mapping-3D-Manufacturing-Warehouse",
-      "vendor": "Ahmed-Malik4147",
+      "tool": "robot-simulation-2026",
+      "vendor": "boazmichael",
       "evidence": [
-        "https://github.com/Ahmed-Malik4147/Mapping-3D-Manufacturing-Warehouse"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Sentiment-Analysis---Recurrent-Architectures-vs.-Embeddings",
-      "vendor": "DenizhanOngun",
-      "evidence": [
-        "https://github.com/DenizhanOngun/Sentiment-Analysis---Recurrent-Architectures-vs.-Embeddings"
+        "https://github.com/boazmichael/robot-simulation-2026"
       ]
     }
   ],
@@ -42,6 +34,11 @@
     {
       "tool": "kova-platform",
       "link": "https://github.com/israel8787/kova-platform",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "Mapping-3D-Manufacturing-Warehouse",
+      "link": "https://github.com/Ahmed-Malik4147/Mapping-3D-Manufacturing-Warehouse",
       "info": "HTTP Error 404: Not Found"
     }
   ]
