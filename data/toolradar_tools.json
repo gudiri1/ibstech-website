@@ -1,5 +1,47 @@
 [
   {
+    "ToolName": "3544-FRC-Toolkit",
+    "VendorOrganisation": "Spartiates-3544",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Monorepo for Team 3544 FRC tooling: configurable React dashboard, power diagnostics, simulation viewer, NetworkTables replay, Java robot library, Python Qt code generator, robot health checker, and subsystem tuner.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Spartiates-3544/3544-FRC-Toolkit",
+      "https://github.com/Spartiates-3544/3544-FRC-Toolkit"
+    ],
+    "LastVerifiedDate": "2026-05-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Spartiates-3544/3544-FRC-Toolkit",
+      "url": "https://github.com/Spartiates-3544/3544-FRC-Toolkit",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-03T19:17:23Z",
+      "created_at": "2026-05-03T19:01:13Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Agentic-Bug-Hunter",
     "VendorOrganisation": "21-Muskan",
     "ToolType": "Open Source",

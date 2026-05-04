@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-05-03T06:11:13Z",
+  "generated_at_utc": "2026-05-04T06:21:14Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "robot-simulation-2026",
-      "vendor": "boazmichael",
+      "tool": "3544-FRC-Toolkit",
+      "vendor": "Spartiates-3544",
       "evidence": [
-        "https://github.com/boazmichael/robot-simulation-2026"
+        "https://github.com/Spartiates-3544/3544-FRC-Toolkit"
       ]
     }
   ],
@@ -40,6 +40,11 @@
       "tool": "Mapping-3D-Manufacturing-Warehouse",
       "link": "https://github.com/Ahmed-Malik4147/Mapping-3D-Manufacturing-Warehouse",
       "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "OApkscan",
+      "link": "https://github.com/owlsecx/OApkscan",
+      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
     }
   ]
 }
