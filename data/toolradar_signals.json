@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-05-04T06:21:14Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "3544-FRC-Toolkit",
-      "vendor": "Spartiates-3544",
-      "evidence": [
-        "https://github.com/Spartiates-3544/3544-FRC-Toolkit"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-05-05T05:49:46Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
@@ -40,11 +31,6 @@
       "tool": "Mapping-3D-Manufacturing-Warehouse",
       "link": "https://github.com/Ahmed-Malik4147/Mapping-3D-Manufacturing-Warehouse",
       "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "OApkscan",
-      "link": "https://github.com/owlsecx/OApkscan",
-      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
     }
   ]
 }
