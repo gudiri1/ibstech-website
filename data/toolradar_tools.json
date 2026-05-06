@@ -2180,6 +2180,47 @@
     }
   },
   {
+    "ToolName": "friction-coefficient-analysis-system",
+    "VendorOrganisation": "kirubelmoges",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An embedded system using Arduino Uno, tilt sensing, and vibration detection to determine the angle of slip and compute the static coefficient of friction in real time.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/kirubelmoges/friction-coefficient-analysis-system",
+      "https://github.com/kirubelmoges/friction-coefficient-analysis-system"
+    ],
+    "LastVerifiedDate": "2026-05-06",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "kirubelmoges/friction-coefficient-analysis-system",
+      "url": "https://github.com/kirubelmoges/friction-coefficient-analysis-system",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-05T13:06:18Z",
+      "created_at": "2026-05-05T11:39:27Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "frontier_exploration_sim",
     "VendorOrganisation": "MarineRock10",
     "ToolType": "Open Source",
