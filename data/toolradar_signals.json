@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-05-06T06:11:42Z",
+  "generated_at_utc": "2026-05-07T06:17:28Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "friction-coefficient-analysis-system",
-      "vendor": "kirubelmoges",
+      "tool": "mini-automotive-ecu",
+      "vendor": "hkianis",
       "evidence": [
-        "https://github.com/kirubelmoges/friction-coefficient-analysis-system"
+        "https://github.com/hkianis/mini-automotive-ecu"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "robotics-skills-suite-updated",
+      "vendor": "lucasccgex4700030",
+      "evidence": [
+        "https://github.com/lucasccgex4700030/robotics-skills-suite-updated"
       ]
     }
   ],
