@@ -1,20 +1,12 @@
 {
-  "generated_at_utc": "2026-05-07T06:17:28Z",
+  "generated_at_utc": "2026-05-08T05:35:32Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "mini-automotive-ecu",
-      "vendor": "hkianis",
+      "tool": "Python-projects-for-mechanical-engineering",
+      "vendor": "Pragatti-c",
       "evidence": [
-        "https://github.com/hkianis/mini-automotive-ecu"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "robotics-skills-suite-updated",
-      "vendor": "lucasccgex4700030",
-      "evidence": [
-        "https://github.com/lucasccgex4700030/robotics-skills-suite-updated"
+        "https://github.com/Pragatti-c/Python-projects-for-mechanical-engineering"
       ]
     }
   ],

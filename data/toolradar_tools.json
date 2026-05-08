@@ -4413,6 +4413,48 @@
     }
   },
   {
+    "ToolName": "Python-projects-for-mechanical-engineering",
+    "VendorOrganisation": "Pragatti-c",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A Python-based mechanical engineering toolkit featuring simulations and analysis for drag force, fluid mechanics, thermodynamics, heat transfer, Otto cycle, mass-spring-damper systems, and robotic 2R arm modeling with visualizations, plots, notebooks, and engineering-focused computational tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Pragatti-c/Python-projects-for-mechanical-engineering",
+      "https://github.com/Pragatti-c/Python-projects-for-mechanical-engineering"
+    ],
+    "LastVerifiedDate": "2026-05-08",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Pragatti-c/Python-projects-for-mechanical-engineering",
+      "url": "https://github.com/Pragatti-c/Python-projects-for-mechanical-engineering",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-07T17:55:50Z",
+      "created_at": "2026-05-07T17:52:30Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "rafatiyan.github.io",
     "VendorOrganisation": "rafatiyan",
     "ToolType": "Open Source",
