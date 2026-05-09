@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-05-08T05:35:32Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "Python-projects-for-mechanical-engineering",
-      "vendor": "Pragatti-c",
-      "evidence": [
-        "https://github.com/Pragatti-c/Python-projects-for-mechanical-engineering"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-05-09T05:59:39Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
