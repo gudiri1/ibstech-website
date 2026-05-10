@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-05-09T05:59:39Z",
-  "signals": [],
+  "generated_at_utc": "2026-05-10T06:18:42Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "firmware-ai-reviewer",
+      "vendor": "razyos",
+      "evidence": [
+        "https://github.com/razyos/firmware-ai-reviewer"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
