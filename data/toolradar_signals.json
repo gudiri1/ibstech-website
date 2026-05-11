@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-05-10T06:18:42Z",
+  "generated_at_utc": "2026-05-11T06:49:01Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "firmware-ai-reviewer",
-      "vendor": "razyos",
+      "tool": "EmbedSentinel",
+      "vendor": "Sydthewhistler",
       "evidence": [
-        "https://github.com/razyos/firmware-ai-reviewer"
+        "https://github.com/Sydthewhistler/EmbedSentinel"
       ]
     }
   ],

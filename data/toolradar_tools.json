@@ -1803,6 +1803,48 @@
     }
   },
   {
+    "ToolName": "EmbedSentinel",
+    "VendorOrganisation": "Sydthewhistler",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Agentic AI pipeline for static security analysis of embedded C/C++ code",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Sydthewhistler/EmbedSentinel",
+      "https://github.com/Sydthewhistler/EmbedSentinel"
+    ],
+    "LastVerifiedDate": "2026-05-11",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Sydthewhistler/EmbedSentinel",
+      "url": "https://github.com/Sydthewhistler/EmbedSentinel",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-10T19:51:31Z",
+      "created_at": "2026-05-10T19:51:31Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "EncoderModel",
     "VendorOrganisation": "devil5th",
     "ToolType": "Open Source",
