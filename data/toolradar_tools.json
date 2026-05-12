@@ -4662,6 +4662,48 @@
     }
   },
   {
+    "ToolName": "robot-description",
+    "VendorOrganisation": "limx-tron2",
+    "ToolType": "Open Source",
+    "PrimaryUse": "URDF / xacro, MuJoCo XML, meshes, and optional USD assets for **TRON2A** robot variants. This package is intended for simulation, visualization, and downstream tooling (ROS 1/2, MuJoCo, Isaac Sim, and similar).",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/limx-tron2/robot-description",
+      "https://github.com/limx-tron2/robot-description"
+    ],
+    "LastVerifiedDate": "2026-05-12",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "limx-tron2/robot-description",
+      "url": "https://github.com/limx-tron2/robot-description",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-12T02:13:55Z",
+      "created_at": "2026-05-12T00:33:45Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "robot-dynamics-force-control-toolbox",
     "VendorOrganisation": "kevintechroy",
     "ToolType": "Open Source",
