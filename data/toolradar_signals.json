@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-05-12T06:21:04Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "robot-description",
-      "vendor": "limx-tron2",
-      "evidence": [
-        "https://github.com/limx-tron2/robot-description"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-05-13T06:31:52Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
