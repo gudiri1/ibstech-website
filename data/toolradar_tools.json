@@ -251,6 +251,48 @@
     }
   },
   {
+    "ToolName": "autonomous-master",
+    "VendorOrganisation": "Harshilshah11",
+    "ToolType": "Open Source",
+    "PrimaryUse": "🚗 Autonomous vehicle project focused on self-driving systems, simulation, planning, control, and AI-based automation. This repository contains experiments, tools, and implementations for building intelligent autonomous vehicles using modern robotics and software technologies.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Harshilshah11/autonomous-master",
+      "https://arnobot.in/"
+    ],
+    "LastVerifiedDate": "2026-05-19",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Harshilshah11/autonomous-master",
+      "url": "https://github.com/Harshilshah11/autonomous-master",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-19T06:27:00Z",
+      "created_at": "2026-05-18T14:41:07Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "AutoTyper",
     "VendorOrganisation": "Himanshu-369",
     "ToolType": "Open Source",
@@ -2931,6 +2973,47 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "malware-static-analyzer",
+    "VendorOrganisation": "MariamAshraf25",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A Python-based Static Malware Analysis tool featuring automated cryptographic hashing, heavy-duty embedded Hex Editing, FLOSS obfuscated string extraction, and suspicious indicator heuristic flagging with PDF reporting.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/MariamAshraf25/malware-static-analyzer",
+      "https://github.com/MariamAshraf25/malware-static-analyzer"
+    ],
+    "LastVerifiedDate": "2026-05-19",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "MariamAshraf25/malware-static-analyzer",
+      "url": "https://github.com/MariamAshraf25/malware-static-analyzer",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-18T16:10:31Z",
+      "created_at": "2026-05-18T15:49:13Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,

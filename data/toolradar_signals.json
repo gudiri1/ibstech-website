@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-05-18T07:04:17Z",
-  "signals": [],
+  "generated_at_utc": "2026-05-19T06:55:26Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "autonomous-master",
+      "vendor": "Harshilshah11",
+      "evidence": [
+        "https://github.com/Harshilshah11/autonomous-master"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "malware-static-analyzer",
+      "vendor": "MariamAshraf25",
+      "evidence": [
+        "https://github.com/MariamAshraf25/malware-static-analyzer"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
