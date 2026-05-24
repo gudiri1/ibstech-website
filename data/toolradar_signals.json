@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-05-23T06:18:46Z",
-  "signals": [],
+  "generated_at_utc": "2026-05-24T06:45:45Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "cortex-memory-budget",
+      "vendor": "embedded-pro",
+      "evidence": [
+        "https://github.com/embedded-pro/cortex-memory-budget"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "Personal-Portfoilo",
+      "vendor": "ayanali827",
+      "evidence": [
+        "https://github.com/ayanali827/Personal-Portfoilo"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
@@ -10,6 +27,11 @@
     {
       "tool": "claudio",
       "link": "https://github.com/noamwiseman/claudio",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "cpp-analysis-benchmark",
+      "link": "https://github.com/shaharlevi818/cpp-analysis-benchmark",
       "info": "HTTP Error 404: Not Found"
     },
     {

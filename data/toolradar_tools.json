@@ -790,6 +790,47 @@
     }
   },
   {
+    "ToolName": "cortex-memory-budget",
+    "VendorOrganisation": "embedded-pro",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Static flash/RAM footprint analysis for ARM Cortex-M binaries",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/embedded-pro/cortex-memory-budget",
+      "https://github.com/embedded-pro/cortex-memory-budget"
+    ],
+    "LastVerifiedDate": "2026-05-24",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "embedded-pro/cortex-memory-budget",
+      "url": "https://github.com/embedded-pro/cortex-memory-budget",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 1,
+      "pushed_at": "2026-05-23T21:13:17Z",
+      "created_at": "2026-05-23T20:05:49Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "cpp-ai-agent-toolkit",
     "VendorOrganisation": "Lificholdell2",
     "ToolType": "Open Source",
@@ -4109,6 +4150,49 @@
       "Maturity": 0,
       "Integration": 1,
       "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Personal-Portfoilo",
+    "VendorOrganisation": "ayanali827",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Research-focused Electrical Engineer pursuing an M.Sc. in Robotics and AI, specializing in autonomous systems, machine learning, and human-robot interaction. Experienced in building robotic prototypes, perception algorithms, and control frameworks with Python, MATLAB, ROS, MuJoCo, C/C++, and simulation tools for autonomous decision-making.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/ayanali827/Personal-Portfoilo",
+      "https://github.com/ayanali827/Personal-Portfoilo"
+    ],
+    "LastVerifiedDate": "2026-05-24",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ayanali827/Personal-Portfoilo",
+      "url": "https://github.com/ayanali827/Personal-Portfoilo",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-24T05:44:59Z",
+      "created_at": "2026-05-24T01:25:36Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
