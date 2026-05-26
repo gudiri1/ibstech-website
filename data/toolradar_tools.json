@@ -4829,6 +4829,48 @@
     }
   },
   {
+    "ToolName": "rob_bot_localization",
+    "VendorOrganisation": "kirillvelyugo",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS2 Kilted packages featuring a Gazebo robot simulation model, ORB-SLAM3 and ArUco marker localization, plug tools for researching and benchmarking localization algorithms.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/kirillvelyugo/rob_bot_localization",
+      "https://github.com/kirillvelyugo/rob_bot_localization"
+    ],
+    "LastVerifiedDate": "2026-05-26",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "kirillvelyugo/rob_bot_localization",
+      "url": "https://github.com/kirillvelyugo/rob_bot_localization",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-02T11:17:12Z",
+      "created_at": "2026-04-17T06:42:02Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "robot-description",
     "VendorOrganisation": "limx-tron2",
     "ToolType": "Open Source",
