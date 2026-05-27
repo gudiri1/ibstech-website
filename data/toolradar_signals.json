@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-05-26T06:54:24Z",
+  "generated_at_utc": "2026-05-27T07:12:46Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "rob_bot_localization",
-      "vendor": "kirillvelyugo",
+      "tool": "Compile-Time-Stack-Usage-Analyzer",
+      "vendor": "Shash-J",
       "evidence": [
-        "https://github.com/kirillvelyugo/rob_bot_localization"
+        "https://github.com/Shash-J/Compile-Time-Stack-Usage-Analyzer"
       ]
     }
   ],

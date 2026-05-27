@@ -749,6 +749,47 @@
     }
   },
   {
+    "ToolName": "Compile-Time-Stack-Usage-Analyzer",
+    "VendorOrganisation": "Shash-J",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An LLVM analysis pass that statically estimates maximum stack usage for each function including its call chain, identifying call paths that risk stack overflow — critical for embedded, kernel, and RTOS development where stack sizes are fixed and small.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Shash-J/Compile-Time-Stack-Usage-Analyzer",
+      "https://github.com/Shash-J/Compile-Time-Stack-Usage-Analyzer"
+    ],
+    "LastVerifiedDate": "2026-05-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Shash-J/Compile-Time-Stack-Usage-Analyzer",
+      "url": "https://github.com/Shash-J/Compile-Time-Stack-Usage-Analyzer",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-26T10:56:31Z",
+      "created_at": "2026-05-26T10:03:45Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "context-os",
     "VendorOrganisation": "sravan27",
     "ToolType": "Open Source",
