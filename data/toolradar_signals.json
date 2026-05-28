@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-05-27T07:12:46Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "Compile-Time-Stack-Usage-Analyzer",
-      "vendor": "Shash-J",
-      "evidence": [
-        "https://github.com/Shash-J/Compile-Time-Stack-Usage-Analyzer"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-05-28T07:01:46Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
