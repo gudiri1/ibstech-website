@@ -2639,6 +2639,91 @@
     }
   },
   {
+    "ToolName": "GuardCode-AI",
+    "VendorOrganisation": "iharshalmeherkhamb",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An automated AI-driven secure code-generation ecosystem utilizing a local Qwen2.5-Coder model backend with embedded Bandit AST abstract syntax tree static analysis for real-time IDE vulnerability interception.",
+    "VModelPhases": [
+      "Stakeholder Needs / System Requirements",
+      "Implementierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/iharshalmeherkhamb/GuardCode-AI",
+      "https://github.com/iharshalmeherkhamb/GuardCode-AI"
+    ],
+    "LastVerifiedDate": "2026-06-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "iharshalmeherkhamb/GuardCode-AI",
+      "url": "https://github.com/iharshalmeherkhamb/GuardCode-AI",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-05-31T08:40:53Z",
+      "created_at": "2026-05-31T08:21:13Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "GymSim",
+    "VendorOrganisation": "CJBrandi",
+    "ToolType": "Open Source",
+    "PrimaryUse": "CLI tool for AI to control FRC AdvantageKit Robot Simulation Headless.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/CJBrandi/GymSim",
+      "https://github.com/CJBrandi/GymSim"
+    ],
+    "LastVerifiedDate": "2026-06-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "CJBrandi/GymSim",
+      "url": "https://github.com/CJBrandi/GymSim",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-01T01:06:56Z",
+      "created_at": "2026-05-31T23:32:46Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Image-Malware-Analyser",
     "VendorOrganisation": "NullBlood04",
     "ToolType": "Open Source",
@@ -7048,6 +7133,48 @@
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "wpilib-agent-tools",
+    "VendorOrganisation": "edanliahovetsky",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Sandbox-first AI/robotics harness for WPILib simulation, NT4 recording, WPILOG analysis, and reviewable robot-code patches.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/edanliahovetsky/wpilib-agent-tools",
+      "https://github.com/edanliahovetsky/wpilib-agent-tools"
+    ],
+    "LastVerifiedDate": "2026-06-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "edanliahovetsky/wpilib-agent-tools",
+      "url": "https://github.com/edanliahovetsky/wpilib-agent-tools",
+      "stars": 2,
+      "forks": 1,
+      "open_issues": 0,
+      "pushed_at": "2026-06-01T03:38:53Z",
+      "created_at": "2026-02-10T15:17:33Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
       "TCO": 5,
       "CommunitySupport": 1
     }
