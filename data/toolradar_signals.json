@@ -1,31 +1,6 @@
 {
-  "generated_at_utc": "2026-06-01T08:43:20Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "GuardCode-AI",
-      "vendor": "iharshalmeherkhamb",
-      "evidence": [
-        "https://github.com/iharshalmeherkhamb/GuardCode-AI"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "GymSim",
-      "vendor": "CJBrandi",
-      "evidence": [
-        "https://github.com/CJBrandi/GymSim"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "wpilib-agent-tools",
-      "vendor": "edanliahovetsky",
-      "evidence": [
-        "https://github.com/edanliahovetsky/wpilib-agent-tools"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-06-02T08:04:06Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "automatic-test-cypress",
