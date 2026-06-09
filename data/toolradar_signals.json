@@ -1,21 +1,7 @@
 {
-  "generated_at_utc": "2026-06-08T08:20:53Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "dhevesh_repo",
-      "vendor": "mdeveshkannan-cpu",
-      "evidence": [
-        "https://github.com/mdeveshkannan-cpu/dhevesh_repo"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-06-09T06:56:48Z",
+  "signals": [],
   "broken_links": [
-    {
-      "tool": "3544-FRC-Toolkit",
-      "link": "https://github.com/Spartiates-3544/3544-FRC-Toolkit",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
     {
       "tool": "APK-insight",
       "link": "https://github.com/0xSpect3r/APK-insight",
@@ -27,49 +13,14 @@
       "info": "HTTP Error 404: Not Found"
     },
     {
-      "tool": "autonomous-master",
-      "link": "https://github.com/Harshilshah11/autonomous-master",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "AutoTyper",
-      "link": "https://github.com/Himanshu-369/AutoTyper",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "CI_FirstEmb_LED1",
-      "link": "https://github.com/Sugumaran-RnD/CI_FirstEmb_LED1",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
       "tool": "claudio",
       "link": "https://github.com/noamwiseman/claudio",
       "info": "HTTP Error 404: Not Found"
     },
     {
-      "tool": "Collision-Expansion-Viewer",
-      "link": "https://github.com/a-710/Collision-Expansion-Viewer",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "cpp-ai-agent-toolkit",
-      "link": "https://github.com/Lificholdell2/cpp-ai-agent-toolkit",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
       "tool": "cpp-analysis-benchmark",
       "link": "https://github.com/shaharlevi818/cpp-analysis-benchmark",
       "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "DeadCodeFinder",
-      "link": "https://github.com/nxi1kor/DeadCodeFinder",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "domain_adaptation_sentiment_analysis",
-      "link": "https://github.com/addytrunks/domain_adaptation_sentiment_analysis",
-      "info": "HTTP Error 504: Gateway Time-out"
     },
     {
       "tool": "domain_adaptation_sentiment_analysis-",
