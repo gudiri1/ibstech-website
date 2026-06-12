@@ -42,6 +42,47 @@
     }
   },
   {
+    "ToolName": "About-Me",
+    "VendorOrganisation": "Sarthak15-Embed",
+    "ToolType": "Open Source",
+    "PrimaryUse": "# 👋 Hi, I'm Sarthak ### Embedded Systems Enthusiast  #### Technical Skills  - Programming: Embedded C - Microcontrollers: ARM7 LPC2148, 8051, PIC16F877A - Protocols: UART, SPI, I2C - Peripherals: GPIO, ADC, PWM, Timers, Interrupts - Tools: Keil uVision, Proteus, MPLAB X, Git, GitHub - Currently Learning: Embedded Linux, Device Drivers, RTOS",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Sarthak15-Embed/About-Me",
+      "https://github.com/Sarthak15-Embed/About-Me"
+    ],
+    "LastVerifiedDate": "2026-06-12",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Sarthak15-Embed/About-Me",
+      "url": "https://github.com/Sarthak15-Embed/About-Me",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-11T17:56:50Z",
+      "created_at": "2026-06-11T17:53:50Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Agentic-Bug-Hunter",
     "VendorOrganisation": "21-Muskan",
     "ToolType": "Open Source",
@@ -7091,6 +7132,48 @@
       "Maturity": 2,
       "Integration": 3,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "utra6-550-gazebo-moveit-simulation",
+    "VendorOrganisation": "Akarapon1909",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS 2 Humble simulation package for the UTRA6 550 robot arm with Gazebo, ros2_control, MoveIt 2, table workcell, cube object, and trajectory execution tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Akarapon1909/utra6-550-gazebo-moveit-simulation",
+      "https://github.com/Akarapon1909/utra6-550-gazebo-moveit-simulation"
+    ],
+    "LastVerifiedDate": "2026-06-12",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Akarapon1909/utra6-550-gazebo-moveit-simulation",
+      "url": "https://github.com/Akarapon1909/utra6-550-gazebo-moveit-simulation",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-12T07:06:33Z",
+      "created_at": "2026-06-12T06:37:58Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
