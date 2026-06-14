@@ -3020,6 +3020,47 @@
     }
   },
   {
+    "ToolName": "KEAS",
+    "VendorOrganisation": "SaxenaVaishnavi",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Kyber-Enhanced Adaptive Steganography is a novel text-in-image steganographic framework that employs filter based texture analysis of cover image to highlight the regions where more payload can be embedded hence providing a significant betterment over the standard static LSB embedding techniques.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/SaxenaVaishnavi/KEAS",
+      "https://github.com/SaxenaVaishnavi/KEAS"
+    ],
+    "LastVerifiedDate": "2026-06-14",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "SaxenaVaishnavi/KEAS",
+      "url": "https://github.com/SaxenaVaishnavi/KEAS",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-05T10:17:28Z",
+      "created_at": "2026-06-05T09:11:43Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "kova-platform",
     "VendorOrganisation": "israel8787",
     "ToolType": "Open Source",

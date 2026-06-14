@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-06-13T07:05:12Z",
-  "signals": [],
+  "generated_at_utc": "2026-06-14T07:55:55Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "KEAS",
+      "vendor": "SaxenaVaishnavi",
+      "evidence": [
+        "https://github.com/SaxenaVaishnavi/KEAS"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
