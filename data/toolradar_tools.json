@@ -1504,6 +1504,48 @@
     }
   },
   {
+    "ToolName": "em_lib",
+    "VendorOrganisation": "matinjalalitekiyeh",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A production-ready embedded C++ library with comprehensive testing, static analysis, and consistent formatting for all your embedded projects.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/matinjalalitekiyeh/em_lib",
+      "https://github.com/matinjalalitekiyeh/em_lib"
+    ],
+    "LastVerifiedDate": "2026-06-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "matinjalalitekiyeh/em_lib",
+      "url": "https://github.com/matinjalalitekiyeh/em_lib",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-17T22:00:11Z",
+      "created_at": "2026-06-17T21:11:17Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "embed-privacy-stubs",
     "VendorOrganisation": "epiphyt",
     "ToolType": "Open Source",
@@ -2633,6 +2675,47 @@
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "genomeocean-diver",
+    "VendorOrganisation": "betodamian",
+    "ToolType": "Open Source",
+    "PrimaryUse": "DNA sequence analysis tool: embedding-based relatedness, composition-origin detection, TNF reference comparison, and LLM annotations (Gemini/Claude). FastAPI backend + static frontend.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/betodamian/genomeocean-diver",
+      "https://github.com/betodamian/genomeocean-diver"
+    ],
+    "LastVerifiedDate": "2026-06-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "betodamian/genomeocean-diver",
+      "url": "https://github.com/betodamian/genomeocean-diver",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-17T17:44:56Z",
+      "created_at": "2026-06-17T17:44:53Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 2,
+      "AIValue": 3,
       "TCO": 5,
       "CommunitySupport": 1
     }

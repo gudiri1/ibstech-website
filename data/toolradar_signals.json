@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-06-17T08:35:13Z",
-  "signals": [],
+  "generated_at_utc": "2026-06-18T08:18:08Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "em_lib",
+      "vendor": "matinjalalitekiyeh",
+      "evidence": [
+        "https://github.com/matinjalalitekiyeh/em_lib"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "genomeocean-diver",
+      "vendor": "betodamian",
+      "evidence": [
+        "https://github.com/betodamian/genomeocean-diver"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
@@ -35,11 +52,6 @@
     {
       "tool": "kova-platform",
       "link": "https://github.com/israel8787/kova-platform",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "Mapping-3D-Manufacturing-Warehouse",
-      "link": "https://github.com/Ahmed-Malik4147/Mapping-3D-Manufacturing-Warehouse",
       "info": "HTTP Error 404: Not Found"
     }
   ]
