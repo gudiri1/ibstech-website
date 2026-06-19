@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-06-18T08:18:08Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "em_lib",
-      "vendor": "matinjalalitekiyeh",
-      "evidence": [
-        "https://github.com/matinjalalitekiyeh/em_lib"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "genomeocean-diver",
-      "vendor": "betodamian",
-      "evidence": [
-        "https://github.com/betodamian/genomeocean-diver"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-06-19T08:39:21Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
