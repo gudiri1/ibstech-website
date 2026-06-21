@@ -209,6 +209,47 @@
     }
   },
   {
+    "ToolName": "AL4-pdfstudio",
+    "VendorOrganisation": "boredchilada",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Assemblyline v4 service for static PDF structural analysis (catalog-graph walk, embedded-payload carving, IOC tagging) wrapping pdfstudio.",
+    "VModelPhases": [
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/boredchilada/AL4-pdfstudio",
+      "https://github.com/boredchilada/pdfstudio"
+    ],
+    "LastVerifiedDate": "2026-06-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "boredchilada/AL4-pdfstudio",
+      "url": "https://github.com/boredchilada/AL4-pdfstudio",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-20T14:27:30Z",
+      "created_at": "2026-06-20T02:30:31Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "APK-insight",
     "VendorOrganisation": "0xSpect3r",
     "ToolType": "Open Source",
@@ -1783,6 +1824,49 @@
       "open_issues": 0,
       "pushed_at": "2026-03-17T23:42:47Z",
       "created_at": "2026-03-17T17:53:18Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "embedded-communication-testing",
+    "VendorOrganisation": "dikejile",
+    "ToolType": "Open Source",
+    "PrimaryUse": "C embedded communication protocol testing portfolio: requirements, automated tests, static analysis, defect lifecycle, and JMeter TCP performance testing.",
+    "VModelPhases": [
+      "Stakeholder Needs / System Requirements",
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/dikejile/embedded-communication-testing",
+      "https://github.com/dikejile/embedded-communication-testing"
+    ],
+    "LastVerifiedDate": "2026-06-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "dikejile/embedded-communication-testing",
+      "url": "https://github.com/dikejile/embedded-communication-testing",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-21T01:52:56Z",
+      "created_at": "2026-06-20T08:18:14Z"
     },
     "Scores": {
       "Maturity": 2,
@@ -5153,6 +5237,47 @@
     },
     "Scores": {
       "Maturity": 1,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "repolens",
+    "VendorOrganisation": "mahdi-behnam",
+    "ToolType": "Open Source",
+    "PrimaryUse": "AI-assisted change impact analysis for Git repositories using static analysis, dependency graphs, code embeddings, commit history mining, and historical evaluation.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/mahdi-behnam/repolens",
+      "https://github.com/mahdi-behnam/repolens"
+    ],
+    "LastVerifiedDate": "2026-06-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mahdi-behnam/repolens",
+      "url": "https://github.com/mahdi-behnam/repolens",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-20T20:56:07Z",
+      "created_at": "2026-06-20T17:46:03Z"
+    },
+    "Scores": {
+      "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
