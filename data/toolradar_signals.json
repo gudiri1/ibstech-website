@@ -1,31 +1,6 @@
 {
-  "generated_at_utc": "2026-06-21T08:09:18Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "AL4-pdfstudio",
-      "vendor": "boredchilada",
-      "evidence": [
-        "https://github.com/boredchilada/AL4-pdfstudio"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "embedded-communication-testing",
-      "vendor": "dikejile",
-      "evidence": [
-        "https://github.com/dikejile/embedded-communication-testing"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "repolens",
-      "vendor": "mahdi-behnam",
-      "evidence": [
-        "https://github.com/mahdi-behnam/repolens"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-06-22T09:20:22Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
