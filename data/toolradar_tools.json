@@ -4448,6 +4448,49 @@
     }
   },
   {
+    "ToolName": "PDF-Security-Kit-Nutter-tools-",
+    "VendorOrganisation": "WAMUTITU610",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A professional PDF static analysis tool that inspects suspicious files safely — without executing them. It extracts hashes, detects embedded JavaScript, scores entropy, flags malicious keywords, pulls IOCs, and outputs a colour-coded risk verdict plus optional JSON report.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/WAMUTITU610/PDF-Security-Kit-Nutter-tools-",
+      "https://github.com/WAMUTITU610/PDF-Security-Kit-Nutter-tools-"
+    ],
+    "LastVerifiedDate": "2026-06-23",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "WAMUTITU610/PDF-Security-Kit-Nutter-tools-",
+      "url": "https://github.com/WAMUTITU610/PDF-Security-Kit-Nutter-tools-",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-22T11:55:02Z",
+      "created_at": "2026-06-22T11:51:17Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "PDF_Malware_Analysis",
     "VendorOrganisation": "Soumya586",
     "ToolType": "Open Source",
