@@ -2136,6 +2136,49 @@
     }
   },
   {
+    "ToolName": "embedguard-skill",
+    "VendorOrganisation": "He-user520",
+    "ToolType": "Open Source",
+    "PrimaryUse": "AI generated embedded code static analysis skill for TRAE - detect hardware hallucinations, memory safety, interrupt safety, timing and resource violations before flashing",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/He-user520/embedguard-skill",
+      "https://github.com/He-user520/embedguard-skill"
+    ],
+    "LastVerifiedDate": "2026-06-24",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "He-user520/embedguard-skill",
+      "url": "https://github.com/He-user520/embedguard-skill",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-23T17:49:02Z",
+      "created_at": "2026-06-23T13:53:38Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "EmbedSentinel",
     "VendorOrganisation": "Sydthewhistler",
     "ToolType": "Open Source",
