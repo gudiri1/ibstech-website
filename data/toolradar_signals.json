@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-06-24T06:55:33Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "embedguard-skill",
-      "vendor": "He-user520",
-      "evidence": [
-        "https://github.com/He-user520/embedguard-skill"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-06-25T06:55:16Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
