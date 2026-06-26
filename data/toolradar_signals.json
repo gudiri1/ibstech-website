@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-06-25T06:55:16Z",
-  "signals": [],
+  "generated_at_utc": "2026-06-26T07:01:48Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "akamai-bmp-research",
+      "vendor": "arisune1337",
+      "evidence": [
+        "https://github.com/arisune1337/akamai-bmp-research"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",

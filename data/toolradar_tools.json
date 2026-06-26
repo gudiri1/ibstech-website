@@ -209,6 +209,47 @@
     }
   },
   {
+    "ToolName": "akamai-bmp-research",
+    "VendorOrganisation": "arisune1337",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Static & dynamic analysis of an Akamai Bot Manager client-side sensor script: obfuscation layers, embedded TLV VM, fingerprinting surfaces, and sensor_data wire format.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/arisune1337/akamai-bmp-research",
+      "https://github.com/arisune1337/akamai-bmp-research"
+    ],
+    "LastVerifiedDate": "2026-06-26",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "arisune1337/akamai-bmp-research",
+      "url": "https://github.com/arisune1337/akamai-bmp-research",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-25T11:10:49Z",
+      "created_at": "2026-06-25T10:44:15Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "AL4-pdfstudio",
     "VendorOrganisation": "boredchilada",
     "ToolType": "Open Source",
