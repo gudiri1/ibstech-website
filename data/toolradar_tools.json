@@ -3940,6 +3940,47 @@
     }
   },
   {
+    "ToolName": "ModernBERT-for-SE-Domain",
+    "VendorOrganisation": "jjsmp2",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Comparative analysis of the static and contextual word embedding models for Software Engineering (SE) domain applications, including data collection, preprocessing, model training, and comprehensive evaluation. ",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "core",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/jjsmp2/ModernBERT-for-SE-Domain",
+      "https://github.com/jjsmp2/ModernBERT-for-SE-Domain"
+    ],
+    "LastVerifiedDate": "2026-06-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "jjsmp2/ModernBERT-for-SE-Domain",
+      "url": "https://github.com/jjsmp2/ModernBERT-for-SE-Domain",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-26T22:47:01Z",
+      "created_at": "2026-06-25T19:16:05Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 5,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "mujoco-mcp-server",
     "VendorOrganisation": "Rongxuan-Zhou",
     "ToolType": "Open Source",
@@ -6507,6 +6548,48 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "sample-robotic-cellsim-tools",
+    "VendorOrganisation": "aws-samples",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Rust binaries for assembling, validating, and driving simulation scenes of multi-robot industrial cells in Isaac Sim",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/aws-samples/sample-robotic-cellsim-tools",
+      "https://github.com/aws-samples/sample-robotic-cellsim-tools"
+    ],
+    "LastVerifiedDate": "2026-06-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "aws-samples/sample-robotic-cellsim-tools",
+      "url": "https://github.com/aws-samples/sample-robotic-cellsim-tools",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-26T10:14:03Z",
+      "created_at": "2026-06-20T11:47:16Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,

@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-06-26T07:01:48Z",
+  "generated_at_utc": "2026-06-27T06:35:36Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "akamai-bmp-research",
-      "vendor": "arisune1337",
+      "tool": "ModernBERT-for-SE-Domain",
+      "vendor": "jjsmp2",
       "evidence": [
-        "https://github.com/arisune1337/akamai-bmp-research"
+        "https://github.com/jjsmp2/ModernBERT-for-SE-Domain"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "sample-robotic-cellsim-tools",
+      "vendor": "aws-samples",
+      "evidence": [
+        "https://github.com/aws-samples/sample-robotic-cellsim-tools"
       ]
     }
   ],
