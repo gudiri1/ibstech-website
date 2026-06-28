@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-06-27T06:35:36Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "ModernBERT-for-SE-Domain",
-      "vendor": "jjsmp2",
-      "evidence": [
-        "https://github.com/jjsmp2/ModernBERT-for-SE-Domain"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "sample-robotic-cellsim-tools",
-      "vendor": "aws-samples",
-      "evidence": [
-        "https://github.com/aws-samples/sample-robotic-cellsim-tools"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-06-28T07:09:14Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
