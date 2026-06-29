@@ -5792,6 +5792,49 @@
     }
   },
   {
+    "ToolName": "Robotics-Engineer-Environment",
+    "VendorOrganisation": "jlgalavi",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A modular development environment tailored for robotics engineers, combining WezTerm, Bash, ROS2, Git, Docker and SSH tooling into a clean, context-aware workflow for robot development, simulation and deployment.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Release / Operations"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/jlgalavi/Robotics-Engineer-Environment",
+      "https://github.com/jlgalavi/Robotics-Engineer-Environment"
+    ],
+    "LastVerifiedDate": "2026-06-29",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "jlgalavi/Robotics-Engineer-Environment",
+      "url": "https://github.com/jlgalavi/Robotics-Engineer-Environment",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-28T21:07:15Z",
+      "created_at": "2026-06-28T12:39:12Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 4,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Robotics-sauna-water-heater",
     "VendorOrganisation": "RolandVaa",
     "ToolType": "Open Source",
@@ -7632,6 +7675,47 @@
     "Scores": {
       "Maturity": 2,
       "Integration": 3,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "WannaCryAnalysis",
+    "VendorOrganisation": "victormeloasm",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Static reverse engineering of the WannaCry core loader, including readable reconstructed C, function mapping, embedded payload analysis, IOCs, YARA rules, and technical notes.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/victormeloasm/WannaCryAnalysis",
+      "https://github.com/victormeloasm/WannaCryAnalysis"
+    ],
+    "LastVerifiedDate": "2026-06-29",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "victormeloasm/WannaCryAnalysis",
+      "url": "https://github.com/victormeloasm/WannaCryAnalysis",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-28T23:46:22Z",
+      "created_at": "2026-06-28T22:56:58Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
       "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
