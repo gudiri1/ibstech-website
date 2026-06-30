@@ -7097,6 +7097,48 @@
     }
   },
   {
+    "ToolName": "SpfDrv",
+    "VendorOrganisation": "diabloidyobane",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Static analysis of a commercial HWID spoofer — IOCTL protocol, embedded driver extraction, spoof target mapping",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/diabloidyobane/SpfDrv",
+      "https://github.com/diabloidyobane/SpfDrv"
+    ],
+    "LastVerifiedDate": "2026-06-30",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "diabloidyobane/SpfDrv",
+      "url": "https://github.com/diabloidyobane/SpfDrv",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-06-30T03:01:16Z",
+      "created_at": "2026-06-30T03:01:14Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Static-Malware-Analysis-Shell-v2.0",
     "VendorOrganisation": "mallazai",
     "ToolType": "Open Source",
