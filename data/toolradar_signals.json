@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-07-02T06:49:37Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "cobot-arm",
-      "vendor": "yixnhuang",
-      "evidence": [
-        "https://github.com/yixnhuang/cobot-arm"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "nlp-static-embeddings-similarity",
-      "vendor": "mahmutozkizilcik",
-      "evidence": [
-        "https://github.com/mahmutozkizilcik/nlp-static-embeddings-similarity"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-07-03T06:41:34Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
