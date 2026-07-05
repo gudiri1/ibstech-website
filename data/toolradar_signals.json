@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-07-04T06:27:37Z",
-  "signals": [],
+  "generated_at_utc": "2026-07-05T06:49:30Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "apkscanner",
+      "vendor": "ProjectFlare",
+      "evidence": [
+        "https://github.com/ProjectFlare/apkscanner"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",

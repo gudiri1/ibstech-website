@@ -332,6 +332,50 @@
     }
   },
   {
+    "ToolName": "apkscanner",
+    "VendorOrganisation": "ProjectFlare",
+    "ToolType": "Open Source",
+    "PrimaryUse": "APK Scanner is a static analysis tool designed for parsing, auditing, and evaluating security configurations of Android applications, including support for split APK bundles. It extracts application permissions, third-party library dependencies, API secrets, and embedded URLs, and groups external domains into clear categories.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Safety & Security",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/ProjectFlare/apkscanner",
+      "https://projectflare.github.io/apkscanner/"
+    ],
+    "LastVerifiedDate": "2026-07-05",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ProjectFlare/apkscanner",
+      "url": "https://github.com/ProjectFlare/apkscanner",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-04T14:49:36Z",
+      "created_at": "2026-07-04T14:32:19Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "automatic-test-cypress",
     "VendorOrganisation": "dendie-sanjaya",
     "ToolType": "Open Source",
