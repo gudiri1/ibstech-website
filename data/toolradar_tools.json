@@ -2640,6 +2640,47 @@
     }
   },
   {
+    "ToolName": "Final-Degree-Project-Code",
+    "VendorOrganisation": "pabloooduran",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Python scripts for data analysis and figure generation of a TFG on type I collagen films with embedded amorphous magnetic microwires. Includes VNA electromagnetic characterization, Instron mechanical testing, and static load device analysis. Universidad Francisco de Vitoria / IMA-UCM, 2026.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/pabloooduran/Final-Degree-Project-Code",
+      "https://github.com/pabloooduran/Final-Degree-Project-Code"
+    ],
+    "LastVerifiedDate": "2026-07-06",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "pabloooduran/Final-Degree-Project-Code",
+      "url": "https://github.com/pabloooduran/Final-Degree-Project-Code",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-05T18:24:12Z",
+      "created_at": "2026-07-05T18:16:45Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "firmware-ai",
     "VendorOrganisation": "alimoaz838",
     "ToolType": "Open Source",

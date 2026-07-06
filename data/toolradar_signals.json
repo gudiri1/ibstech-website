@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-07-05T06:49:30Z",
+  "generated_at_utc": "2026-07-06T07:53:52Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "apkscanner",
-      "vendor": "ProjectFlare",
+      "tool": "Final-Degree-Project-Code",
+      "vendor": "pabloooduran",
       "evidence": [
-        "https://github.com/ProjectFlare/apkscanner"
+        "https://github.com/pabloooduran/Final-Degree-Project-Code"
       ]
     }
   ],
