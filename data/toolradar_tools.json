@@ -5875,6 +5875,48 @@
     }
   },
   {
+    "ToolName": "robot_plan",
+    "VendorOrganisation": "haomingyi",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Robot task planning and MuJoCo simulation tools for mobile manipulation research.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/haomingyi/robot_plan",
+      "https://github.com/haomingyi/robot_plan"
+    ],
+    "LastVerifiedDate": "2026-07-08",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "haomingyi/robot_plan",
+      "url": "https://github.com/haomingyi/robot_plan",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-08T05:49:08Z",
+      "created_at": "2026-07-08T05:47:57Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Robot_Vacuum_Cleaner_ROS2",
     "VendorOrganisation": "maxonbejenari",
     "ToolType": "Open Source",

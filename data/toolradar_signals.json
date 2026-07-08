@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-07-07T06:54:44Z",
-  "signals": [],
+  "generated_at_utc": "2026-07-08T06:06:02Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "robot_plan",
+      "vendor": "haomingyi",
+      "evidence": [
+        "https://github.com/haomingyi/robot_plan"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
