@@ -1,12 +1,28 @@
 {
-  "generated_at_utc": "2026-07-08T06:06:02Z",
+  "generated_at_utc": "2026-07-09T06:53:40Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "robot_plan",
-      "vendor": "haomingyi",
+      "tool": "AI-Emotion-Detector",
+      "vendor": "devotuoma",
       "evidence": [
-        "https://github.com/haomingyi/robot_plan"
+        "https://github.com/devotuoma/AI-Emotion-Detector"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "apk-fraud-analyzer",
+      "vendor": "kushkalia1908",
+      "evidence": [
+        "https://github.com/kushkalia1908/apk-fraud-analyzer"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "Robot-Learning-Roadmap",
+      "vendor": "Kodo-Robotics",
+      "evidence": [
+        "https://github.com/Kodo-Robotics/Robot-Learning-Roadmap"
       ]
     }
   ],
