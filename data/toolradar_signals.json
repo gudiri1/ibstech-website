@@ -1,28 +1,12 @@
 {
-  "generated_at_utc": "2026-07-09T06:53:40Z",
+  "generated_at_utc": "2026-07-10T06:54:01Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "AI-Emotion-Detector",
-      "vendor": "devotuoma",
+      "tool": "nanobot_sim",
+      "vendor": "zhan994",
       "evidence": [
-        "https://github.com/devotuoma/AI-Emotion-Detector"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "apk-fraud-analyzer",
-      "vendor": "kushkalia1908",
-      "evidence": [
-        "https://github.com/kushkalia1908/apk-fraud-analyzer"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Robot-Learning-Roadmap",
-      "vendor": "Kodo-Robotics",
-      "evidence": [
-        "https://github.com/Kodo-Robotics/Robot-Learning-Roadmap"
+        "https://github.com/zhan994/nanobot_sim"
       ]
     }
   ],
@@ -60,6 +44,11 @@
     {
       "tool": "EncoderModel",
       "link": "https://github.com/devil5th/EncoderModel",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "friction-coefficient-analysis-system",
+      "link": "https://github.com/kirubelmoges/friction-coefficient-analysis-system",
       "info": "HTTP Error 404: Not Found"
     }
   ]
