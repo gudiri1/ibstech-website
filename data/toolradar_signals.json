@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-07-13T06:29:06Z",
-  "signals": [],
+  "generated_at_utc": "2026-07-14T05:39:21Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Reverse-Engineering-Methodology",
+      "vendor": "mohamed-algabry",
+      "evidence": [
+        "https://github.com/mohamed-algabry/Reverse-Engineering-Methodology"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",

@@ -5790,6 +5790,47 @@
     }
   },
   {
+    "ToolName": "Reverse-Engineering-Methodology",
+    "VendorOrganisation": "mohamed-algabry",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A practical and structured Reverse Engineering methodology covering static analysis, dynamic analysis, binary analysis, debugging, malware analysis, deobfuscation, unpacking, and real-world workflows for Windows, Linux, Android, and embedded systems.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/mohamed-algabry/Reverse-Engineering-Methodology",
+      "https://github.com/mohamed-algabry/Reverse-Engineering-Methodology"
+    ],
+    "LastVerifiedDate": "2026-07-14",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mohamed-algabry/Reverse-Engineering-Methodology",
+      "url": "https://github.com/mohamed-algabry/Reverse-Engineering-Methodology",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-13T10:40:48Z",
+      "created_at": "2026-07-13T10:12:38Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "rob_bot_localization",
     "VendorOrganisation": "kirillvelyugo",
     "ToolType": "Open Source",
