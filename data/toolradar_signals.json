@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-07-14T05:39:21Z",
+  "generated_at_utc": "2026-07-15T05:40:33Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Reverse-Engineering-Methodology",
-      "vendor": "mohamed-algabry",
+      "tool": "WiseGlove-Robotics-Toolkit",
+      "vendor": "wiseglovetech",
       "evidence": [
-        "https://github.com/mohamed-algabry/Reverse-Engineering-Methodology"
+        "https://github.com/wiseglovetech/WiseGlove-Robotics-Toolkit"
       ]
     }
   ],

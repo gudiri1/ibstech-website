@@ -8267,6 +8267,48 @@
     }
   },
   {
+    "ToolName": "WiseGlove-Robotics-Toolkit",
+    "VendorOrganisation": "wiseglovetech",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Python SDK & ROS2 bridge for WiseGlove/WiseForce5D datagloves. Features 80Hz low-latency multi-modal data fusion (19-ch fiber optic tracking, 4-IMU pose estimation, 19-pt tactile sensing) & closed-loop force-feedback exoskeleton control. Built for Embodied AI data collection, humanoid teleoperation, and VR simulation. ",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/wiseglovetech/WiseGlove-Robotics-Toolkit",
+      "https://github.com/wiseglovetech/WiseGlove-Robotics-Toolkit"
+    ],
+    "LastVerifiedDate": "2026-07-15",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "wiseglovetech/WiseGlove-Robotics-Toolkit",
+      "url": "https://github.com/wiseglovetech/WiseGlove-Robotics-Toolkit",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-14T10:30:44Z",
+      "created_at": "2026-07-14T09:54:25Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Word-Embeddings-Repository-for-Turkish",
     "VendorOrganisation": "Turkish-Word-Embeddings",
     "ToolType": "Open Source",
