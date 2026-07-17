@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-07-16T05:48:31Z",
-  "signals": [],
+  "generated_at_utc": "2026-07-17T05:49:35Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Cloud-Based-Digital-Twin-Monitoring",
+      "vendor": "DEFTREnterprise",
+      "evidence": [
+        "https://github.com/DEFTREnterprise/Cloud-Based-Digital-Twin-Monitoring"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
