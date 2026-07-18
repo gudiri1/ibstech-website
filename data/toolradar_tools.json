@@ -2726,6 +2726,48 @@
     }
   },
   {
+    "ToolName": "fetchbot",
+    "VendorOrganisation": "mehmetRodi",
+    "ToolType": "Open Source",
+    "PrimaryUse": " A learning project that builds a differential-drive robot with a 2-DOF arm entirely in simulation, using the tools the robotics and robot-learning industries actually use: ROS 2 + Gazebo + MuJoCo + PyTorch. No physical hardware required.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/mehmetRodi/fetchbot",
+      "https://github.com/mehmetRodi/fetchbot"
+    ],
+    "LastVerifiedDate": "2026-07-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mehmetRodi/fetchbot",
+      "url": "https://github.com/mehmetRodi/fetchbot",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-17T07:49:08Z",
+      "created_at": "2026-07-17T07:48:40Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "File-Queries-Rag-App",
     "VendorOrganisation": "pavan29903",
     "ToolType": "Open Source",
@@ -6211,6 +6253,48 @@
     }
   },
   {
+    "ToolName": "Robotic-Toolpath-Generation",
+    "VendorOrganisation": "muratcanyigitoglu1-oss",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Python-based toolpath generation for ABB IRB 1600 robots, converting visual data into RAPID code for automated milling simulations.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/muratcanyigitoglu1-oss/Robotic-Toolpath-Generation",
+      "https://github.com/muratcanyigitoglu1-oss/Robotic-Toolpath-Generation"
+    ],
+    "LastVerifiedDate": "2026-07-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "muratcanyigitoglu1-oss/Robotic-Toolpath-Generation",
+      "url": "https://github.com/muratcanyigitoglu1-oss/Robotic-Toolpath-Generation",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-17T07:14:42Z",
+      "created_at": "2026-07-17T07:12:45Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Robotics",
     "VendorOrganisation": "kawtharzaidan95-max",
     "ToolType": "Open Source",
@@ -8258,6 +8342,48 @@
       "open_issues": 0,
       "pushed_at": "2026-06-28T23:46:22Z",
       "created_at": "2026-06-28T22:56:58Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "wheeled-dual-arm-pick-place",
+    "VendorOrganisation": "haomingyi",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Robot task planning and MuJoCo simulation tools for mobile manipulation research.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/haomingyi/wheeled-dual-arm-pick-place",
+      "https://github.com/haomingyi/wheeled-dual-arm-pick-place"
+    ],
+    "LastVerifiedDate": "2026-07-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "haomingyi/wheeled-dual-arm-pick-place",
+      "url": "https://github.com/haomingyi/wheeled-dual-arm-pick-place",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-17T08:06:16Z",
+      "created_at": "2026-07-08T05:47:57Z"
     },
     "Scores": {
       "Maturity": 2,
