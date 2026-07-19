@@ -1,31 +1,6 @@
 {
-  "generated_at_utc": "2026-07-18T05:35:13Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "fetchbot",
-      "vendor": "mehmetRodi",
-      "evidence": [
-        "https://github.com/mehmetRodi/fetchbot"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Robotic-Toolpath-Generation",
-      "vendor": "muratcanyigitoglu1-oss",
-      "evidence": [
-        "https://github.com/muratcanyigitoglu1-oss/Robotic-Toolpath-Generation"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "wheeled-dual-arm-pick-place",
-      "vendor": "haomingyi",
-      "evidence": [
-        "https://github.com/haomingyi/wheeled-dual-arm-pick-place"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-07-19T06:06:51Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
