@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-07-19T06:06:51Z",
-  "signals": [],
+  "generated_at_utc": "2026-07-20T06:25:04Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Ditto",
+      "vendor": "Kartik8Dwivedi",
+      "evidence": [
+        "https://github.com/Kartik8Dwivedi/Ditto"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline",
+      "vendor": "nagadeepach",
+      "evidence": [
+        "https://github.com/nagadeepach/Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",

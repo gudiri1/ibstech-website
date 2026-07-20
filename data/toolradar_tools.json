@@ -1547,6 +1547,47 @@
     }
   },
   {
+    "ToolName": "Ditto",
+    "VendorOrganisation": "Kartik8Dwivedi",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Semantic memory for AI coding agents. Detect semantic duplicates using static analysis, embeddings, and behavioral execution.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Kartik8Dwivedi/Ditto",
+      "https://ditto-flax.vercel.app"
+    ],
+    "LastVerifiedDate": "2026-07-20",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Kartik8Dwivedi/Ditto",
+      "url": "https://github.com/Kartik8Dwivedi/Ditto",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-19T18:03:37Z",
+      "created_at": "2026-07-17T08:35:03Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "domain_adaptation_sentiment_analysis",
     "VendorOrganisation": "addytrunks",
     "ToolType": "Open Source",
@@ -2211,6 +2252,47 @@
       "Maturity": 1,
       "Integration": 5,
       "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline",
+    "VendorOrganisation": "nagadeepach",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A modular Embedded C firmware project implementing GPIO, UART, I2C, and Sensor drivers with automated build verification and static code analysis. Demonstrates Git, GitHub, GitHub Actions, GCC, Cppcheck, and Clang Static Analyzer in an Embedded Firmware Continuous Integration (CI) workflow.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/nagadeepach/Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline",
+      "https://github.com/nagadeepach/Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline"
+    ],
+    "LastVerifiedDate": "2026-07-20",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "nagadeepach/Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline",
+      "url": "https://github.com/nagadeepach/Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-19T15:20:55Z",
+      "created_at": "2026-07-19T14:37:44Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 3,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
