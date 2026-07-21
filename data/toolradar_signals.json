@@ -1,20 +1,20 @@
 {
-  "generated_at_utc": "2026-07-20T06:25:04Z",
+  "generated_at_utc": "2026-07-21T06:05:02Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Ditto",
-      "vendor": "Kartik8Dwivedi",
+      "tool": "chasebot",
+      "vendor": "fsmalkin",
       "evidence": [
-        "https://github.com/Kartik8Dwivedi/Ditto"
+        "https://github.com/fsmalkin/chasebot"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline",
-      "vendor": "nagadeepach",
+      "tool": "smart-plc-cncsim",
+      "vendor": "junke365",
       "evidence": [
-        "https://github.com/nagadeepach/Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline"
+        "https://github.com/junke365/smart-plc-cncsim"
       ]
     }
   ],
@@ -47,6 +47,11 @@
     {
       "tool": "em_lib",
       "link": "https://github.com/matinjalalitekiyeh/em_lib",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "embedded-firmware-security",
+      "link": "https://github.com/Ntandolis431/embedded-firmware-security",
       "info": "HTTP Error 404: Not Found"
     },
     {
