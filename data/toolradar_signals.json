@@ -1,20 +1,28 @@
 {
-  "generated_at_utc": "2026-07-21T06:05:02Z",
+  "generated_at_utc": "2026-07-22T06:03:39Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "chasebot",
-      "vendor": "fsmalkin",
+      "tool": "Embedded-DevOps-Template",
+      "vendor": "SafdariAli",
       "evidence": [
-        "https://github.com/fsmalkin/chasebot"
+        "https://github.com/SafdariAli/Embedded-DevOps-Template"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "smart-plc-cncsim",
-      "vendor": "junke365",
+      "tool": "robotics-devkit",
+      "vendor": "di-omics",
       "evidence": [
-        "https://github.com/junke365/smart-plc-cncsim"
+        "https://github.com/di-omics/robotics-devkit"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "tpt-embedded-tools",
+      "vendor": "tpt-solutions",
+      "evidence": [
+        "https://github.com/tpt-solutions/tpt-embedded-tools"
       ]
     }
   ],
