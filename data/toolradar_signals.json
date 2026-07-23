@@ -1,28 +1,12 @@
 {
-  "generated_at_utc": "2026-07-22T06:03:39Z",
+  "generated_at_utc": "2026-07-23T06:08:59Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Embedded-DevOps-Template",
-      "vendor": "SafdariAli",
+      "tool": "ROS_autonomous_warehouse_robot",
+      "vendor": "CoderAlpha9",
       "evidence": [
-        "https://github.com/SafdariAli/Embedded-DevOps-Template"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "robotics-devkit",
-      "vendor": "di-omics",
-      "evidence": [
-        "https://github.com/di-omics/robotics-devkit"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "tpt-embedded-tools",
-      "vendor": "tpt-solutions",
-      "evidence": [
-        "https://github.com/tpt-solutions/tpt-embedded-tools"
+        "https://github.com/CoderAlpha9/ROS_autonomous_warehouse_robot"
       ]
     }
   ],

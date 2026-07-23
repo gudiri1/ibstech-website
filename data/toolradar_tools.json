@@ -7186,6 +7186,48 @@
     }
   },
   {
+    "ToolName": "ROS_autonomous_warehouse_robot",
+    "VendorOrganisation": "CoderAlpha9",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Autonomous Warehouse Robot Program Objective: A robot to navigate a virtual warehouse, pick and place items.  Tools: ROS + Gazebo. Used LiDAR or camera simulation for obstacle avoidance.  Implemented path planning using A* algorithm.  Integrated object recognition for item picking.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/CoderAlpha9/ROS_autonomous_warehouse_robot",
+      "https://github.com/CoderAlpha9/ROS_autonomous_warehouse_robot"
+    ],
+    "LastVerifiedDate": "2026-07-23",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "CoderAlpha9/ROS_autonomous_warehouse_robot",
+      "url": "https://github.com/CoderAlpha9/ROS_autonomous_warehouse_robot",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-22T11:14:52Z",
+      "created_at": "2026-07-22T11:07:14Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "ros_code_checker_demo",
     "VendorOrganisation": "adityagautam73",
     "ToolType": "Open Source",
