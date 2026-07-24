@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-07-23T06:08:59Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "ROS_autonomous_warehouse_robot",
-      "vendor": "CoderAlpha9",
-      "evidence": [
-        "https://github.com/CoderAlpha9/ROS_autonomous_warehouse_robot"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-07-24T06:03:14Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
