@@ -6127,6 +6127,48 @@
     }
   },
   {
+    "ToolName": "robosimtools-mcp",
+    "VendorOrganisation": "RahulRajelli",
+    "ToolType": "Open Source",
+    "PrimaryUse": "MCP server exposing robosimtools.com's 12 robotics/simulation tools to AI agents - local computation, 39 known-answer tests",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/RahulRajelli/robosimtools-mcp",
+      "https://robosimtools.com/mcp/"
+    ],
+    "LastVerifiedDate": "2026-07-26",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "RahulRajelli/robosimtools-mcp",
+      "url": "https://github.com/RahulRajelli/robosimtools-mcp",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-15T18:34:32Z",
+      "created_at": "2026-07-15T17:54:07Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "robot-description",
     "VendorOrganisation": "limx-tron2",
     "ToolType": "Open Source",

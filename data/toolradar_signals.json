@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-07-25T05:50:11Z",
-  "signals": [],
+  "generated_at_utc": "2026-07-26T06:13:57Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "robosimtools-mcp",
+      "vendor": "RahulRajelli",
+      "evidence": [
+        "https://github.com/RahulRajelli/robosimtools-mcp"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
@@ -15,6 +24,11 @@
     {
       "tool": "claudio",
       "link": "https://github.com/noamwiseman/claudio",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "cobot-arm",
+      "link": "https://github.com/yixnhuang/cobot-arm",
       "info": "HTTP Error 404: Not Found"
     },
     {
