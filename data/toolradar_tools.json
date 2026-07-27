@@ -543,6 +543,49 @@
     }
   },
   {
+    "ToolName": "AUTONOMOUS-SELF-PARKING-VEHICLE-IN-GAZEBO",
+    "VendorOrganisation": "Marylicious20",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Autonomous parking is an important application of intelligent transportation systems and robotics.  This project presents the design and simulation of a self-parking vehicle using Robot Operating  System (ROS), Gazebo simulator and RViz visualization tool. A virtual parking environment was  created in Gazebo where two cars are already parked.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Marylicious20/AUTONOMOUS-SELF-PARKING-VEHICLE-IN-GAZEBO",
+      "https://github.com/Marylicious20/AUTONOMOUS-SELF-PARKING-VEHICLE-IN-GAZEBO"
+    ],
+    "LastVerifiedDate": "2026-07-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Marylicious20/AUTONOMOUS-SELF-PARKING-VEHICLE-IN-GAZEBO",
+      "url": "https://github.com/Marylicious20/AUTONOMOUS-SELF-PARKING-VEHICLE-IN-GAZEBO",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-26T09:09:10Z",
+      "created_at": "2026-07-26T09:07:09Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "AutoTyper",
     "VendorOrganisation": "Himanshu-369",
     "ToolType": "Open Source",
@@ -3939,6 +3982,47 @@
       "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "MalDoc-IOC-Extractor",
+    "VendorOrganisation": "0r1ng",
+    "ToolType": "Open Source",
+    "PrimaryUse": "MalDoc-IOC-Extractor is a static malware-document analysis tool that scans DOC, DOCX, XLS, XLSX, PPT, PPTX, PDF, RTF, EML, ZIP, and text files. It extracts IPs, domains, URLs, emails, hashes, macros, embedded files, external links, and common obfuscation patterns, then generates structured JSON, CSV, and HTML reports for fast threat triage.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/0r1ng/MalDoc-IOC-Extractor",
+      "https://github.com/0r1ng/MalDoc-IOC-Extractor"
+    ],
+    "LastVerifiedDate": "2026-07-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "0r1ng/MalDoc-IOC-Extractor",
+      "url": "https://github.com/0r1ng/MalDoc-IOC-Extractor",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-26T15:55:23Z",
+      "created_at": "2026-07-26T15:40:25Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
       "TCO": 5,
       "CommunitySupport": 1
     }

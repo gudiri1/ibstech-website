@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-07-26T06:13:57Z",
+  "generated_at_utc": "2026-07-27T06:41:14Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "robosimtools-mcp",
-      "vendor": "RahulRajelli",
+      "tool": "AUTONOMOUS-SELF-PARKING-VEHICLE-IN-GAZEBO",
+      "vendor": "Marylicious20",
       "evidence": [
-        "https://github.com/RahulRajelli/robosimtools-mcp"
+        "https://github.com/Marylicious20/AUTONOMOUS-SELF-PARKING-VEHICLE-IN-GAZEBO"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "MalDoc-IOC-Extractor",
+      "vendor": "0r1ng",
+      "evidence": [
+        "https://github.com/0r1ng/MalDoc-IOC-Extractor"
       ]
     }
   ],
