@@ -4530,6 +4530,48 @@
     }
   },
   {
+    "ToolName": "mobile-dual-arm-manipulation-sim",
+    "VendorOrganisation": "haomingyi",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Robot task planning and MuJoCo simulation tools for mobile manipulation research.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/haomingyi/mobile-dual-arm-manipulation-sim",
+      "https://github.com/haomingyi/mobile-dual-arm-manipulation-sim"
+    ],
+    "LastVerifiedDate": "2026-07-29",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "haomingyi/mobile-dual-arm-manipulation-sim",
+      "url": "https://github.com/haomingyi/mobile-dual-arm-manipulation-sim",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-29T01:40:30Z",
+      "created_at": "2026-07-08T05:47:57Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "ModernBERT-for-SE-Domain",
     "VendorOrganisation": "jjsmp2",
     "ToolType": "Open Source",
@@ -8769,6 +8811,48 @@
       "Maturity": 2,
       "Integration": 3,
       "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "voxel-curved-path-planning",
+    "VendorOrganisation": "xin785039-sketch",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Voxel-based curved-layer path planning and robot-tool trajectory simulation for continuous carbon-fiber 3D printing.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/xin785039-sketch/voxel-curved-path-planning",
+      "https://github.com/xin785039-sketch/voxel-curved-path-planning"
+    ],
+    "LastVerifiedDate": "2026-07-29",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "xin785039-sketch/voxel-curved-path-planning",
+      "url": "https://github.com/xin785039-sketch/voxel-curved-path-planning",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-28T09:01:50Z",
+      "created_at": "2026-07-28T08:41:29Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
