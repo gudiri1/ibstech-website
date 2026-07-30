@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-07-29T06:06:19Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "mobile-dual-arm-manipulation-sim",
-      "vendor": "haomingyi",
-      "evidence": [
-        "https://github.com/haomingyi/mobile-dual-arm-manipulation-sim"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "voxel-curved-path-planning",
-      "vendor": "xin785039-sketch",
-      "evidence": [
-        "https://github.com/xin785039-sketch/voxel-curved-path-planning"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-07-30T05:58:02Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
