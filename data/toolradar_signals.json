@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-07-31T06:22:23Z",
-  "signals": [],
+  "generated_at_utc": "2026-08-01T06:07:48Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "tron2-robot-description",
+      "vendor": "limxdynamics",
+      "evidence": [
+        "https://github.com/limxdynamics/tron2-robot-description"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
@@ -45,6 +54,11 @@
     {
       "tool": "EncoderModel",
       "link": "https://github.com/devil5th/EncoderModel",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "firmware-ai-reviewer",
+      "link": "https://github.com/razyos/firmware-ai-reviewer",
       "info": "HTTP Error 404: Not Found"
     },
     {

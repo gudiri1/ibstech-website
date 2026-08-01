@@ -8692,6 +8692,48 @@
     }
   },
   {
+    "ToolName": "tron2-robot-description",
+    "VendorOrganisation": "limxdynamics",
+    "ToolType": "Open Source",
+    "PrimaryUse": "URDF/xacro, MuJoCo XML, mesh, and optional USD model files for the TRON2A multi-form robot (dual-arm, wheeled-leg, and bipedal configurations), for use in simulation, visualization, and downstream tooling such as ROS 1/2, MuJoCo, and Isaac Sim.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/limxdynamics/tron2-robot-description",
+      "https://github.com/limxdynamics/tron2-robot-description"
+    ],
+    "LastVerifiedDate": "2026-08-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "limxdynamics/tron2-robot-description",
+      "url": "https://github.com/limxdynamics/tron2-robot-description",
+      "stars": 5,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-07-16T11:48:26Z",
+      "created_at": "2026-05-12T00:33:45Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "turtlebot-mpc",
     "VendorOrganisation": "severinswoboda99-alt",
     "ToolType": "Open Source",
