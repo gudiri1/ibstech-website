@@ -8902,6 +8902,48 @@
     }
   },
   {
+    "ToolName": "vulnscanp",
+    "VendorOrganisation": "Sriteja17",
+    "ToolType": "Open Source",
+    "PrimaryUse": "VulnScan5G is a security-focused software project that delivers an end-to-end vulnerability scanning and remediation platform for C/C++ codebases, with a strong emphasis on 5G and embedded-system workloads. It combines hybrid static analysis techniques (AST parsing, Tree-sitter semantic analysis, and regex-based detection) to identify common CWE-cl",
+    "VModelPhases": [
+      "Implementierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Sriteja17/vulnscanp",
+      "https://vulnscanp.netlify.app/"
+    ],
+    "LastVerifiedDate": "2026-08-03",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Sriteja17/vulnscanp",
+      "url": "https://github.com/Sriteja17/vulnscanp",
+      "stars": 0,
+      "forks": 2,
+      "open_issues": 0,
+      "pushed_at": "2026-08-02T14:11:53Z",
+      "created_at": "2026-06-06T09:02:32Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "WannaCryAnalysis",
     "VendorOrganisation": "victormeloasm",
     "ToolType": "Open Source",

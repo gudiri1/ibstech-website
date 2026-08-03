@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-08-02T06:10:40Z",
-  "signals": [],
+  "generated_at_utc": "2026-08-03T06:33:38Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "vulnscanp",
+      "vendor": "Sriteja17",
+      "evidence": [
+        "https://github.com/Sriteja17/vulnscanp"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
