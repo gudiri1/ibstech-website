@@ -6211,6 +6211,48 @@
     }
   },
   {
+    "ToolName": "riiico",
+    "VendorOrganisation": "api-evangelist",
+    "ToolType": "Open Source",
+    "PrimaryUse": "RIIICO is a Duesseldorf-based industrial software company building 3D-AI tools that digitalize the factory shop floor. Its platform turns reality scans (point clouds) of existing plants into CAD-ready, pre-classified 3D models, cutting 3D modeling time by up to 80% and accelerating factory retrofit, robot programming, and simulation.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/api-evangelist/riiico",
+      "https://github.com/api-evangelist/riiico"
+    ],
+    "LastVerifiedDate": "2026-08-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "api-evangelist/riiico",
+      "url": "https://github.com/api-evangelist/riiico",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-04T01:31:15Z",
+      "created_at": "2026-08-01T10:35:49Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "rob_bot_localization",
     "VendorOrganisation": "kirillvelyugo",
     "ToolType": "Open Source",

@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-08-03T06:33:38Z",
+  "generated_at_utc": "2026-08-04T06:03:20Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "vulnscanp",
-      "vendor": "Sriteja17",
+      "tool": "riiico",
+      "vendor": "api-evangelist",
       "evidence": [
-        "https://github.com/Sriteja17/vulnscanp"
+        "https://github.com/api-evangelist/riiico"
       ]
     }
   ],
