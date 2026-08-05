@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-08-04T06:03:20Z",
+  "generated_at_utc": "2026-08-05T06:00:06Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "riiico",
-      "vendor": "api-evangelist",
+      "tool": "McuBuddy",
+      "vendor": "cunjun",
       "evidence": [
-        "https://github.com/api-evangelist/riiico"
+        "https://github.com/cunjun/McuBuddy"
       ]
     }
   ],

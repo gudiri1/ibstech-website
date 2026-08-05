@@ -4363,6 +4363,47 @@
     }
   },
   {
+    "ToolName": "McuBuddy",
+    "VendorOrganisation": "cunjun",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An AI debugging tool for MCUs and embedded firmware that connects to real hardware through MCP, with support for ST-Link, J-Link, pyOCD, Keil, RTOS, GDB Server, and Flash debugging.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/cunjun/McuBuddy",
+      "https://github.com/cunjun/McuBuddy"
+    ],
+    "LastVerifiedDate": "2026-08-05",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "cunjun/McuBuddy",
+      "url": "https://github.com/cunjun/McuBuddy",
+      "stars": 3,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-05T04:22:25Z",
+      "created_at": "2026-07-11T12:14:36Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 5,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "mempool",
     "VendorOrganisation": "Yanujz",
     "ToolType": "Open Source",
