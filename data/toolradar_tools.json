@@ -671,6 +671,47 @@
     }
   },
   {
+    "ToolName": "awesome-embedded-systems",
+    "VendorOrganisation": "KHALEDNOAMAN",
+    "ToolType": "Open Source",
+    "PrimaryUse": "? A curated list of awesome embedded systems resources - boards, RTOS, protocols, tools, books, courses, and project ideas for beginners to advanced.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/KHALEDNOAMAN/awesome-embedded-systems",
+      "https://github.com/KHALEDNOAMAN/awesome-embedded-systems"
+    ],
+    "LastVerifiedDate": "2026-08-06",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "KHALEDNOAMAN/awesome-embedded-systems",
+      "url": "https://github.com/KHALEDNOAMAN/awesome-embedded-systems",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-06T01:05:31Z",
+      "created_at": "2026-08-06T00:51:06Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "bias-in-embeddings",
     "VendorOrganisation": "Anubhuti710",
     "ToolType": "Open Source",
@@ -3892,6 +3933,48 @@
       "open_issues": 0,
       "pushed_at": "2025-12-16T14:45:53Z",
       "created_at": "2025-10-06T22:01:24Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "lance-tools-simulation",
+    "VendorOrganisation": "FadilBayanganxyz23",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Lance Tools Simulation - Editor Layout Lapangan & Simulator Robot",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/FadilBayanganxyz23/lance-tools-simulation",
+      "https://github.com/FadilBayanganxyz23/lance-tools-simulation"
+    ],
+    "LastVerifiedDate": "2026-08-06",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "FadilBayanganxyz23/lance-tools-simulation",
+      "url": "https://github.com/FadilBayanganxyz23/lance-tools-simulation",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-05T12:40:47Z",
+      "created_at": "2026-08-05T12:40:11Z"
     },
     "Scores": {
       "Maturity": 2,

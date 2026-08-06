@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-08-05T06:00:06Z",
+  "generated_at_utc": "2026-08-06T06:03:52Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "McuBuddy",
-      "vendor": "cunjun",
+      "tool": "awesome-embedded-systems",
+      "vendor": "KHALEDNOAMAN",
       "evidence": [
-        "https://github.com/cunjun/McuBuddy"
+        "https://github.com/KHALEDNOAMAN/awesome-embedded-systems"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "lance-tools-simulation",
+      "vendor": "FadilBayanganxyz23",
+      "evidence": [
+        "https://github.com/FadilBayanganxyz23/lance-tools-simulation"
       ]
     }
   ],
