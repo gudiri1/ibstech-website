@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-08-06T06:03:52Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "awesome-embedded-systems",
-      "vendor": "KHALEDNOAMAN",
-      "evidence": [
-        "https://github.com/KHALEDNOAMAN/awesome-embedded-systems"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "lance-tools-simulation",
-      "vendor": "FadilBayanganxyz23",
-      "evidence": [
-        "https://github.com/FadilBayanganxyz23/lance-tools-simulation"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-08-07T05:01:44Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
