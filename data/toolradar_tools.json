@@ -459,6 +459,48 @@
     }
   },
   {
+    "ToolName": "Auto-DigitalTwins",
+    "VendorOrganisation": "rayhan3333",
+    "ToolType": "Open Source",
+    "PrimaryUse": "AI tool for generating interactable digital twins with labels for use in robotics, simulation, and AR/VR",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/rayhan3333/Auto-DigitalTwins",
+      "https://github.com/rayhan3333/Auto-DigitalTwins"
+    ],
+    "LastVerifiedDate": "2026-08-09",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "rayhan3333/Auto-DigitalTwins",
+      "url": "https://github.com/rayhan3333/Auto-DigitalTwins",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-08T17:07:37Z",
+      "created_at": "2026-08-08T16:49:32Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "automatic-test-cypress",
     "VendorOrganisation": "dendie-sanjaya",
     "ToolType": "Open Source",
