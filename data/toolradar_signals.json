@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-08-11T04:39:13Z",
-  "signals": [],
+  "generated_at_utc": "2026-08-12T05:01:30Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "gitvane",
+      "vendor": "mahdi-behnam",
+      "evidence": [
+        "https://github.com/mahdi-behnam/gitvane"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",

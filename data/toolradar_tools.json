@@ -3564,6 +3564,47 @@
     }
   },
   {
+    "ToolName": "gitvane",
+    "VendorOrganisation": "mahdi-behnam",
+    "ToolType": "Open Source",
+    "PrimaryUse": "AI-assisted change impact analysis for Git repositories using static analysis, dependency graphs, code embeddings, commit history mining, and historical evaluation.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/mahdi-behnam/gitvane",
+      "https://github.com/mahdi-behnam/gitvane"
+    ],
+    "LastVerifiedDate": "2026-08-12",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mahdi-behnam/gitvane",
+      "url": "https://github.com/mahdi-behnam/gitvane",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-11T08:00:12Z",
+      "created_at": "2026-06-20T17:46:03Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Graph-Tree-Generator-for-LLMs",
     "VendorOrganisation": "duftcola-dev",
     "ToolType": "Open Source",
