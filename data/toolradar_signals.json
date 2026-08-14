@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-08-13T05:03:30Z",
-  "signals": [],
+  "generated_at_utc": "2026-08-14T05:01:31Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Ambulance-Digital-Twin-EMS-Use-Case",
+      "vendor": "oscarecortez361",
+      "evidence": [
+        "https://github.com/oscarecortez361/Ambulance-Digital-Twin-EMS-Use-Case"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "dsh-robotic-harness",
+      "vendor": "dingkaihu63",
+      "evidence": [
+        "https://github.com/dingkaihu63/dsh-robotic-harness"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
@@ -50,11 +67,6 @@
     {
       "tool": "firmware-ai-reviewer",
       "link": "https://github.com/razyos/firmware-ai-reviewer",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "friction-coefficient-analysis-system",
-      "link": "https://github.com/kirubelmoges/friction-coefficient-analysis-system",
       "info": "HTTP Error 404: Not Found"
     }
   ]

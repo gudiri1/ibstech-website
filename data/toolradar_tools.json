@@ -332,6 +332,49 @@
     }
   },
   {
+    "ToolName": "Ambulance-Digital-Twin-EMS-Use-Case",
+    "VendorOrganisation": "oscarecortez361",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Digital twin concept modeling ambulance layout, patient/equipment locations, sensor data, workflow simulation, and robotics testing using NVIDIA digital twin tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/oscarecortez361/Ambulance-Digital-Twin-EMS-Use-Case",
+      "https://github.com/oscarecortez361/Ambulance-Digital-Twin-EMS-Use-Case"
+    ],
+    "LastVerifiedDate": "2026-08-14",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "oscarecortez361/Ambulance-Digital-Twin-EMS-Use-Case",
+      "url": "https://github.com/oscarecortez361/Ambulance-Digital-Twin-EMS-Use-Case",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-13T16:35:56Z",
+      "created_at": "2026-08-13T16:30:28Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "apk-fraud-analyzer",
     "VendorOrganisation": "kushkalia1908",
     "ToolType": "Open Source",
@@ -1960,6 +2003,50 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "dsh-robotic-harness",
+    "VendorOrganisation": "dingkaihu63",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Robotic Harness: embodied-intelligence research tools for DeepSeek Harness - robot asset inspection, MuJoCo pick-place simulation with fault injection, evidence-based diagnostics, and reproducible experiment bundles.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/dingkaihu63/dsh-robotic-harness",
+      "https://github.com/dingkaihu63/dsh-robotic-harness"
+    ],
+    "LastVerifiedDate": "2026-08-14",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "dingkaihu63/dsh-robotic-harness",
+      "url": "https://github.com/dingkaihu63/dsh-robotic-harness",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-14T04:22:16Z",
+      "created_at": "2026-08-13T17:50:49Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
