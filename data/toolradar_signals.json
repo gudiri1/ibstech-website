@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-08-14T05:01:31Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "Ambulance-Digital-Twin-EMS-Use-Case",
-      "vendor": "oscarecortez361",
-      "evidence": [
-        "https://github.com/oscarecortez361/Ambulance-Digital-Twin-EMS-Use-Case"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "dsh-robotic-harness",
-      "vendor": "dingkaihu63",
-      "evidence": [
-        "https://github.com/dingkaihu63/dsh-robotic-harness"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-08-15T03:53:21Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
