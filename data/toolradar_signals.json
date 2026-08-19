@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-08-18T03:57:05Z",
-  "signals": [],
+  "generated_at_utc": "2026-08-19T03:57:58Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "agv-project",
+      "vendor": "Seniru-Semal",
+      "evidence": [
+        "https://github.com/Seniru-Semal/agv-project"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "AI-Powered-Codebase-RAG",
+      "vendor": "Shlok107",
+      "evidence": [
+        "https://github.com/Shlok107/AI-Powered-Codebase-RAG"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
@@ -45,11 +62,6 @@
     {
       "tool": "EncoderModel",
       "link": "https://github.com/devil5th/EncoderModel",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "firmware-ai-reviewer",
-      "link": "https://github.com/razyos/firmware-ai-reviewer",
       "info": "HTTP Error 404: Not Found"
     }
   ]

@@ -167,6 +167,50 @@
     }
   },
   {
+    "ToolName": "agv-project",
+    "VendorOrganisation": "Seniru-Semal",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A ROS 2 based multi-AGV project for factory material transport, including Arduino low-level motor control, Raspberry Pi robot-side mission and safety nodes, VM-based fleet and delivery management, operator GUIs for supervisors, stores, and workbenches, RFID-based navigation maps, and simulation tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Seniru-Semal/agv-project",
+      "https://github.com/Seniru-Semal/agv-project"
+    ],
+    "LastVerifiedDate": "2026-08-19",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Seniru-Semal/agv-project",
+      "url": "https://github.com/Seniru-Semal/agv-project",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-18T09:26:36Z",
+      "created_at": "2026-08-17T05:54:14Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 3,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "AI-Emotion-Detector",
     "VendorOrganisation": "devotuoma",
     "ToolType": "Open Source",
@@ -243,6 +287,48 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "AI-Powered-Codebase-RAG",
+    "VendorOrganisation": "Shlok107",
+    "ToolType": "Open Source",
+    "PrimaryUse": "AI-powered platform that ingests Git repositories and enables context-aware Q&A via RAG, embeddings, and vector search. Combines static analysis with LLM reasoning to detect hardcoded secrets, vulnerable dependencies, and Docker/K8s misconfigurations, with severity scoring and automated remediation recommendations.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Shlok107/AI-Powered-Codebase-RAG",
+      "https://github.com/Shlok107/AI-Powered-Codebase-RAG"
+    ],
+    "LastVerifiedDate": "2026-08-19",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Shlok107/AI-Powered-Codebase-RAG",
+      "url": "https://github.com/Shlok107/AI-Powered-Codebase-RAG",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-18T23:45:24Z",
+      "created_at": "2026-08-18T23:45:23Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 3,
       "TCO": 5,
