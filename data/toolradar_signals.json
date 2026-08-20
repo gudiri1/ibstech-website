@@ -1,20 +1,12 @@
 {
-  "generated_at_utc": "2026-08-19T03:57:58Z",
+  "generated_at_utc": "2026-08-20T03:57:36Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "agv-project",
-      "vendor": "Seniru-Semal",
+      "tool": "MARIN",
+      "vendor": "Dogerion",
       "evidence": [
-        "https://github.com/Seniru-Semal/agv-project"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "AI-Powered-Codebase-RAG",
-      "vendor": "Shlok107",
-      "evidence": [
-        "https://github.com/Shlok107/AI-Powered-Codebase-RAG"
+        "https://github.com/Dogerion/MARIN"
       ]
     }
   ],
