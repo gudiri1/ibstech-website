@@ -3151,6 +3151,48 @@
     }
   },
   {
+    "ToolName": "farm-generator",
+    "VendorOrganisation": "StuartGJohnson",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Procedural farm generation via intermediate representation for robotics simulations. Tools for conversion to (minimally) IsaacSim/USD.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/StuartGJohnson/farm-generator",
+      "https://github.com/StuartGJohnson/farm-generator"
+    ],
+    "LastVerifiedDate": "2026-08-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "StuartGJohnson/farm-generator",
+      "url": "https://github.com/StuartGJohnson/farm-generator",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-20T20:53:00Z",
+      "created_at": "2026-08-20T20:52:59Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "fastbit-ci-tools",
     "VendorOrganisation": "FASTBIT-EMBEDDED",
     "ToolType": "Open Source",
@@ -9229,6 +9271,48 @@
       "open_issues": 0,
       "pushed_at": "2026-04-30T13:13:11Z",
       "created_at": "2026-03-30T17:37:54Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "UniEMind-Datasets",
+    "VendorOrganisation": "depthEmMind",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Datasets and data tools for embodied robot learning, simulation, and evaluation.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/depthEmMind/UniEMind-Datasets",
+      "https://github.com/depthEmMind/UniEMind-Datasets"
+    ],
+    "LastVerifiedDate": "2026-08-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "depthEmMind/UniEMind-Datasets",
+      "url": "https://github.com/depthEmMind/UniEMind-Datasets",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-20T05:24:08Z",
+      "created_at": "2026-08-20T05:24:07Z"
     },
     "Scores": {
       "Maturity": 2,
