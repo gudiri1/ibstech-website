@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-08-21T04:00:09Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "farm-generator",
-      "vendor": "StuartGJohnson",
-      "evidence": [
-        "https://github.com/StuartGJohnson/farm-generator"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "UniEMind-Datasets",
-      "vendor": "depthEmMind",
-      "evidence": [
-        "https://github.com/depthEmMind/UniEMind-Datasets"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-08-22T03:55:58Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
