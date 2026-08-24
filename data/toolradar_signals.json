@@ -1,6 +1,31 @@
 {
-  "generated_at_utc": "2026-08-23T03:59:36Z",
-  "signals": [],
+  "generated_at_utc": "2026-08-24T04:04:21Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "dummy",
+      "vendor": "LucasLabX",
+      "evidence": [
+        "https://github.com/LucasLabX/dummy"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "Embedded-c-static-analyzer",
+      "vendor": "Lamouchi-Bayrem",
+      "evidence": [
+        "https://github.com/Lamouchi-Bayrem/Embedded-c-static-analyzer"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "PDF-Sentinel",
+      "vendor": "Shaikhshariq-tech",
+      "evidence": [
+        "https://github.com/Shaikhshariq-tech/PDF-Sentinel"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
@@ -20,6 +45,11 @@
     {
       "tool": "cobot-arm",
       "link": "https://github.com/yixnhuang/cobot-arm",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "codeiq",
+      "link": "https://github.com/RandomCodeSpace/codeiq",
       "info": "HTTP Error 404: Not Found"
     },
     {

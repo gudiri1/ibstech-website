@@ -2140,6 +2140,48 @@
     }
   },
   {
+    "ToolName": "dummy",
+    "VendorOrganisation": "LucasLabX",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Dummy robotic arm kinematics and simulation tools with DH/URDF, MuJoCo, and Pinocchio support.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/LucasLabX/dummy",
+      "https://github.com/LucasLabX/dummy"
+    ],
+    "LastVerifiedDate": "2026-08-24",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "LucasLabX/dummy",
+      "url": "https://github.com/LucasLabX/dummy",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-23T15:41:25Z",
+      "created_at": "2026-08-23T15:35:33Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "ecolint-ai",
     "VendorOrganisation": "psamme",
     "ToolType": "Open Source",
@@ -2466,6 +2508,47 @@
       "Maturity": 1,
       "Integration": 4,
       "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Embedded-c-static-analyzer",
+    "VendorOrganisation": "Lamouchi-Bayrem",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Responsive Qt-based embedded C static-analysis workbench with GCC/Clang diagnostics, Cppcheck, Clang-Tidy, source review, and reproducible reports.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Lamouchi-Bayrem/Embedded-c-static-analyzer",
+      "https://github.com/Lamouchi-Bayrem/Embedded-c-static-analyzer"
+    ],
+    "LastVerifiedDate": "2026-08-24",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Lamouchi-Bayrem/Embedded-c-static-analyzer",
+      "url": "https://github.com/Lamouchi-Bayrem/Embedded-c-static-analyzer",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-23T20:49:27Z",
+      "created_at": "2026-08-22T22:30:49Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
@@ -5784,6 +5867,47 @@
       "open_issues": 0,
       "pushed_at": "2026-06-22T11:55:02Z",
       "created_at": "2026-06-22T11:51:17Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "PDF-Sentinel",
+    "VendorOrganisation": "Shaikhshariq-tech",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A static PDF malware analysis tool for detecting suspicious PDF structures, JavaScript, embedded files, IOCs, and obfuscation indicators.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Shaikhshariq-tech/PDF-Sentinel",
+      "https://github.com/Shaikhshariq-tech/PDF-Sentinel"
+    ],
+    "LastVerifiedDate": "2026-08-24",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Shaikhshariq-tech/PDF-Sentinel",
+      "url": "https://github.com/Shaikhshariq-tech/PDF-Sentinel",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-23T11:59:40Z",
+      "created_at": "2026-08-23T11:46:44Z"
     },
     "Scores": {
       "Maturity": 2,
