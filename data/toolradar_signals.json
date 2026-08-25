@@ -1,28 +1,28 @@
 {
-  "generated_at_utc": "2026-08-24T04:04:21Z",
+  "generated_at_utc": "2026-08-25T03:58:43Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "dummy",
-      "vendor": "LucasLabX",
+      "tool": "project_superdex",
+      "vendor": "facebookresearch",
       "evidence": [
-        "https://github.com/LucasLabX/dummy"
+        "https://github.com/facebookresearch/project_superdex"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "Embedded-c-static-analyzer",
-      "vendor": "Lamouchi-Bayrem",
+      "tool": "Tech-Art-Library-Unity",
+      "vendor": "Noah13s",
       "evidence": [
-        "https://github.com/Lamouchi-Bayrem/Embedded-c-static-analyzer"
+        "https://github.com/Noah13s/Tech-Art-Library-Unity"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "PDF-Sentinel",
-      "vendor": "Shaikhshariq-tech",
+      "tool": "toolnet",
+      "vendor": "Iheb1Bekir",
       "evidence": [
-        "https://github.com/Shaikhshariq-tech/PDF-Sentinel"
+        "https://github.com/Iheb1Bekir/toolnet"
       ]
     }
   ],
