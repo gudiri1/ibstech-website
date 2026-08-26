@@ -1,31 +1,6 @@
 {
-  "generated_at_utc": "2026-08-25T03:58:43Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "project_superdex",
-      "vendor": "facebookresearch",
-      "evidence": [
-        "https://github.com/facebookresearch/project_superdex"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Tech-Art-Library-Unity",
-      "vendor": "Noah13s",
-      "evidence": [
-        "https://github.com/Noah13s/Tech-Art-Library-Unity"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "toolnet",
-      "vendor": "Iheb1Bekir",
-      "evidence": [
-        "https://github.com/Iheb1Bekir/toolnet"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-08-26T04:02:13Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
