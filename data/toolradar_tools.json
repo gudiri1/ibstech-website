@@ -5329,6 +5329,49 @@
     }
   },
   {
+    "ToolName": "Nexus-robotics-OS",
+    "VendorOrganisation": "theworker02",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Nexus Robotics OS is a Rust-first, hardware-agnostic robotics platform for skills, configurable intelligence, learning, simulation, safety, connected tools, and heterogeneous robotic hardware. It gives applications and robot skills one stable, capability-driven interface while preserving the robotics stack already in place: simulator, ROS 2 graph.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/theworker02/Nexus-robotics-OS",
+      "https://theworker02.github.io/Nexus-robotics-OS/"
+    ],
+    "LastVerifiedDate": "2026-08-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "theworker02/Nexus-robotics-OS",
+      "url": "https://github.com/theworker02/Nexus-robotics-OS",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-26T21:54:33Z",
+      "created_at": "2026-08-26T21:03:49Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "nlp-static-embeddings-similarity",
     "VendorOrganisation": "mahmutozkizilcik",
     "ToolType": "Open Source",
@@ -6919,6 +6962,138 @@
       "Maturity": 2,
       "Integration": 3,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "RoboLab",
+    "VendorOrganisation": "randhirarivuselvan-cloud",
+    "ToolType": "Open Source",
+    "PrimaryUse": "RoboLab is a free AI-assisted robotics engineering platform that helps users turn ideas into build plans. It includes component planning, cost calculation, availability tools, firmware generation, circuit diagrams, robotics simulation, and CAD generation. Built by SynapseX Robotics & Technologies to make robotics more accessible.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/randhirarivuselvan-cloud/RoboLab",
+      "https://github.com/randhirarivuselvan-cloud/RoboLab"
+    ],
+    "LastVerifiedDate": "2026-08-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "randhirarivuselvan-cloud/RoboLab",
+      "url": "https://github.com/randhirarivuselvan-cloud/RoboLab",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-26T11:43:55Z",
+      "created_at": "2026-08-26T11:43:54Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "RoboLab-New",
+    "VendorOrganisation": "randhirarivuselvan-cloud",
+    "ToolType": "Open Source",
+    "PrimaryUse": "RoboLab is a free AI-assisted robotics engineering platform that helps users turn ideas into build plans. It includes component planning, cost calculation, availability tools, firmware generation, circuit diagrams, robotics simulation, and CAD generation. Built by SynapseX Robotics & Technologies to make robotics more accessible.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/randhirarivuselvan-cloud/RoboLab-New",
+      "https://github.com/randhirarivuselvan-cloud/RoboLab-New"
+    ],
+    "LastVerifiedDate": "2026-08-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "randhirarivuselvan-cloud/RoboLab-New",
+      "url": "https://github.com/randhirarivuselvan-cloud/RoboLab-New",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-26T15:16:47Z",
+      "created_at": "2026-08-26T15:16:46Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "RoboLab-Release",
+    "VendorOrganisation": "randhirarivuselvan-cloud",
+    "ToolType": "Open Source",
+    "PrimaryUse": "RoboLab is a free AI-assisted robotics engineering platform that helps users turn ideas into build plans. It includes component planning, cost calculation, availability tools, firmware generation, circuit diagrams, robotics simulation, and CAD generation. Built by SynapseX Robotics & Technologies to make robotics more accessible.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/randhirarivuselvan-cloud/RoboLab-Release",
+      "https://github.com/randhirarivuselvan-cloud/RoboLab-Release"
+    ],
+    "LastVerifiedDate": "2026-08-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "randhirarivuselvan-cloud/RoboLab-Release",
+      "url": "https://github.com/randhirarivuselvan-cloud/RoboLab-Release",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-26T12:45:42Z",
+      "created_at": "2026-08-26T11:57:18Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,

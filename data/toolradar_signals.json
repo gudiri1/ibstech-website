@@ -1,6 +1,39 @@
 {
-  "generated_at_utc": "2026-08-26T04:02:13Z",
-  "signals": [],
+  "generated_at_utc": "2026-08-27T14:11:44Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Nexus-robotics-OS",
+      "vendor": "theworker02",
+      "evidence": [
+        "https://github.com/theworker02/Nexus-robotics-OS"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "RoboLab",
+      "vendor": "randhirarivuselvan-cloud",
+      "evidence": [
+        "https://github.com/randhirarivuselvan-cloud/RoboLab"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "RoboLab-New",
+      "vendor": "randhirarivuselvan-cloud",
+      "evidence": [
+        "https://github.com/randhirarivuselvan-cloud/RoboLab-New"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "RoboLab-Release",
+      "vendor": "randhirarivuselvan-cloud",
+      "evidence": [
+        "https://github.com/randhirarivuselvan-cloud/RoboLab-Release"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
