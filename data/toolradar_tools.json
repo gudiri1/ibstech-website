@@ -3610,6 +3610,47 @@
     }
   },
   {
+    "ToolName": "FreeRTOS",
+    "VendorOrganisation": "AmirMirj",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Hands-On RTOS with Microcontrollers Building real-time embedded systems using FreeRTOS, STM32 MCUs, and SEGGER debug tools",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/AmirMirj/FreeRTOS",
+      "https://github.com/AmirMirj/FreeRTOS"
+    ],
+    "LastVerifiedDate": "2026-08-30",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "AmirMirj/FreeRTOS",
+      "url": "https://github.com/AmirMirj/FreeRTOS",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-29T18:57:51Z",
+      "created_at": "2026-08-29T18:55:14Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 5,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "friction-coefficient-analysis-system",
     "VendorOrganisation": "kirubelmoges",
     "ToolType": "Open Source",
