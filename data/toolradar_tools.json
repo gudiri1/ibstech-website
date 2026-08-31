@@ -9501,6 +9501,47 @@
     }
   },
   {
+    "ToolName": "tocorator",
+    "VendorOrganisation": "DimaReverse",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Extract the embedded payload from Nuitka onefile binaries. Static analysis only — the target is never executed. By DimaReverse.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/DimaReverse/tocorator",
+      "https://github.com/DimaReverse/tocorator"
+    ],
+    "LastVerifiedDate": "2026-08-31",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "DimaReverse/tocorator",
+      "url": "https://github.com/DimaReverse/tocorator",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-08-31T03:15:32Z",
+      "created_at": "2026-08-31T03:15:09Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "toolchain",
     "VendorOrganisation": "embedom",
     "ToolType": "Open Source",
