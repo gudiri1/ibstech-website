@@ -9834,6 +9834,49 @@
     }
   },
   {
+    "ToolName": "Turtlebot_Waffle_Pi-simluation-with-ROS2-system",
+    "VendorOrganisation": "Sally551",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This is a project about robot simulation on gazebo, using nav2 and slam as navigation tools. It includes simulation models of Turtlebot3 official websites, official maps and personal-created maps available for navigation tests.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Sally551/Turtlebot_Waffle_Pi-simluation-with-ROS2-system",
+      "https://github.com/Sally551/Turtlebot_Waffle_Pi-simluation-with-ROS2-system"
+    ],
+    "LastVerifiedDate": "2026-09-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Sally551/Turtlebot_Waffle_Pi-simluation-with-ROS2-system",
+      "url": "https://github.com/Sally551/Turtlebot_Waffle_Pi-simluation-with-ROS2-system",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-01T08:12:54Z",
+      "created_at": "2026-09-01T07:19:13Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "UniEMind-Datasets",
     "VendorOrganisation": "depthEmMind",
     "ToolType": "Open Source",
