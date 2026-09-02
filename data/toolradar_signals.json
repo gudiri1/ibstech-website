@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-09-01T08:38:18Z",
+  "generated_at_utc": "2026-09-02T07:54:15Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Turtlebot_Waffle_Pi-simluation-with-ROS2-system",
+      "tool": "Autonomous-Ship-Navigation-System",
+      "vendor": "Dogerion",
+      "evidence": [
+        "https://github.com/Dogerion/Autonomous-Ship-Navigation-System"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "Turtlebot3_ROS2_system",
       "vendor": "Sally551",
       "evidence": [
-        "https://github.com/Sally551/Turtlebot_Waffle_Pi-simluation-with-ROS2-system"
+        "https://github.com/Sally551/Turtlebot3_ROS2_system"
       ]
     }
   ],

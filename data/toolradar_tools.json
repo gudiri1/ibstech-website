@@ -757,6 +757,49 @@
     }
   },
   {
+    "ToolName": "Autonomous-Ship-Navigation-System",
+    "VendorOrganisation": "Dogerion",
+    "ToolType": "Open Source",
+    "PrimaryUse": "MARIN is an open source framework designed for marine hydrodynamic simulation, autonomous vessel guidance, and robotics research. It provides modular tools for hydrodynamic modeling, sensor integration, state estimation, and path planning algorithms to accelerate maritime autonomous surface vehicle and underwater vehicle development.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Dogerion/Autonomous-Ship-Navigation-System",
+      "https://github.com/Dogerion/Autonomous-Ship-Navigation-System"
+    ],
+    "LastVerifiedDate": "2026-09-02",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Dogerion/Autonomous-Ship-Navigation-System",
+      "url": "https://github.com/Dogerion/Autonomous-Ship-Navigation-System",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-01T11:23:01Z",
+      "created_at": "2026-07-22T16:18:07Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "AutoTyper",
     "VendorOrganisation": "Himanshu-369",
     "ToolType": "Open Source",
@@ -9826,6 +9869,49 @@
     "Scores": {
       "Maturity": 2,
       "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Turtlebot3_ROS2_system",
+    "VendorOrganisation": "Sally551",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This is a project about robot simulation on gazebo, using nav2 and slam as navigation tools. It includes simulation models of Turtlebot3 official websites, official maps and personal-created maps available for navigation tests.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Sally551/Turtlebot3_ROS2_system",
+      "https://github.com/Sally551/Turtlebot3_ROS2_system"
+    ],
+    "LastVerifiedDate": "2026-09-02",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Sally551/Turtlebot3_ROS2_system",
+      "url": "https://github.com/Sally551/Turtlebot3_ROS2_system",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-02T02:11:27Z",
+      "created_at": "2026-09-01T07:19:13Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
