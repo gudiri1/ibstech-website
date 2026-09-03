@@ -757,6 +757,49 @@
     }
   },
   {
+    "ToolName": "Autonomous-Ship-Course-Keeping-Controller",
+    "VendorOrganisation": "Dogerion",
+    "ToolType": "Open Source",
+    "PrimaryUse": "It is an open source framework designed for marine hydrodynamic simulation, autonomous vessel guidance, and robotics research. It provides modular tools for hydrodynamic modeling, sensor integration, state estimation, and path planning algorithms to accelerate maritime autonomous surface vehicle and underwater vehicle development.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Dogerion/Autonomous-Ship-Course-Keeping-Controller",
+      "https://github.com/Dogerion/Autonomous-Ship-Course-Keeping-Controller"
+    ],
+    "LastVerifiedDate": "2026-09-03",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Dogerion/Autonomous-Ship-Course-Keeping-Controller",
+      "url": "https://github.com/Dogerion/Autonomous-Ship-Course-Keeping-Controller",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-02T12:25:25Z",
+      "created_at": "2026-07-22T16:18:07Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Autonomous-Ship-Navigation-System",
     "VendorOrganisation": "Dogerion",
     "ToolType": "Open Source",

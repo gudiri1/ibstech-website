@@ -1,20 +1,12 @@
 {
-  "generated_at_utc": "2026-09-02T07:54:15Z",
+  "generated_at_utc": "2026-09-03T08:02:14Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Autonomous-Ship-Navigation-System",
+      "tool": "Autonomous-Ship-Course-Keeping-Controller",
       "vendor": "Dogerion",
       "evidence": [
-        "https://github.com/Dogerion/Autonomous-Ship-Navigation-System"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Turtlebot3_ROS2_system",
-      "vendor": "Sally551",
-      "evidence": [
-        "https://github.com/Sally551/Turtlebot3_ROS2_system"
+        "https://github.com/Dogerion/Autonomous-Ship-Course-Keeping-Controller"
       ]
     }
   ],
