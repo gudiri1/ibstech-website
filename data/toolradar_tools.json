@@ -4283,6 +4283,49 @@
     }
   },
   {
+    "ToolName": "Infinity_Scientific_Toolbox",
+    "VendorOrganisation": "aryamanxsingha",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Open source robotic simulation OS",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/aryamanxsingha/Infinity_Scientific_Toolbox",
+      "https://infinity-scientific-toolbox.vercel.app"
+    ],
+    "LastVerifiedDate": "2026-09-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "aryamanxsingha/Infinity_Scientific_Toolbox",
+      "url": "https://github.com/aryamanxsingha/Infinity_Scientific_Toolbox",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-03T08:53:34Z",
+      "created_at": "2026-09-03T08:53:33Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "InverseKinematicsVisualizer",
     "VendorOrganisation": "Solid-V",
     "ToolType": "Open Source",
@@ -10085,6 +10128,50 @@
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Url-detection-Cybersecurity-Training-",
+    "VendorOrganisation": "prasanna-r-tech",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This architecture features a Flask threat-intel engine blending Machine Learning (XGBoost/RF), APIs (VirusTotal/WebRisk), and passive DOM/DNS heuristics.  Key Endpoints  /check: Multi-engine URL risk scoring  /agent-scan: Passive DOM/DNS/TLS analysis  /scan-qr: QR payload decoding  /scan-document: Static analysis for embedded risks",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "Safety & Security",
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "core",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/prasanna-r-tech/Url-detection-Cybersecurity-Training-",
+      "https://github.com/prasanna-r-tech/Url-detection-Cybersecurity-Training-"
+    ],
+    "LastVerifiedDate": "2026-09-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "prasanna-r-tech/Url-detection-Cybersecurity-Training-",
+      "url": "https://github.com/prasanna-r-tech/Url-detection-Cybersecurity-Training-",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-03T14:55:14Z",
+      "created_at": "2026-09-03T14:50:35Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 5,
       "TCO": 5,
       "CommunitySupport": 1
     }

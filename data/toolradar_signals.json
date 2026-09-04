@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-09-03T08:02:14Z",
+  "generated_at_utc": "2026-09-04T07:57:56Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Autonomous-Ship-Course-Keeping-Controller",
-      "vendor": "Dogerion",
+      "tool": "Infinity_Scientific_Toolbox",
+      "vendor": "aryamanxsingha",
       "evidence": [
-        "https://github.com/Dogerion/Autonomous-Ship-Course-Keeping-Controller"
+        "https://github.com/aryamanxsingha/Infinity_Scientific_Toolbox"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "Url-detection-Cybersecurity-Training-",
+      "vendor": "prasanna-r-tech",
+      "evidence": [
+        "https://github.com/prasanna-r-tech/Url-detection-Cybersecurity-Training-"
       ]
     }
   ],
