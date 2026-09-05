@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-09-04T07:57:56Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "Infinity_Scientific_Toolbox",
-      "vendor": "aryamanxsingha",
-      "evidence": [
-        "https://github.com/aryamanxsingha/Infinity_Scientific_Toolbox"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Url-detection-Cybersecurity-Training-",
-      "vendor": "prasanna-r-tech",
-      "evidence": [
-        "https://github.com/prasanna-r-tech/Url-detection-Cybersecurity-Training-"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-09-05T07:39:33Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
