@@ -4369,6 +4369,49 @@
     }
   },
   {
+    "ToolName": "isaac-sim-pruning-workflow",
+    "VendorOrganisation": "joses2017smjh",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Robotic pruning simulation with dual-ToF feedback, scripted tool control, collision checks, and a reproducible CPU demo; Isaac Sim integration in progress.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/joses2017smjh/isaac-sim-pruning-workflow",
+      "https://github.com/joses2017smjh/isaac-sim-pruning-workflow"
+    ],
+    "LastVerifiedDate": "2026-09-06",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "joses2017smjh/isaac-sim-pruning-workflow",
+      "url": "https://github.com/joses2017smjh/isaac-sim-pruning-workflow",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-05T21:53:35Z",
+      "created_at": "2026-08-27T23:00:03Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "ISMCTS-MRTA-U-Library",
     "VendorOrganisation": "lidgarbar",
     "ToolType": "Open Source",
