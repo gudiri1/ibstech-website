@@ -9294,6 +9294,50 @@
     }
   },
   {
+    "ToolName": "sphero-vicon-swarm",
+    "VendorOrganisation": "RV-crtl",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Vicon-guided multi-robot control framework for Sphero BOLT+ chariots, with calibration, trajectory following, simulation and safety tooling.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/RV-crtl/sphero-vicon-swarm",
+      "https://github.com/RV-crtl/sphero-vicon-swarm"
+    ],
+    "LastVerifiedDate": "2026-09-10",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "RV-crtl/sphero-vicon-swarm",
+      "url": "https://github.com/RV-crtl/sphero-vicon-swarm",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-09T13:39:53Z",
+      "created_at": "2026-09-09T13:39:48Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Static-Malware-Analysis-Shell-v2.0",
     "VendorOrganisation": "mallazai",
     "ToolType": "Open Source",
