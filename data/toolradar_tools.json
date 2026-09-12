@@ -1386,6 +1386,49 @@
     }
   },
   {
+    "ToolName": "Codec-Technologies-Internship-Portfolio-2026",
+    "VendorOrganisation": "Eswar5313",
+    "ToolType": "Open Source",
+    "PrimaryUse": "All Codec Technologies internship tracks in one repo — Digital Electronics & VLSI, Robotics & Automation, Electric Vehicle, Cyber Security: 50 projects with runnable source, self-checking tests, simulations, per-project engineering reports and dashboards. Every result measured; unavailable tools declared as substitutions.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Eswar5313/Codec-Technologies-Internship-Portfolio-2026",
+      "https://github.com/Eswar5313/Codec-Technologies-Internship-Portfolio-2026"
+    ],
+    "LastVerifiedDate": "2026-09-12",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Eswar5313/Codec-Technologies-Internship-Portfolio-2026",
+      "url": "https://github.com/Eswar5313/Codec-Technologies-Internship-Portfolio-2026",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-11T13:07:27Z",
+      "created_at": "2026-09-11T10:23:38Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "codeiq",
     "VendorOrganisation": "RandomCodeSpace",
     "ToolType": "Open Source",

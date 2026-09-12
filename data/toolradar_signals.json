@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-09-11T08:02:45Z",
-  "signals": [],
+  "generated_at_utc": "2026-09-12T07:54:35Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Codec-Technologies-Internship-Portfolio-2026",
+      "vendor": "Eswar5313",
+      "evidence": [
+        "https://github.com/Eswar5313/Codec-Technologies-Internship-Portfolio-2026"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
