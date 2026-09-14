@@ -9213,6 +9213,47 @@
     }
   },
   {
+    "ToolName": "software-archaeologist",
+    "VendorOrganisation": "manuwastaken",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An autonomous Code Intelligence and Semantic Retrieval system combining AST static analysis, vector embeddings, and grounded LLM reasoning to explain how and why software systems evolve.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/manuwastaken/software-archaeologist",
+      "https://github.com/manuwastaken/software-archaeologist"
+    ],
+    "LastVerifiedDate": "2026-09-14",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "manuwastaken/software-archaeologist",
+      "url": "https://github.com/manuwastaken/software-archaeologist",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-13T22:55:26Z",
+      "created_at": "2026-08-31T22:07:56Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "SorathiyaDhavalkumar",
     "VendorOrganisation": "SorathiyaDhavalkumar",
     "ToolType": "Open Source",

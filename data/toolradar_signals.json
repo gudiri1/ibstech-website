@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-09-13T08:17:50Z",
-  "signals": [],
+  "generated_at_utc": "2026-09-14T08:54:16Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "software-archaeologist",
+      "vendor": "manuwastaken",
+      "evidence": [
+        "https://github.com/manuwastaken/software-archaeologist"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
