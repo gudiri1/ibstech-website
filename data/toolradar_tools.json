@@ -4707,6 +4707,49 @@
     }
   },
   {
+    "ToolName": "logicraftstudios",
+    "VendorOrganisation": "chiru1122006",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Logicraft Studios is an innovative technology platform focused on electronics, embedded systems, robotics, FPGA, and digital design. It provides tools, simulations, learning resources, and projects that help students and developers design, program, and experiment with hardware and software in an interactive environment.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/chiru1122006/logicraftstudios",
+      "logicraftstudios.tech"
+    ],
+    "LastVerifiedDate": "2026-09-15",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "chiru1122006/logicraftstudios",
+      "url": "https://github.com/chiru1122006/logicraftstudios",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-15T04:38:18Z",
+      "created_at": "2026-08-04T18:17:08Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "MalDoc-IOC-Extractor",
     "VendorOrganisation": "0r1ng",
     "ToolType": "Open Source",
@@ -7438,6 +7481,49 @@
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Robot-cell-energy-consumption-optimisation-with-modern-simulation-tools",
+    "VendorOrganisation": "AaronRiosV",
+    "ToolType": "Open Source",
+    "PrimaryUse": "This repository has all the supplementary materials and data available for the Applied Sciences article \"Robot cell energy consumption optimisation with modern simulation tools\".",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/AaronRiosV/Robot-cell-energy-consumption-optimisation-with-modern-simulation-tools",
+      "https://github.com/AaronRiosV/Robot-cell-energy-consumption-optimisation-with-modern-simulation-tools"
+    ],
+    "LastVerifiedDate": "2026-09-15",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "AaronRiosV/Robot-cell-energy-consumption-optimisation-with-modern-simulation-tools",
+      "url": "https://github.com/AaronRiosV/Robot-cell-energy-consumption-optimisation-with-modern-simulation-tools",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-14T13:44:53Z",
+      "created_at": "2026-09-14T13:29:48Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
       "TCO": 5,
       "CommunitySupport": 1
     }
