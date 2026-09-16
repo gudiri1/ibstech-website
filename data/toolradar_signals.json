@@ -1,20 +1,20 @@
 {
-  "generated_at_utc": "2026-09-15T08:40:10Z",
+  "generated_at_utc": "2026-09-16T08:34:43Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "logicraftstudios",
-      "vendor": "chiru1122006",
+      "tool": "code-explorer",
+      "vendor": "vmikhailov",
       "evidence": [
-        "https://github.com/chiru1122006/logicraftstudios"
+        "https://github.com/vmikhailov/code-explorer"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "Robot-cell-energy-consumption-optimisation-with-modern-simulation-tools",
-      "vendor": "AaronRiosV",
+      "tool": "NavIsaaclab2.0",
+      "vendor": "yh83305",
       "evidence": [
-        "https://github.com/AaronRiosV/Robot-cell-energy-consumption-optimisation-with-modern-simulation-tools"
+        "https://github.com/yh83305/NavIsaaclab2.0"
       ]
     }
   ],
