@@ -3695,6 +3695,48 @@
     }
   },
   {
+    "ToolName": "firmware-extract",
+    "VendorOrganisation": "mosfaqur",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Automated static-analysis pipeline for embedded Linux firmware. Systematically extracts and audits credentials, cryptographic keys, password hashes, ELF binary hardening, unsafe C functions, and debug interfaces.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/mosfaqur/firmware-extract",
+      "https://github.com/mosfaqur/firmware-extract"
+    ],
+    "LastVerifiedDate": "2026-09-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mosfaqur/firmware-extract",
+      "url": "https://github.com/mosfaqur/firmware-extract",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-16T23:33:25Z",
+      "created_at": "2026-09-05T07:21:50Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "firmware-lens",
     "VendorOrganisation": "luca8744",
     "ToolType": "Open Source",
@@ -6674,6 +6716,48 @@
       "open_issues": 0,
       "pushed_at": "2025-12-12T10:00:43Z",
       "created_at": "2025-12-10T13:24:37Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "pid-line-follower",
+    "VendorOrganisation": "Praneetha04A",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Arduino-based autonomous line-following robot with a tuned PID control loop, IR sensor array, and a Python simulation tool for tuning gains before flashing hardware.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Praneetha04A/pid-line-follower",
+      "https://github.com/Praneetha04A/pid-line-follower"
+    ],
+    "LastVerifiedDate": "2026-09-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Praneetha04A/pid-line-follower",
+      "url": "https://github.com/Praneetha04A/pid-line-follower",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-17T08:06:00Z",
+      "created_at": "2026-09-17T08:05:33Z"
     },
     "Scores": {
       "Maturity": 2,
@@ -9799,6 +9883,48 @@
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "surgical-tool-handover-assistant",
+    "VendorOrganisation": "baranik-16",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Vision-based robotic assistant for surgical tool handover using MediaPipe gesture recognition, machine learning and robotic arm simulation.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/baranik-16/surgical-tool-handover-assistant",
+      "https://github.com/baranik-16/surgical-tool-handover-assistant"
+    ],
+    "LastVerifiedDate": "2026-09-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "baranik-16/surgical-tool-handover-assistant",
+      "url": "https://github.com/baranik-16/surgical-tool-handover-assistant",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-16T15:48:08Z",
+      "created_at": "2026-09-16T15:46:35Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 3,
       "TCO": 5,
       "CommunitySupport": 1
     }

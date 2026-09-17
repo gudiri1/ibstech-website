@@ -1,20 +1,28 @@
 {
-  "generated_at_utc": "2026-09-16T08:34:43Z",
+  "generated_at_utc": "2026-09-17T08:38:41Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "code-explorer",
-      "vendor": "vmikhailov",
+      "tool": "firmware-extract",
+      "vendor": "mosfaqur",
       "evidence": [
-        "https://github.com/vmikhailov/code-explorer"
+        "https://github.com/mosfaqur/firmware-extract"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "NavIsaaclab2.0",
-      "vendor": "yh83305",
+      "tool": "pid-line-follower",
+      "vendor": "Praneetha04A",
       "evidence": [
-        "https://github.com/yh83305/NavIsaaclab2.0"
+        "https://github.com/Praneetha04A/pid-line-follower"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "surgical-tool-handover-assistant",
+      "vendor": "baranik-16",
+      "evidence": [
+        "https://github.com/baranik-16/surgical-tool-handover-assistant"
       ]
     }
   ],
