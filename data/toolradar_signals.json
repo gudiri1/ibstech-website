@@ -1,28 +1,28 @@
 {
-  "generated_at_utc": "2026-09-17T08:38:41Z",
+  "generated_at_utc": "2026-09-18T08:14:11Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "firmware-extract",
-      "vendor": "mosfaqur",
+      "tool": "ROSCon_UK_2026",
+      "vendor": "IFRA-Cranfield",
       "evidence": [
-        "https://github.com/mosfaqur/firmware-extract"
+        "https://github.com/IFRA-Cranfield/ROSCon_UK_2026"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "pid-line-follower",
-      "vendor": "Praneetha04A",
+      "tool": "VDOT8_SIMD_INT8_DOT_PRODUCT",
+      "vendor": "CHITTESH-S",
       "evidence": [
-        "https://github.com/Praneetha04A/pid-line-follower"
+        "https://github.com/CHITTESH-S/VDOT8_SIMD_INT8_DOT_PRODUCT"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "surgical-tool-handover-assistant",
-      "vendor": "baranik-16",
+      "tool": "xensexyq",
+      "vendor": "xensexyq",
       "evidence": [
-        "https://github.com/baranik-16/surgical-tool-handover-assistant"
+        "https://github.com/xensexyq/xensexyq"
       ]
     }
   ],

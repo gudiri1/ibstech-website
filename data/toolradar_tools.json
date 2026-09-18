@@ -8884,6 +8884,49 @@
     }
   },
   {
+    "ToolName": "ROSCon_UK_2026",
+    "VendorOrganisation": "IFRA-Cranfield",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Documentation and source code for IFRA Cranfield's Workshop at ROSCon UK 2026: \"Open-Source Tool for the Simulation and Control of any Robot Arm in ROS 2\".",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/IFRA-Cranfield/ROSCon_UK_2026",
+      "https://github.com/IFRA-Cranfield/ROSCon_UK_2026"
+    ],
+    "LastVerifiedDate": "2026-09-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "IFRA-Cranfield/ROSCon_UK_2026",
+      "url": "https://github.com/IFRA-Cranfield/ROSCon_UK_2026",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-17T10:54:36Z",
+      "created_at": "2026-08-28T14:27:40Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "RSMA",
     "VendorOrganisation": "GrimDarkTech",
     "ToolType": "Open Source",
@@ -10688,6 +10731,50 @@
     }
   },
   {
+    "ToolName": "VDOT8_SIMD_INT8_DOT_PRODUCT",
+    "VendorOrganisation": "CHITTESH-S",
+    "ToolType": "Open Source",
+    "PrimaryUse": "VDOT.8 - A custom SIMD INT8 dot-product hardware accelerator designed in Verilog, targeting edge-AI inference on low-power embedded devices. Features a 3-stage pipeline architecture, full RTL-to-GDSII ASIC flow using OpenLane on SkyWater SKY130 PDK, multi-corner static timing analysis, and FPGA hardware validation on Xilinx Artix-7.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung",
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "core",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/CHITTESH-S/VDOT8_SIMD_INT8_DOT_PRODUCT",
+      "https://github.com/CHITTESH-S/VDOT8_SIMD_INT8_DOT_PRODUCT"
+    ],
+    "LastVerifiedDate": "2026-09-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "CHITTESH-S/VDOT8_SIMD_INT8_DOT_PRODUCT",
+      "url": "https://github.com/CHITTESH-S/VDOT8_SIMD_INT8_DOT_PRODUCT",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-18T05:45:43Z",
+      "created_at": "2026-09-18T05:05:19Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 5,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "voxel-curved-path-planning",
     "VendorOrganisation": "xin785039-sketch",
     "ToolType": "Open Source",
@@ -11054,6 +11141,48 @@
     "Scores": {
       "Maturity": 2,
       "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "xensexyq",
+    "VendorOrganisation": "xensexyq",
+    "ToolType": "Open Source",
+    "PrimaryUse": "GitHub profile · Robotics, embedded tools & simulation",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/xensexyq/xensexyq",
+      "https://github.com/xensexyq/xensexyq"
+    ],
+    "LastVerifiedDate": "2026-09-18",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "xensexyq/xensexyq",
+      "url": "https://github.com/xensexyq/xensexyq",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-17T10:03:38Z",
+      "created_at": "2026-09-17T09:12:36Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
       "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
