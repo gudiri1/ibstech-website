@@ -1,31 +1,6 @@
 {
-  "generated_at_utc": "2026-09-18T08:14:11Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "ROSCon_UK_2026",
-      "vendor": "IFRA-Cranfield",
-      "evidence": [
-        "https://github.com/IFRA-Cranfield/ROSCon_UK_2026"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "VDOT8_SIMD_INT8_DOT_PRODUCT",
-      "vendor": "CHITTESH-S",
-      "evidence": [
-        "https://github.com/CHITTESH-S/VDOT8_SIMD_INT8_DOT_PRODUCT"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "xensexyq",
-      "vendor": "xensexyq",
-      "evidence": [
-        "https://github.com/xensexyq/xensexyq"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-09-19T08:02:16Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
