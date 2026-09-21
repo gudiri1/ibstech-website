@@ -2898,6 +2898,48 @@
     }
   },
   {
+    "ToolName": "embedded-firmware-analyzer",
+    "VendorOrganisation": "makemk",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Deep embedded C/C++ firmware analysis engine & Optical Transceiver CMIS quality gate, static safety audit, and memory budgeting.",
+    "VModelPhases": [
+      "Safety & Security",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/makemk/embedded-firmware-analyzer",
+      "https://github.com/makemk/embedded-firmware-analyzer"
+    ],
+    "LastVerifiedDate": "2026-09-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "makemk/embedded-firmware-analyzer",
+      "url": "https://github.com/makemk/embedded-firmware-analyzer",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-21T08:53:00Z",
+      "created_at": "2026-09-21T08:09:04Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 3,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline",
     "VendorOrganisation": "nagadeepach",
     "ToolType": "Open Source",
@@ -9421,6 +9463,47 @@
       "Maturity": 2,
       "Integration": 2,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Simulink-Arduino-PlatformIO-FreeRTOS",
+    "VendorOrganisation": "dapperfu",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A Simulink Library, vibe coded, to test out the MATLAB MCP with embedded coder tools.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/dapperfu/Simulink-Arduino-PlatformIO-FreeRTOS",
+      "https://github.com/dapperfu/Simulink-Arduino-PlatformIO-FreeRTOS"
+    ],
+    "LastVerifiedDate": "2026-09-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded rtos tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "dapperfu/Simulink-Arduino-PlatformIO-FreeRTOS",
+      "url": "https://github.com/dapperfu/Simulink-Arduino-PlatformIO-FreeRTOS",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-20T19:58:05Z",
+      "created_at": "2026-09-20T19:58:04Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 4,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
