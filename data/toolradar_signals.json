@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-09-21T08:55:55Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "embedded-firmware-analyzer",
-      "vendor": "makemk",
-      "evidence": [
-        "https://github.com/makemk/embedded-firmware-analyzer"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Simulink-Arduino-PlatformIO-FreeRTOS",
-      "vendor": "dapperfu",
-      "evidence": [
-        "https://github.com/dapperfu/Simulink-Arduino-PlatformIO-FreeRTOS"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-09-22T08:32:00Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
