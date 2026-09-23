@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-09-22T08:32:00Z",
-  "signals": [],
+  "generated_at_utc": "2026-09-23T08:34:01Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Unity-Robotics-Hub",
+      "vendor": "Unity-Technologies",
+      "evidence": [
+        "https://github.com/Unity-Technologies/Unity-Robotics-Hub"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
@@ -15,6 +24,11 @@
     {
       "tool": "claudio",
       "link": "https://github.com/noamwiseman/claudio",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "Cloud-Based-Digital-Twin-Monitoring",
+      "link": "https://github.com/DEFTREnterprise/Cloud-Based-Digital-Twin-Monitoring",
       "info": "HTTP Error 404: Not Found"
     },
     {
