@@ -4750,6 +4750,48 @@
     }
   },
   {
+    "ToolName": "line_follower_sim",
+    "VendorOrganisation": "yck011522",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Simulation tool for a line follower robot",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/yck011522/line_follower_sim",
+      "https://github.com/yck011522/line_follower_sim"
+    ],
+    "LastVerifiedDate": "2026-09-25",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "yck011522/line_follower_sim",
+      "url": "https://github.com/yck011522/line_follower_sim",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-23T15:50:41Z",
+      "created_at": "2026-09-20T14:41:50Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Live-Fintech-AI-Solution-Prototype",
     "VendorOrganisation": "aksingh0505",
     "ToolType": "Open Source",

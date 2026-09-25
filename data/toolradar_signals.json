@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-09-24T08:26:48Z",
-  "signals": [],
+  "generated_at_utc": "2026-09-25T08:48:34Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "line_follower_sim",
+      "vendor": "yck011522",
+      "evidence": [
+        "https://github.com/yck011522/line_follower_sim"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
