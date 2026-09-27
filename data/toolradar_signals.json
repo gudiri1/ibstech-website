@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-09-26T08:35:03Z",
-  "signals": [],
+  "generated_at_utc": "2026-09-27T09:14:56Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "DocGuard",
+      "vendor": "paavandnd-max",
+      "evidence": [
+        "https://github.com/paavandnd-max/DocGuard"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "ML-vs-Classical-Model-Pathfinding",
+      "vendor": "Shploot",
+      "evidence": [
+        "https://github.com/Shploot/ML-vs-Classical-Model-Pathfinding"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",

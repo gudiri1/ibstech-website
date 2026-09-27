@@ -2057,6 +2057,47 @@
     }
   },
   {
+    "ToolName": "DocGuard",
+    "VendorOrganisation": "paavandnd-max",
+    "ToolType": "Open Source",
+    "PrimaryUse": "DocGuard — A static digital forensics and threat inspection tool for detecting suspicious files, macros, embedded scripts, and malicious indicators with explainable risk analysis.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/paavandnd-max/DocGuard",
+      "https://docguard-pu91.onrender.com"
+    ],
+    "LastVerifiedDate": "2026-09-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "paavandnd-max/DocGuard",
+      "url": "https://github.com/paavandnd-max/DocGuard",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-26T11:15:23Z",
+      "created_at": "2026-09-26T10:37:50Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "domain_adaptation_sentiment_analysis",
     "VendorOrganisation": "addytrunks",
     "ToolType": "Open Source",
@@ -5538,6 +5579,48 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "ML-vs-Classical-Model-Pathfinding",
+    "VendorOrganisation": "Shploot",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Comparing DQN, PPO, and A* for autonomous robot navigation with obstacle avoidance -- evaluated in simulation and on real Raspberry Pi 5 hardware. Includes trained models, 18 real trial logs, analysis tools, and a research paper draft. Independent Polygence research project.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Shploot/ML-vs-Classical-Model-Pathfinding",
+      "https://github.com/Shploot/ML-vs-Classical-Model-Pathfinding"
+    ],
+    "LastVerifiedDate": "2026-09-27",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Shploot/ML-vs-Classical-Model-Pathfinding",
+      "url": "https://github.com/Shploot/ML-vs-Classical-Model-Pathfinding",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-09-27T06:17:23Z",
+      "created_at": "2026-09-27T06:12:19Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
