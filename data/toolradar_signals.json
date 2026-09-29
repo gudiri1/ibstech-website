@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-28T09:46:54Z",
+  "generated_at_utc": "2026-09-29T09:48:58Z",
   "signals": [],
   "broken_links": [
     {
@@ -35,6 +35,11 @@
     {
       "tool": "cpp-analysis-benchmark",
       "link": "https://github.com/shaharlevi818/cpp-analysis-benchmark",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "DocGuard",
+      "link": "https://github.com/paavandnd-max/DocGuard",
       "info": "HTTP Error 404: Not Found"
     },
     {
