@@ -83,6 +83,50 @@
     }
   },
   {
+    "ToolName": "Agent-Priors-guided-Policy-Learning",
+    "VendorOrganisation": "Agentics-robotics",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Official implementation of APPL: Agent Priors-guided Policy Learning. Includes simulation benchmarks, policy implementations, and tools for reproducing the paper's results.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Agentics-robotics/Agent-Priors-guided-Policy-Learning",
+      "https://github.com/Agentics-robotics/Agent-Priors-guided-Policy-Learning"
+    ],
+    "LastVerifiedDate": "2026-10-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Agentics-robotics/Agent-Priors-guided-Policy-Learning",
+      "url": "https://github.com/Agentics-robotics/Agent-Priors-guided-Policy-Learning",
+      "stars": 2,
+      "forks": 1,
+      "open_issues": 0,
+      "pushed_at": "2026-10-01T05:28:13Z",
+      "created_at": "2026-10-01T02:41:02Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Agentic-Bug-Hunter",
     "VendorOrganisation": "21-Muskan",
     "ToolType": "Open Source",

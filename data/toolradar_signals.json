@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-09-30T09:41:25Z",
-  "signals": [],
+  "generated_at_utc": "2026-10-01T10:07:27Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Agent-Priors-guided-Policy-Learning",
+      "vendor": "Agentics-robotics",
+      "evidence": [
+        "https://github.com/Agentics-robotics/Agent-Priors-guided-Policy-Learning"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
@@ -55,11 +64,6 @@
     {
       "tool": "embedded-firmware-security",
       "link": "https://github.com/Ntandolis431/embedded-firmware-security",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "EncoderModel",
-      "link": "https://github.com/devil5th/EncoderModel",
       "info": "HTTP Error 404: Not Found"
     }
   ]
