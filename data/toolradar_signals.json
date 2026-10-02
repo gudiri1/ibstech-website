@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-10-01T10:07:27Z",
+  "generated_at_utc": "2026-10-02T09:45:20Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Agent-Priors-guided-Policy-Learning",
-      "vendor": "Agentics-robotics",
+      "tool": "S0MA.OpenLab",
+      "vendor": "Sleeping-Ninja-OpenLab",
       "evidence": [
-        "https://github.com/Agentics-robotics/Agent-Priors-guided-Policy-Learning"
+        "https://github.com/Sleeping-Ninja-OpenLab/S0MA.OpenLab"
       ]
     }
   ],

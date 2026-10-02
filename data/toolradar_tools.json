@@ -9264,6 +9264,49 @@
     }
   },
   {
+    "ToolName": "S0MA.OpenLab",
+    "VendorOrganisation": "Sleeping-Ninja-OpenLab",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Open research and simulation lab for S0MA — Synthetic Organism Mind Architecture. UE5 environments, robotics experiments, CAD regeneration tools, and embodied-AI research built to be reproducible, hackable, and community-driven.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Sleeping-Ninja-OpenLab/S0MA.OpenLab",
+      "https://github.com/Sleeping-Ninja-OpenLab/S0MA.OpenLab"
+    ],
+    "LastVerifiedDate": "2026-10-02",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Sleeping-Ninja-OpenLab/S0MA.OpenLab",
+      "url": "https://github.com/Sleeping-Ninja-OpenLab/S0MA.OpenLab",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-01T12:34:14Z",
+      "created_at": "2026-10-01T11:57:31Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "sample-robotic-cellsim-tools",
     "VendorOrganisation": "aws-samples",
     "ToolType": "Open Source",
