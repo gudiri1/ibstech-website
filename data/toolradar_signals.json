@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-10-02T09:45:20Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "S0MA.OpenLab",
-      "vendor": "Sleeping-Ninja-OpenLab",
-      "evidence": [
-        "https://github.com/Sleeping-Ninja-OpenLab/S0MA.OpenLab"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-10-03T09:08:35Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
