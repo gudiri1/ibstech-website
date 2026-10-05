@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-10-04T09:46:55Z",
-  "signals": [],
+  "generated_at_utc": "2026-10-05T10:25:19Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "onyxcrew-malware-analysis",
+      "vendor": "714tenny",
+      "evidence": [
+        "https://github.com/714tenny/onyxcrew-malware-analysis"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
