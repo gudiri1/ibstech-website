@@ -8457,6 +8457,48 @@
     }
   },
   {
+    "ToolName": "robotics-lab",
+    "VendorOrganisation": "kanakpandit17",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Working repository for robotics projects across a Unitree R1 humanoid and NEURA arms — VR teleoperation, MQTT fleet orchestration, DDS tooling and probes, 3D scanning, and Isaac Lab simulation.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/kanakpandit17/robotics-lab",
+      "https://github.com/kanakpandit17/robotics-lab"
+    ],
+    "LastVerifiedDate": "2026-10-06",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "kanakpandit17/robotics-lab",
+      "url": "https://github.com/kanakpandit17/robotics-lab",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 1,
+      "pushed_at": "2026-09-30T08:47:56Z",
+      "created_at": "2026-08-06T09:44:09Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Robotics-sauna-water-heater",
     "VendorOrganisation": "RolandVaa",
     "ToolType": "Open Source",
