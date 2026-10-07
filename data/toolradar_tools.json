@@ -5505,6 +5505,49 @@
     }
   },
   {
+    "ToolName": "microduck-lab",
+    "VendorOrganisation": "notwitcheer",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Hermes Agent tool, training tools and rough-terrain patches for the Pollen Robotics Microduck. Simulation only.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "core",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/notwitcheer/microduck-lab",
+      "https://github.com/notwitcheer/microduck-lab"
+    ],
+    "LastVerifiedDate": "2026-10-07",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "notwitcheer/microduck-lab",
+      "url": "https://github.com/notwitcheer/microduck-lab",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-06T17:32:18Z",
+      "created_at": "2026-10-06T17:32:12Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 5,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "MikuMotionTools",
     "VendorOrganisation": "T-K-233",
     "ToolType": "Open Source",
