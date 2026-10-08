@@ -9891,6 +9891,48 @@
     }
   },
   {
+    "ToolName": "Smartcode-AI",
+    "VendorOrganisation": "mahilmalathiv-a11y",
+    "ToolType": "Open Source",
+    "PrimaryUse": "SmartCode AI is an intelligent code refactoring and automated bug repair system powered by RAG architecture and LLMs. It combines static code analysis, vector embeddings, and sandboxed test validation to localize bugs, explain root causes, and generate verified patches via an interactive dashboard.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/mahilmalathiv-a11y/Smartcode-AI",
+      "https://github.com/mahilmalathiv-a11y/Smartcode-AI"
+    ],
+    "LastVerifiedDate": "2026-10-08",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "mahilmalathiv-a11y/Smartcode-AI",
+      "url": "https://github.com/mahilmalathiv-a11y/Smartcode-AI",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-07T16:30:06Z",
+      "created_at": "2026-10-07T16:30:04Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "SO-101_Manipulator_FullStack_Robotics",
     "VendorOrganisation": "diwyanvithana",
     "ToolType": "Open Source",

@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-10-07T10:15:08Z",
+  "generated_at_utc": "2026-10-08T10:34:12Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "microduck-lab",
-      "vendor": "notwitcheer",
+      "tool": "Smartcode-AI",
+      "vendor": "mahilmalathiv-a11y",
       "evidence": [
-        "https://github.com/notwitcheer/microduck-lab"
+        "https://github.com/mahilmalathiv-a11y/Smartcode-AI"
       ]
     }
   ],
