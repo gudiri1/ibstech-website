@@ -5463,6 +5463,50 @@
     }
   },
   {
+    "ToolName": "Mechatronics-Tutorials",
+    "VendorOrganisation": "HEATRobotics",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A hands-on mechatronics tutorial repository from **HEAT Robotics**, covering the ideas and tools behind building real robotic systems—from sensors and embedded hardware to ROS 2, control, and simulation. Learn by building, testing, and connecting each piece into a robot that works.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/HEATRobotics/Mechatronics-Tutorials",
+      "https://github.com/HEATRobotics/Mechatronics-Tutorials"
+    ],
+    "LastVerifiedDate": "2026-10-09",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "HEATRobotics/Mechatronics-Tutorials",
+      "url": "https://github.com/HEATRobotics/Mechatronics-Tutorials",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-09T08:08:39Z",
+      "created_at": "2026-10-09T05:38:47Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "mempool",
     "VendorOrganisation": "Yanujz",
     "ToolType": "Open Source",
@@ -5745,6 +5789,47 @@
       "open_issues": 0,
       "pushed_at": "2026-07-29T01:40:30Z",
       "created_at": "2026-07-08T05:47:57Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "modelinspect",
+    "VendorOrganisation": "ctj01",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Find and inspect ML models (TFLite, Core ML, ONNX, TorchScript, GGUF...) embedded in mobile apps. Hybrid C++/Python static-analysis tool.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/ctj01/modelinspect",
+      "https://github.com/ctj01/modelinspect"
+    ],
+    "LastVerifiedDate": "2026-10-09",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ctj01/modelinspect",
+      "url": "https://github.com/ctj01/modelinspect",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-08T21:00:14Z",
+      "created_at": "2026-10-08T21:00:07Z"
     },
     "Scores": {
       "Maturity": 2,

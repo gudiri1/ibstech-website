@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-10-08T10:34:12Z",
+  "generated_at_utc": "2026-10-09T10:32:43Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Smartcode-AI",
-      "vendor": "mahilmalathiv-a11y",
+      "tool": "Mechatronics-Tutorials",
+      "vendor": "HEATRobotics",
       "evidence": [
-        "https://github.com/mahilmalathiv-a11y/Smartcode-AI"
+        "https://github.com/HEATRobotics/Mechatronics-Tutorials"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "modelinspect",
+      "vendor": "ctj01",
+      "evidence": [
+        "https://github.com/ctj01/modelinspect"
       ]
     }
   ],
