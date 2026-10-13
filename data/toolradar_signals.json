@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-10-12T10:48:24Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "refund-portal-malware-analysis",
-      "vendor": "SpyCop1998",
-      "evidence": [
-        "https://github.com/SpyCop1998/refund-portal-malware-analysis"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-10-13T10:34:48Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
