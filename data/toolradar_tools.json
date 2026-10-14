@@ -1,5 +1,46 @@
 [
   {
+    "ToolName": "-Advanced-Malware-Analysis",
+    "VendorOrganisation": "utuinnocent-creator",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An automated Python tool for static malware analysis on suspicious binaries. Features safe file loading, simulated assembly disassembly, obfuscation detection, and embedded payload signature scanning. Combines diagnostic findings into a structured threat analysis report to quickly assess binary risk without execution.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/utuinnocent-creator/-Advanced-Malware-Analysis",
+      "https://github.com/utuinnocent-creator/-Advanced-Malware-Analysis"
+    ],
+    "LastVerifiedDate": "2026-10-14",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "utuinnocent-creator/-Advanced-Malware-Analysis",
+      "url": "https://github.com/utuinnocent-creator/-Advanced-Malware-Analysis",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-13T17:32:01Z",
+      "created_at": "2026-10-13T17:27:24Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "3544-FRC-Toolkit",
     "VendorOrganisation": "Spartiates-3544",
     "ToolType": "Open Source",
