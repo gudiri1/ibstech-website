@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-10-14T08:41:56Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "-Advanced-Malware-Analysis",
-      "vendor": "utuinnocent-creator",
-      "evidence": [
-        "https://github.com/utuinnocent-creator/-Advanced-Malware-Analysis"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-10-15T08:17:08Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
