@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-10-15T08:17:08Z",
-  "signals": [],
+  "generated_at_utc": "2026-10-16T08:09:55Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Embedded-Signal-lib",
+      "vendor": "ravikiranmysore",
+      "evidence": [
+        "https://github.com/ravikiranmysore/Embedded-Signal-lib"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "Nova3D",
+      "vendor": "RareSense",
+      "evidence": [
+        "https://github.com/RareSense/Nova3D"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",

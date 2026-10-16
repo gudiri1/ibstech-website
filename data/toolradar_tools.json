@@ -3149,6 +3149,47 @@
     }
   },
   {
+    "ToolName": "Embedded-Signal-lib",
+    "VendorOrganisation": "ravikiranmysore",
+    "ToolType": "Open Source",
+    "PrimaryUse": "eader-only C++17 signal filters for embedded systems. Tested with GoogleTest, sanitizers and static analysis.",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/ravikiranmysore/Embedded-Signal-lib",
+      "https://github.com/ravikiranmysore/Embedded-Signal-lib"
+    ],
+    "LastVerifiedDate": "2026-10-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ravikiranmysore/Embedded-Signal-lib",
+      "url": "https://github.com/ravikiranmysore/Embedded-Signal-lib",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-15T11:52:40Z",
+      "created_at": "2026-10-15T11:22:39Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Embedded-Software-role-with-RTOS-skills---Santa-Clara-CA",
     "VendorOrganisation": "ktp-forked-repos",
     "ToolType": "Open Source",
@@ -6217,6 +6258,48 @@
       "AIValue": 1,
       "TCO": 5,
       "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Nova3D",
+    "VendorOrganisation": "RareSense",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Design workspace for programmable 3D. Nova builds assets and worlds as editable, versioned programs: parametric, articulated and simulation-ready, compiled to CAD tools, 3D applications and robotics simulators.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/RareSense/Nova3D",
+      "https://nova3d.xyz"
+    ],
+    "LastVerifiedDate": "2026-10-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "RareSense/Nova3D",
+      "url": "https://github.com/RareSense/Nova3D",
+      "stars": 733,
+      "forks": 63,
+      "open_issues": 2,
+      "pushed_at": "2026-10-15T14:26:14Z",
+      "created_at": "2026-05-06T23:08:26Z"
+    },
+    "Scores": {
+      "Maturity": 4,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 3
     }
   },
   {
