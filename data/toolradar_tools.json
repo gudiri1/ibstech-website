@@ -7359,6 +7359,48 @@
     }
   },
   {
+    "ToolName": "Portiva",
+    "VendorOrganisation": "adilsukumar",
+    "ToolType": "Open Source",
+    "PrimaryUse": "An Android + Arduino home carrying robot: follow, load, deliver and return. Shared mission software, swept-body planning and simulation tools. Hardware validation in progress.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/adilsukumar/Portiva",
+      "https://github.com/adilsukumar/Portiva"
+    ],
+    "LastVerifiedDate": "2026-10-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "adilsukumar/Portiva",
+      "url": "https://github.com/adilsukumar/Portiva",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-17T02:25:50Z",
+      "created_at": "2026-10-16T17:22:56Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "principia-cli",
     "VendorOrganisation": "principia-cloud",
     "ToolType": "Open Source",
