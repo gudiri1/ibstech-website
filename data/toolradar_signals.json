@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-10-17T07:46:58Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "Portiva",
-      "vendor": "adilsukumar",
-      "evidence": [
-        "https://github.com/adilsukumar/Portiva"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-10-18T08:00:39Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
