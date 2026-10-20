@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-10-19T08:51:34Z",
+  "generated_at_utc": "2026-10-20T08:31:10Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Robotics_Internship_Junior_task",
-      "vendor": "PearlM-457",
+      "tool": "fake-news-misinformation-detector",
+      "vendor": "OMDATTA",
       "evidence": [
-        "https://github.com/PearlM-457/Robotics_Internship_Junior_task"
+        "https://github.com/OMDATTA/fake-news-misinformation-detector"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "robot-visual-simulation-platform",
+      "vendor": "jackysqing-max",
+      "evidence": [
+        "https://github.com/jackysqing-max/robot-visual-simulation-platform"
       ]
     }
   ],

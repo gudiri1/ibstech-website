@@ -3614,6 +3614,47 @@
     }
   },
   {
+    "ToolName": "fake-news-misinformation-detector",
+    "VendorOrganisation": "OMDATTA",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Estimates whether a news article resembles known reliable or misleading examples. TF-IDF + linguistic features + transformer-embedding comparison, source/topic leakage analysis, class imbalance, Platt calibration, explainable highlights. Static, Vercel-ready site.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/OMDATTA/fake-news-misinformation-detector",
+      "https://fake-news-misinformation-detector.vercel.app"
+    ],
+    "LastVerifiedDate": "2026-10-20",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "OMDATTA/fake-news-misinformation-detector",
+      "url": "https://github.com/OMDATTA/fake-news-misinformation-detector",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-20T07:10:02Z",
+      "created_at": "2026-10-20T07:09:58Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "farm-generator",
     "VendorOrganisation": "StuartGJohnson",
     "ToolType": "Open Source",
@@ -8489,6 +8530,48 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "robot-visual-simulation-platform",
+    "VendorOrganisation": "jackysqing-max",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Robot Workbench: ROS 2 and PyBullet visual simulation with URDF and tool import, TCP configuration, motion control and embedded monitors.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/jackysqing-max/robot-visual-simulation-platform",
+      "https://github.com/jackysqing-max/robot-visual-simulation-platform"
+    ],
+    "LastVerifiedDate": "2026-10-20",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "jackysqing-max/robot-visual-simulation-platform",
+      "url": "https://github.com/jackysqing-max/robot-visual-simulation-platform",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-19T18:09:23Z",
+      "created_at": "2026-10-19T17:28:48Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
