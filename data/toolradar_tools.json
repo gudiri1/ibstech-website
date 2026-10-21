@@ -4533,6 +4533,48 @@
     }
   },
   {
+    "ToolName": "im6014Development",
+    "VendorOrganisation": "sidrk-dev",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Single-arm robotics workbench: Unitree IM6014 bench tools, MuJoCo rolling-contact simulation, and Dream joint-action integration.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/sidrk-dev/im6014Development",
+      "https://github.com/sidrk-dev/im6014Development"
+    ],
+    "LastVerifiedDate": "2026-10-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "sidrk-dev/im6014Development",
+      "url": "https://github.com/sidrk-dev/im6014Development",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 5,
+      "pushed_at": "2026-10-21T06:37:33Z",
+      "created_at": "2026-10-02T21:10:17Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Image-Malware-Analyser",
     "VendorOrganisation": "NullBlood04",
     "ToolType": "Open Source",
@@ -4861,6 +4903,48 @@
       "open_issues": 0,
       "pushed_at": "2026-06-05T10:17:28Z",
       "created_at": "2026-06-05T09:11:43Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "khora",
+    "VendorOrganisation": "iriss-dev",
+    "ToolType": "Open Source",
+    "PrimaryUse": "RP2040 PIO firmware, MCP robotics tools and browser simulations for aerial imaging and ultrasonic haptics.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/iriss-dev/khora",
+      "https://iriss-dev.github.io/khora/"
+    ],
+    "LastVerifiedDate": "2026-10-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "iriss-dev/khora",
+      "url": "https://github.com/iriss-dev/khora",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 3,
+      "pushed_at": "2026-10-21T04:04:44Z",
+      "created_at": "2026-10-20T22:24:45Z"
     },
     "Scores": {
       "Maturity": 2,

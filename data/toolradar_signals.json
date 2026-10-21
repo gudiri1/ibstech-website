@@ -1,20 +1,20 @@
 {
-  "generated_at_utc": "2026-10-20T08:31:10Z",
+  "generated_at_utc": "2026-10-21T08:33:34Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "fake-news-misinformation-detector",
-      "vendor": "OMDATTA",
+      "tool": "im6014Development",
+      "vendor": "sidrk-dev",
       "evidence": [
-        "https://github.com/OMDATTA/fake-news-misinformation-detector"
+        "https://github.com/sidrk-dev/im6014Development"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "robot-visual-simulation-platform",
-      "vendor": "jackysqing-max",
+      "tool": "khora",
+      "vendor": "iriss-dev",
       "evidence": [
-        "https://github.com/jackysqing-max/robot-visual-simulation-platform"
+        "https://github.com/iriss-dev/khora"
       ]
     }
   ],
