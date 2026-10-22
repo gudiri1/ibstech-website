@@ -1,20 +1,12 @@
 {
-  "generated_at_utc": "2026-10-21T08:33:34Z",
+  "generated_at_utc": "2026-10-22T08:35:46Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "im6014Development",
-      "vendor": "sidrk-dev",
+      "tool": "embed-ai-tool-demo",
+      "vendor": "zhangjianbang-nb",
       "evidence": [
-        "https://github.com/sidrk-dev/im6014Development"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "khora",
-      "vendor": "iriss-dev",
-      "evidence": [
-        "https://github.com/iriss-dev/khora"
+        "https://github.com/zhangjianbang-nb/embed-ai-tool-demo"
       ]
     }
   ],
