@@ -9168,6 +9168,48 @@
     }
   },
   {
+    "ToolName": "Robotics-Teaching-Tool-Matlab",
+    "VendorOrganisation": "TanveerSaleh-1977",
+    "ToolType": "Open Source",
+    "PrimaryUse": "I have created a matlab script with the help of deep seek via open code. The script can help to visualize 2- 4 dof industrial robot simulation in 3D and 2D graphics environment. Student can verify their HTM in the symbolic matrix form via this script. I used Matlab 2024 to develop this. ",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/TanveerSaleh-1977/Robotics-Teaching-Tool-Matlab",
+      "https://github.com/TanveerSaleh-1977/Robotics-Teaching-Tool-Matlab"
+    ],
+    "LastVerifiedDate": "2026-10-23",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "TanveerSaleh-1977/Robotics-Teaching-Tool-Matlab",
+      "url": "https://github.com/TanveerSaleh-1977/Robotics-Teaching-Tool-Matlab",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-23T03:44:59Z",
+      "created_at": "2026-10-23T03:39:51Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Robotics_Internship_Junior_task",
     "VendorOrganisation": "PearlM-457",
     "ToolType": "Open Source",
@@ -10010,6 +10052,48 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "SanjaySparker27",
+    "VendorOrganisation": "SanjaySparker27",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Robotics, simulation, firmware, and developer tools — project portfolio",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/SanjaySparker27/SanjaySparker27",
+      "https://sanjaysparker27.github.io/SanjaySparker27/"
+    ],
+    "LastVerifiedDate": "2026-10-23",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "SanjaySparker27/SanjaySparker27",
+      "url": "https://github.com/SanjaySparker27/SanjaySparker27",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-23T06:33:49Z",
+      "created_at": "2026-02-26T04:47:12Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,

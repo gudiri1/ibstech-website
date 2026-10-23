@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-10-22T08:35:46Z",
+  "generated_at_utc": "2026-10-23T08:31:45Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "embed-ai-tool-demo",
-      "vendor": "zhangjianbang-nb",
+      "tool": "Robotics-Teaching-Tool-Matlab",
+      "vendor": "TanveerSaleh-1977",
       "evidence": [
-        "https://github.com/zhangjianbang-nb/embed-ai-tool-demo"
+        "https://github.com/TanveerSaleh-1977/Robotics-Teaching-Tool-Matlab"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "SanjaySparker27",
+      "vendor": "SanjaySparker27",
+      "evidence": [
+        "https://github.com/SanjaySparker27/SanjaySparker27"
       ]
     }
   ],
