@@ -1,20 +1,44 @@
 {
-  "generated_at_utc": "2026-10-23T08:31:45Z",
+  "generated_at_utc": "2026-10-24T08:06:45Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Robotics-Teaching-Tool-Matlab",
-      "vendor": "TanveerSaleh-1977",
+      "tool": "FTC-Largo-Robotics-Biobuzz-Auto-Simulation",
+      "vendor": "woodjame",
       "evidence": [
-        "https://github.com/TanveerSaleh-1977/Robotics-Teaching-Tool-Matlab"
+        "https://github.com/woodjame/FTC-Largo-Robotics-Biobuzz-Auto-Simulation"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "SanjaySparker27",
-      "vendor": "SanjaySparker27",
+      "tool": "ldra_automation",
+      "vendor": "rishabh-embedded",
       "evidence": [
-        "https://github.com/SanjaySparker27/SanjaySparker27"
+        "https://github.com/rishabh-embedded/ldra_automation"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "robograph",
+      "vendor": "lalitkumar790",
+      "evidence": [
+        "https://github.com/lalitkumar790/robograph"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "robot",
+      "vendor": "WorkBenchMark",
+      "evidence": [
+        "https://github.com/WorkBenchMark/robot"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "smart-robot-devops",
+      "vendor": "Mouh123-m",
+      "evidence": [
+        "https://github.com/Mouh123-m/smart-robot-devops"
       ]
     }
   ],
