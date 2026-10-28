@@ -3532,6 +3532,49 @@
     }
   },
   {
+    "ToolName": "embedded_c_lab",
+    "VendorOrganisation": "embedded-pro-labs",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Enterprise-grade, safety-critical, and boundary-safe C coding labs. Grounded in MISRA-C:2012 guidelines, rigorous unit testing, and static analysis. Designed for experienced firmware architects and high-reliability systems.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/embedded-pro-labs/embedded_c_lab",
+      "https://github.com/embedded-pro-labs/embedded_c_lab"
+    ],
+    "LastVerifiedDate": "2026-10-28",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "embedded-pro-labs/embedded_c_lab",
+      "url": "https://github.com/embedded-pro-labs/embedded_c_lab",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-28T06:49:14Z",
+      "created_at": "2026-10-28T06:24:40Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 2,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "embedding-method-benchmark",
     "VendorOrganisation": "kiingxo",
     "ToolType": "Open Source",
@@ -10061,6 +10104,48 @@
     }
   },
   {
+    "ToolName": "ros2-humble-slam-toolbox-sim",
+    "VendorOrganisation": "meenakshika0918-a11y",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A ROS 2 Humble SLAM simulation using Gazebo Classic, featuring a differential-drive robot with 2D LiDAR and a depth camera in a custom 12×12 m world with four rooms and obstacles. Supports real-time mapping with SLAM Toolbox, RViz2 visualization, keyboard teleoperation, and map export for future autonomous navigation.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/meenakshika0918-a11y/ros2-humble-slam-toolbox-sim",
+      "https://github.com/meenakshika0918-a11y/ros2-humble-slam-toolbox-sim"
+    ],
+    "LastVerifiedDate": "2026-10-28",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "meenakshika0918-a11y/ros2-humble-slam-toolbox-sim",
+      "url": "https://github.com/meenakshika0918-a11y/ros2-humble-slam-toolbox-sim",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-28T07:56:26Z",
+      "created_at": "2026-10-28T07:30:26Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "ros2-lidar-utils",
     "VendorOrganisation": "JcNavjot",
     "ToolType": "Open Source",
@@ -12454,6 +12539,48 @@
       "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 5,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "voice-robot-agent",
+    "VendorOrganisation": "sreevathsasridhar1506-oss",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Real-time voice-controlled robot arm agent: streaming STT/TTS, barge-in, LLM tool-calling, MuJoCo Franka Panda simulation",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/sreevathsasridhar1506-oss/voice-robot-agent",
+      "https://github.com/sreevathsasridhar1506-oss/voice-robot-agent"
+    ],
+    "LastVerifiedDate": "2026-10-28",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "sreevathsasridhar1506-oss/voice-robot-agent",
+      "url": "https://github.com/sreevathsasridhar1506-oss/voice-robot-agent",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-27T17:13:21Z",
+      "created_at": "2026-10-27T17:13:15Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 3,
       "TCO": 5,
       "CommunitySupport": 1
     }

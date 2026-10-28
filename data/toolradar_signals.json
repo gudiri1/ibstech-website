@@ -1,36 +1,28 @@
 {
-  "generated_at_utc": "2026-10-27T08:58:33Z",
+  "generated_at_utc": "2026-10-28T09:38:54Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "armlock",
-      "vendor": "praveenjoshi01",
+      "tool": "embedded_c_lab",
+      "vendor": "embedded-pro-labs",
       "evidence": [
-        "https://github.com/praveenjoshi01/armlock"
+        "https://github.com/embedded-pro-labs/embedded_c_lab"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "artefacts-arena-template",
-      "vendor": "art-e-fact",
+      "tool": "ros2-humble-slam-toolbox-sim",
+      "vendor": "meenakshika0918-a11y",
       "evidence": [
-        "https://github.com/art-e-fact/artefacts-arena-template"
+        "https://github.com/meenakshika0918-a11y/ros2-humble-slam-toolbox-sim"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "embedded-verification-portfolio",
-      "vendor": "jasircolovic",
+      "tool": "voice-robot-agent",
+      "vendor": "sreevathsasridhar1506-oss",
       "evidence": [
-        "https://github.com/jasircolovic/embedded-verification-portfolio"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Robotics-simulation",
-      "vendor": "wiktoriamalek",
-      "evidence": [
-        "https://github.com/wiktoriamalek/Robotics-simulation"
+        "https://github.com/sreevathsasridhar1506-oss/voice-robot-agent"
       ]
     }
   ],
