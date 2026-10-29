@@ -5423,6 +5423,48 @@
     }
   },
   {
+    "ToolName": "liao-ai-robot",
+    "VendorOrganisation": "sadekul-me",
+    "ToolType": "Open Source",
+    "PrimaryUse": "DeepSeek-powered AI robot with MCP tool calling, PC simulation, and Raspberry Pi motor and camera interfaces.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/sadekul-me/liao-ai-robot",
+      "https://github.com/sadekul-me/liao-ai-robot"
+    ],
+    "LastVerifiedDate": "2026-10-29",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "sadekul-me/liao-ai-robot",
+      "url": "https://github.com/sadekul-me/liao-ai-robot",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-29T04:50:44Z",
+      "created_at": "2026-10-29T03:27:31Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "line_follower_sim",
     "VendorOrganisation": "yck011522",
     "ToolType": "Open Source",
@@ -6929,6 +6971,49 @@
       "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "open-embodied-simops",
+    "VendorOrganisation": "eust-w",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Self-hosted robotics workflow workbench: simulation integrations, dataset tools, training and artifact provenance. Alpha; trusted-local use.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "core",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/eust-w/open-embodied-simops",
+      "https://github.com/eust-w/open-embodied-simops"
+    ],
+    "LastVerifiedDate": "2026-10-29",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "eust-w/open-embodied-simops",
+      "url": "https://github.com/eust-w/open-embodied-simops",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-28T20:37:33Z",
+      "created_at": "2026-06-08T14:12:24Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 5,
       "TCO": 5,
       "CommunitySupport": 1
     }
@@ -10262,6 +10347,48 @@
       "open_issues": 2,
       "pushed_at": "2026-04-03T21:35:55Z",
       "created_at": "2025-09-05T10:06:09Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Ros2_visualized_maze_solver_robot",
+    "VendorOrganisation": "tawfikhasan-eng",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A ROS 2-based mobile robot simulation using CoppeliaSim to navigate through a maze. The project includes a simulation environment, a ROS 2 control node for robot movement, and a 2D path visualization tool to track and display the robot's trajectory.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/tawfikhasan-eng/Ros2_visualized_maze_solver_robot",
+      "https://github.com/tawfikhasan-eng/Ros2_visualized_maze_solver_robot"
+    ],
+    "LastVerifiedDate": "2026-10-29",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "tawfikhasan-eng/Ros2_visualized_maze_solver_robot",
+      "url": "https://github.com/tawfikhasan-eng/Ros2_visualized_maze_solver_robot",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-29T00:49:03Z",
+      "created_at": "2026-10-29T00:44:57Z"
     },
     "Scores": {
       "Maturity": 2,

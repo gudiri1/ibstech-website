@@ -1,28 +1,28 @@
 {
-  "generated_at_utc": "2026-10-28T09:38:54Z",
+  "generated_at_utc": "2026-10-29T09:57:16Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "embedded_c_lab",
-      "vendor": "embedded-pro-labs",
+      "tool": "liao-ai-robot",
+      "vendor": "sadekul-me",
       "evidence": [
-        "https://github.com/embedded-pro-labs/embedded_c_lab"
+        "https://github.com/sadekul-me/liao-ai-robot"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "ros2-humble-slam-toolbox-sim",
-      "vendor": "meenakshika0918-a11y",
+      "tool": "open-embodied-simops",
+      "vendor": "eust-w",
       "evidence": [
-        "https://github.com/meenakshika0918-a11y/ros2-humble-slam-toolbox-sim"
+        "https://github.com/eust-w/open-embodied-simops"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "voice-robot-agent",
-      "vendor": "sreevathsasridhar1506-oss",
+      "tool": "Ros2_visualized_maze_solver_robot",
+      "vendor": "tawfikhasan-eng",
       "evidence": [
-        "https://github.com/sreevathsasridhar1506-oss/voice-robot-agent"
+        "https://github.com/tawfikhasan-eng/Ros2_visualized_maze_solver_robot"
       ]
     }
   ],
