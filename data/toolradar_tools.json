@@ -4199,6 +4199,48 @@
     }
   },
   {
+    "ToolName": "firmware-bootloader-test-suite",
+    "VendorOrganisation": "Asmitmandal01",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Dual-bank Embedded C Firmware Update Bootloader and Python OTA sender with IEEE 802.3 CRC-32 packet framing, fault-injection retry recovery, 99.6% GCOV code coverage, and MISRA-C/AS9100C static analysis.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Asmitmandal01/firmware-bootloader-test-suite",
+      "https://github.com/Asmitmandal01/firmware-bootloader-test-suite"
+    ],
+    "LastVerifiedDate": "2026-10-30",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Asmitmandal01/firmware-bootloader-test-suite",
+      "url": "https://github.com/Asmitmandal01/firmware-bootloader-test-suite",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-29T18:50:25Z",
+      "created_at": "2026-10-29T18:36:44Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "firmware-extract",
     "VendorOrganisation": "mosfaqur",
     "ToolType": "Open Source",
@@ -5328,6 +5370,48 @@
       "open_issues": 0,
       "pushed_at": "2025-12-16T14:45:53Z",
       "created_at": "2025-10-06T22:01:24Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "KUKA-Industrial-Robotics",
+    "VendorOrganisation": "rakesh96-mec",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Master’s academic project at RWU involving hands-on KUKA robot programming and simulation. Calibrated robot tool and base frames, programmed automated drawing and colour-based ball sorting, and tested sensor-driven palletizing on a physical industrial robot.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/rakesh96-mec/KUKA-Industrial-Robotics",
+      "https://github.com/rakesh96-mec/KUKA-Industrial-Robotics"
+    ],
+    "LastVerifiedDate": "2026-10-30",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "rakesh96-mec/KUKA-Industrial-Robotics",
+      "url": "https://github.com/rakesh96-mec/KUKA-Industrial-Robotics",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-29T12:13:30Z",
+      "created_at": "2026-10-29T12:12:00Z"
     },
     "Scores": {
       "Maturity": 2,
@@ -12406,6 +12490,48 @@
     "Scores": {
       "Maturity": 2,
       "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "Ungaaaabungaaa",
+    "VendorOrganisation": "ungaaaabungaaa",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Muqeeth's GitHub profile, featuring software tools, robotics simulations, engineering studies, and project notes.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/ungaaaabungaaa/Ungaaaabungaaa",
+      "https://github.com/ungaaaabungaaa/Ungaaaabungaaa"
+    ],
+    "LastVerifiedDate": "2026-10-30",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ungaaaabungaaa/Ungaaaabungaaa",
+      "url": "https://github.com/ungaaaabungaaa/Ungaaaabungaaa",
+      "stars": 20,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-27T14:05:15Z",
+      "created_at": "2021-11-11T05:05:52Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
