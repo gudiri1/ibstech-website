@@ -1,28 +1,12 @@
 {
-  "generated_at_utc": "2026-10-30T09:59:42Z",
+  "generated_at_utc": "2026-10-31T09:38:18Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "firmware-bootloader-test-suite",
-      "vendor": "Asmitmandal01",
+      "tool": "code-quality",
+      "vendor": "markbac",
       "evidence": [
-        "https://github.com/Asmitmandal01/firmware-bootloader-test-suite"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "KUKA-Industrial-Robotics",
-      "vendor": "rakesh96-mec",
-      "evidence": [
-        "https://github.com/rakesh96-mec/KUKA-Industrial-Robotics"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "Ungaaaabungaaa",
-      "vendor": "ungaaaabungaaa",
-      "evidence": [
-        "https://github.com/ungaaaabungaaa/Ungaaaabungaaa"
+        "https://github.com/markbac/code-quality"
       ]
     }
   ],

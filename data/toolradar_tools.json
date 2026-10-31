@@ -1516,6 +1516,48 @@
     }
   },
   {
+    "ToolName": "code-quality",
+    "VendorOrganisation": "markbac",
+    "ToolType": "Open Source",
+    "PrimaryUse": "FWLens: static analysis, structural debt and RTOS architecture inspection for C/C++ embedded firmware, with MISRA checks, SBOMs and HTML reports.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/markbac/code-quality",
+      "https://github.com/markbac/code-quality"
+    ],
+    "LastVerifiedDate": "2026-10-31",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "markbac/code-quality",
+      "url": "https://github.com/markbac/code-quality",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-30T11:06:04Z",
+      "created_at": "2026-09-30T13:15:04Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "CodeAssist_python",
     "VendorOrganisation": "SRIRAM231005",
     "ToolType": "Open Source",
