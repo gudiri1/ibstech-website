@@ -11240,6 +11240,48 @@
     }
   },
   {
+    "ToolName": "SHIFT",
+    "VendorOrganisation": "cst0313",
+    "ToolType": "Open Source",
+    "PrimaryUse": "SHIFT is a multimodal AI changeover copilot built with Gemini. Engineers snap a photo of the packing cell to calibrate a 3D kinematic Delta robot simulation, describe the production change in plain English, and watch Gemini autonomously run a schema-guardrailed 6-tool verification loop.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/cst0313/SHIFT",
+      "https://github.com/cst0313/SHIFT"
+    ],
+    "LastVerifiedDate": "2026-11-01",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "cst0313/SHIFT",
+      "url": "https://github.com/cst0313/SHIFT",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-10-31T16:36:10Z",
+      "created_at": "2026-10-31T16:22:53Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "SimPublisher",
     "VendorOrganisation": "intuitive-robots",
     "ToolType": "Open Source",

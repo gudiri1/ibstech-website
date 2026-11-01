@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-10-31T09:38:18Z",
+  "generated_at_utc": "2026-11-01T10:26:37Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "code-quality",
-      "vendor": "markbac",
+      "tool": "SHIFT",
+      "vendor": "cst0313",
       "evidence": [
-        "https://github.com/markbac/code-quality"
+        "https://github.com/cst0313/SHIFT"
       ]
     }
   ],
