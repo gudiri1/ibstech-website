@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-11-01T10:26:37Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "SHIFT",
-      "vendor": "cst0313",
-      "evidence": [
-        "https://github.com/cst0313/SHIFT"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-11-02T11:04:45Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "APK-insight",
@@ -34,6 +25,11 @@
     {
       "tool": "cobot-arm",
       "link": "https://github.com/yixnhuang/cobot-arm",
+      "info": "HTTP Error 404: Not Found"
+    },
+    {
+      "tool": "code-quality",
+      "link": "https://github.com/markbac/code-quality",
       "info": "HTTP Error 404: Not Found"
     },
     {
