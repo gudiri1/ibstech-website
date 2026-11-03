@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-11-02T11:04:45Z",
-  "signals": [],
+  "generated_at_utc": "2026-11-03T10:51:41Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "5bar-tool",
+      "vendor": "kayrunjaavice",
+      "evidence": [
+        "https://github.com/kayrunjaavice/5bar-tool"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "RBL-Card-Limit-Increase-Investigation",
+      "vendor": "ashrithpeechara",
+      "evidence": [
+        "https://github.com/ashrithpeechara/RBL-Card-Limit-Increase-Investigation"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "APK-insight",
@@ -55,11 +72,6 @@
     {
       "tool": "em_lib",
       "link": "https://github.com/matinjalalitekiyeh/em_lib",
-      "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "embedded-firmware-security",
-      "link": "https://github.com/Ntandolis431/embedded-firmware-security",
       "info": "HTTP Error 404: Not Found"
     }
   ]

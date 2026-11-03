@@ -83,6 +83,48 @@
     }
   },
   {
+    "ToolName": "5bar-tool",
+    "VendorOrganisation": "kayrunjaavice",
+    "ToolType": "Open Source",
+    "PrimaryUse": "5 bar parallel robot simulation tool",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/kayrunjaavice/5bar-tool",
+      "https://github.com/kayrunjaavice/5bar-tool"
+    ],
+    "LastVerifiedDate": "2026-11-03",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "kayrunjaavice/5bar-tool",
+      "url": "https://github.com/kayrunjaavice/5bar-tool",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-03T09:25:43Z",
+      "created_at": "2026-11-03T09:25:37Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "About-Me",
     "VendorOrganisation": "Sarthak15-Embed",
     "ToolType": "Open Source",
@@ -8488,6 +8530,48 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "RBL-Card-Limit-Increase-Investigation",
+    "VendorOrganisation": "ashrithpeechara",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Android malware investigation of a suspicious RBL Card Limit Increase application using static analysis and reverse engineering. Examines SMS functionality, Firebase integration, call-forwarding logic, and embedded WebView components.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/ashrithpeechara/RBL-Card-Limit-Increase-Investigation",
+      "https://github.com/ashrithpeechara/RBL-Card-Limit-Increase-Investigation"
+    ],
+    "LastVerifiedDate": "2026-11-03",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ashrithpeechara/RBL-Card-Limit-Increase-Investigation",
+      "url": "https://github.com/ashrithpeechara/RBL-Card-Limit-Increase-Investigation",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-03T08:23:04Z",
+      "created_at": "2026-11-03T05:52:56Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
