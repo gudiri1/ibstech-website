@@ -1,20 +1,28 @@
 {
-  "generated_at_utc": "2026-11-03T10:51:41Z",
+  "generated_at_utc": "2026-11-04T10:54:23Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "5bar-tool",
-      "vendor": "kayrunjaavice",
+      "tool": "embeddedx-android-workstation",
+      "vendor": "Gokul-Madhu",
       "evidence": [
-        "https://github.com/kayrunjaavice/5bar-tool"
+        "https://github.com/Gokul-Madhu/embeddedx-android-workstation"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "RBL-Card-Limit-Increase-Investigation",
-      "vendor": "ashrithpeechara",
+      "tool": "industrial-tool-delivery-robot",
+      "vendor": "K-S-Devanadh",
       "evidence": [
-        "https://github.com/ashrithpeechara/RBL-Card-Limit-Increase-Investigation"
+        "https://github.com/K-S-Devanadh/industrial-tool-delivery-robot"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "slam_toolbox_1",
+      "vendor": "akhilranand",
+      "evidence": [
+        "https://github.com/akhilranand/slam_toolbox_1"
       ]
     }
   ],

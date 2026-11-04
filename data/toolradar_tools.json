@@ -3659,6 +3659,49 @@
     }
   },
   {
+    "ToolName": "embeddedx-android-workstation",
+    "VendorOrganisation": "Gokul-Madhu",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Android embedded engineering workstation featuring ESP32 connectivity, automotive diagnostics, CAN monitoring, IoT telemetry, firmware verification, USB/BLE tools and robotics simulation.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung",
+      "Release / Operations"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Gokul-Madhu/embeddedx-android-workstation",
+      "https://github.com/Gokul-Madhu/embeddedx-android-workstation"
+    ],
+    "LastVerifiedDate": "2026-11-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Gokul-Madhu/embeddedx-android-workstation",
+      "url": "https://github.com/Gokul-Madhu/embeddedx-android-workstation",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-04T09:37:47Z",
+      "created_at": "2026-11-04T09:37:44Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "embedding-method-benchmark",
     "VendorOrganisation": "kiingxo",
     "ToolType": "Open Source",
@@ -5160,6 +5203,48 @@
     "Scores": {
       "Maturity": 2,
       "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "industrial-tool-delivery-robot",
+    "VendorOrganisation": "K-S-Devanadh",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS Noetic-based industrial tool delivery robot simulation",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/K-S-Devanadh/industrial-tool-delivery-robot",
+      "https://github.com/K-S-Devanadh/industrial-tool-delivery-robot"
+    ],
+    "LastVerifiedDate": "2026-11-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "K-S-Devanadh/industrial-tool-delivery-robot",
+      "url": "https://github.com/K-S-Devanadh/industrial-tool-delivery-robot",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-03T16:17:10Z",
+      "created_at": "2026-11-03T15:26:58Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
@@ -11442,6 +11527,48 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 4,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "slam_toolbox_1",
+    "VendorOrganisation": "akhilranand",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS 2 Humble differential drive robot simulation using URDF/Xacro, RViz2, Gazebo Classic, LiDAR integration, SLAM, and 2D map generation. ",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/akhilranand/slam_toolbox_1",
+      "https://github.com/akhilranand/slam_toolbox_1"
+    ],
+    "LastVerifiedDate": "2026-11-04",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "akhilranand/slam_toolbox_1",
+      "url": "https://github.com/akhilranand/slam_toolbox_1",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-04T09:54:25Z",
+      "created_at": "2026-11-04T09:29:34Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 1,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,
