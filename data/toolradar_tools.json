@@ -9257,6 +9257,48 @@
     }
   },
   {
+    "ToolName": "robot-asset-toolkit",
+    "VendorOrganisation": "DuoChen-317",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Agent skill and tools for robot assets, compliant assembly simulation, connector validation, and recorded physics visualization (CAD, URDF, USD, Isaac Sim).",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/DuoChen-317/robot-asset-toolkit",
+      "https://github.com/DuoChen-317/robot-asset-toolkit"
+    ],
+    "LastVerifiedDate": "2026-11-05",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "DuoChen-317/robot-asset-toolkit",
+      "url": "https://github.com/DuoChen-317/robot-asset-toolkit",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-05T08:01:19Z",
+      "created_at": "2026-10-16T07:19:11Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Robot-cell-energy-consumption-optimisation-with-modern-simulation-tools",
     "VendorOrganisation": "AaronRiosV",
     "ToolType": "Open Source",
@@ -10556,6 +10598,48 @@
       "open_issues": 0,
       "pushed_at": "2026-02-02T17:23:08Z",
       "created_at": "2026-02-02T16:57:59Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 3,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "ros2-slam-toolbox-mapping",
+    "VendorOrganisation": "akhilranand",
+    "ToolType": "Open Source",
+    "PrimaryUse": "ROS 2 Humble differential drive robot simulation using URDF/Xacro, RViz2, Gazebo Classic, LiDAR integration, SLAM, and 2D map generation. ",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/akhilranand/ros2-slam-toolbox-mapping",
+      "https://github.com/akhilranand/ros2-slam-toolbox-mapping"
+    ],
+    "LastVerifiedDate": "2026-11-05",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "akhilranand/ros2-slam-toolbox-mapping",
+      "url": "https://github.com/akhilranand/ros2-slam-toolbox-mapping",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-04T09:54:25Z",
+      "created_at": "2026-11-04T09:29:34Z"
     },
     "Scores": {
       "Maturity": 2,
@@ -11948,6 +12032,50 @@
       "EmbeddedFit": 2,
       "AuditTraceability": 2,
       "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "splatsam",
+    "VendorOrganisation": "Skrisps26",
+    "ToolType": "Open Source",
+    "PrimaryUse": "splatsam is a live video to 3d sim generation tool to assit in generating simulations primarily for robotics related RL training",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung",
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "core",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Skrisps26/splatsam",
+      "https://github.com/Skrisps26/splatsam"
+    ],
+    "LastVerifiedDate": "2026-11-05",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Skrisps26/splatsam",
+      "url": "https://github.com/Skrisps26/splatsam",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-05T06:27:22Z",
+      "created_at": "2026-11-04T12:45:46Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 5,
       "TCO": 5,
       "CommunitySupport": 1
     }

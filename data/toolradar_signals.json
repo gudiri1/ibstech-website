@@ -1,28 +1,28 @@
 {
-  "generated_at_utc": "2026-11-04T10:54:23Z",
+  "generated_at_utc": "2026-11-05T10:55:12Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "embeddedx-android-workstation",
-      "vendor": "Gokul-Madhu",
+      "tool": "robot-asset-toolkit",
+      "vendor": "DuoChen-317",
       "evidence": [
-        "https://github.com/Gokul-Madhu/embeddedx-android-workstation"
+        "https://github.com/DuoChen-317/robot-asset-toolkit"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "industrial-tool-delivery-robot",
-      "vendor": "K-S-Devanadh",
-      "evidence": [
-        "https://github.com/K-S-Devanadh/industrial-tool-delivery-robot"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "slam_toolbox_1",
+      "tool": "ros2-slam-toolbox-mapping",
       "vendor": "akhilranand",
       "evidence": [
-        "https://github.com/akhilranand/slam_toolbox_1"
+        "https://github.com/akhilranand/ros2-slam-toolbox-mapping"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "splatsam",
+      "vendor": "Skrisps26",
+      "evidence": [
+        "https://github.com/Skrisps26/splatsam"
       ]
     }
   ],
