@@ -1,28 +1,12 @@
 {
-  "generated_at_utc": "2026-11-05T10:55:12Z",
+  "generated_at_utc": "2026-11-06T10:51:28Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "robot-asset-toolkit",
-      "vendor": "DuoChen-317",
+      "tool": "esae",
+      "vendor": "alessiomattoccia1-sys",
       "evidence": [
-        "https://github.com/DuoChen-317/robot-asset-toolkit"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "ros2-slam-toolbox-mapping",
-      "vendor": "akhilranand",
-      "evidence": [
-        "https://github.com/akhilranand/ros2-slam-toolbox-mapping"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "splatsam",
-      "vendor": "Skrisps26",
-      "evidence": [
-        "https://github.com/Skrisps26/splatsam"
+        "https://github.com/alessiomattoccia1-sys/esae"
       ]
     }
   ],

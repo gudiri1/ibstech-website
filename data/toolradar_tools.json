@@ -3912,6 +3912,48 @@
     }
   },
   {
+    "ToolName": "esae",
+    "VendorOrganisation": "alessiomattoccia1-sys",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Local embedded C/C++ static analysis prototype · Cppcheck, clang-tidy, optional Ollama · Mattoccia Labs",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/alessiomattoccia1-sys/esae",
+      "https://mattoccia.com/ricerca/esae/"
+    ],
+    "LastVerifiedDate": "2026-11-06",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "alessiomattoccia1-sys/esae",
+      "url": "https://github.com/alessiomattoccia1-sys/esae",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-06T10:43:50Z",
+      "created_at": "2026-11-05T22:19:34Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "esp32-devops-analyzer",
     "VendorOrganisation": "elross913",
     "ToolType": "Open Source",
