@@ -6136,6 +6136,49 @@
     }
   },
   {
+    "ToolName": "Malware-Triage-Document-Based-Analysis",
+    "VendorOrganisation": "abhinavkishor9",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Static malware triage lab examining synthetic DOCX and RTF documents for suspicious instructions, external hyperlinks, document metadata, and embedded components. Includes safe package extraction, indicator identification, evidence preservation, and SHA-256 validation without executing document content or contacting extracted URLs.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/abhinavkishor9/Malware-Triage-Document-Based-Analysis",
+      "https://github.com/abhinavkishor9/Malware-Triage-Document-Based-Analysis"
+    ],
+    "LastVerifiedDate": "2026-11-07",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "abhinavkishor9/Malware-Triage-Document-Based-Analysis",
+      "url": "https://github.com/abhinavkishor9/Malware-Triage-Document-Based-Analysis",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-07T05:45:41Z",
+      "created_at": "2026-11-07T04:42:27Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Mapping-3D-Manufacturing-Warehouse",
     "VendorOrganisation": "Ahmed-Malik4147",
     "ToolType": "Open Source",

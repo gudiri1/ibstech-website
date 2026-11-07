@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-11-06T10:51:28Z",
+  "generated_at_utc": "2026-11-07T10:06:39Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "esae",
-      "vendor": "alessiomattoccia1-sys",
+      "tool": "Malware-Triage-Document-Based-Analysis",
+      "vendor": "abhinavkishor9",
       "evidence": [
-        "https://github.com/alessiomattoccia1-sys/esae"
+        "https://github.com/abhinavkishor9/Malware-Triage-Document-Based-Analysis"
       ]
     }
   ],
