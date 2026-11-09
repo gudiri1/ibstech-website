@@ -3233,6 +3233,48 @@
     }
   },
   {
+    "ToolName": "embedded-cpp-template",
+    "VendorOrganisation": "theAndreas",
+    "ToolType": "Open Source",
+    "PrimaryUse": "The template of an embedded C++ library, usable from Arduino as well: style, static analysis, tests, CI and dev container, kept up to date with copier",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/theAndreas/embedded-cpp-template",
+      "https://github.com/theAndreas/embedded-cpp-template"
+    ],
+    "LastVerifiedDate": "2026-11-09",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "theAndreas/embedded-cpp-template",
+      "url": "https://github.com/theAndreas/embedded-cpp-template",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-08T18:29:08Z",
+      "created_at": "2026-03-01T17:42:39Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Embedded-DevOps-Template",
     "VendorOrganisation": "SafdariAli",
     "ToolType": "Open Source",
@@ -13757,6 +13799,48 @@
       "Integration": 1,
       "EmbeddedFit": 2,
       "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "XSSReaper",
+    "VendorOrganisation": "youwannahackme",
+    "ToolType": "Open Source",
+    "PrimaryUse": "XSSReaper is a high-performance, Go-based scanner for detecting Reflected and DOM XSS vulnerabilities. It uses a zero-false-positive 3-Tier pipeline combining static context analysis, DOM-sink hooking, and headless browser execution confirmation. Features include 2,700+ embedded payloads, CSP auditing, and dynamic concurrency for precise testing.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)",
+      "Documentation & Audit"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/youwannahackme/XSSReaper",
+      "https://github.com/youwannahackme/XSSReaper"
+    ],
+    "LastVerifiedDate": "2026-11-09",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "youwannahackme/XSSReaper",
+      "url": "https://github.com/youwannahackme/XSSReaper",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-01T17:04:43Z",
+      "created_at": "2026-07-14T08:44:48Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 2,
       "AIValue": 1,
       "TCO": 5,
       "CommunitySupport": 1

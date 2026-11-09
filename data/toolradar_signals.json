@@ -1,171 +1,38 @@
 {
-  "generated_at_utc": "2026-11-08T10:21:16Z",
-  "signals": [],
+  "generated_at_utc": "2026-11-09T11:29:53Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "embedded-cpp-template",
+      "vendor": "theAndreas",
+      "evidence": [
+        "https://github.com/theAndreas/embedded-cpp-template"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "XSSReaper",
+      "vendor": "youwannahackme",
+      "evidence": [
+        "https://github.com/youwannahackme/XSSReaper"
+      ]
+    }
+  ],
   "broken_links": [
-    {
-      "tool": "-Advanced-Malware-Analysis",
-      "link": "https://github.com/utuinnocent-creator/-Advanced-Malware-Analysis",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "3544-FRC-Toolkit",
-      "link": "https://github.com/Spartiates-3544/3544-FRC-Toolkit",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "5bar-tool",
-      "link": "https://github.com/kayrunjaavice/5bar-tool",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "About-Me",
-      "link": "https://github.com/Sarthak15-Embed/About-Me",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Agent-Priors-guided-Policy-Learning",
-      "link": "https://github.com/Agentics-robotics/Agent-Priors-guided-Policy-Learning",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Agentic-Bug-Hunter",
-      "link": "https://github.com/21-Muskan/Agentic-Bug-Hunter",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Agentic-Bug-Hunter-",
-      "link": "https://github.com/21-Muskan/Agentic-Bug-Hunter-",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "agv-project",
-      "link": "https://github.com/Seniru-Semal/agv-project",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "AI-Emotion-Detector",
-      "link": "https://github.com/devotuoma/AI-Emotion-Detector",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "AI-Hacking-Village",
-      "link": "https://github.com/zuwasi/AI-Hacking-Village",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "AI-Powered-Codebase-RAG",
-      "link": "https://github.com/Shlok107/AI-Powered-Codebase-RAG",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "akamai-bmp-research",
-      "link": "https://github.com/arisune1337/akamai-bmp-research",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "AL4-pdfstudio",
-      "link": "https://github.com/boredchilada/AL4-pdfstudio",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Ambulance-Digital-Twin-EMS-Use-Case",
-      "link": "https://github.com/oscarecortez361/Ambulance-Digital-Twin-EMS-Use-Case",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "apk-fraud-analyzer",
-      "link": "https://github.com/kushkalia1908/apk-fraud-analyzer",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
     {
       "tool": "APK-insight",
       "link": "https://github.com/0xSpect3r/APK-insight",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "apkscanner",
-      "link": "https://github.com/ProjectFlare/apkscanner",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "armlock",
-      "link": "https://github.com/praveenjoshi01/armlock",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Auto-DigitalTwins",
-      "link": "https://github.com/rayhan3333/Auto-DigitalTwins",
-      "info": "HTTP Error 504: Gateway Time-out"
+      "info": "HTTP Error 404: Not Found"
     },
     {
       "tool": "automatic-test-cypress",
       "link": "https://github.com/dendie-sanjaya/automatic-test-cypress",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "autonomous-master",
-      "link": "https://github.com/Harshilshah11/autonomous-master",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "AUTONOMOUS-SELF-PARKING-VEHICLE-IN-GAZEBO",
-      "link": "https://github.com/Marylicious20/AUTONOMOUS-SELF-PARKING-VEHICLE-IN-GAZEBO",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Autonomous-Ship-Course-Keeping-Controller",
-      "link": "https://github.com/Dogerion/Autonomous-Ship-Course-Keeping-Controller",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Autonomous-Ship-Navigation-System",
-      "link": "https://github.com/Dogerion/Autonomous-Ship-Navigation-System",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "AutoTyper",
-      "link": "https://github.com/Himanshu-369/AutoTyper",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Awesome-AECO",
-      "link": "https://github.com/osama-ata/Awesome-AECO",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "awesome-embedded-systems",
-      "link": "https://github.com/KHALEDNOAMAN/awesome-embedded-systems",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "bias-in-embeddings",
-      "link": "https://github.com/Anubhuti710/bias-in-embeddings",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "chasebot",
-      "link": "https://github.com/fsmalkin/chasebot",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "CI-CD-Jenkins",
-      "link": "https://github.com/AhmedSamymoh/CI-CD-Jenkins",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "CI_FirstEmb_LED1",
-      "link": "https://github.com/Sugumaran-RnD/CI_FirstEmb_LED1",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "ClaudeRTOS-Insight",
-      "link": "https://github.com/xogizmft32/ClaudeRTOS-Insight",
-      "info": "HTTP Error 504: Gateway Time-out"
+      "info": "HTTP Error 404: Not Found"
     },
     {
       "tool": "claudio",
       "link": "https://github.com/noamwiseman/claudio",
-      "info": "HTTP Error 504: Gateway Time-out"
+      "info": "HTTP Error 404: Not Found"
     },
     {
       "tool": "Cloud-Based-Digital-Twin-Monitoring",
@@ -175,112 +42,27 @@
     {
       "tool": "cobot-arm",
       "link": "https://github.com/yixnhuang/cobot-arm",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "code-explorer",
-      "link": "https://github.com/vmikhailov/code-explorer",
-      "info": "HTTP Error 504: Gateway Time-out"
+      "info": "HTTP Error 404: Not Found"
     },
     {
       "tool": "code-quality",
       "link": "https://github.com/markbac/code-quality",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "CodeAssist_python",
-      "link": "https://github.com/SRIRAM231005/CodeAssist_python",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "codebase-analyzer",
-      "link": "https://github.com/kkazei/codebase-analyzer",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Codec-Technologies-Internship-Portfolio-2026",
-      "link": "https://github.com/Eswar5313/Codec-Technologies-Internship-Portfolio-2026",
-      "info": "HTTP Error 504: Gateway Time-out"
+      "info": "HTTP Error 404: Not Found"
     },
     {
       "tool": "codeiq",
       "link": "https://github.com/RandomCodeSpace/codeiq",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Collision-Expansion-Viewer",
-      "link": "https://github.com/a-710/Collision-Expansion-Viewer",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Compile-Time-Stack-Usage-Analyzer",
-      "link": "https://github.com/Shash-J/Compile-Time-Stack-Usage-Analyzer",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "context-os",
-      "link": "https://github.com/sravan27/context-os",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "cortex-memory-budget",
-      "link": "https://github.com/embedded-pro/cortex-memory-budget",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "cpp-ai-agent-toolkit",
-      "link": "https://github.com/Lificholdell2/cpp-ai-agent-toolkit",
-      "info": "HTTP Error 504: Gateway Time-out"
+      "info": "HTTP Error 404: Not Found"
     },
     {
       "tool": "cpp-analysis-benchmark",
       "link": "https://github.com/shaharlevi818/cpp-analysis-benchmark",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "CPU_load_optimizer_C",
-      "link": "https://github.com/AMZ93-sudo/CPU_load_optimizer_C",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "crx-forensics",
-      "link": "https://github.com/Jz8Root/crx-forensics",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "cycle-timer",
-      "link": "https://github.com/eduardo-bido/cycle-timer",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "DeadCodeFinder",
-      "link": "https://github.com/nxi1kor/DeadCodeFinder",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "defenX",
-      "link": "https://github.com/Rashichandel191/defenX",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "dhevesh_repo",
-      "link": "https://github.com/mdeveshkannan-cpu/dhevesh_repo",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Ditto",
-      "link": "https://github.com/Kartik8Dwivedi/Ditto",
-      "info": "HTTP Error 504: Gateway Time-out"
+      "info": "HTTP Error 404: Not Found"
     },
     {
       "tool": "DocGuard",
       "link": "https://github.com/paavandnd-max/DocGuard",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "domain_adaptation_sentiment_analysis",
-      "link": "https://github.com/addytrunks/domain_adaptation_sentiment_analysis",
-      "info": "HTTP Error 504: Gateway Time-out"
+      "info": "HTTP Error 404: Not Found"
     },
     {
       "tool": "domain_adaptation_sentiment_analysis-",
@@ -288,99 +70,9 @@
       "info": "HTTP Error 404: Not Found"
     },
     {
-      "tool": "Drawing_Robotic_Arm",
-      "link": "https://github.com/Anany444/Drawing_Robotic_Arm",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Drift_Take_Home_Assignment",
-      "link": "https://github.com/courtniedangco-creator/Drift_Take_Home_Assignment",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "drone-packaging-simulation-unity",
-      "link": "https://github.com/jorgefajardom-coder/drone-packaging-simulation-unity",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "dsh-robotic-harness",
-      "link": "https://github.com/dingkaihu63/dsh-robotic-harness",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "dummy",
-      "link": "https://github.com/LucasLabX/dummy",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
-      "tool": "Elevator-simulation-using-ARM-Keil-and-RTOS",
-      "link": "https://github.com/navinkumar357/Elevator-simulation-using-ARM-Keil-and-RTOS",
-      "info": "HTTP Error 504: Gateway Time-out"
-    },
-    {
       "tool": "em_lib",
       "link": "https://github.com/matinjalalitekiyeh/em_lib",
       "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "embed-ai-tool-demo",
-      "link": "https://github.com/zhangjianbang-nb/embed-ai-tool-demo",
-      "info": "The read operation timed out"
-    },
-    {
-      "tool": "embed-privacy-stubs",
-      "link": "https://github.com/epiphyt/embed-privacy-stubs",
-      "info": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "tool": "embedded",
-      "link": "https://github.com/WilliamChenGitHub/embedded",
-      "info": "The read operation timed out"
-    },
-    {
-      "tool": "embedded-c-cpp-template",
-      "link": "https://github.com/brahimab8/embedded-c-cpp-template",
-      "info": "The read operation timed out"
-    },
-    {
-      "tool": "Embedded-c-static-analyzer",
-      "link": "https://github.com/Lamouchi-Bayrem/Embedded-c-static-analyzer",
-      "info": "The read operation timed out"
-    },
-    {
-      "tool": "embedded-ci-pipeline",
-      "link": "https://github.com/Abdx-l/embedded-ci-pipeline",
-      "info": "The read operation timed out"
-    },
-    {
-      "tool": "embedded-cicd-pipeline",
-      "link": "https://github.com/aabhakadam/embedded-cicd-pipeline",
-      "info": "The read operation timed out"
-    },
-    {
-      "tool": "embedded-communication-testing",
-      "link": "https://github.com/dikejile/embedded-communication-testing",
-      "info": "The read operation timed out"
-    },
-    {
-      "tool": "embedded-cpp-pro-starter",
-      "link": "https://github.com/SourabhDhalia/embedded-cpp-pro-starter",
-      "info": "The read operation timed out"
-    },
-    {
-      "tool": "Embedded-DevOps-Template",
-      "link": "https://github.com/SafdariAli/Embedded-DevOps-Template",
-      "info": "The read operation timed out"
-    },
-    {
-      "tool": "embedded-firmware-analyzer",
-      "link": "https://github.com/makemk/embedded-firmware-analyzer",
-      "info": "The read operation timed out"
-    },
-    {
-      "tool": "Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline",
-      "link": "https://github.com/nagadeepach/Embedded-Firmware-CI-CD-Automated-Static-Analysis-Pipeline",
-      "info": "The read operation timed out"
     }
   ]
 }
