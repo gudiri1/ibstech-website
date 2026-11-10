@@ -1,24 +1,12 @@
 {
-  "generated_at_utc": "2026-11-09T11:29:53Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "embedded-cpp-template",
-      "vendor": "theAndreas",
-      "evidence": [
-        "https://github.com/theAndreas/embedded-cpp-template"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "XSSReaper",
-      "vendor": "youwannahackme",
-      "evidence": [
-        "https://github.com/youwannahackme/XSSReaper"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-11-10T11:10:42Z",
+  "signals": [],
   "broken_links": [
+    {
+      "tool": "agv-project",
+      "link": "https://github.com/Seniru-Semal/agv-project",
+      "info": "HTTP Error 404: Not Found"
+    },
     {
       "tool": "APK-insight",
       "link": "https://github.com/0xSpect3r/APK-insight",
