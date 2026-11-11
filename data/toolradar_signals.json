@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-11-10T11:10:42Z",
-  "signals": [],
+  "generated_at_utc": "2026-11-11T10:56:10Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "Embedded-Static-Analysis-Pipeline",
+      "vendor": "sdeeraj05",
+      "evidence": [
+        "https://github.com/sdeeraj05/Embedded-Static-Analysis-Pipeline"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "rm-vision",
+      "vendor": "Kisketch",
+      "evidence": [
+        "https://github.com/Kisketch/rm-vision"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "agv-project",
