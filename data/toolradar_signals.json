@@ -1,6 +1,31 @@
 {
-  "generated_at_utc": "2026-11-12T11:07:08Z",
-  "signals": [],
+  "generated_at_utc": "2026-11-13T10:57:38Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "awesome-nvidia-physical-ai",
+      "vendor": "james-joobs",
+      "evidence": [
+        "https://github.com/james-joobs/awesome-nvidia-physical-ai"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "RPA-Simulation-Tool-Django-Based-",
+      "vendor": "Fathir-Afatar",
+      "evidence": [
+        "https://github.com/Fathir-Afatar/RPA-Simulation-Tool-Django-Based-"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "smartcitiesiot-tools",
+      "vendor": "GaonaJ1",
+      "evidence": [
+        "https://github.com/GaonaJ1/smartcitiesiot-tools"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "agv-project",
