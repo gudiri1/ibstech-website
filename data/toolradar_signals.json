@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-11-14T10:24:36Z",
-  "signals": [],
+  "generated_at_utc": "2026-11-15T10:52:12Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "rm_mujoco",
+      "vendor": "ABSCISSA921",
+      "evidence": [
+        "https://github.com/ABSCISSA921/rm_mujoco"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "agv-project",
