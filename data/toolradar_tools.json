@@ -4664,6 +4664,48 @@
     }
   },
   {
+    "ToolName": "frc-agent-toolkit",
+    "VendorOrganisation": "j0n5m1th",
+    "ToolType": "Open Source",
+    "PrimaryUse": "MCP servers and Claude Code skills that let an AI assistant debug FRC robots: live NetworkTables, match logs, simulation, Systemcore and CTRE devices.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "assisted",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/j0n5m1th/frc-agent-toolkit",
+      "https://github.com/j0n5m1th/frc-agent-toolkit"
+    ],
+    "LastVerifiedDate": "2026-11-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "j0n5m1th/frc-agent-toolkit",
+      "url": "https://github.com/j0n5m1th/frc-agent-toolkit",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-16T05:10:46Z",
+      "created_at": "2026-11-15T22:59:41Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 3,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "FreeRTOS",
     "VendorOrganisation": "AmirMirj",
     "ToolType": "Open Source",
@@ -6042,6 +6084,48 @@
       "open_issues": 0,
       "pushed_at": "2026-09-15T04:38:18Z",
       "created_at": "2026-08-04T18:17:08Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "lucen-sdk",
+    "VendorOrganisation": "ICE-CUBA",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Lucen SDK: models, simulation tools and real-robot software for biped_Laika, wheeled_base, humanoid_arm and Arm",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/ICE-CUBA/lucen-sdk",
+      "https://github.com/ICE-CUBA/lucen-sdk"
+    ],
+    "LastVerifiedDate": "2026-11-16",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "ICE-CUBA/lucen-sdk",
+      "url": "https://github.com/ICE-CUBA/lucen-sdk",
+      "stars": 7,
+      "forks": 1,
+      "open_issues": 0,
+      "pushed_at": "2026-11-15T23:08:36Z",
+      "created_at": "2026-11-15T22:17:58Z"
     },
     "Scores": {
       "Maturity": 2,
