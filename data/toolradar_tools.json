@@ -1265,6 +1265,47 @@
     }
   },
   {
+    "ToolName": "buglens",
+    "VendorOrganisation": "Icoder05",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Bug localization on SWE-bench Lite (BM25, fine-tuned code embeddings, LambdaRank, Gemini reranking) + static-analysis codebase onboarding. Research report, statistics and Gradio demo.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Icoder05/buglens",
+      "https://github.com/Icoder05/buglens"
+    ],
+    "LastVerifiedDate": "2026-11-17",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Icoder05/buglens",
+      "url": "https://github.com/Icoder05/buglens",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-16T14:38:10Z",
+      "created_at": "2026-11-11T15:01:53Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "chasebot",
     "VendorOrganisation": "fsmalkin",
     "ToolType": "Open Source",

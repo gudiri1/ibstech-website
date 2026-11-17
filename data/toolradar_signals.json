@@ -1,20 +1,12 @@
 {
-  "generated_at_utc": "2026-11-16T11:16:00Z",
+  "generated_at_utc": "2026-11-17T11:50:40Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "frc-agent-toolkit",
-      "vendor": "j0n5m1th",
+      "tool": "buglens",
+      "vendor": "Icoder05",
       "evidence": [
-        "https://github.com/j0n5m1th/frc-agent-toolkit"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "lucen-sdk",
-      "vendor": "ICE-CUBA",
-      "evidence": [
-        "https://github.com/ICE-CUBA/lucen-sdk"
+        "https://github.com/Icoder05/buglens"
       ]
     }
   ],
