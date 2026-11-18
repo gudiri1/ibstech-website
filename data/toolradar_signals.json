@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-11-17T11:50:40Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "buglens",
-      "vendor": "Icoder05",
-      "evidence": [
-        "https://github.com/Icoder05/buglens"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-11-18T11:40:46Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "agv-project",
