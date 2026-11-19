@@ -8538,6 +8538,49 @@
     }
   },
   {
+    "ToolName": "platformio-ide",
+    "VendorOrganisation": "platformio-ide-cli",
+    "ToolType": "Open Source",
+    "PrimaryUse": "PlatformIO IDE and Core provide a cross-platform embedded development workflow for boards, frameworks, libraries, firmware builds, debugging, unit testing, static analysis, and serial monitoring through declarative project environments. It supports repeatable workflows for IoT teams.",
+    "VModelPhases": [
+      "Implementierung",
+      "Integration & Test (Komponenten)",
+      "Release / Operations"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/platformio-ide-cli/platformio-ide",
+      "https://github.com/platformio-ide-cli/platformio-ide"
+    ],
+    "LastVerifiedDate": "2026-11-19",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "platformio-ide-cli/platformio-ide",
+      "url": "https://github.com/platformio-ide-cli/platformio-ide",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-19T05:01:04Z",
+      "created_at": "2026-11-19T04:46:01Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "PortfolioWebsite",
     "VendorOrganisation": "KalebSabo",
     "ToolType": "Open Source",
