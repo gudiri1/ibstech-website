@@ -1,15 +1,6 @@
 {
-  "generated_at_utc": "2026-11-19T11:38:29Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "platformio-ide",
-      "vendor": "platformio-ide-cli",
-      "evidence": [
-        "https://github.com/platformio-ide-cli/platformio-ide"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-11-20T11:38:35Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "agv-project",
