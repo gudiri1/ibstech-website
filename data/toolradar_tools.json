@@ -884,6 +884,47 @@
     }
   },
   {
+    "ToolName": "automotive-ecu-binary-analysis-notes",
+    "VendorOrganisation": "Nurmuhammad-Xusanov",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Technical notes and methodology on automotive ECU firmware static analysis, memory mapping, and embedded protocol reverse engineering",
+    "VModelPhases": [
+      "Implementierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/Nurmuhammad-Xusanov/automotive-ecu-binary-analysis-notes",
+      "https://github.com/Nurmuhammad-Xusanov/automotive-ecu-binary-analysis-notes"
+    ],
+    "LastVerifiedDate": "2026-11-21",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "Nurmuhammad-Xusanov/automotive-ecu-binary-analysis-notes",
+      "url": "https://github.com/Nurmuhammad-Xusanov/automotive-ecu-binary-analysis-notes",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-21T06:05:56Z",
+      "created_at": "2026-11-21T06:03:30Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 3,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "autonomous-master",
     "VendorOrganisation": "Harshilshah11",
     "ToolType": "Open Source",

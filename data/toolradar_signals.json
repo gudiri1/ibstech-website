@@ -1,6 +1,15 @@
 {
-  "generated_at_utc": "2026-11-20T11:38:35Z",
-  "signals": [],
+  "generated_at_utc": "2026-11-21T10:59:44Z",
+  "signals": [
+    {
+      "type": "NEW_TOOL",
+      "tool": "automotive-ecu-binary-analysis-notes",
+      "vendor": "Nurmuhammad-Xusanov",
+      "evidence": [
+        "https://github.com/Nurmuhammad-Xusanov/automotive-ecu-binary-analysis-notes"
+      ]
+    }
+  ],
   "broken_links": [
     {
       "tool": "agv-project",
