@@ -12083,6 +12083,48 @@
     }
   },
   {
+    "ToolName": "shiwamshoryasharma",
+    "VendorOrganisation": "shiwamshoryasharma",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Professional profile and React portfolio for robotics, applied AI, simulation, and engineering tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/shiwamshoryasharma/shiwamshoryasharma",
+      "https://shiwamshoryasharma.github.io/shiwamshoryasharma/"
+    ],
+    "LastVerifiedDate": "2026-11-22",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "shiwamshoryasharma/shiwamshoryasharma",
+      "url": "https://github.com/shiwamshoryasharma/shiwamshoryasharma",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-22T07:25:03Z",
+      "created_at": "2026-09-25T07:17:08Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "SimPublisher",
     "VendorOrganisation": "intuitive-robots",
     "ToolType": "Open Source",
