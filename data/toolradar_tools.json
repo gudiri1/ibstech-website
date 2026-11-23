@@ -5588,6 +5588,47 @@
     }
   },
   {
+    "ToolName": "Injection-Molding-Machine",
+    "VendorOrganisation": "filegeiasou",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Designed and developed an ESP32-based injection molding machine, integrating mechanical design, embedded programming, and temperature control. Performed static structural analysis, injection time calculations, and electrical system design to develop a functional mechatronic prototype.",
+    "VModelPhases": [
+      "Data/AI Lifecycle"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/filegeiasou/Injection-Molding-Machine",
+      "https://github.com/filegeiasou/Injection-Molding-Machine"
+    ],
+    "LastVerifiedDate": "2026-11-23",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "filegeiasou/Injection-Molding-Machine",
+      "url": "https://github.com/filegeiasou/Injection-Molding-Machine",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-22T15:01:34Z",
+      "created_at": "2026-11-22T15:01:32Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "InverseKinematicsVisualizer",
     "VendorOrganisation": "Solid-V",
     "ToolType": "Open Source",
@@ -8242,6 +8283,47 @@
     }
   },
   {
+    "ToolName": "PDFSentinel",
+    "VendorOrganisation": "v64526173-cmyk",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A Python and Bash tool for static PDF analysis. Detects suspicious PDF actions, JavaScript, embedded files, and other indicators, with optional ClamAV scanning.",
+    "VModelPhases": [
+      "Integration & Test (Komponenten)"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/v64526173-cmyk/PDFSentinel",
+      "https://github.com/v64526173-cmyk/PDFSentinel"
+    ],
+    "LastVerifiedDate": "2026-11-23",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "v64526173-cmyk/PDFSentinel",
+      "url": "https://github.com/v64526173-cmyk/PDFSentinel",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-23T09:36:59Z",
+      "created_at": "2026-11-23T07:48:56Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "Pengenalan-RTOS-dan-Embedded-Toolchain",
     "VendorOrganisation": "sinekarlintang",
     "ToolType": "Open Source",
@@ -10177,6 +10259,48 @@
       "Maturity": 2,
       "Integration": 3,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "robotic-arm-simulator-mini",
+    "VendorOrganisation": "vaibhav10107",
+    "ToolType": "Open Source",
+    "PrimaryUse": "A lightweight, offline simulation tool for robotic arms using Python and Pygame.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/vaibhav10107/robotic-arm-simulator-mini",
+      "https://github.com/vaibhav10107/robotic-arm-simulator-mini"
+    ],
+    "LastVerifiedDate": "2026-11-23",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "vaibhav10107/robotic-arm-simulator-mini",
+      "url": "https://github.com/vaibhav10107/robotic-arm-simulator-mini",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-22T15:13:29Z",
+      "created_at": "2026-11-22T15:13:19Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,

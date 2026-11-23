@@ -1,12 +1,28 @@
 {
-  "generated_at_utc": "2026-11-22T11:23:29Z",
+  "generated_at_utc": "2026-11-23T12:37:47Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "shiwamshoryasharma",
-      "vendor": "shiwamshoryasharma",
+      "tool": "Injection-Molding-Machine",
+      "vendor": "filegeiasou",
       "evidence": [
-        "https://github.com/shiwamshoryasharma/shiwamshoryasharma"
+        "https://github.com/filegeiasou/Injection-Molding-Machine"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "PDFSentinel",
+      "vendor": "v64526173-cmyk",
+      "evidence": [
+        "https://github.com/v64526173-cmyk/PDFSentinel"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "robotic-arm-simulator-mini",
+      "vendor": "vaibhav10107",
+      "evidence": [
+        "https://github.com/vaibhav10107/robotic-arm-simulator-mini"
       ]
     }
   ],
