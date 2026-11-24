@@ -4120,6 +4120,49 @@
     }
   },
   {
+    "ToolName": "enginelab",
+    "VendorOrganisation": "jeremygideonbareh",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Open-source CAD analysis for engineers: break assemblies into parts, identify and measure them, recommend materials, FEA, engine life simulation, robotics tools.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "Implementierung",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/jeremygideonbareh/enginelab",
+      "https://github.com/jeremygideonbareh/enginelab"
+    ],
+    "LastVerifiedDate": "2026-11-24",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "jeremygideonbareh/enginelab",
+      "url": "https://github.com/jeremygideonbareh/enginelab",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-24T10:26:02Z",
+      "created_at": "2026-11-24T10:20:55Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "esae",
     "VendorOrganisation": "alessiomattoccia1-sys",
     "ToolType": "Open Source",
@@ -10808,6 +10851,48 @@
       "Maturity": 2,
       "Integration": 1,
       "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "robotics-tools",
+    "VendorOrganisation": "wuisabel-gif",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Cross-check sensor-fault diagnosis for robots (AUV and robot arm): ranks faults, abstains when unsure, names the next test. Simulation only, blinded evaluation.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/wuisabel-gif/robotics-tools",
+      "https://github.com/wuisabel-gif/robotics-tools"
+    ],
+    "LastVerifiedDate": "2026-11-24",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "wuisabel-gif/robotics-tools",
+      "url": "https://github.com/wuisabel-gif/robotics-tools",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-24T05:58:06Z",
+      "created_at": "2026-10-26T21:54:40Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 2,
+      "EmbeddedFit": 2,
       "AuditTraceability": 1,
       "AIValue": 1,
       "TCO": 5,

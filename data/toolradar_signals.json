@@ -1,28 +1,20 @@
 {
-  "generated_at_utc": "2026-11-23T12:37:47Z",
+  "generated_at_utc": "2026-11-24T13:41:40Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Injection-Molding-Machine",
-      "vendor": "filegeiasou",
+      "tool": "enginelab",
+      "vendor": "jeremygideonbareh",
       "evidence": [
-        "https://github.com/filegeiasou/Injection-Molding-Machine"
+        "https://github.com/jeremygideonbareh/enginelab"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "PDFSentinel",
-      "vendor": "v64526173-cmyk",
+      "tool": "robotics-tools",
+      "vendor": "wuisabel-gif",
       "evidence": [
-        "https://github.com/v64526173-cmyk/PDFSentinel"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "robotic-arm-simulator-mini",
-      "vendor": "vaibhav10107",
-      "evidence": [
-        "https://github.com/vaibhav10107/robotic-arm-simulator-mini"
+        "https://github.com/wuisabel-gif/robotics-tools"
       ]
     }
   ],
