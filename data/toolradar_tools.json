@@ -12459,6 +12459,48 @@
     }
   },
   {
+    "ToolName": "Smart-Contract-Vulnerability-Detector",
+    "VendorOrganisation": "harshithkathi83-hash",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Explainable Ethereum smart contract vulnerability detection using CodeBERT source code embeddings and hybrid static analysis (Slither) with XAI remediation.",
+    "VModelPhases": [
+      "Implementierung",
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/harshithkathi83-hash/Smart-Contract-Vulnerability-Detector",
+      "https://github.com/harshithkathi83-hash/Smart-Contract-Vulnerability-Detector"
+    ],
+    "LastVerifiedDate": "2026-11-25",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "harshithkathi83-hash/Smart-Contract-Vulnerability-Detector",
+      "url": "https://github.com/harshithkathi83-hash/Smart-Contract-Vulnerability-Detector",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-25T10:39:48Z",
+      "created_at": "2026-11-25T10:04:48Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "smart-plc-cncsim",
     "VendorOrganisation": "junke365",
     "ToolType": "Open Source",
