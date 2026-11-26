@@ -1,12 +1,20 @@
 {
-  "generated_at_utc": "2026-11-25T12:53:49Z",
+  "generated_at_utc": "2026-11-26T12:31:59Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "Smart-Contract-Vulnerability-Detector",
-      "vendor": "harshithkathi83-hash",
+      "tool": "KUKA_KR300_Payload_Aware_Modeling",
+      "vendor": "blisxhxnx",
       "evidence": [
-        "https://github.com/harshithkathi83-hash/Smart-Contract-Vulnerability-Detector"
+        "https://github.com/blisxhxnx/KUKA_KR300_Payload_Aware_Modeling"
+      ]
+    },
+    {
+      "type": "NEW_TOOL",
+      "tool": "mathworks-polyspace",
+      "vendor": "patrku",
+      "evidence": [
+        "https://github.com/patrku/mathworks-polyspace"
       ]
     }
   ],
@@ -15,11 +23,6 @@
       "tool": "agv-project",
       "link": "https://github.com/Seniru-Semal/agv-project",
       "info": "HTTP Error 404: Not Found"
-    },
-    {
-      "tool": "Ambulance-Digital-Twin-EMS-Use-Case",
-      "link": "https://github.com/oscarecortez361/Ambulance-Digital-Twin-EMS-Use-Case",
-      "info": "HTTP Error 502: Bad Gateway or Proxy Error"
     },
     {
       "tool": "APK-insight",

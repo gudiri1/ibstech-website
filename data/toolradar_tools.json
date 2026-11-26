@@ -5969,6 +5969,48 @@
     }
   },
   {
+    "ToolName": "KUKA_KR300_Payload_Aware_Modeling",
+    "VendorOrganisation": "blisxhxnx",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Payload-aware digital twin of a KUKA KR300 industrial robot. Physics-residual XGBoost predicts tool position from joint angles and payload (6,600 laser-tracker poses), with SHAP explanations, conformal error bars and genetic-algorithm inverse kinematics, all in an interactive 3D Streamlit simulation with FK, IK and pick-and-place.",
+    "VModelPhases": [
+      "Architektur/Design",
+      "System Integration & Validierung"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/blisxhxnx/KUKA_KR300_Payload_Aware_Modeling",
+      "https://github.com/blisxhxnx/KUKA_KR300_Payload_Aware_Modeling"
+    ],
+    "LastVerifiedDate": "2026-11-26",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'robotics simulation tool'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "blisxhxnx/KUKA_KR300_Payload_Aware_Modeling",
+      "url": "https://github.com/blisxhxnx/KUKA_KR300_Payload_Aware_Modeling",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-26T11:07:20Z",
+      "created_at": "2026-11-26T11:01:19Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 1,
+      "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
     "ToolName": "lance-tools-simulation",
     "VendorOrganisation": "FadilBayanganxyz23",
     "ToolType": "Open Source",
@@ -6634,6 +6676,47 @@
       "Integration": 1,
       "EmbeddedFit": 1,
       "AuditTraceability": 1,
+      "AIValue": 1,
+      "TCO": 5,
+      "CommunitySupport": 1
+    }
+  },
+  {
+    "ToolName": "mathworks-polyspace",
+    "VendorOrganisation": "patrku",
+    "ToolType": "Open Source",
+    "PrimaryUse": "Mathworks Polyspace: static code analysis suite for Windows 10/11, with abstract interpretation bug detection, formal proof verification, MISRA and CERT rule checking and variable range analysis for embedded safety-critical software teams.",
+    "VModelPhases": [
+      "Safety & Security"
+    ],
+    "AIInvolvement": "none",
+    "Classification": "Assess",
+    "EvidenceLinks": [
+      "https://github.com/patrku/mathworks-polyspace",
+      "https://patrku.github.io/mathworks-polyspace/"
+    ],
+    "LastVerifiedDate": "2026-11-26",
+    "UpdateSignal": [
+      "GitHubReleases"
+    ],
+    "RiskFlags": [
+      "Unvalidated (auto-discovered)"
+    ],
+    "Notes": "Discovered via GitHub search query: 'embedded static analysis'. Scores are heuristic.",
+    "Repo": {
+      "full_name": "patrku/mathworks-polyspace",
+      "url": "https://github.com/patrku/mathworks-polyspace",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "pushed_at": "2026-11-25T19:47:44Z",
+      "created_at": "2026-11-25T19:42:49Z"
+    },
+    "Scores": {
+      "Maturity": 2,
+      "Integration": 1,
+      "EmbeddedFit": 2,
+      "AuditTraceability": 2,
       "AIValue": 1,
       "TCO": 5,
       "CommunitySupport": 1
