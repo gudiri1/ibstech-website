@@ -1,20 +1,20 @@
 {
-  "generated_at_utc": "2026-11-26T12:31:59Z",
+  "generated_at_utc": "2026-11-27T12:17:54Z",
   "signals": [
     {
       "type": "NEW_TOOL",
-      "tool": "KUKA_KR300_Payload_Aware_Modeling",
-      "vendor": "blisxhxnx",
+      "tool": "coregold-usdt-vcc-physical-ai-robotics-rnd-team-billing-guide",
+      "vendor": "borchertnad-creator",
       "evidence": [
-        "https://github.com/blisxhxnx/KUKA_KR300_Payload_Aware_Modeling"
+        "https://github.com/borchertnad-creator/coregold-usdt-vcc-physical-ai-robotics-rnd-team-billing-guide"
       ]
     },
     {
       "type": "NEW_TOOL",
-      "tool": "mathworks-polyspace",
-      "vendor": "patrku",
+      "tool": "sql-review-toolkit",
+      "vendor": "suhani-kumar",
       "evidence": [
-        "https://github.com/patrku/mathworks-polyspace"
+        "https://github.com/suhani-kumar/sql-review-toolkit"
       ]
     }
   ],
