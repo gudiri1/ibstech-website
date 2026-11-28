@@ -1,23 +1,6 @@
 {
-  "generated_at_utc": "2026-11-27T12:17:54Z",
-  "signals": [
-    {
-      "type": "NEW_TOOL",
-      "tool": "coregold-usdt-vcc-physical-ai-robotics-rnd-team-billing-guide",
-      "vendor": "borchertnad-creator",
-      "evidence": [
-        "https://github.com/borchertnad-creator/coregold-usdt-vcc-physical-ai-robotics-rnd-team-billing-guide"
-      ]
-    },
-    {
-      "type": "NEW_TOOL",
-      "tool": "sql-review-toolkit",
-      "vendor": "suhani-kumar",
-      "evidence": [
-        "https://github.com/suhani-kumar/sql-review-toolkit"
-      ]
-    }
-  ],
+  "generated_at_utc": "2026-11-28T11:43:36Z",
+  "signals": [],
   "broken_links": [
     {
       "tool": "agv-project",
